@@ -1,0 +1,366 @@
+Analysis & Synthesis report for Thesis_Project
+Sun Nov 17 16:51:54 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
+ 12. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Nov 17 16:51:54 2024           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; Thesis_Project                                  ;
+; Top-level Entity Name              ; BAUD_RATE_GENERATOR                             ;
+; Family                             ; Cyclone IV GX                                   ;
+; Total logic elements               ; 37                                              ;
+;     Total combinational functions  ; 37                                              ;
+;     Dedicated logic registers      ; 14                                              ;
+; Total registers                    ; 14                                              ;
+; Total pins                         ; 44                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total GXB Receiver Channel PCS     ; 0                                               ;
+; Total GXB Receiver Channel PMA     ; 0                                               ;
+; Total GXB Transmitter Channel PCS  ; 0                                               ;
+; Total GXB Transmitter Channel PMA  ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                         ;
++----------------------------------------------------------------------------+---------------------+--------------------+
+; Option                                                                     ; Setting             ; Default Value      ;
++----------------------------------------------------------------------------+---------------------+--------------------+
+; Top-level entity name                                                      ; BAUD_RATE_GENERATOR ; Thesis_Project     ;
+; Family name                                                                ; Cyclone IV GX       ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                 ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                  ; On                 ;
+; Enable compact report table                                                ; Off                 ; Off                ;
+; Restructure Multiplexers                                                   ; Auto                ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                 ; Off                ;
+; Preserve fewer node names                                                  ; On                  ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                 ; Off                ;
+; Verilog Version                                                            ; Verilog_2001        ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993           ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto                ; Auto               ;
+; Safe State Machine                                                         ; Off                 ; Off                ;
+; Extract Verilog State Machines                                             ; On                  ; On                 ;
+; Extract VHDL State Machines                                                ; On                  ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                 ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000                ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                 ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                  ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                  ; On                 ;
+; Parallel Synthesis                                                         ; On                  ; On                 ;
+; DSP Block Balancing                                                        ; Auto                ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                  ; On                 ;
+; Power-Up Don't Care                                                        ; On                  ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                 ; Off                ;
+; Remove Duplicate Registers                                                 ; On                  ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                 ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                 ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                 ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                 ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                 ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                  ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                 ; Off                ;
+; Optimization Technique                                                     ; Balanced            ; Balanced           ;
+; Carry Chain Length                                                         ; 70                  ; 70                 ;
+; Auto Carry Chains                                                          ; On                  ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                  ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                 ; Off                ;
+; Auto ROM Replacement                                                       ; On                  ; On                 ;
+; Auto RAM Replacement                                                       ; On                  ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                  ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto                ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto                ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                  ; On                 ;
+; Strict RAM Replacement                                                     ; Off                 ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                  ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                 ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                  ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                 ; Off                ;
+; Auto Resource Sharing                                                      ; Off                 ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                 ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                 ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                 ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                  ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                 ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                  ; On                 ;
+; Report Parameter Settings                                                  ; On                  ; On                 ;
+; Report Source Assignments                                                  ; On                  ; On                 ;
+; Report Connectivity Checks                                                 ; On                  ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                 ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                   ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation  ; Normal compilation ;
+; HDL message level                                                          ; Level2              ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                 ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000                ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                 ; 100                ;
+; Clock MUX Protection                                                       ; On                  ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                 ; Off                ;
+; Block Design Naming                                                        ; Auto                ; Auto               ;
+; SDC constraint protection                                                  ; Off                 ; Off                ;
+; Synthesis Effort                                                           ; Auto                ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                  ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                 ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium              ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto                ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                  ; On                 ;
+; Synthesis Seed                                                             ; 1                   ; 1                  ;
++----------------------------------------------------------------------------+---------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 32     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                               ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                           ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------+---------+
+; BAUD_RATE_GENERATOR.sv           ; yes             ; User SystemVerilog HDL File  ; C:/Users/24h/Desktop/HK241/DATN/BAUD_RATE_GENERATOR.sv ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------+---------+
+
+
++----------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary  ;
++--------------------------+-------------------+
+; Resource                 ; Usage             ;
++--------------------------+-------------------+
+; I/O pins                 ; 44                ;
+; DSP block 9-bit elements ; 0                 ;
+; Maximum fan-out node     ; baud_div_16~input ;
+; Maximum fan-out          ; 14                ;
+; Total fan-out            ; 218               ;
+; Average fan-out          ; 1.57              ;
++--------------------------+-------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                      ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name  ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------+--------------+
+; |BAUD_RATE_GENERATOR       ; 37 (37)           ; 14 (14)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 44   ; 0            ; |BAUD_RATE_GENERATOR ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 14    ;
+; Number of registers using Synchronous Clear  ; 13    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 14    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+; 3:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |BAUD_RATE_GENERATOR|counter_baud[0]~reg0 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Nov 17 16:51:53 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Thesis_Project -c Thesis_Project
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file wrapper.sv
+    Info (12023): Found entity 1: wrapper
+Info (12021): Found 1 design units, including 1 entities, in source file uart_start_bit_detect.sv
+    Info (12023): Found entity 1: uart_start_bit_detect
+Info (12021): Found 1 design units, including 1 entities, in source file tx_fsm.sv
+    Info (12023): Found entity 1: tx_fsm
+Info (12021): Found 1 design units, including 1 entities, in source file transmit_fifo.sv
+    Info (12023): Found entity 1: transmit_FIFO
+Info (12021): Found 1 design units, including 1 entities, in source file transfer_validate.sv
+    Info (12023): Found entity 1: transfer_validate
+Info (12021): Found 1 design units, including 1 entities, in source file test_ver4.sv
+    Info (12023): Found entity 1: test_ver4
+Info (12021): Found 1 design units, including 1 entities, in source file test_ver3.sv
+    Info (12023): Found entity 1: test_ver3
+Info (12021): Found 1 design units, including 1 entities, in source file test_ver2.sv
+    Info (12023): Found entity 1: test_ver2
+Info (12021): Found 1 design units, including 1 entities, in source file tb_ahb_apb_bridge.sv
+    Info (12023): Found entity 1: tb_AHB_SLAVE
+Info (12021): Found 1 design units, including 1 entities, in source file shift_register_wr.sv
+    Info (12023): Found entity 1: shift_register_wr
+Info (12021): Found 1 design units, including 1 entities, in source file shift_register_rd.sv
+    Info (12023): Found entity 1: shift_register_rd
+Info (12021): Found 1 design units, including 1 entities, in source file sel_clk.sv
+    Info (12023): Found entity 1: Sel_Clk
+Info (12021): Found 1 design units, including 1 entities, in source file rx_fsm.sv
+    Info (12023): Found entity 1: rx_fsm
+Info (12021): Found 1 design units, including 1 entities, in source file register_enable_only.sv
+    Info (12023): Found entity 1: register_enable_only
+Info (12021): Found 1 design units, including 1 entities, in source file receive_fifo.sv
+    Info (12023): Found entity 1: receive_FIFO
+Info (12021): Found 1 design units, including 1 entities, in source file mux4to1_4bit.sv
+    Info (12023): Found entity 1: mux4to1_4bit
+Info (12021): Found 1 design units, including 1 entities, in source file mux2to1_1bit.sv
+    Info (12023): Found entity 1: MUX2TO1_1bit
+Info (12021): Found 1 design units, including 1 entities, in source file fsm_apb.sv
+    Info (12023): Found entity 1: FSM_APB
+Info (12021): Found 1 design units, including 1 entities, in source file fsm_ahb.sv
+    Info (12023): Found entity 1: FSM_AHB
+Info (12021): Found 1 design units, including 1 entities, in source file encoderdatalength.sv
+    Info (12023): Found entity 1: EncoderDataLength
+Info (12021): Found 1 design units, including 1 entities, in source file encoderaddressbehave.sv
+    Info (12023): Found entity 1: EncoderAddressBehave
+Info (12021): Found 1 design units, including 1 entities, in source file divider.sv
+    Info (12023): Found entity 1: DIVIDER
+Info (12021): Found 0 design units, including 0 entities, in source file defines.sv
+Info (12021): Found 1 design units, including 1 entities, in source file datalengthdecoder.sv
+    Info (12023): Found entity 1: DataLengthDecoder
+Info (12021): Found 1 design units, including 1 entities, in source file d_ff_64bit.sv
+    Info (12023): Found entity 1: D_FF_64bit
+Info (12021): Found 1 design units, including 1 entities, in source file d_ff_32bit_with_sel.sv
+    Info (12023): Found entity 1: D_FF_32bit_with_Sel
+Info (12021): Found 1 design units, including 1 entities, in source file d_ff_32bit.sv
+    Info (12023): Found entity 1: D_FF_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file d_ff_12bit.sv
+    Info (12023): Found entity 1: D_FF_12bit
+Info (12021): Found 1 design units, including 1 entities, in source file d_ff_8bit.sv
+    Info (12023): Found entity 1: D_FF_8bit
+Info (12021): Found 1 design units, including 1 entities, in source file d_ff_4bit.sv
+    Info (12023): Found entity 1: D_FF_4BIT
+Info (12021): Found 1 design units, including 1 entities, in source file d_ff_1bit_with_sel.sv
+    Info (12023): Found entity 1: D_FF_1bit_with_Sel
+Info (12021): Found 1 design units, including 1 entities, in source file d_ff_1bit.sv
+    Info (12023): Found entity 1: D_FF_1bit
+Info (12021): Found 1 design units, including 1 entities, in source file custom_fsm_wr_rd.sv
+    Info (12023): Found entity 1: custom_fsm_wr_rd
+Info (12021): Found 1 design units, including 1 entities, in source file comparator_unsigned_32bit.sv
+    Info (12023): Found entity 1: comparator_unsigned_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file comparator_bit.sv
+    Info (12023): Found entity 1: comparator_bit
+Info (12021): Found 1 design units, including 1 entities, in source file bit_counter_unit.sv
+    Info (12023): Found entity 1: bit_counter_unit
+Info (12021): Found 1 design units, including 1 entities, in source file bcdtohex.sv
+    Info (12023): Found entity 1: bcdtohex
+Info (12021): Found 1 design units, including 1 entities, in source file baud_rate_generator.sv
+    Info (12023): Found entity 1: BAUD_RATE_GENERATOR
+Info (12021): Found 1 design units, including 1 entities, in source file baud_rate_divisor.sv
+    Info (12023): Found entity 1: baud_rate_divisor
+Info (12021): Found 1 design units, including 1 entities, in source file apb_uart_tb.sv
+    Info (12023): Found entity 1: tb_APB_UART
+Info (12021): Found 1 design units, including 1 entities, in source file apb_uart.sv
+    Info (12023): Found entity 1: APB_UART
+Info (12021): Found 1 design units, including 1 entities, in source file apb_master.sv
+    Info (12023): Found entity 1: APB_MASTER
+Info (12021): Found 1 design units, including 1 entities, in source file apb_interface.sv
+    Info (12023): Found entity 1: apb_interface
+Info (12021): Found 1 design units, including 1 entities, in source file ahb_slave.sv
+    Info (12023): Found entity 1: AHB_SLAVE
+Info (12021): Found 1 design units, including 1 entities, in source file ahb_busmatrix.sv
+    Info (12023): Found entity 1: AHB_BusMatrix
+Info (12021): Found 1 design units, including 1 entities, in source file ahb_apb_uart.sv
+    Info (12023): Found entity 1: AHB_APB_UART
+Info (12021): Found 1 design units, including 1 entities, in source file address_decode.sv
+    Info (12023): Found entity 1: address_decode
+Info (12021): Found 1 design units, including 1 entities, in source file thesis_project.sv
+    Info (12023): Found entity 1: Thesis_Project
+Info (12021): Found 1 design units, including 1 entities, in source file ram.sv
+    Info (12023): Found entity 1: ram
+Info (12021): Found 1 design units, including 1 entities, in source file ram_tb.sv
+    Info (12023): Found entity 1: tb_ram
+Info (12021): Found 1 design units, including 1 entities, in source file tb_baud_rate_generator.sv
+    Info (12023): Found entity 1: BAUD_RATE_GENERATOR_tb
+Info (12021): Found 1 design units, including 1 entities, in source file arbiter.sv
+    Info (12023): Found entity 1: arbiter
+Info (12021): Found 1 design units, including 1 entities, in source file arbiter_tb.sv
+    Info (12023): Found entity 1: arbiter_tb
+Warning (10236): Verilog HDL Implicit Net warning at bit_counter_unit.sv(30): created implicit net for "bit_used"
+Info (12127): Elaborating entity "BAUD_RATE_GENERATOR" for the top level hierarchy
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/24h/Desktop/HK241/DATN/output_files/Thesis_Project.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 81 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 17 input pins
+    Info (21059): Implemented 27 output pins
+    Info (21061): Implemented 37 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4659 megabytes
+    Info: Processing ended: Sun Nov 17 16:51:55 2024
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/24h/Desktop/HK241/DATN/output_files/Thesis_Project.map.smsg.
+
+

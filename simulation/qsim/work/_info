@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\24h\Desktop\HK241\DATN\simulation\qsim
+vBAUD_RATE_GENERATOR
+Z1 ImjFmZ680NWXJU_z<Xa^[H0
+Z2 V1BKV=@z4DTUSfN4n1Ki5B2
+Z3 dC:\Users\24h\Desktop\HK241\DATN\simulation\qsim
+Z4 w1731837135
+Z5 8Thesis_Project.vo
+Z6 FThesis_Project.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|Thesis_Project.vo|
+Z9 o-work work -O0
+Z10 n@b@a@u@d_@r@a@t@e_@g@e@n@e@r@a@t@o@r
+!i10b 1
+Z11 !s100 CaWBf?hB2Gcd?N^i7@oRG2
+!s85 0
+Z12 !s108 1731837135.476000
+Z13 !s107 Thesis_Project.vo|
+!s101 -O0
+vBAUD_RATE_GENERATOR_vlg_check_tst
+!i10b 1
+Z14 !s100 TgX=ihUll_0oeD?`2P1o90
+Z15 I1=FAkz;Ja=JIBhKVKbX0`2
+Z16 VNS[JlinKYz398h^]:2zVY3
+R3
+Z17 w1731837134
+Z18 8Thesis_Project.vt
+Z19 FThesis_Project.vt
+L0 65
+R7
+r1
+!s85 0
+31
+Z20 !s108 1731837135.546000
+Z21 !s107 Thesis_Project.vt|
+Z22 !s90 -work|work|Thesis_Project.vt|
+!s101 -O0
+R9
+Z23 n@b@a@u@d_@r@a@t@e_@g@e@n@e@r@a@t@o@r_vlg_check_tst
+vBAUD_RATE_GENERATOR_vlg_sample_tst
+!i10b 1
+Z24 !s100 BV8i3Cjb9TcoRBIXYzcQV2
+Z25 IH?f_fJ2<W5]gS@zLMO@h`0
+Z26 V2on5Zo=_4BIGbf8^adaOh3
+R3
+R17
+R18
+R19
+L0 29
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z27 n@b@a@u@d_@r@a@t@e_@g@e@n@e@r@a@t@o@r_vlg_sample_tst
+vBAUD_RATE_GENERATOR_vlg_vec_tst
+!i10b 1
+Z28 !s100 VC]QPPSG@8j<_DVoKkC5L2
+Z29 I4a<i0lbG6LVm[8MHz>`5[2
+Z30 V=Bh;F`<RWlLXaF7H]7FPQ1
+R3
+R17
+R18
+R19
+Z31 L0 644
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z32 n@b@a@u@d_@r@a@t@e_@g@e@n@e@r@a@t@o@r_vlg_vec_tst

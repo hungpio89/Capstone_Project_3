@@ -1,0 +1,36 @@
+E:/HK241/DATN/ram.sv {1 {vlog -work work -vopt -sv E:/HK241/DATN/ram.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module ram
+
+Top level modules:
+	ram
+
+} {} {}} E:/HK241/DATN/Sel_Clk.sv {1 {vlog -work work -vopt -sv E:/HK241/DATN/Sel_Clk.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module Sel_Clk
+
+Top level modules:
+	Sel_Clk
+
+} {} {}} E:/HK241/DATN/ram_tb.sv {1 {vlog -work work -vopt -sv E:/HK241/DATN/ram_tb.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module tb_ram
+
+Top level modules:
+	tb_ram
+
+} {} {}} E:/HK241/DATN/BAUD_RATE_GENERATOR.sv {1 {vlog -work work -vopt -sv E:/HK241/DATN/BAUD_RATE_GENERATOR.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module BAUD_RATE_GENERATOR
+
+Top level modules:
+	BAUD_RATE_GENERATOR
+
+} {} {}} E:/HK241/DATN/tb_baud_rate_generator.sv {1 {vlog -work work -vopt -sv E:/HK241/DATN/tb_baud_rate_generator.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module BAUD_RATE_GENERATOR_tb
+
+Top level modules:
+	BAUD_RATE_GENERATOR_tb
+
+} {} {}}

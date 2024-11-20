@@ -1,0 +1,368 @@
+C:/Users/24h/Desktop/HK241/DATN/D_FF_64bit.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/D_FF_64bit.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module D_FF_64bit
+
+Top level modules:
+	D_FF_64bit
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/test_ver3.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/test_ver3.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module test_ver3
+
+Top level modules:
+	test_ver3
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/D_FF_12bit.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/D_FF_12bit.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module D_FF_12bit
+
+Top level modules:
+	D_FF_12bit
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/FSM_AHB.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/FSM_AHB.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module FSM_AHB
+
+Top level modules:
+	FSM_AHB
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/wrapper.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/wrapper.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module wrapper
+
+Top level modules:
+	wrapper
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/arbiter.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/arbiter.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module arbiter
+
+Top level modules:
+	arbiter
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/EncoderAddressBehave.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/EncoderAddressBehave.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module EncoderAddressBehave
+
+Top level modules:
+	EncoderAddressBehave
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/custom_fsm_wr_rd.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/custom_fsm_wr_rd.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module custom_fsm_wr_rd
+
+Top level modules:
+	custom_fsm_wr_rd
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/Thesis_Project.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/Thesis_Project.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module Thesis_Project
+
+Top level modules:
+	Thesis_Project
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/arbiter_tb.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/arbiter_tb.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module arbiter_tb
+
+Top level modules:
+	arbiter_tb
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/MUX2TO1_1bit.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/MUX2TO1_1bit.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module MUX2TO1_1bit
+
+Top level modules:
+	MUX2TO1_1bit
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/FSM_APB.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/FSM_APB.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module FSM_APB
+
+Top level modules:
+	FSM_APB
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/DataLengthDecoder.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/DataLengthDecoder.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module DataLengthDecoder
+
+Top level modules:
+	DataLengthDecoder
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/register_enable_only.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/register_enable_only.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module register_enable_only
+
+Top level modules:
+	register_enable_only
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/APB_UART.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/APB_UART.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module APB_UART
+
+Top level modules:
+	APB_UART
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/comparator_bit.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/comparator_bit.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module comparator_bit
+
+Top level modules:
+	comparator_bit
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/AHB_APB_UART.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/AHB_APB_UART.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module AHB_APB_UART
+
+Top level modules:
+	AHB_APB_UART
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/address_decode.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/address_decode.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module address_decode
+
+Top level modules:
+	address_decode
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/AHB_BusMatrix.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/AHB_BusMatrix.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module AHB_BusMatrix
+
+Top level modules:
+	AHB_BusMatrix
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/transmit_FIFO.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/transmit_FIFO.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module transmit_FIFO
+
+Top level modules:
+	transmit_FIFO
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/ram_tb.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/ram_tb.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module tb_ram
+
+Top level modules:
+	tb_ram
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/DIVIDER.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/DIVIDER.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module DIVIDER
+
+Top level modules:
+	DIVIDER
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/rx_fsm.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/rx_fsm.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module rx_fsm
+
+Top level modules:
+	rx_fsm
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/D_FF_32bit_with_Sel.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/D_FF_32bit_with_Sel.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module D_FF_32bit_with_Sel
+
+Top level modules:
+	D_FF_32bit_with_Sel
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/test_ver4.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/test_ver4.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module test_ver4
+
+Top level modules:
+	test_ver4
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/tx_fsm.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/tx_fsm.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module tx_fsm
+
+Top level modules:
+	tx_fsm
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/D_FF_4BIT.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/D_FF_4BIT.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module D_FF_4BIT
+
+Top level modules:
+	D_FF_4BIT
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/APB_MASTER.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/APB_MASTER.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module APB_MASTER
+
+Top level modules:
+	APB_MASTER
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/tb_ahb_apb_bridge.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/tb_ahb_apb_bridge.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module tb_AHB_SLAVE
+
+Top level modules:
+	tb_AHB_SLAVE
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/BAUD_RATE_GENERATOR.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/BAUD_RATE_GENERATOR.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module BAUD_RATE_GENERATOR
+
+Top level modules:
+	BAUD_RATE_GENERATOR
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/bit_counter_unit.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/bit_counter_unit.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module bit_counter_unit
+
+Top level modules:
+	bit_counter_unit
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/Sel_Clk.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/Sel_Clk.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module Sel_Clk
+
+Top level modules:
+	Sel_Clk
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/D_FF_1bit.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/D_FF_1bit.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module D_FF_1bit
+
+Top level modules:
+	D_FF_1bit
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/test_ver2.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/test_ver2.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module test_ver2
+
+Top level modules:
+	test_ver2
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/uart_start_bit_detect.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/uart_start_bit_detect.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module uart_start_bit_detect
+
+Top level modules:
+	uart_start_bit_detect
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/shift_register_rd.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/shift_register_rd.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module shift_register_rd
+
+Top level modules:
+	shift_register_rd
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/ram.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/ram.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module ram
+
+Top level modules:
+	ram
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/bcdtohex.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/bcdtohex.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module bcdtohex
+
+Top level modules:
+	bcdtohex
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/shift_register_wr.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/shift_register_wr.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module shift_register_wr
+
+Top level modules:
+	shift_register_wr
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/tb_baud_rate_generator.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/tb_baud_rate_generator.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module BAUD_RATE_GENERATOR_tb
+
+Top level modules:
+	BAUD_RATE_GENERATOR_tb
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/D_FF_1bit_with_Sel.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/D_FF_1bit_with_Sel.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module D_FF_1bit_with_Sel
+
+Top level modules:
+	D_FF_1bit_with_Sel
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/mux4to1_4bit.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/mux4to1_4bit.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module mux4to1_4bit
+
+Top level modules:
+	mux4to1_4bit
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/transfer_validate.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/transfer_validate.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module transfer_validate
+
+Top level modules:
+	transfer_validate
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/baud_rate_divisor.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/baud_rate_divisor.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module baud_rate_divisor
+
+Top level modules:
+	baud_rate_divisor
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/receive_FIFO.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/receive_FIFO.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module receive_FIFO
+
+Top level modules:
+	receive_FIFO
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/D_FF_32bit.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/D_FF_32bit.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module D_FF_32bit
+
+Top level modules:
+	D_FF_32bit
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/apb_interface.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/apb_interface.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module apb_interface
+
+Top level modules:
+	apb_interface
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/AHB_SLAVE.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/AHB_SLAVE.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module AHB_SLAVE
+
+Top level modules:
+	AHB_SLAVE
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/DEFINES.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/DEFINES.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/comparator_unsigned_32bit.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/comparator_unsigned_32bit.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module comparator_unsigned_32bit
+
+Top level modules:
+	comparator_unsigned_32bit
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/transmit_FIFO_tb.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/transmit_FIFO_tb.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module transmit_FIFO_tb
+
+Top level modules:
+	transmit_FIFO_tb
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/EncoderDataLength.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/EncoderDataLength.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module EncoderDataLength
+
+Top level modules:
+	EncoderDataLength
+
+} {} {}} C:/Users/24h/Desktop/HK241/DATN/D_FF_8bit.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/DATN/D_FF_8bit.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module D_FF_8bit
+
+Top level modules:
+	D_FF_8bit
+
+} {} {}}

@@ -1,0 +1,50 @@
+module BAUD_RATE_GENERATOR 
+(
+	// INPUT LOGIC CONFIGURATION
+	
+	//------------------CPU INPUT------------------------//
+	input  logic 				uart_ref_clk,        // Input clock (custom)
+	input  logic 				rst_n,           		// Reset signal
+	input  logic 				uart_mode_sel,
+	//---------------------------------------------------//
+	//---------------INPUT FROM APB INTERFACE------------//
+	input  logic 				baud_div_16,
+	input  logic [ 12 :  0] cd,
+	//---------------------------------------------------//
+	
+	// OUTPUT LOGIC CONFIGURATION
+	
+	//--------------------BAUD GEN OUT-------------------//
+	output logic 				baud_tick         	// Output clock (baud rate clock)
+	//---------------------------------------------------//
+);
+
+	reg 			[ 12 :  0] 	counter_baud;       	// Counter to divide the clock
+	logic 			  			clk_sel;
+		
+	always_ff @(posedge baud_div_16 or negedge rst_n) begin
+		if (!rst_n) begin
+			counter_baud <= 13'd1;
+			clk_sel 		 <= 1'b0;
+		end 
+		else begin
+			if (counter_baud == cd) begin
+				counter_baud <= 13'd1;
+				clk_sel <= ~clk_sel;  // Toggle the output clock
+			end 
+			else begin
+				counter_baud <= counter_baud + 13'b0_0000_0000_0001;
+			end
+		end
+	end
+	
+	
+	Sel_Clk						SEL_CLOCK_BLOCK
+	(
+		 .uart_ref_clk			(uart_ref_clk),
+		 .clk_div16				(clk_sel),
+		 .uart_mode_sel		(uart_mode_sel),
+		
+		 .sel_clk				(baud_tick)
+	);
+endmodule

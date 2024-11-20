@@ -1,0 +1,81 @@
+`timescale 1ns/1ps
+
+module tb_ahb_apb_arbiter;
+
+    // Parameters
+    parameter NUM_MASTERS = 4;
+
+    // Clock and reset
+    logic hclk;
+    logic hresetn;
+
+    // Arbiter inputs
+    logic [NUM_MASTERS-1:0] hreq;  // Requests from AHB masters
+    logic hready;                  // Ready signal from APB bridge
+
+    // Arbiter outputs
+    logic [NUM_MASTERS-1:0] hgrant;  // Grants to AHB masters
+
+    // Instantiate the AHB-to-APB Arbiter
+    ahb_apb_arbiter #(.NUM_MASTERS(NUM_MASTERS)) uut (
+        .hclk(hclk),
+        .hresetn(hresetn),
+        .hreq(hreq),
+        .hready(hready),
+        .hgrant(hgrant)
+    );
+
+    // Clock generation
+    initial begin
+        hclk = 0;
+        forever #5 hclk = ~hclk;  // 10ns clock period
+    end
+
+    // Testbench variables
+    integer i;
+
+    // Test procedure
+    initial begin
+        // Initialize inputs
+        hresetn = 0;
+        hreq = 0;
+        hready = 1;
+
+        // Release reset
+        #20 hresetn = 1;
+
+        // Test 1: Single master requesting
+        $display("Test 1: Single master requesting");
+        hreq = 4'b0001;  // Master 0 requests
+        #20;
+        assert(hgrant == 4'b0001) else $error("Test 1 failed: Master 0 not granted");
+
+        // Test 2: Multiple masters requesting
+        $display("Test 2: Multiple masters requesting");
+        hreq = 4'b1010;  // Masters 1 and 3 request
+        #20;
+        assert(hgrant == 4'b0010) else $error("Test 2 failed: Master 1 not granted");
+        hready = 1;  // Ready to grant next
+        #20;
+        assert(hgrant == 4'b1000) else $error("Test 2 failed: Master 3 not granted");
+
+        // Test 3: Round-robin arbitration
+        $display("Test 3: Round-robin arbitration");
+        hreq = 4'b1111;  // All masters request
+        for (i = 0; i < NUM_MASTERS; i++) begin
+            #20;
+            assert(hgrant == (1 << i)) else $error("Test 3 failed: Master %0d not granted", i);
+            hready = 1;
+        end
+
+        // Test 4: No requests
+        $display("Test 4: No requests");
+        hreq = 4'b0000;  // No master requests
+        #20;
+        assert(hgrant == 4'b0000) else $error("Test 4 failed: Grant issued when no request present");
+
+        $display("All tests completed successfully.");
+        $finish;
+    end
+
+endmodule

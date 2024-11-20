@@ -1,0 +1,44 @@
+module ahb_apb_arbiter #(
+    parameter NUM_MASTERS = 4
+) (
+    input  logic                  hclk,        // AHB Clock
+    input  logic                  hresetn,     // AHB Reset, active low
+    input  logic [NUM_MASTERS-1:0] hreq,       // AHB Request signals from masters
+    input  logic                  hready,      // AHB Ready from APB bridge
+    output logic [NUM_MASTERS-1:0] hgrant      // Grant signals for each master
+);
+
+    // Registers to track the current and next master to be granted access
+    logic [$clog2(NUM_MASTERS)-1:0] current_master;
+    logic [$clog2(NUM_MASTERS)-1:0] next_master;
+
+    // Round-robin selection for next master
+    always_comb begin
+        next_master = current_master;  // Default to current master
+        for (int i = 1; i <= NUM_MASTERS; i++) begin
+            int index = (current_master + i) % NUM_MASTERS;
+            if (hreq[index]) begin
+                next_master = index[$clog2(NUM_MASTERS)-1:0];
+                break;
+            end
+        end
+    end
+
+    // Update current master on each clock cycle if `hready` is asserted
+    always_ff @(posedge hclk or negedge hresetn) begin
+        if (!hresetn) begin
+            current_master <= 0;
+        end else if (hready) begin
+            current_master <= next_master;
+        end
+    end
+
+    // Generate grant signals based on the current master
+    always_comb begin
+        hgrant = {NUM_MASTERS{1'b0}};  // Default: no grants
+        if (hreq[current_master]) begin
+            hgrant[current_master] = 1'b1;  // Grant access to the current master
+        end
+    end
+
+endmodule
