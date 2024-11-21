@@ -21,10 +21,17 @@ logic [7:0] PWDATA;
 logic UART_RXD;
 
 // Tín hiệu đầu ra
-logic baud_tick;
 logic PREADY;
 logic [31:0] PRDATA;
 logic UART_TXD;
+
+// delete later 
+logic baud_tick;
+logic done_flag;
+logic ctrl_rx_buffer;
+logic	stop_bit_rx;
+logic	[ 11 :   0] temp_rx_2;
+logic	[  3 :   0]	ctrl_shift_register_rd;
 
 parameter CLK_PERIOD = 2; // Thời gian chu kỳ đồng hồ (10 ns cho 100 MHz)
 
@@ -51,7 +58,12 @@ APB_UART uut (
     .PREADY(PREADY),
     .PRDATA(PRDATA),
     .UART_TXD(UART_TXD),
-	 .baud_tick(baud_tick)
+	 .baud_tick(baud_tick),
+	 .done_flag(done_flag),
+	 .ctrl_rx_buffer(ctrl_rx_buffer),
+	 .stop_bit_rx(stop_bit_rx),
+	 .temp_rx_2(temp_rx_2),
+	 .ctrl_shift_register_rd(ctrl_shift_register_rd)
 );
 
 // Clock generation
@@ -74,7 +86,7 @@ initial begin
     desired_baud_rate = 20'd921600; // Cấu hình baud rate
     parity_bit_mode = 1; // Parity mode (even)
     stop_bit_twice = 1; // Chỉ một stop bit
-    fifo_en = 2'b10; // Enable cả TX và RX FIFO
+    fifo_en = 2'b11; // Enable cả TX và RX FIFO
     number_data_receive = 4'd8;
     number_data_trans = 4'd8;
     ctrl_i = 7'b0000000; // Cấu hình control
@@ -209,40 +221,80 @@ initial begin
     PADDR = 12'h400; // Chọn địa chỉ đọc
 	 
 	 // Start bit
-    repeat (CLK_PERIOD) @(posedge baud_tick);
+    @(posedge baud_tick);
     UART_RXD = 0; // Start bit (0)
     
     // Data bits
-    repeat (CLK_PERIOD) @(posedge baud_tick);
+	 
+	 // character m
+    @(posedge baud_tick);
     UART_RXD = 1; // Data bit 0 (1)
-    repeat (CLK_PERIOD) @(posedge baud_tick);
+    @(posedge baud_tick);
     UART_RXD = 0; // Data bit 1 (0)
-    repeat (CLK_PERIOD) @(posedge baud_tick);
+    @(posedge baud_tick);
     UART_RXD = 1; // Data bit 2 (1)
-    repeat (CLK_PERIOD) @(posedge baud_tick);
-    UART_RXD = 0; // Data bit 3 (0)
-    repeat (CLK_PERIOD) @(posedge baud_tick);
-    UART_RXD = 1; // Data bit 4 (1)
-    repeat (CLK_PERIOD) @(posedge baud_tick);
-    UART_RXD = 0; // Data bit 5 (0)
-    repeat (CLK_PERIOD) @(posedge baud_tick);
+    @(posedge baud_tick);
+    UART_RXD = 1; // Data bit 3 (1)
+    @(posedge baud_tick);
+    UART_RXD = 0; // Data bit 4 (0)
+    @(posedge baud_tick);
+    UART_RXD = 1; // Data bit 5 (1)
+    @(posedge baud_tick);
     UART_RXD = 1; // Data bit 6 (1)
-    repeat (CLK_PERIOD) @(posedge baud_tick);
-    UART_RXD = 1; // Data bit 7 (1)
+    @(posedge baud_tick);
+    UART_RXD = 0; // Data bit 7 (0)
     
     // Parity bit (even parity)
-	 repeat (CLK_PERIOD) @(posedge baud_tick);
+	 @(posedge baud_tick);
     UART_RXD = 1; // Parity bit (1) - even parity
     
     // Stop bit
-	 repeat (CLK_PERIOD) @(posedge baud_tick);
+	 @(posedge baud_tick);
     UART_RXD = 1; // Stop bit (1)
-	 repeat (CLK_PERIOD) @(posedge baud_tick);
+	 @(posedge baud_tick);
+    UART_RXD = 1; // Stop bit (1) 
+
+	 // Chờ phản hồi PREADY và kiểm tra kết quả
+    wait (done_flag == 1);
+    #30;
+	 
+	 // Start bit
+    @(posedge baud_tick);
+    UART_RXD = 0; // Start bit (0)
+    
+    // Data bits
+	 
+	 // character y
+    @(posedge baud_tick);
+    UART_RXD = 1; // Data bit 0 (1)
+    @(posedge baud_tick);
+    UART_RXD = 0; // Data bit 1 (0)
+    @(posedge baud_tick);
+    UART_RXD = 0; // Data bit 2 (0)
+    @(posedge baud_tick);
+    UART_RXD = 1; // Data bit 3 (1)
+    @(posedge baud_tick);
+    UART_RXD = 1; // Data bit 4 (1)
+    @(posedge baud_tick);
+    UART_RXD = 1; // Data bit 5 (1)
+    @(posedge baud_tick);
+    UART_RXD = 1; // Data bit 6 (1)
+    @(posedge baud_tick);
+    UART_RXD = 0; // Data bit 7 (0)
+    
+    // Parity bit (even parity)
+	 @(posedge baud_tick);
+    UART_RXD = 1; // Parity bit (1) - even parity
+    
+    // Stop bit
+	 @(posedge baud_tick);
+    UART_RXD = 1; // Stop bit (1)
+	 @(posedge baud_tick);
     UART_RXD = 1; // Stop bit (1)
 
-    #30;
 	 // Chờ phản hồi PREADY và kiểm tra kết quả
     wait (PREADY == 1);
+    #30;
 	 
     PENABLE = 0;
     PSEL = 0;

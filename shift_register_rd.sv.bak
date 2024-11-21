@@ -89,7 +89,7 @@ module shift_register_rd		// determine whether the bit is trans when we are done
 				endcase
 			end
 			4'b0100: begin
-				if (data_in[9] == parity_bit_read) begin		// parity_bit is used at LOW or HIGH Active depend on parity_bit_mode
+				if (data_in[9] == parity_bit_read) begin			// parity_bit is used at LOW or HIGH Active depend on parity_bit_mode
 					parity_bit 		= 1'b1;							// flag stage only
 				end
 				else

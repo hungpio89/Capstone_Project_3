@@ -37,6 +37,7 @@ module uart_start_bit_detect 										// Customize block for increase legitimat
 	// Local no-need appear assignment 
 	
 	// Local logic signal define
+	logic								done_ack;
 	logic 							prev_rx;              	// To store previous RX state for edge detection
 	logic 							sampling;          		// Indicate whether to sample for start bit
 	logic       					start_bit_detected; 		// Signal when start bit is detected
@@ -161,7 +162,7 @@ module uart_start_bit_detect 										// Customize block for increase legitimat
 	always @(posedge clk_i or negedge rst_ni) begin
 		if (!rst_ni) begin
 			shift_reg 	<= 12'b0;     		// Reset shift register
-			bit_count 	<= 4'b0;        	// Reset bit counter
+			bit_count 	<= 4'd0;        	// Reset bit counter
 			done_flag	<= 1'b0;
 		end
 		else begin
@@ -175,13 +176,12 @@ module uart_start_bit_detect 										// Customize block for increase legitimat
 				
 				// Once 12 bits are collected, send the result and reset counter
 				if (bit_count == bit_count_up_to) begin
-					bit_count 	<= 4'b0;
+					bit_count 	<= 4'd0;
 					done_flag	<= 1'b1;
 				end
 			end
-			else begin
-				bit_count 	<= 4'b0;
-			end
+			else
+				bit_count 	<= 4'd0;
 		end
 	end
 	
@@ -192,6 +192,7 @@ module uart_start_bit_detect 										// Customize block for increase legitimat
 			end
 		end
 		else
-			data_out <= data_out;
+			data_out	<= data_out;
 	end
+	
 endmodule

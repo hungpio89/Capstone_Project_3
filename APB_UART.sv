@@ -36,26 +36,33 @@ module APB_UART												// Wrapping APB UART OPERATING BLOCK
 	//---------------------------------------------------//
 	
 	// Delete Later
-	output logic 					baud_tick
+	output logic 					baud_tick,
+	output logic					done_flag,
+	output logic					ctrl_rx_buffer,
+	output logic					stop_bit_rx,
+	output logic	[ 11 :   0] temp_rx_2,
+	output logic	[  3 :   0]	ctrl_shift_register_rd
 );	
 
 	// Local signal assignment
 	
 	// Logical define
 	logic  [  3 :   0] 	tick_count_tx;																// signal counter to detect the state transition state of TX															// 
-	logic  [  3 :   0]	ctrl_shift_register_wr, ctrl_shift_register_rd;					// signal control to allow shift register to start
-	logic 					done_flag;																	// flag for informing when done receive 12 bits
+	logic  [  3 :   0]	ctrl_shift_register_wr;													// signal control to allow shift register to start writing
+//	logic	 [  3 :   0]	ctrl_shift_register_rd;													// signal control to allow shift register to start	reading
+//	logic 					done_flag;																	// flag for informing when done receive 12 bits
 	logic						TXdone, RXdone;															// flag for informing when TX or RX process is done
 	logic						RXen, TXen;																	// flag for informing when RX or TX is allow to operate
 	logic						error_rx_detect, error_tx_detect;									// flag for informing when RX or TX is ERROR during operation
 	logic						timeout_flag; 	 															// flag for informing when time of RX is out																										// (over only when does not receied parity, stop_bit)
 	logic						start_bit_tx, data_on_trans, parity_bit_tx, stop_bit_tx;		// flag for informing when start, data, parity, stop bit of TX is already sent
 	logic 					data_is_avail;																// flag for informing when RX side of UART receie data
-	logic						start_bit_rx, data_is_received, parity_bit_rx, stop_bit_rx;	// flag for informing when start, data, parity, stop bit of RX is receied
+	logic						start_bit_rx, data_is_received, parity_bit_rx; 
+//	logic						stop_bit_rx;																// flag for informing when start, data, parity, stop bit of RX is receied
 //	logic 					baud_tick;																	// signal clk when finished created as a baud rate clock for block to operate
 	logic 					clk_div16;																	// signal clk raw before adding counter divisor to generate out clk for baudtick
 	logic 					ctrl_tx_buffer;
-	logic						ctrl_rx_buffer;															// signal for controlling FIFO of TX and RX to send out data
+//	logic						ctrl_rx_buffer;															// signal for controlling FIFO of TX and RX to send out data
 	logic						transfer;																	// flag for informing when transfer process is available
 	logic						rx_buffer_overrun, tx_buffer_overrun;								// signal as a flag to enable FIFO to not alarm ERROR if reach its max
 	logic						uart_run_flag;																// signal as an enable to allow RX or TX process to operate via apb interface
@@ -68,7 +75,7 @@ module APB_UART												// Wrapping APB UART OPERATING BLOCK
 	
 	reg  	 [ 11 :   0] 	temp_rx; 																	// intermediate register to store temporary data after done receive
 	reg  	 [ 11 :   0] 	temp_rx_1; 																	// intermediate register to store temporary data when passing throughout D - FF 
-	reg  	 [ 11 :   0] 	temp_rx_2; 																	// intermediate register to store temporary data when transmit into shift register
+//	reg  	 [ 11 :   0] 	temp_rx_2; 																	// intermediate register to store temporary data when transmit into shift register
 	reg 	 [  7 :   0] 	rx_fifo_mid;																// intermediate register to store temporary data before transmit out to read
 	reg    [  4 :   0] 	rx_fifo_wr_ptr;															// register for RX to store value of index (pointer) for write data in
 	reg 	 [  4 :   0] 	rx_fifo_rd_ptr;															// register for RX to store value of index (pointer) for read data out

@@ -43,7 +43,7 @@ module receive_FIFO													// operating as FIFO
 	end
 	
 	// always loop for rx_ptr_addr_wr_i increasement
-	always @(posedge clk_i, negedge rst_ni) begin
+	always @(posedge clk_i or negedge rst_ni) begin
 		if (!rst_ni) begin
 			rx_ptr_addr_wr_i <= 5'b0;
 		end
@@ -51,7 +51,7 @@ module receive_FIFO													// operating as FIFO
 			if (RXen) begin
 				if (fifo_en) begin
 					if (done_flag) begin	
-						rx_ptr_addr_wr_i <= rx_ptr_addr_wr_i + 5'd1; 
+						rx_ptr_addr_wr_i <= rx_ptr_addr_wr_i + 5'd1;
 					end
 					else
 						rx_ptr_addr_wr_i <= rx_ptr_addr_wr_i;
