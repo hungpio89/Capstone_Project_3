@@ -101,7 +101,8 @@ module rx_fsm
 					next_state = IDLE;
 				end
 				else if (RXen & data_is_avail) begin
-					next_state = START;
+					ctrl_rx_buffer	= 1'b1;
+					next_state 	= START;
 				end
 			end
 			START: begin

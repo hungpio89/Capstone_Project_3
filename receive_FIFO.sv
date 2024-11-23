@@ -1,117 +1,68 @@
-module receive_FIFO													// operating as FIFO
+module receive_FIFO
 (
-	// INPUT LOGIC CONFIGURATION
+	input		logic				clkw, 						//clock write
+	input		logic				clkr, 						//clock read
+	input		logic				rst_n,
+     
+	input		logic 			fiford,    					// FIFO control
+	input		logic 			fifowr,
+
+	output	logic 			fifofull,  					// high when fifo full
+	output	logic 			notempty,  					// high when fifo not empty
+
+	// Connect to memories
+	output					 	write,    					// write address of memories
+	output 						read,      					// enable to read memories
 	
-	//------------------CPU INPUT------------------------//
-	input  logic				  	clk_i, 
-	input  logic    			  	rst_ni,			
-	//---------------------------------------------------//
-	//----------------APB INTERFACE INPUT----------------//
-	input  logic [ 11 :  0]    rd_data_i,                 // the write data ready for shift
-	input  logic					fifo_en,							// indicate FIFO is used or not
-	//---------------------------------------------------//
-	//-------------------RX FSM INPUT--------------------//
-	input  logic				  	ctrl_rx_buffer,				// indicate the singal feedback from rx_fsm for next shifting
-	input  logic					RXen, 
-	input  logic					done_flag,
-	//---------------------------------------------------//
-	
-	// OUTPUT LOGIC CONFIGURATION
-	
-	//----------------APB INTERFACE INPUT----------------//
-	output logic 					data_is_avail,
-	output reg   [  4 :  0]		rx_ptr_addr_wr_i,
-	output reg   [  4 :  0]		rx_ptr_addr_rd_o,
-	output reg   [ 11 :  0]		rx_data_o							// read data out for shift process
-	//---------------------------------------------------//
+	output [  4:  0] 			rx_ptr_addr_wr_i,
+	output [  4:  0] 			rx_ptr_addr_rd_o						// read address of memories
 );
 
-	// Local no-need appear assignment
-	reg 	[ 11:  0] mem 			[0 : 31]; 
+	reg	[  5:  0]   		fifo_len;
+	reg	[  5:  0]   		fifo_rd;	
+	reg	[  4:  0] 			wrcnt;
+	reg	[  4:  0]			rdcnt;	
 	
-	always @(posedge clk_i or negedge rst_ni) begin
-		if (!rst_ni) begin
-			data_is_avail <= 1'b0;
+	wire							fifoempt;
+	
+	assign  rx_ptr_addr_wr_i	= 	wrcnt;
+	assign  fifoempt    			=	(fifo_len==6'b0);
+	assign  notempty    			=	!fifoempt;
+	assign  fifofull    			=	(fifo_len[5]);
+	assign  write       			=	(fifowr& !fifofull);
+	assign  read        			=	(fiford& !fifoempt);
+	assign  rx_ptr_addr_wr_i	= 	rdcnt;
+
+	always @(posedge clkw or negedge rst_n) begin
+		if(!rst_n) begin
+			wrcnt 	 <= 5'b0;				// restart to zero
+			fifo_len  <= 6'b0;
 		end
 		else begin
-			if (rd_data_i) begin
-				data_is_avail <= 1'b1;
+			if(write) begin
+				wrcnt     <= wrcnt  + 1'b1;
+				fifo_len  <= fifo_len + 1'b1;
 			end
 			else
-				data_is_avail <= 1'b0;
-		end
-	end
-	
-	// always loop for rx_ptr_addr_wr_i increasement
-	always @(posedge clk_i or negedge rst_ni) begin
-		if (!rst_ni) begin
-			rx_ptr_addr_wr_i <= 5'b0;
-		end
-		else begin
-			if (RXen) begin
-				if (fifo_en) begin
-					if (done_flag) begin	
-						rx_ptr_addr_wr_i <= rx_ptr_addr_wr_i + 5'd1;
-					end
-					else
-						rx_ptr_addr_wr_i <= rx_ptr_addr_wr_i;
-				end
-			end
-		end
-	end
-	
-	// always loop for increasing rx_ptr_addr_rd_o increasement
-	always @(posedge clk_i, negedge rst_ni) begin
-		if (!rst_ni) begin
-			rx_ptr_addr_rd_o <= 5'b0;
-		end
-		else begin
-			if (RXen) begin
-				if (fifo_en) begin
-					if (ctrl_rx_buffer) begin					// add condition for sending data out (not availabe)
-						rx_ptr_addr_rd_o <= rx_ptr_addr_rd_o + 5'd1;
-					end
-					else	
-						rx_ptr_addr_rd_o <= rx_ptr_addr_rd_o;
-				end
-			end
-		end
-	end
-	
-	// always loop for direct data to rx_data_o output signal
-	always @(posedge clk_i or negedge rst_ni) begin
-		if (!rst_ni) begin
-			rx_data_o			<= 12'b0;
-		end
-		else begin
-			if (RXen) begin
-				// read out buffer operation
-				if (fifo_en) begin
-					rx_data_o <= mem[rx_ptr_addr_rd_o]; 
-				end
-				else
-					rx_data_o <= rd_data_i;
-			end
+				wrcnt     <= wrcnt;
+				fifo_len  <= fifo_len;
 		end
 	end
 
-	// always loop for writing into buffer operation
-	always @(posedge clk_i, negedge rst_ni) begin
-	// If reset signal is active, reset all registers
-		if (!rst_ni) begin           
-			for (integer j = 0; j < 32; j = j + 1) begin
-				mem[j] 		<= 12'b0;
-			end
+	always @(posedge clkr or negedge rst_n) begin
+		if(!rst_n) begin
+			rdcnt		 <= 5'b0;				// restart to zero
+			fifo_rd   <= 6'b0;
 		end
-		else begin
-			if (RXen) begin
-				if (fifo_en) begin
-					// Write the data into RX buffer
-					mem [rx_ptr_addr_wr_i]  <= rd_data_i;
-				end
+		else if (read) begin
+			if (fifo_rd <= fifo_len) begin
+				rdcnt		<= rdcnt + 1'b1;
+				fifo_rd  <= fifo_rd + 1'b1;
 			end
-		end
+			else
+				rdcnt		 <= 5'b0;			// restart to zero
+				fifo_rd   <= 6'b0;
+		end	
 	end
-	
 
 endmodule

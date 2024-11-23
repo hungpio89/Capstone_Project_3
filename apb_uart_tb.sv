@@ -31,6 +31,13 @@ logic done_flag;
 logic ctrl_rx_buffer;
 logic	stop_bit_rx;
 logic	[ 11 :   0] temp_rx_2;
+logic	[ 11 :   0] temp_rx;
+logic	[  4 :   0]	rx_fifo_wr_ptr;
+logic	[  4 :   0]	rx_fifo_rd_ptr;
+logic 					rx_write_en;
+logic 					rx_read_en;
+logic 					rx_fifo_full;
+logic 					rx_not_empty;
 logic	[  3 :   0]	ctrl_shift_register_rd;
 
 parameter CLK_PERIOD = 2; // Thời gian chu kỳ đồng hồ (10 ns cho 100 MHz)
@@ -62,7 +69,14 @@ APB_UART uut (
 	 .done_flag(done_flag),
 	 .ctrl_rx_buffer(ctrl_rx_buffer),
 	 .stop_bit_rx(stop_bit_rx),
+	 .temp_rx(temp_rx),
 	 .temp_rx_2(temp_rx_2),
+	 .rx_fifo_wr_ptr(rx_fifo_wr_ptr),
+	 .rx_fifo_rd_ptr(rx_fifo_rd_ptr),
+	 .rx_write_en(rx_write_en),
+	 .rx_read_en(rx_read_en),
+	 .rx_fifo_full(rx_fifo_full),
+	 .rx_not_empty(rx_not_empty),
 	 .ctrl_shift_register_rd(ctrl_shift_register_rd)
 );
 

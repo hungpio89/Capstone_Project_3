@@ -1,0 +1,63 @@
+module tb_d_ff_trick;
+
+    // Declare testbench signals
+    logic clk;
+    logic reset_n;
+    logic d;
+    logic [4:0] en;
+    logic q;
+
+    // Instantiate the DUT (Design Under Test)
+    d_ff_trick uut (
+        .clk(clk),
+        .reset_n(reset_n),
+        .d(d),
+        .en(en),
+        .q(q)
+    );
+
+    // Clock generation: 50 MHz (20 ns period)
+    always #10 clk = ~clk;
+
+    // Testbench procedure
+    initial begin
+        // Initialize signals
+        clk = 0;
+        reset_n = 0;
+        d = 0;
+        en = 5'b00000;
+
+        // Apply reset
+        #15 reset_n = 1; // Deassert reset after 15 ns
+
+        // Test case 1: Apply a valid `d` and `en`
+        #20 d = 1; en = 5'b11111; // Update d and enable all bits
+        #20 d = 0; en = 5'b11111; // Change d, same en
+
+        // Test case 2: Change `en` to see the `is_same` condition
+        #20 d = 1; en = 5'b11110; // Change en, check is_same behavior
+        #20 en = 5'b11111;        // Restore en
+
+        // Test case 3: Change `d` but keep `en` the same
+        #20 d = 0;                // Update d, same en
+        #20 d = 1;
+
+        // Test case 4: Reset behavior
+        #20 reset_n = 0;          // Apply reset
+        #20 reset_n = 1;          // Release reset
+
+        // Test case 5: Random values
+        #20 d = 1; en = 5'b10101;
+        #20 d = 0; en = 5'b01010;
+
+        // Finish simulation
+        #50 $finish;
+    end
+
+    // Monitor output and input changes
+    initial begin
+        $monitor("Time: %0t | clk: %b | reset_n: %b | d: %b | en: %b | q: %b", 
+                  $time, clk, reset_n, d, en, q);
+    end
+
+endmodule

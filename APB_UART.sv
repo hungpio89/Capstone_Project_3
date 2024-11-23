@@ -41,6 +41,13 @@ module APB_UART												// Wrapping APB UART OPERATING BLOCK
 	output logic					ctrl_rx_buffer,
 	output logic					stop_bit_rx,
 	output logic	[ 11 :   0] temp_rx_2,
+	output logic  	[ 11 :   0]	temp_rx,
+	output logic	[  4 :   0]	rx_fifo_wr_ptr,															// register for RX to store value of index (pointer) for write data in
+	output logic	[  4 :   0]	rx_fifo_rd_ptr,
+	output logic 					rx_write_en,
+	output logic 					rx_read_en,
+	output logic 					rx_fifo_full,
+	output logic 					rx_not_empty,
 	output logic	[  3 :   0]	ctrl_shift_register_rd
 );	
 
@@ -66,6 +73,10 @@ module APB_UART												// Wrapping APB UART OPERATING BLOCK
 	logic						transfer;																	// flag for informing when transfer process is available
 	logic						rx_buffer_overrun, tx_buffer_overrun;								// signal as a flag to enable FIFO to not alarm ERROR if reach its max
 	logic						uart_run_flag;																// signal as an enable to allow RX or TX process to operate via apb interface
+//	logic 					rx_write_en;
+//	logic						rx_read_en;
+//	logic						rx_fifo_full;
+//	logic						rx_not_empty;
 	
 	// Register define
 	reg  	 [	 6 :   0]	ctrl;																			// signal for controlling the operation of UART
@@ -73,12 +84,12 @@ module APB_UART												// Wrapping APB UART OPERATING BLOCK
 	reg 	 [	 3 :   0]	state;																		// signal for informing status of UART in general
 	reg 	 [	 3 :   0]	state_i;
 	
-	reg  	 [ 11 :   0] 	temp_rx; 																	// intermediate register to store temporary data after done receive
-	reg  	 [ 11 :   0] 	temp_rx_1; 																	// intermediate register to store temporary data when passing throughout D - FF 
+//	reg  	 [ 11 :   0] 	temp_rx; 																	// intermediate register to store temporary data after done receive
+//	reg  	 [ 11 :   0] 	temp_rx_1; 																	// intermediate register to store temporary data when passing throughout D - FF 
 //	reg  	 [ 11 :   0] 	temp_rx_2; 																	// intermediate register to store temporary data when transmit into shift register
 	reg 	 [  7 :   0] 	rx_fifo_mid;																// intermediate register to store temporary data before transmit out to read
-	reg    [  4 :   0] 	rx_fifo_wr_ptr;															// register for RX to store value of index (pointer) for write data in
-	reg 	 [  4 :   0] 	rx_fifo_rd_ptr;															// register for RX to store value of index (pointer) for read data out
+//	reg    [  4 :   0] 	rx_fifo_wr_ptr;															// register for RX to store value of index (pointer) for write data in
+//	reg 	 [  4 :   0] 	rx_fifo_rd_ptr;															// register for RX to store value of index (pointer) for read data out
 	reg	 [	 7 :   0]	read_data;																	// intermediate register to store temporary data before transmit into apb interface for read out
 	
 	reg 	 [  4 :   0] 	tx_fifo_wr_ptr;															// register for TX to store value of index (pointer) for write data in 
@@ -284,35 +295,40 @@ uart_start_bit_detect 			UART_START_BIT_DETECT_BLOCK
 );
 //---------------------------------------------------//
 
-D_FF_12bit							DFF_TEMPORARY_STORING_RECEIVING
+//---------------------------------------------------//
+rx_fifo_memory						RX_FIFO_MEMORY_BLOCK
 (
-	// INPUT LOGIC CONFIGURATION
-										.baud_tick				(baud_tick), 
-										.rst_ni					(PRESETn), 
-										.enable					(done_flag),
-										.D							(temp_rx),
+										.clk						(PCLK),
+										.rst_n					(PRESETn),
+										.write_en				(rx_write_en),
+										.read_en					(rx_read_en),
+										.write_data				(temp_rx),
+										.wraddr					(rx_fifo_wr_ptr),
+										.rdaddr					(rx_fifo_rd_ptr),
+										.fifofull				(rx_fifo_full),
+										.notempty				(rx_not_empty),
 	
-	// OUTPUT LOGIC CONFIGURATION
-										.Q							(temp_rx_1)
-);	
+										.read_data				(temp_rx_2)
+);
+//---------------------------------------------------//
 
 //---------------------------------------------------//
-receive_FIFO						RX_FIFO_BLOCK
+receive_FIFO						RECEIVE_FIFO_BLOCK
 (
 	// INPUT LOGIC CONFIGURATION
-										.clk_i					(baud_tick), 
-										.rst_ni					(PRESETn),
-										.rd_data_i				(temp_rx_1),
-										.ctrl_rx_buffer		(ctrl_rx_buffer),	
-										.RXen						(RXen),
-										.done_flag				(done_flag),
-										.fifo_en					(fifo_en[0]),
+										.clkw						(PCLK), 
+										.clkr						(baud_tick),
+										.rst_n					(PRESETn),
+										.fiford					(ctrl_rx_buffer),
+										.fifowr					(done_flag),
 										
-	// OUTPUT LOGIC CONFIGURATION		
-										.data_is_avail			(data_is_avail),
+	// OUTPUT LOGIC CONFIGURATION
+										.fifofull				(rx_fifo_full),
+										.notempty				(rx_not_empty),
+										.write					(rx_write_en),
+										.read						(rx_read_en),
 										.rx_ptr_addr_wr_i		(rx_fifo_wr_ptr),
-										.rx_ptr_addr_rd_o		(rx_fifo_rd_ptr),
-										.rx_data_o				(temp_rx_2)
+										.rx_ptr_addr_rd_o		(rx_fifo_rd_ptr)
 );
 //---------------------------------------------------//
 
@@ -324,7 +340,7 @@ rx_fsm								RX_FSM_BLOCK
 										.PRESETn					(PRESETn),
 										.parity_bit_mode		(parity_bit_mode),
 										.stop_bit_twice		(stop_bit_twice),
-										.data_is_avail			(data_is_avail),
+										.data_is_avail			(notempty),
 										.RXen						(RXen),
 										.PWRITE					(PWRITE),
 										.start_bit				(start_bit_rx),
