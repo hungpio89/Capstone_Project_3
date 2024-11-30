@@ -10,13 +10,15 @@ module AHB_APB_UART
 	//-----------------INPUT FROM MASTER-----------------//
 	input logic		[  1 :  0]	HTRANS,					// This indicates the type of the current transfer, which can be NONSEQUENTIAL, SEQUENTIAL, IDLE or BUSY.
 	input logic 					HWRITE,					// indicates an AHB write ACCESS when HIGH (1) and an AHB read ACCESS when LOW (0).
-//	
 //																	// indicates that the current transfer is intended for the selected.
 //																	// slave. This signal is a combinatorial decode of the address bus.	
+	input logic		[  2 :  0]	HSIZES,
+	input logic		[  2 :  0]	HBURST,
+	input logic						HSELABPif,
 	input logic 					HREADYin,				// When HIGH the HREADY signal indicates that a transfer has
 																	// finished on the bus. This signal may be driven LOW to extend a transfer.
 	input logic		[ 31 :  0]	HWDATA,
-	input logic		[ 31 :  0]	HADDR,					// The 32-bit system address bus.
+//	input logic		[ 31 :  0]	HADDR,					// The 32-bit system address bus.
 	//---------------------------------------------------//
 	
 	//--------EXTERNAL CONFIGURATION FROM MASTER---------//
@@ -46,7 +48,7 @@ module AHB_APB_UART
 	
 	//------------------UART INTERFACE-------------------//
 	input  logic 					UART_RXD,
-	output logic 					UART_TXD 
+	output logic 					UART_TXD
 	//---------------------------------------------------//
 	
 	//---------------------UART FLAG---------------------//
@@ -70,12 +72,14 @@ AHB_SLAVE 							AHB_APB_BRIDGE
 										.HCLK						(HCLK),
 										.HRESETn					(HRESETn),
 										.HTRANS					(HTRANS),
+										.HSIZES					(HSIZES),
+										.HBURST					(HBURST),
 										.HWRITE					(HWRITE),
 										.HREADYin				(HREADYin),
 										.HWDATA					(HWDATA),
-										.HADDR					(HADDR),
 										.PRDATA					(PRDATA),
 										.PREADY					(PREADY),
+										.HSELABPif				(HSELABPif),
 										
 	// OUTPUT LOGIC CONFIGURATION
 

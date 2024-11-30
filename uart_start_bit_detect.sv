@@ -20,7 +20,7 @@ module uart_start_bit_detect 										// Customize block for increase legitimat
 	// OUTPUT LOGIC CONFIGURATION
 	
 	//-----------------CONTROL OUTPUT--------------------//
-	output	logic					done_flag,
+	output	logic					fifo_wr_ctrl,
 	output	logic	[ 11 :  0] 	data_out    	// 12-bit output signal
 	//---------------------------------------------------//
 	
@@ -37,7 +37,7 @@ module uart_start_bit_detect 										// Customize block for increase legitimat
 	// Local no-need appear assignment 
 	
 	// Local logic signal define
-	logic								done_ack;
+	logic 							done_flag;
 	logic 							prev_rx;              	// To store previous RX state for edge detection
 	logic 							sampling;          		// Indicate whether to sample for start bit
 	logic       					start_bit_detected; 		// Signal when start bit is detected
@@ -132,11 +132,8 @@ module uart_start_bit_detect 										// Customize block for increase legitimat
 			if (RXen) begin
 				if (!done_flag) begin
 					// Edge detection: Detect falling edge from '1' to '0' (start bit)
-					if (prev_rx && !UART_RXD && !ctrl_count_clock) begin
+					if (prev_rx && !UART_RXD) begin
 						sampling <= 1'b1;          // Start sampling
-					end
-					else if (prev_rx && !UART_RXD && ctrl_count_clock) begin
-						
 					end
 
 					prev_rx <= UART_RXD;  // Update previous RX state for next clock cycle
@@ -194,5 +191,7 @@ module uart_start_bit_detect 										// Customize block for increase legitimat
 		else
 			data_out	<= data_out;
 	end
+	
+	assign fifo_wr_ctrl = (shift_reg != 12'b0 && done_flag); 
 	
 endmodule

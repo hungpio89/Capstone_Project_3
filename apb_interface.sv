@@ -139,11 +139,8 @@ baud_rate_divisor 				BAUD_RATE_DIVISOR_BLOCK
 					case (base_offset)
 					// Base Offset
 						8'h0: begin
-							uart_run_flag  <= 1'b1;
-							uart_data_mid 	<= PWDATA[  7 :  0];
-							if (TXdone) begin
-								PREADY	<= 1'b1;
-							end
+							ctrl		<= ctrl_mid;								// write 1 to ctrl[0]	// custom write only
+							PREADY	<= 1'b1;
 						end
 						8'h4: begin
 							rx_buffer_overrun <= state_i[3];
@@ -151,39 +148,42 @@ baud_rate_divisor 				BAUD_RATE_DIVISOR_BLOCK
 							state[3:0]			<= state_i[3:0];
 							PREADY				<= 1'b1;
 						end
-						8'h8: begin 
-							ctrl		<= ctrl_mid;								// write 1 to ctrl[0]	// custom write only
-							PREADY	<= 1'b1;
-						end
-						8'h10: begin 											// this process is for set up clock (custom from PCLK)
+						8'h8: begin 											// this process is for set up clock (custom from PCLK)
 							for (int l = 0; l < 13; l = l + 1) begin: cd_assignment
 								cd[l]	<= actual_cd[l];
 							end
 							PREADY	<= 1'b1;
+						end
+						default: begin
+							uart_run_flag  <= 1'b1;
+							uart_data_mid 	<= PWDATA[  7 :  0];
+							if (TXdone) begin
+								PREADY	<= 1'b1;
+							end
 						end
 					endcase
 				end 
 				else if (!PWRITE) begin												// READING MODE
 					case (base_offset)
 						8'h0: begin 
+							PRDATA 		<= {28'b0, state};
+							PREADY		<= 1'b1;
+						end
+						8'h4: begin 
+							ctrl 			<= ctrl_mid;
+							PRDATA		<= {25'b0, ctrl_mid};
+							PREADY		<= 1'b1;
+						end	
+						8'h8: begin
+							PRDATA		<= {19'b0, actual_cd};
+							PREADY		<= 1'b1;
+						end
+						default: begin
 							uart_run_flag <= 1'b1;
 							PRDATA 		  <= {24'b0, read_data};
 							if (RXdone) begin
 								PREADY	<= 1'b1;
 							end
-						end
-						8'h4: begin 
-							PRDATA 		<= {28'b0, state};
-							PREADY		<= 1'b1;
-						end
-						8'h8: begin 
-							ctrl 			<= ctrl_mid;
-							PRDATA		<= {25'b0, ctrl_mid};
-							PREADY		<= 1'b1;
-						end	
-						8'h10: begin
-							PRDATA		<= {19'b0, actual_cd};
-							PREADY		<= 1'b1;
 						end
 					endcase
 				end

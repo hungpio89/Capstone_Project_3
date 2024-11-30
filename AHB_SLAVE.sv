@@ -18,9 +18,10 @@ module AHB_SLAVE // BRIDGE MODULE (AHB TO APB)
 	input logic 					HREADYin,				// When HIGH the HREADY signal indicates that a transfer has
 																	// finished on the bus. This signal may be driven LOW to extend a transfer.
 	input logic		[ 31 :  0]	HWDATA,
-	input logic		[ 31 :  0]	HADDR,					// The 32-bit system address bus.
+//	input logic		[ 31 :  0]	HADDR,					// The 32-bit system address bus.
 	input logic		[ 31 :  0]	PRDATA,
 	input logic						PREADY,
+	input logic						HSELABPif,
 	//---------------------------------------------------//
 	//---------------------------------------------------//
 	
@@ -37,37 +38,38 @@ module AHB_SLAVE // BRIDGE MODULE (AHB TO APB)
 	output logic 					PSELx,
 	
 	// SEND BACK TO MASTER
-	output logic	[ 31 :  0]	HRDATA
+	output logic	[ 31 :  0]	HRDATA,
 	//---------------------------------------------------//
+	
+	// Delete later
+	output logic	[ 31 :  0]	HADDR
 );
 
 	//	Local Signal declaration for communication
-	logic								HSELABPif;				// Each APB slave has its own slave select signal, and this signal.
+//	logic								HSELABPif;				// Each APB slave has its own slave select signal, and this signal.
 	logic								PWRITE_Int;
 	logic								PENABLE_int;
 	logic								PSELx_mid;
-	logic								PSELxInt, Valid, APBen;
+	logic								PSELxInt;
+	logic								Valid;
+	logic								APBen;
 	
 	// Local Register declaration for Storing Interface's Signal
 	reg								HwriteReg;
 	reg				[  5 :  0]	AHBI_DataLength_ldB6;
+//	reg				[ 31 :  0]	HADDR;
 
 	typedef enum bit[ 1 : 0] {IDLE = 2'b00, BUSY = 2'b01, NONSEQ = 2'b10, SEQ = 2'b11} hstate;
 	
-	typedef enum bit[ 2 : 0] {SINGLE = 3'b000, INCR = 3'b001, WRAP4 = 3'b010, INCR4 = 3'b011, WRAP8 = 3'b100, INCR8 = 3'b101, WRAP16 = 3'b110, INCR16 = 3'b111} Type;		// this is used for HBURST
-	
 	always @(posedge HCLK or negedge HRESETn) begin
 		if (!HRESETn) begin
-			HSELABPif <= 1'b0;
 			HRESP 	 <= 2'b00;
 		end
 		else begin
 			if (HADDR >= 32'h8000_0000 && HADDR < 32'h8C00_0000) begin
-				HSELABPif <= 1'b1;
 				HRESP 	 <= 2'b01;
 			end
 			else begin
-				HSELABPif <= 1'b0;
 				HRESP 	 <= 2'b00;
 			end
 		end
@@ -137,9 +139,9 @@ register_enable_only				RDATA_BLOCK
 				.clk					(HCLK), 
 				.rst_n 				(HRESETn),
 				.enable				(PWRITE_Int),
-	
-				// OUTPUT LOGIC ASSIGNMENT
 				.D						(PRDATA),
+				
+				// OUTPUT LOGIC ASSIGNMENT
 				.Q						(HRDATA)
 );
 
@@ -148,7 +150,7 @@ D_FF_1bit							D_FF_PENABLE
 				// INPUT LOGIC ASSIGNMENT
 				.clk					(HCLK), 
 				.rst_ni				(HRESETn),
-				.D						(PENABLE_int),
+				.D						(PENABLE_int && APBen),
 				
 				// OUTPUT LOGIC ASSIGNMENT
 				.Q						(PENABLE)
@@ -164,6 +166,18 @@ D_FF_1bit_with_Sel				D_FF_PWRITE
 				
 				// OUTPUT LOGIC ASSIGNMENT
 				.Q						(PWRITE)
+);
+
+encoder_method						ENCODER_METHOD_ADDRESS
+(
+				// INPUT LOGIC ASSIGNMENT
+				.HBURST				(HBURST),
+				.HCLK					(HCLK),
+				.HRESETn				(HRESETn),
+				.enable				(HREADYout),
+	
+				// OUTPUT LOGIC ASSIGNMENT
+				.HADDR				(HADDR)
 );
 
 D_FF_32bit_with_Sel				D_FF_PADDR

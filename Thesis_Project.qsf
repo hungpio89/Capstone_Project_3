@@ -38,11 +38,65 @@
 
 set_global_assignment -name FAMILY "Cyclone IV GX"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY d_ff_trick
+set_global_assignment -name TOP_LEVEL_ENTITY pipeline_riscv_mod2
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:34:45  NOVEMBER 03, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/xor_comp.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/xor_32bit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/wrapper_mod2.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/wb_cycle.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/sub_comp.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/store_inst.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/srl_32bit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/sra_32bit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/slt_sltu_comp.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/shift_overflow.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/shift_left_32bit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/shift_comp.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/regfile.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/pipeline_riscv_mod2.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/or_comp.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/or_32bit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/mux10to1_32bit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/mux3to1_32bit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/mux2to1_32bit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/MUX2TO1_5BITLOW.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/MUX2TO1_1BIT.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/mem_cycle.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/mag_comparator_4bit_slave.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/mag_comparator_4bit_master.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/load_inst.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/inverter_32bit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/imm_gen.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/imem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/fulladder_1bit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/forward_ctr_unit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/fetch_cycle.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/execute_cycle.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/dmem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/decode_hex.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/decode_cycle.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/D_FF_32bit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/ctrl_unit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/Comparator_Un.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/Comparator_S.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/comparator_32bit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/check_mux.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/branch_detect_unit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/branch_comparator.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/and_comp.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/and_32bit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/alu_component.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/adder_32bit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/adder_1bit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE RISC_V/add_comp.sv
 set_global_assignment -name SYSTEMVERILOG_FILE wrapper.sv
 set_global_assignment -name SYSTEMVERILOG_FILE uart_start_bit_detect.sv
 set_global_assignment -name SYSTEMVERILOG_FILE tx_fsm.sv
@@ -69,7 +123,6 @@ set_global_assignment -name SYSTEMVERILOG_FILE DEFINES.sv
 set_global_assignment -name SYSTEMVERILOG_FILE DataLengthDecoder.sv
 set_global_assignment -name SYSTEMVERILOG_FILE D_FF_64bit.sv
 set_global_assignment -name SYSTEMVERILOG_FILE D_FF_32bit_with_Sel.sv
-set_global_assignment -name SYSTEMVERILOG_FILE D_FF_32bit.sv
 set_global_assignment -name SYSTEMVERILOG_FILE D_FF_12bit.sv
 set_global_assignment -name SYSTEMVERILOG_FILE D_FF_8bit.sv
 set_global_assignment -name SYSTEMVERILOG_FILE D_FF_4BIT.sv
@@ -97,18 +150,22 @@ set_global_assignment -name SYSTEMVERILOG_FILE tb_baud_rate_generator.sv
 set_global_assignment -name SYSTEMVERILOG_FILE arbiter.sv
 set_global_assignment -name SYSTEMVERILOG_FILE arbiter_tb.sv
 set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/waveform_test_clock.vwf
-set_global_assignment -name SIMULATION_MODE FUNCTIONAL
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
-set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/24h/Desktop/HK241/DATN/output_files/waveform_test_clock.vwf"
 set_global_assignment -name SYSTEMVERILOG_FILE transmit_FIFO_tb.sv
 set_global_assignment -name SYSTEMVERILOG_FILE tb_receive_FIFO.sv
 set_global_assignment -name SYSTEMVERILOG_FILE fifo_read_memory.sv
 set_global_assignment -name SYSTEMVERILOG_FILE d_ff_trick.sv
+set_global_assignment -name SYSTEMVERILOG_FILE d_ff_trick_tb.sv
+set_global_assignment -name SYSTEMVERILOG_FILE test_ver5.sv
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform_test_ver5.vwf
+set_global_assignment -name SYSTEMVERILOG_FILE compare_5bit.sv
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform_test_compare_5bit.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform_test_APB_UART.vwf
+set_global_assignment -name SYSTEMVERILOG_FILE encoder_method.sv
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform_encoder_method.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform_test_ahb.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Waveform_test_ahb_apb_uart.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/output_files/Waveform_test_ahb_apb_uart.vwf"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name SYSTEMVERILOG_FILE d_ff_trick_tb.sv

@@ -1,0 +1,375 @@
+C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_12bit.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_12bit.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module D_FF_12bit
+
+Top level modules:
+	D_FF_12bit
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/d_ff_trick.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/d_ff_trick.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module d_ff_trick
+
+Top level modules:
+	d_ff_trick
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/EncoderDataLength.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/EncoderDataLength.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module EncoderDataLength
+
+Top level modules:
+	EncoderDataLength
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_8bit.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_8bit.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module D_FF_8bit
+
+Top level modules:
+	D_FF_8bit
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/arbiter_tb.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/arbiter_tb.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module arbiter_tb
+
+Top level modules:
+	arbiter_tb
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver3.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver3.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module test_ver3
+
+Top level modules:
+	test_ver3
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_baud_rate_generator.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_baud_rate_generator.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module BAUD_RATE_GENERATOR_tb
+
+Top level modules:
+	BAUD_RATE_GENERATOR_tb
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/transmit_FIFO_tb.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/transmit_FIFO_tb.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module transmit_FIFO_tb
+
+Top level modules:
+	transmit_FIFO_tb
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/DEFINES.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/DEFINES.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/uart_start_bit_detect.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/uart_start_bit_detect.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module uart_start_bit_detect
+
+Top level modules:
+	uart_start_bit_detect
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_32bit_with_Sel.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_32bit_with_Sel.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module D_FF_32bit_with_Sel
+
+Top level modules:
+	D_FF_32bit_with_Sel
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/DataLengthDecoder.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/DataLengthDecoder.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module DataLengthDecoder
+
+Top level modules:
+	DataLengthDecoder
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_receive_FIFO.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_receive_FIFO.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module tb_receive_FIFO
+
+Top level modules:
+	tb_receive_FIFO
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/FSM_AHB.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/FSM_AHB.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module FSM_AHB
+
+Top level modules:
+	FSM_AHB
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/wrapper.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/wrapper.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module wrapper
+
+Top level modules:
+	wrapper
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/arbiter.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/arbiter.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module arbiter
+
+Top level modules:
+	arbiter
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/mux4to1_4bit.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/mux4to1_4bit.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module mux4to1_4bit
+
+Top level modules:
+	mux4to1_4bit
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/BAUD_RATE_GENERATOR.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/BAUD_RATE_GENERATOR.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module BAUD_RATE_GENERATOR
+
+Top level modules:
+	BAUD_RATE_GENERATOR
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/receive_FIFO.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/receive_FIFO.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module receive_FIFO
+
+Top level modules:
+	receive_FIFO
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/APB_MASTER.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/APB_MASTER.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module APB_MASTER
+
+Top level modules:
+	APB_MASTER
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver4.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver4.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module test_ver4
+
+Top level modules:
+	test_ver4
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/d_ff_trick_tb.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/d_ff_trick_tb.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module d_ff_trick_tb
+
+Top level modules:
+	d_ff_trick_tb
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/FSM_APB.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/FSM_APB.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module FSM_APB
+
+Top level modules:
+	FSM_APB
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/ram.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/ram.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module ram
+
+Top level modules:
+	ram
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_4BIT.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_4BIT.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module D_FF_4BIT
+
+Top level modules:
+	D_FF_4BIT
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_uart_tb.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_uart_tb.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module testbench_APB_UART
+
+Top level modules:
+	testbench_APB_UART
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_ahb_apb_bridge.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_ahb_apb_bridge.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module tb_AHB_SLAVE
+
+Top level modules:
+	tb_AHB_SLAVE
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/compare_5bit.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/compare_5bit.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module compare_5bit
+
+Top level modules:
+	compare_5bit
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_1bit_with_Sel.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_1bit_with_Sel.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module D_FF_1bit_with_Sel
+
+Top level modules:
+	D_FF_1bit_with_Sel
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver2.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver2.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module test_ver2
+
+Top level modules:
+	test_ver2
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/comparator_bit.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/comparator_bit.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module comparator_bit
+
+Top level modules:
+	comparator_bit
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_1bit.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_1bit.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module D_FF_1bit
+
+Top level modules:
+	D_FF_1bit
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/fifo_read_memory.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/fifo_read_memory.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module fifo_read_memory
+
+Top level modules:
+	fifo_read_memory
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/DIVIDER.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/DIVIDER.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module DIVIDER
+
+Top level modules:
+	DIVIDER
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/shift_register_rd.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/shift_register_rd.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module shift_register_rd
+
+Top level modules:
+	shift_register_rd
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/address_decode.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/address_decode.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module address_decode
+
+Top level modules:
+	address_decode
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/EncoderAddressBehave.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/EncoderAddressBehave.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module EncoderAddressBehave
+
+Top level modules:
+	EncoderAddressBehave
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_32bit.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_32bit.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module D_FF_32bit
+
+Top level modules:
+	D_FF_32bit
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/shift_register_wr.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/shift_register_wr.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module shift_register_wr
+
+Top level modules:
+	shift_register_wr
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/bit_counter_unit.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/bit_counter_unit.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module bit_counter_unit
+
+Top level modules:
+	bit_counter_unit
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/ram_tb.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/ram_tb.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module tb_ram
+
+Top level modules:
+	tb_ram
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/transfer_validate.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/transfer_validate.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module transfer_validate
+
+Top level modules:
+	transfer_validate
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/baud_rate_divisor.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/baud_rate_divisor.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module baud_rate_divisor
+
+Top level modules:
+	baud_rate_divisor
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/MUX2TO1_1bit.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/MUX2TO1_1bit.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module MUX2TO1_1bit
+
+Top level modules:
+	MUX2TO1_1bit
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver5.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver5.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module test_ver5
+
+Top level modules:
+	test_ver5
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/bcdtohex.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/bcdtohex.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module bcdtohex
+
+Top level modules:
+	bcdtohex
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/AHB_BusMatrix.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/AHB_BusMatrix.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module AHB_BusMatrix
+
+Top level modules:
+	AHB_BusMatrix
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tx_fsm.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tx_fsm.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module tx_fsm
+
+Top level modules:
+	tx_fsm
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/register_enable_only.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/register_enable_only.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module register_enable_only
+
+Top level modules:
+	register_enable_only
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/Sel_Clk.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/Sel_Clk.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module Sel_Clk
+
+Top level modules:
+	Sel_Clk
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/transmit_FIFO.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/transmit_FIFO.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module transmit_FIFO
+
+Top level modules:
+	transmit_FIFO
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/AHB_SLAVE.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/AHB_SLAVE.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module AHB_SLAVE
+
+Top level modules:
+	AHB_SLAVE
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_64bit.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_64bit.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module D_FF_64bit
+
+Top level modules:
+	D_FF_64bit
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/comparator_unsigned_32bit.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/comparator_unsigned_32bit.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module comparator_unsigned_32bit
+
+Top level modules:
+	comparator_unsigned_32bit
+
+} {} {}}

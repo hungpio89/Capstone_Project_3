@@ -1,16 +1,16 @@
-C:/Users/Admin/Desktop/HK241/Capstone_Project_3/test_ver3.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/test_ver3.sv
-QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module test_ver3
-
-Top level modules:
-	test_ver3
-
-} {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/rx_fsm.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/rx_fsm.sv
+C:/Users/Admin/Desktop/HK241/Capstone_Project_3/rx_fsm.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/rx_fsm.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling module rx_fsm
 
 Top level modules:
 	rx_fsm
+
+} {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/test_ver3.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/test_ver3.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module test_ver3
+
+Top level modules:
+	test_ver3
 
 } {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/tx_fsm.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/tx_fsm.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
@@ -26,13 +26,6 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	mux4to1_4bit
 
-} {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/receive_FIFO.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/receive_FIFO.sv
-QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module receive_FIFO
-
-Top level modules:
-	receive_FIFO
-
 } {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/APB_UART.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/APB_UART.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling module APB_UART
@@ -40,12 +33,12 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	APB_UART
 
-} {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/DIVIDER.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/DIVIDER.sv
+} {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/receive_FIFO.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/receive_FIFO.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module DIVIDER
+-- Compiling module receive_FIFO
 
 Top level modules:
-	DIVIDER
+	receive_FIFO
 
 } {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/D_FF_64bit.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/D_FF_64bit.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
@@ -54,12 +47,12 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	D_FF_64bit
 
-} {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/uart_start_bit_detect.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/uart_start_bit_detect.sv
+} {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/DIVIDER.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/DIVIDER.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module uart_start_bit_detect
+-- Compiling module DIVIDER
 
 Top level modules:
-	uart_start_bit_detect
+	DIVIDER
 
 } {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/D_FF_12bit.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/D_FF_12bit.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
@@ -74,6 +67,13 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 
 Top level modules:
 	DataLengthDecoder
+
+} {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/d_ff_trick.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/d_ff_trick.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module d_ff_trick
+
+Top level modules:
+	d_ff_trick
 
 } {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/arbiter_tb.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/arbiter_tb.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
@@ -105,10 +105,17 @@ Top level modules:
 
 } {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/fifo_read_memory.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/fifo_read_memory.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module rx_fifo_memory
+-- Compiling module fifo_read_memory
 
 Top level modules:
-	rx_fifo_memory
+	fifo_read_memory
+
+} {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/d_ff_trick_tb.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/d_ff_trick_tb.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module d_ff_trick_tb
+
+Top level modules:
+	d_ff_trick_tb
 
 } {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/test_ver4.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/test_ver4.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
@@ -330,19 +337,19 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	comparator_unsigned_32bit
 
-} {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/FSM_APB.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/FSM_APB.sv
-QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module FSM_APB
-
-Top level modules:
-	FSM_APB
-
 } {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/ram.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/ram.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling module ram
 
 Top level modules:
 	ram
+
+} {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/FSM_APB.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/FSM_APB.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module FSM_APB
+
+Top level modules:
+	FSM_APB
 
 } {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/address_decode.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/address_decode.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
@@ -372,12 +379,12 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	EncoderDataLength
 
-} {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/ram_tb.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/ram_tb.sv
+} {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/custom_fsm_wr_rd.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/custom_fsm_wr_rd.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module tb_ram
+-- Compiling module custom_fsm_wr_rd
 
 Top level modules:
-	tb_ram
+	custom_fsm_wr_rd
 
 } {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/D_FF_8bit.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/D_FF_8bit.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
@@ -386,11 +393,11 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	D_FF_8bit
 
-} {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/custom_fsm_wr_rd.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/custom_fsm_wr_rd.sv
+} {} {}} C:/Users/Admin/Desktop/HK241/Capstone_Project_3/ram_tb.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/Capstone_Project_3/ram_tb.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module custom_fsm_wr_rd
+-- Compiling module tb_ram
 
 Top level modules:
-	custom_fsm_wr_rd
+	tb_ram
 
 } {} {}}

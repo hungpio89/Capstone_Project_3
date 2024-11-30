@@ -1,4 +1,4 @@
-module rx_fifo_memory 
+module fifo_read_memory 
 #(	// Parameters
 	parameter int ADDRBIT 	 = 5,
 	parameter int DATA_WIDTH = 12,
@@ -13,7 +13,8 @@ module rx_fifo_memory
 	input  logic [ 	ADDRBIT-1:  0]	wraddr,  		// Address to write into the FIFO
 	input  logic [ 	ADDRBIT-1:  0]	rdaddr,  	 	// Address to read from the FIFO
 	input  logic							fifofull,      // High when FIFO is fifofull
-	input  logic							notempty,       	// High when FIFO is empty
+	input  logic							notempty,		// High when FIFO is empty
+	input  logic							fifo_en,
 	
 	output logic [ DATA_WIDTH-1:  0]	read_data   	// Data read from the FIFO
 );
@@ -34,14 +35,18 @@ module rx_fifo_memory
 			end
 		end 
 		else begin
-			// Write operation (push to FIFO)
-			if (write_en && !fifofull) begin
-				memory[write_ptr] <= write_data;
+			if (fifo_en) begin
+				// Write operation (push to FIFO)
+				if (write_en && !fifofull) begin
+					memory[write_ptr] <= write_data;
+				end
+				// Read operation (pop from FIFO)
+				if (read_en && notempty) begin
+					read_data <= memory[read_ptr];
+				end
 			end
-			// Read operation (pop from FIFO)
-			if (read_en && notempty) begin
-				read_data <= memory[read_ptr];
-			end
+			else
+				read_data <= write_data;
 		end
 	end
 

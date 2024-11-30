@@ -29,7 +29,7 @@ module custom_fsm_wr_rd									// CUSTOM from APB interface FSM
 	
 	
 	// state declaration communication
-	typedef enum bit[2:0] {IDLE, TRANS, READ, RWAIT, WWAIT, ERROR}	state;
+	typedef enum bit[2:0] {IDLE, TRANS, READ, RWAIT, WWAIT, ERROR, INIT}	state;
   
 	//state declaration of present and next 
 	state present_state, next_state;
@@ -37,7 +37,7 @@ module custom_fsm_wr_rd									// CUSTOM from APB interface FSM
   // always loop for state transition
 	always @(posedge PCLK or negedge PRESETn) begin
 		if(!PRESETn) begin			// back to IDLE state
-			present_state <= IDLE;
+			present_state <= INIT;
 		end
 		else begin
 			if (uart_run_flag) begin
@@ -56,6 +56,11 @@ module custom_fsm_wr_rd									// CUSTOM from APB interface FSM
 		RXen 		= 0;
 		
 		case (present_state)
+//			INIT: begin									// during this state, UART is automatic configed
+//				if (!transfer) begin
+//					next_state = INIT;
+//				end
+//			end
 			IDLE: begin
 				if (!transfer) begin
 					next_state = IDLE;

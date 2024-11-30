@@ -1,20 +1,20 @@
-Fitter Status : Successful - Sat Nov 23 04:59:02 2024
+Fitter Status : Successful - Sun Dec 01 02:58:37 2024
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : Thesis_Project
-Top-level Entity Name : d_ff_trick
+Top-level Entity Name : pipeline_riscv_mod2
 Family : Cyclone IV GX
-Device : EP4CGX15BF14C6
+Device : EP4CGX110DF31C7
 Timing Models : Final
-Total logic elements : 2 / 14,400 ( < 1 % )
-    Total combinational functions : 2 / 14,400 ( < 1 % )
-    Dedicated logic registers : 1 / 14,400 ( < 1 % )
-Total registers : 1
-Total pins : 9 / 81 ( 11 % )
+Total logic elements : 11,400 / 109,424 ( 10 % )
+    Total combinational functions : 10,946 / 109,424 ( 10 % )
+    Dedicated logic registers : 2,917 / 109,424 ( 3 % )
+Total registers : 2917
+Total pins : 418 / 508 ( 82 % )
 Total virtual pins : 0
-Total memory bits : 0 / 552,960 ( 0 % )
-Embedded Multiplier 9-bit elements : 0
-Total GXB Receiver Channel PCS : 0 / 2 ( 0 % )
-Total GXB Receiver Channel PMA : 0 / 2 ( 0 % )
-Total GXB Transmitter Channel PCS : 0 / 2 ( 0 % )
-Total GXB Transmitter Channel PMA : 0 / 2 ( 0 % )
-Total PLLs : 0 / 3 ( 0 % )
+Total memory bits : 0 / 5,621,760 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 560 ( 0 % )
+Total GXB Receiver Channel PCS : 0 / 8 ( 0 % )
+Total GXB Receiver Channel PMA : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PCS : 0 / 8 ( 0 % )
+Total GXB Transmitter Channel PMA : 0 / 8 ( 0 % )
+Total PLLs : 0 / 8 ( 0 % )

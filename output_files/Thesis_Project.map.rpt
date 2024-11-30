@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Thesis_Project
-Sat Nov 23 04:58:47 2024
+Sun Dec 01 02:56:44 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -13,10 +13,43 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Elapsed Time Per Partition
- 10. Analysis & Synthesis Messages
- 11. Analysis & Synthesis Suppressed Messages
+  8. User-Specified and Inferred Latches
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Port Connectivity Checks: "mem_cycle:MEM_instance"
+ 13. Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_overflow:result_inst|check_mux:over_select|mux2to1_32bit:over_select"
+ 14. Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_overflow:result_inst|mux2to1_32bit:srl_select"
+ 15. Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_overflow:result_inst|mux2to1_32bit:sll_select"
+ 16. Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_overflow:result_inst|comparator_32bit:check_inst"
+ 17. Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|sra_32bit:sra_inst|mux2to1_32bit:select_shift16"
+ 18. Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|sra_32bit:sra_inst|mux2to1_32bit:select_shift8"
+ 19. Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|sra_32bit:sra_inst|mux2to1_32bit:select_shift4"
+ 20. Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|sra_32bit:sra_inst|mux2to1_32bit:select_shift2"
+ 21. Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|sra_32bit:sra_inst|mux2to1_32bit:select_shift1"
+ 22. Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|srl_32bit:srl_inst|mux2to1_32bit:shift16_inst"
+ 23. Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|srl_32bit:srl_inst|mux2to1_32bit:shift8_inst"
+ 24. Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|srl_32bit:srl_inst|mux2to1_32bit:shift4_inst"
+ 25. Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|srl_32bit:srl_inst|mux2to1_32bit:shift2_inst"
+ 26. Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|srl_32bit:srl_inst|mux2to1_32bit:shift1_inst"
+ 27. Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_left_32bit:sll_inst|mux2to1_32bit:shift16_inst"
+ 28. Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_left_32bit:sll_inst|mux2to1_32bit:shift8_inst"
+ 29. Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_left_32bit:sll_inst|mux2to1_32bit:shift4_inst"
+ 30. Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_left_32bit:sll_inst|mux2to1_32bit:shift2_inst"
+ 31. Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_left_32bit:sll_inst|mux2to1_32bit:shift1_inst"
+ 32. Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst"
+ 33. Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst"
+ 34. Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst"
+ 35. Port Connectivity Checks: "execute_cycle:EX_instance|mux3to1_32bit:select_a_inst"
+ 36. Port Connectivity Checks: "execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_S:Signed|mag_comparator_4bit_slave:gen_compare32[29].slave_inst"
+ 37. Port Connectivity Checks: "execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_S:Signed"
+ 38. Port Connectivity Checks: "execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_Un:Unsigned|mag_comparator_4bit_slave:gen_compare32[30].slave_inst"
+ 39. Port Connectivity Checks: "decode_cycle:ID_instance|imm_gen:imm_inst|MUX2TO1_5BITLOW:Comp2|MUX2TO1_1BIT:IMM0"
+ 40. Port Connectivity Checks: "decode_cycle:ID_instance|imm_gen:imm_inst|MUX2TO1_1BIT:Comp1"
+ 41. Port Connectivity Checks: "fetch_cycle:IF_instance|adder_32bit:FA_inst"
+ 42. Elapsed Time Per Partition
+ 43. Analysis & Synthesis Messages
+ 44. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -42,16 +75,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Nov 23 04:58:47 2024           ;
+; Analysis & Synthesis Status        ; Successful - Sun Dec 01 02:56:44 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Thesis_Project                                  ;
-; Top-level Entity Name              ; d_ff_trick                                      ;
+; Top-level Entity Name              ; pipeline_riscv_mod2                             ;
 ; Family                             ; Cyclone IV GX                                   ;
-; Total logic elements               ; 2                                               ;
-;     Total combinational functions  ; 2                                               ;
-;     Dedicated logic registers      ; 1                                               ;
-; Total registers                    ; 1                                               ;
-; Total pins                         ; 9                                               ;
+; Total logic elements               ; 12,467                                          ;
+;     Total combinational functions  ; 10,946                                          ;
+;     Dedicated logic registers      ; 2,917                                           ;
+; Total registers                    ; 2917                                            ;
+; Total pins                         ; 418                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -63,90 +96,90 @@ applicable agreement for further details.
 +------------------------------------+-------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                        ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                     ; Setting            ; Default Value      ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
-; Top-level entity name                                                      ; d_ff_trick         ; Thesis_Project     ;
-; Family name                                                                ; Cyclone IV GX      ; Cyclone IV GX      ;
-; Use smart compilation                                                      ; Off                ; Off                ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
-; Enable compact report table                                                ; Off                ; Off                ;
-; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
-; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
-; Preserve fewer node names                                                  ; On                 ; On                 ;
-; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
-; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                                   ; Auto               ; Auto               ;
-; Safe State Machine                                                         ; Off                ; Off                ;
-; Extract Verilog State Machines                                             ; On                 ; On                 ;
-; Extract VHDL State Machines                                                ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
-; Parallel Synthesis                                                         ; On                 ; On                 ;
-; DSP Block Balancing                                                        ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                         ; On                 ; On                 ;
-; Power-Up Don't Care                                                        ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
-; Remove Duplicate Registers                                                 ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
-; Optimization Technique                                                     ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                         ; 70                 ; 70                 ;
-; Auto Carry Chains                                                          ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
-; Auto ROM Replacement                                                       ; On                 ; On                 ;
-; Auto RAM Replacement                                                       ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
-; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
-; Strict RAM Replacement                                                     ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
-; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
-; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                      ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
-; Report Parameter Settings                                                  ; On                 ; On                 ;
-; Report Source Assignments                                                  ; On                 ; On                 ;
-; Report Connectivity Checks                                                 ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
-; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
-; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
-; HDL message level                                                          ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
-; Clock MUX Protection                                                       ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
-; Block Design Naming                                                        ; Auto               ; Auto               ;
-; SDC constraint protection                                                  ; Off                ; Off                ;
-; Synthesis Effort                                                           ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
-; Synthesis Seed                                                             ; 1                  ; 1                  ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                         ;
++----------------------------------------------------------------------------+---------------------+--------------------+
+; Option                                                                     ; Setting             ; Default Value      ;
++----------------------------------------------------------------------------+---------------------+--------------------+
+; Top-level entity name                                                      ; pipeline_riscv_mod2 ; Thesis_Project     ;
+; Family name                                                                ; Cyclone IV GX       ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                 ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                  ; On                 ;
+; Enable compact report table                                                ; Off                 ; Off                ;
+; Restructure Multiplexers                                                   ; Auto                ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                 ; Off                ;
+; Preserve fewer node names                                                  ; On                  ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                 ; Off                ;
+; Verilog Version                                                            ; Verilog_2001        ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993           ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto                ; Auto               ;
+; Safe State Machine                                                         ; Off                 ; Off                ;
+; Extract Verilog State Machines                                             ; On                  ; On                 ;
+; Extract VHDL State Machines                                                ; On                  ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                 ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000                ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                 ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                  ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                  ; On                 ;
+; Parallel Synthesis                                                         ; On                  ; On                 ;
+; DSP Block Balancing                                                        ; Auto                ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                  ; On                 ;
+; Power-Up Don't Care                                                        ; On                  ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                 ; Off                ;
+; Remove Duplicate Registers                                                 ; On                  ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                 ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                 ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                 ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                 ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                 ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                  ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                 ; Off                ;
+; Optimization Technique                                                     ; Balanced            ; Balanced           ;
+; Carry Chain Length                                                         ; 70                  ; 70                 ;
+; Auto Carry Chains                                                          ; On                  ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                  ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                 ; Off                ;
+; Auto ROM Replacement                                                       ; On                  ; On                 ;
+; Auto RAM Replacement                                                       ; On                  ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                  ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto                ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto                ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                  ; On                 ;
+; Strict RAM Replacement                                                     ; Off                 ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                  ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                 ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                  ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                 ; Off                ;
+; Auto Resource Sharing                                                      ; Off                 ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                 ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                 ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                 ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                  ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                 ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                  ; On                 ;
+; Report Parameter Settings                                                  ; On                  ; On                 ;
+; Report Source Assignments                                                  ; On                  ; On                 ;
+; Report Connectivity Checks                                                 ; On                  ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                 ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                   ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation  ; Normal compilation ;
+; HDL message level                                                          ; Level2              ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                 ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000                ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000                ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                 ; 100                ;
+; Clock MUX Protection                                                       ; On                  ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                 ; Off                ;
+; Block Design Naming                                                        ; Auto                ; Auto               ;
+; SDC constraint protection                                                  ; Off                 ; Off                ;
+; Synthesis Effort                                                           ; Auto                ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                  ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                 ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium              ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto                ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                  ; On                 ;
+; Synthesis Seed                                                             ; 1                   ; 1                  ;
++----------------------------------------------------------------------------+---------------------+--------------------+
 
 
 Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
@@ -160,13 +193,60 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                      ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                  ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------+---------+
-; d_ff_trick.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/Capstone_Project_3/d_ff_trick.sv ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                      ;
++--------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path     ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                              ; Library ;
++--------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------+---------+
+; RISC_V/xor_comp.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/xor_comp.sv                   ;         ;
+; RISC_V/xor_32bit.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/xor_32bit.sv                  ;         ;
+; RISC_V/wb_cycle.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/wb_cycle.sv                   ;         ;
+; RISC_V/sub_comp.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/sub_comp.sv                   ;         ;
+; RISC_V/store_inst.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/store_inst.sv                 ;         ;
+; RISC_V/srl_32bit.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/srl_32bit.sv                  ;         ;
+; RISC_V/sra_32bit.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/sra_32bit.sv                  ;         ;
+; RISC_V/slt_sltu_comp.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/slt_sltu_comp.sv              ;         ;
+; RISC_V/shift_overflow.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/shift_overflow.sv             ;         ;
+; RISC_V/shift_left_32bit.sv           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/shift_left_32bit.sv           ;         ;
+; RISC_V/shift_comp.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/shift_comp.sv                 ;         ;
+; RISC_V/regfile.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/regfile.sv                    ;         ;
+; RISC_V/pipeline_riscv_mod2.sv        ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/pipeline_riscv_mod2.sv        ;         ;
+; RISC_V/or_comp.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/or_comp.sv                    ;         ;
+; RISC_V/or_32bit.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/or_32bit.sv                   ;         ;
+; RISC_V/mux10to1_32bit.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/mux10to1_32bit.sv             ;         ;
+; RISC_V/mux3to1_32bit.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/mux3to1_32bit.sv              ;         ;
+; RISC_V/mux2to1_32bit.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/mux2to1_32bit.sv              ;         ;
+; RISC_V/MUX2TO1_5BITLOW.sv            ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/MUX2TO1_5BITLOW.sv            ;         ;
+; RISC_V/MUX2TO1_1BIT.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/MUX2TO1_1BIT.sv               ;         ;
+; RISC_V/mem_cycle.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/mem_cycle.sv                  ;         ;
+; RISC_V/mag_comparator_4bit_slave.sv  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/mag_comparator_4bit_slave.sv  ;         ;
+; RISC_V/mag_comparator_4bit_master.sv ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/mag_comparator_4bit_master.sv ;         ;
+; RISC_V/load_inst.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/load_inst.sv                  ;         ;
+; RISC_V/inverter_32bit.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/inverter_32bit.sv             ;         ;
+; RISC_V/imm_gen.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/imm_gen.sv                    ;         ;
+; RISC_V/imem.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/imem.sv                       ;         ;
+; RISC_V/fulladder_1bit.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/fulladder_1bit.sv             ;         ;
+; RISC_V/forward_ctr_unit.sv           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/forward_ctr_unit.sv           ;         ;
+; RISC_V/fetch_cycle.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/fetch_cycle.sv                ;         ;
+; RISC_V/execute_cycle.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/execute_cycle.sv              ;         ;
+; RISC_V/dmem.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/dmem.sv                       ;         ;
+; RISC_V/decode_cycle.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/decode_cycle.sv               ;         ;
+; RISC_V/D_FF_32bit.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/D_FF_32bit.sv                 ;         ;
+; RISC_V/ctrl_unit.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/ctrl_unit.sv                  ;         ;
+; RISC_V/Comparator_Un.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/Comparator_Un.sv              ;         ;
+; RISC_V/Comparator_S.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/Comparator_S.sv               ;         ;
+; RISC_V/comparator_32bit.sv           ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/comparator_32bit.sv           ;         ;
+; RISC_V/check_mux.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/check_mux.sv                  ;         ;
+; RISC_V/branch_detect_unit.sv         ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/branch_detect_unit.sv         ;         ;
+; RISC_V/branch_comparator.sv          ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/branch_comparator.sv          ;         ;
+; RISC_V/and_comp.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/and_comp.sv                   ;         ;
+; RISC_V/and_32bit.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/and_32bit.sv                  ;         ;
+; RISC_V/alu_component.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/alu_component.sv              ;         ;
+; RISC_V/adder_32bit.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/adder_32bit.sv                ;         ;
+; RISC_V/adder_1bit.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/adder_1bit.sv                 ;         ;
+; RISC_V/add_comp.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/RISC_V/add_comp.sv                   ;         ;
+; risc_v/imem_data.txt                 ; yes             ; Auto-Found File              ; C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/risc_v/imem_data.txt                 ;         ;
++--------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------+
@@ -174,23 +254,318 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------+------------------+
 ; Resource                 ; Usage            ;
 +--------------------------+------------------+
-; I/O pins                 ; 9                ;
+; I/O pins                 ; 418              ;
 ; DSP block 9-bit elements ; 0                ;
-; Maximum fan-out node     ; q~reg0           ;
-; Maximum fan-out          ; 2                ;
-; Total fan-out            ; 21               ;
-; Average fan-out          ; 1.00             ;
+; Maximum fan-out node     ; clk_i~input      ;
+; Maximum fan-out          ; 2917             ;
+; Total fan-out            ; 53122            ;
+; Average fan-out          ; 3.61             ;
 +--------------------------+------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                     ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
-; |d_ff_trick                ; 2 (2)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 9    ; 0            ; |d_ff_trick         ; work         ;
-+----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+---------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                   ;
++--------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                                               ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                 ; Library Name ;
++--------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |pipeline_riscv_mod2                                                     ; 10946 (0)         ; 2917 (0)     ; 0           ; 0            ; 0       ; 0         ; 0         ; 418  ; 0            ; |pipeline_riscv_mod2                                                                                                                                                                ; work         ;
+;    |decode_cycle:ID_instance|                                            ; 1526 (72)         ; 1194 (202)   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|decode_cycle:ID_instance                                                                                                                                       ; work         ;
+;       |ctrl_unit:ctr_inst|                                               ; 51 (51)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|decode_cycle:ID_instance|ctrl_unit:ctr_inst                                                                                                                    ; work         ;
+;       |imm_gen:imm_inst|                                                 ; 50 (31)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|decode_cycle:ID_instance|imm_gen:imm_inst                                                                                                                      ; work         ;
+;          |MUX2TO1_1BIT:Comp1|                                            ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|decode_cycle:ID_instance|imm_gen:imm_inst|MUX2TO1_1BIT:Comp1                                                                                                   ; work         ;
+;          |MUX2TO1_5BITLOW:Comp2|                                         ; 14 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|decode_cycle:ID_instance|imm_gen:imm_inst|MUX2TO1_5BITLOW:Comp2                                                                                                ; work         ;
+;             |MUX2TO1_1BIT:IMM0|                                          ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|decode_cycle:ID_instance|imm_gen:imm_inst|MUX2TO1_5BITLOW:Comp2|MUX2TO1_1BIT:IMM0                                                                              ; work         ;
+;       |mux2to1_32bit:sel_rd_inst1|                                       ; 640 (640)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|decode_cycle:ID_instance|mux2to1_32bit:sel_rd_inst1                                                                                                            ; work         ;
+;       |mux2to1_32bit:sel_rd_inst2|                                       ; 640 (640)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|decode_cycle:ID_instance|mux2to1_32bit:sel_rd_inst2                                                                                                            ; work         ;
+;       |regfile:regfile_inst|                                             ; 73 (73)           ; 992 (992)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|decode_cycle:ID_instance|regfile:regfile_inst                                                                                                                  ; work         ;
+;    |execute_cycle:EX_instance|                                           ; 1129 (50)         ; 115 (115)    ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance                                                                                                                                      ; work         ;
+;       |alu_component:alu_inst|                                           ; 755 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst                                                                                                               ; work         ;
+;          |add_comp:add_func|                                             ; 56 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func                                                                                             ; work         ;
+;             |adder_32bit:add_inst|                                       ; 56 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst                                                                        ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[10].fulladder_inst_0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[10].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[11].fulladder_inst_0| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[11].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[12].fulladder_inst_0| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[12].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[13].fulladder_inst_0| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[13].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[14].fulladder_inst_0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[14].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[15].fulladder_inst_0| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[15].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[16].fulladder_inst_0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[16].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[17].fulladder_inst_0| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[17].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[18].fulladder_inst_0| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[18].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[19].fulladder_inst_0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[19].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[1].fulladder_inst_0|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[1].fulladder_inst_0                 ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[20].fulladder_inst_0| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[20].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[21].fulladder_inst_0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[21].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[22].fulladder_inst_0| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[22].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[23].fulladder_inst_0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[23].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[24].fulladder_inst_0| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[24].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[25].fulladder_inst_0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[25].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[26].fulladder_inst_0| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[26].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[27].fulladder_inst_0| ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[27].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[28].fulladder_inst_0| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[28].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[29].fulladder_inst_0| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[29].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[3].fulladder_inst_0|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[3].fulladder_inst_0                 ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[4].fulladder_inst_0|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[4].fulladder_inst_0                 ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[5].fulladder_inst_0|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[5].fulladder_inst_0                 ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[6].fulladder_inst_0|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[6].fulladder_inst_0                 ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[7].fulladder_inst_0|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[7].fulladder_inst_0                 ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[8].fulladder_inst_0|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[8].fulladder_inst_0                 ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[9].fulladder_inst_0|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[9].fulladder_inst_0                 ; work         ;
+;          |and_comp:and_func|                                             ; 23 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|and_comp:and_func                                                                                             ; work         ;
+;             |and_32bit:and_inst|                                         ; 23 (23)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|and_comp:and_func|and_32bit:and_inst                                                                          ; work         ;
+;          |mux10to1_32bit:select_inst|                                    ; 263 (263)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|mux10to1_32bit:select_inst                                                                                    ; work         ;
+;          |or_comp:or_func|                                               ; 4 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|or_comp:or_func                                                                                               ; work         ;
+;             |or_32bit:or_inst|                                           ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|or_comp:or_func|or_32bit:or_inst                                                                              ; work         ;
+;          |shift_comp:shift_comp|                                         ; 285 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp                                                                                         ; work         ;
+;             |shift_left_32bit:sll_inst|                                  ; 128 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_left_32bit:sll_inst                                                               ; work         ;
+;                |mux2to1_32bit:shift16_inst|                              ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_left_32bit:sll_inst|mux2to1_32bit:shift16_inst                                    ; work         ;
+;                |mux2to1_32bit:shift1_inst|                               ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_left_32bit:sll_inst|mux2to1_32bit:shift1_inst                                     ; work         ;
+;                |mux2to1_32bit:shift2_inst|                               ; 61 (61)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_left_32bit:sll_inst|mux2to1_32bit:shift2_inst                                     ; work         ;
+;                |mux2to1_32bit:shift4_inst|                               ; 19 (19)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_left_32bit:sll_inst|mux2to1_32bit:shift4_inst                                     ; work         ;
+;                |mux2to1_32bit:shift8_inst|                               ; 28 (28)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_left_32bit:sll_inst|mux2to1_32bit:shift8_inst                                     ; work         ;
+;             |shift_overflow:result_inst|                                 ; 14 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_overflow:result_inst                                                              ; work         ;
+;                |mux2to1_32bit:sll_select|                                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_overflow:result_inst|mux2to1_32bit:sll_select                                     ; work         ;
+;                |mux2to1_32bit:srl_select|                                ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_overflow:result_inst|mux2to1_32bit:srl_select                                     ; work         ;
+;             |sra_32bit:sra_inst|                                         ; 21 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|sra_32bit:sra_inst                                                                      ; work         ;
+;                |mux2to1_32bit:shift4_inst|                               ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|sra_32bit:sra_inst|mux2to1_32bit:shift4_inst                                            ; work         ;
+;                |mux2to1_32bit:shift8_inst|                               ; 18 (18)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|sra_32bit:sra_inst|mux2to1_32bit:shift8_inst                                            ; work         ;
+;             |srl_32bit:srl_inst|                                         ; 122 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|srl_32bit:srl_inst                                                                      ; work         ;
+;                |mux2to1_32bit:shift16_inst|                              ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|srl_32bit:srl_inst|mux2to1_32bit:shift16_inst                                           ; work         ;
+;                |mux2to1_32bit:shift1_inst|                               ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|srl_32bit:srl_inst|mux2to1_32bit:shift1_inst                                            ; work         ;
+;                |mux2to1_32bit:shift2_inst|                               ; 60 (60)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|srl_32bit:srl_inst|mux2to1_32bit:shift2_inst                                            ; work         ;
+;                |mux2to1_32bit:shift4_inst|                               ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|srl_32bit:srl_inst|mux2to1_32bit:shift4_inst                                            ; work         ;
+;                |mux2to1_32bit:shift8_inst|                               ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|srl_32bit:srl_inst|mux2to1_32bit:shift8_inst                                            ; work         ;
+;          |slt_sltu_comp:sl_func|                                         ; 63 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func                                                                                         ; work         ;
+;             |comparator_32bit:comparator_inst|                           ; 62 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst                                                        ; work         ;
+;                |mag_comparator_4bit_master:master_inst|                  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst|mag_comparator_4bit_master:master_inst                 ; work         ;
+;                |mag_comparator_4bit_slave:gen_compare32[10].slave_inst|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst|mag_comparator_4bit_slave:gen_compare32[10].slave_inst ; work         ;
+;                |mag_comparator_4bit_slave:gen_compare32[11].slave_inst|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst|mag_comparator_4bit_slave:gen_compare32[11].slave_inst ; work         ;
+;                |mag_comparator_4bit_slave:gen_compare32[13].slave_inst|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst|mag_comparator_4bit_slave:gen_compare32[13].slave_inst ; work         ;
+;                |mag_comparator_4bit_slave:gen_compare32[16].slave_inst|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst|mag_comparator_4bit_slave:gen_compare32[16].slave_inst ; work         ;
+;                |mag_comparator_4bit_slave:gen_compare32[19].slave_inst|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst|mag_comparator_4bit_slave:gen_compare32[19].slave_inst ; work         ;
+;                |mag_comparator_4bit_slave:gen_compare32[1].slave_inst|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst|mag_comparator_4bit_slave:gen_compare32[1].slave_inst  ; work         ;
+;                |mag_comparator_4bit_slave:gen_compare32[20].slave_inst|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst|mag_comparator_4bit_slave:gen_compare32[20].slave_inst ; work         ;
+;                |mag_comparator_4bit_slave:gen_compare32[22].slave_inst|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst|mag_comparator_4bit_slave:gen_compare32[22].slave_inst ; work         ;
+;                |mag_comparator_4bit_slave:gen_compare32[23].slave_inst|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst|mag_comparator_4bit_slave:gen_compare32[23].slave_inst ; work         ;
+;                |mag_comparator_4bit_slave:gen_compare32[27].slave_inst|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst|mag_comparator_4bit_slave:gen_compare32[27].slave_inst ; work         ;
+;                |mag_comparator_4bit_slave:gen_compare32[2].slave_inst|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst|mag_comparator_4bit_slave:gen_compare32[2].slave_inst  ; work         ;
+;                |mag_comparator_4bit_slave:gen_compare32[30].slave_inst|  ; 38 (38)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst|mag_comparator_4bit_slave:gen_compare32[30].slave_inst ; work         ;
+;                |mag_comparator_4bit_slave:gen_compare32[4].slave_inst|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst|mag_comparator_4bit_slave:gen_compare32[4].slave_inst  ; work         ;
+;                |mag_comparator_4bit_slave:gen_compare32[5].slave_inst|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst|mag_comparator_4bit_slave:gen_compare32[5].slave_inst  ; work         ;
+;                |mag_comparator_4bit_slave:gen_compare32[6].slave_inst|   ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst|mag_comparator_4bit_slave:gen_compare32[6].slave_inst  ; work         ;
+;                |mag_comparator_4bit_slave:gen_compare32[7].slave_inst|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst|mag_comparator_4bit_slave:gen_compare32[7].slave_inst  ; work         ;
+;                |mag_comparator_4bit_slave:gen_compare32[8].slave_inst|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst|mag_comparator_4bit_slave:gen_compare32[8].slave_inst  ; work         ;
+;                |mag_comparator_4bit_slave:gen_compare32[9].slave_inst|   ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst|mag_comparator_4bit_slave:gen_compare32[9].slave_inst  ; work         ;
+;          |sub_comp:sub_func|                                             ; 61 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func                                                                                             ; work         ;
+;             |adder_32bit:add_inst|                                       ; 61 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst                                                                        ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[10].fulladder_inst_0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[10].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[11].fulladder_inst_0| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[11].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[12].fulladder_inst_0| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[12].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[13].fulladder_inst_0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[13].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[14].fulladder_inst_0| ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[14].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[15].fulladder_inst_0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[15].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[17].fulladder_inst_0| ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[17].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[18].fulladder_inst_0| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[18].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[19].fulladder_inst_0| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[19].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[1].fulladder_inst_0|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[1].fulladder_inst_0                 ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[20].fulladder_inst_0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[20].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[21].fulladder_inst_0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[21].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[22].fulladder_inst_0| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[22].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[23].fulladder_inst_0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[23].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[24].fulladder_inst_0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[24].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[25].fulladder_inst_0| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[25].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[26].fulladder_inst_0| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[26].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[27].fulladder_inst_0| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[27].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[28].fulladder_inst_0| ; 4 (4)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[28].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[29].fulladder_inst_0| ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[29].fulladder_inst_0                ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[2].fulladder_inst_0|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[2].fulladder_inst_0                 ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[3].fulladder_inst_0|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[3].fulladder_inst_0                 ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[4].fulladder_inst_0|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[4].fulladder_inst_0                 ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[5].fulladder_inst_0|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[5].fulladder_inst_0                 ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[6].fulladder_inst_0|  ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[6].fulladder_inst_0                 ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[7].fulladder_inst_0|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[7].fulladder_inst_0                 ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[8].fulladder_inst_0|  ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[8].fulladder_inst_0                 ; work         ;
+;                |fulladder_1bit:gen_fulladder32_low[9].fulladder_inst_0|  ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst|fulladder_1bit:gen_fulladder32_low[9].fulladder_inst_0                 ; work         ;
+;       |branch_comparator:brc_inst|                                       ; 59 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|branch_comparator:brc_inst                                                                                                           ; work         ;
+;          |Comparator_S:Signed|                                           ; 26 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_S:Signed                                                                                       ; work         ;
+;             |mag_comparator_4bit_slave:gen_compare32[15].slave_inst|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_S:Signed|mag_comparator_4bit_slave:gen_compare32[15].slave_inst                                ; work         ;
+;             |mag_comparator_4bit_slave:gen_compare32[19].slave_inst|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_S:Signed|mag_comparator_4bit_slave:gen_compare32[19].slave_inst                                ; work         ;
+;             |mag_comparator_4bit_slave:gen_compare32[22].slave_inst|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_S:Signed|mag_comparator_4bit_slave:gen_compare32[22].slave_inst                                ; work         ;
+;             |mag_comparator_4bit_slave:gen_compare32[25].slave_inst|     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_S:Signed|mag_comparator_4bit_slave:gen_compare32[25].slave_inst                                ; work         ;
+;             |mag_comparator_4bit_slave:gen_compare32[29].slave_inst|     ; 19 (19)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_S:Signed|mag_comparator_4bit_slave:gen_compare32[29].slave_inst                                ; work         ;
+;             |mag_comparator_4bit_slave:gen_compare32[2].slave_inst|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_S:Signed|mag_comparator_4bit_slave:gen_compare32[2].slave_inst                                 ; work         ;
+;             |mag_comparator_4bit_slave:gen_compare32[5].slave_inst|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_S:Signed|mag_comparator_4bit_slave:gen_compare32[5].slave_inst                                 ; work         ;
+;             |mag_comparator_4bit_slave:gen_compare32[8].slave_inst|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_S:Signed|mag_comparator_4bit_slave:gen_compare32[8].slave_inst                                 ; work         ;
+;          |Comparator_Un:Unsigned|                                        ; 32 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_Un:Unsigned                                                                                    ; work         ;
+;             |mag_comparator_4bit_master:master_inst|                     ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_Un:Unsigned|mag_comparator_4bit_master:master_inst                                             ; work         ;
+;             |mag_comparator_4bit_slave:gen_compare32[30].slave_inst|     ; 30 (30)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_Un:Unsigned|mag_comparator_4bit_slave:gen_compare32[30].slave_inst                             ; work         ;
+;             |mag_comparator_4bit_slave:gen_compare32[6].slave_inst|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_Un:Unsigned|mag_comparator_4bit_slave:gen_compare32[6].slave_inst                              ; work         ;
+;       |mux2to1_32bit:select_b_inst|                                      ; 44 (44)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|mux2to1_32bit:select_b_inst                                                                                                          ; work         ;
+;       |mux3to1_32bit:sel_forwardA_inst|                                  ; 76 (76)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|mux3to1_32bit:sel_forwardA_inst                                                                                                      ; work         ;
+;       |mux3to1_32bit:sel_forwardB_inst|                                  ; 75 (75)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|mux3to1_32bit:sel_forwardB_inst                                                                                                      ; work         ;
+;       |mux3to1_32bit:select_a_inst|                                      ; 70 (70)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|execute_cycle:EX_instance|mux3to1_32bit:select_a_inst                                                                                                          ; work         ;
+;    |fetch_cycle:IF_instance|                                             ; 188 (1)           ; 126 (94)     ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance                                                                                                                                        ; work         ;
+;       |D_FF_32bit:PC_inst|                                               ; 2 (2)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst                                                                                                                     ; work         ;
+;       |adder_32bit:FA_inst|                                              ; 39 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst                                                                                                                    ; work         ;
+;          |adder_1bit:adder_inst|                                         ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|adder_1bit:adder_inst                                                                                              ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[10].fulladder_inst_0|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[10].fulladder_inst_0                                                            ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[11].fulladder_inst_0|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[11].fulladder_inst_0                                                            ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[12].fulladder_inst_0|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[12].fulladder_inst_0                                                            ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[13].fulladder_inst_0|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[13].fulladder_inst_0                                                            ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[14].fulladder_inst_0|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[14].fulladder_inst_0                                                            ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[15].fulladder_inst_0|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[15].fulladder_inst_0                                                            ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[16].fulladder_inst_0|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[16].fulladder_inst_0                                                            ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[17].fulladder_inst_0|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[17].fulladder_inst_0                                                            ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[18].fulladder_inst_0|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[18].fulladder_inst_0                                                            ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[19].fulladder_inst_0|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[19].fulladder_inst_0                                                            ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[20].fulladder_inst_0|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[20].fulladder_inst_0                                                            ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[21].fulladder_inst_0|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[21].fulladder_inst_0                                                            ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[22].fulladder_inst_0|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[22].fulladder_inst_0                                                            ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[23].fulladder_inst_0|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[23].fulladder_inst_0                                                            ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[24].fulladder_inst_0|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[24].fulladder_inst_0                                                            ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[25].fulladder_inst_0|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[25].fulladder_inst_0                                                            ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[26].fulladder_inst_0|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[26].fulladder_inst_0                                                            ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[27].fulladder_inst_0|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[27].fulladder_inst_0                                                            ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[28].fulladder_inst_0|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[28].fulladder_inst_0                                                            ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[29].fulladder_inst_0|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[29].fulladder_inst_0                                                            ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[30].fulladder_inst_0|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[30].fulladder_inst_0                                                            ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[3].fulladder_inst_0|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[3].fulladder_inst_0                                                             ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[4].fulladder_inst_0|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[4].fulladder_inst_0                                                             ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[5].fulladder_inst_0|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[5].fulladder_inst_0                                                             ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[6].fulladder_inst_0|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[6].fulladder_inst_0                                                             ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[7].fulladder_inst_0|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[7].fulladder_inst_0                                                             ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[8].fulladder_inst_0|        ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[8].fulladder_inst_0                                                             ; work         ;
+;          |fulladder_1bit:gen_fulladder32_low[9].fulladder_inst_0|        ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[9].fulladder_inst_0                                                             ; work         ;
+;       |imem:i_inst|                                                      ; 117 (117)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|imem:i_inst                                                                                                                            ; work         ;
+;       |mux2to1_32bit:Mux_br_sel|                                         ; 29 (29)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|fetch_cycle:IF_instance|mux2to1_32bit:Mux_br_sel                                                                                                               ; work         ;
+;    |forward_ctr_unit:fwr_inst|                                           ; 40 (40)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|forward_ctr_unit:fwr_inst                                                                                                                                      ; work         ;
+;    |mem_cycle:MEM_instance|                                              ; 7982 (1)          ; 1482 (106)   ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|mem_cycle:MEM_instance                                                                                                                                         ; work         ;
+;       |dmem:dmem_inst|                                                   ; 7981 (7890)       ; 1376 (1376)  ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|mem_cycle:MEM_instance|dmem:dmem_inst                                                                                                                          ; work         ;
+;          |load_inst:LOAD_DAT|                                            ; 59 (59)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|mem_cycle:MEM_instance|dmem:dmem_inst|load_inst:LOAD_DAT                                                                                                       ; work         ;
+;          |store_inst:STORE_DAT|                                          ; 32 (32)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|mem_cycle:MEM_instance|dmem:dmem_inst|store_inst:STORE_DAT                                                                                                     ; work         ;
+;    |wb_cycle:WB_instance|                                                ; 81 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|wb_cycle:WB_instance                                                                                                                                           ; work         ;
+;       |mux3to1_32bit:select_inst|                                        ; 81 (81)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |pipeline_riscv_mod2|wb_cycle:WB_instance|mux3to1_32bit:select_inst                                                                                                                 ; work         ;
++--------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                        ;
++-----------------------------------------------------+---------------------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal                         ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------------------------------+------------------------+
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[0][0] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[0][1] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[0][2] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[0][3] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[0][4] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[0][5] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[0][6] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[0][7] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[1][0] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[1][1] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[1][2] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[1][3] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[1][4] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[1][5] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[1][6] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[1][7] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[2][0] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[2][1] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[2][2] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[2][3] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[2][4] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[2][5] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[2][6] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[2][7] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[3][0] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[3][1] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[3][2] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[3][3] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[3][4] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[3][5] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[3][6] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; mem_cycle:MEM_instance|dmem:dmem_inst|temp_ld[3][7] ; execute_cycle:EX_instance|MEM_mem_en[0]     ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[1]         ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[0]         ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[6]         ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[5]         ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[4]         ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[3]         ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[2]         ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[20]        ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[21]        ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[22]        ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[23]        ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[24]        ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[15]        ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[16]        ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[17]        ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[18]        ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[19]        ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[14]        ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[13]        ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[12]        ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[30]        ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[7]         ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[8]         ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[9]         ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[10]        ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[11]        ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[31]        ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[29]        ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[28]        ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[27]        ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[26]        ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; fetch_cycle:IF_instance|imem:i_inst|inst[25]        ; fetch_cycle:IF_instance|imem:i_inst|always0 ; yes                    ;
+; Number of user-specified and inferred latches = 64  ;                                             ;                        ;
++-----------------------------------------------------+---------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++-------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                          ;
++----------------------------------------------------------+--------------------------------------------------+
+; Register name                                            ; Reason for Removal                               ;
++----------------------------------------------------------+--------------------------------------------------+
+; decode_cycle:ID_instance|EX_pc_four[1]                   ; Merged with decode_cycle:ID_instance|EX_pc[1]    ;
+; decode_cycle:ID_instance|EX_pc_four[0]                   ; Merged with decode_cycle:ID_instance|EX_pc[0]    ;
+; decode_cycle:ID_instance|EX_wb_en[1]                     ; Merged with decode_cycle:ID_instance|EX_ex_en[0] ;
+; fetch_cycle:IF_instance|ID_pc_four[0]                    ; Merged with fetch_cycle:IF_instance|ID_pc[0]     ;
+; fetch_cycle:IF_instance|ID_pc_four[1]                    ; Merged with fetch_cycle:IF_instance|ID_pc[1]     ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][0]  ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][31] ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][30] ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][29] ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][28] ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][27] ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][26] ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][25] ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][24] ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][23] ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][22] ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][21] ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][20] ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][19] ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][18] ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][17] ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][16] ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][15] ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][14] ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][13] ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][12] ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][11] ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][10] ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][9]  ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][8]  ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][7]  ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][6]  ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][5]  ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][4]  ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][3]  ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][2]  ; Stuck at GND due to stuck port data_in           ;
+; decode_cycle:ID_instance|regfile:regfile_inst|mem[0][1]  ; Stuck at GND due to stuck port data_in           ;
+; Total Number of Removed Registers = 37                   ;                                                  ;
++----------------------------------------------------------+--------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -198,14 +573,334 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 1     ;
+; Total registers                              ; 2917  ;
+; Number of registers using Synchronous Clear  ; 12    ;
+; Number of registers using Synchronous Load   ; 78    ;
+; Number of registers using Asynchronous Clear ; 2909  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 1672  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |pipeline_riscv_mod2|decode_cycle:ID_instance|EX_imm_value[24]                                                   ;
+; 6:1                ; 16 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |pipeline_riscv_mod2|mem_cycle:MEM_instance|WB_ld_data[31]                                                       ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |pipeline_riscv_mod2|decode_cycle:ID_instance|EX_imm_value[28]                                                   ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; Yes        ; |pipeline_riscv_mod2|decode_cycle:ID_instance|EX_rs2_data[6]                                                     ;
+; 33:1               ; 32 bits   ; 704 LEs       ; 704 LEs              ; 0 LEs                  ; Yes        ; |pipeline_riscv_mod2|decode_cycle:ID_instance|EX_rs1_data[16]                                                    ;
+; 6:1                ; 7 bits    ; 28 LEs        ; 14 LEs               ; 14 LEs                 ; Yes        ; |pipeline_riscv_mod2|mem_cycle:MEM_instance|WB_ld_data[13]                                                       ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |pipeline_riscv_mod2|decode_cycle:ID_instance|EX_wb_en[0]                                                        ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |pipeline_riscv_mod2|decode_cycle:ID_instance|EX_imm_value[3]                                                    ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |pipeline_riscv_mod2|decode_cycle:ID_instance|EX_imm_value[14]                                                   ;
+; 22:1               ; 7 bits    ; 98 LEs        ; 56 LEs               ; 42 LEs                 ; Yes        ; |pipeline_riscv_mod2|execute_cycle:EX_instance|MEM_alu_data[8]                                                   ;
+; 23:1               ; 7 bits    ; 105 LEs       ; 56 LEs               ; 49 LEs                 ; Yes        ; |pipeline_riscv_mod2|execute_cycle:EX_instance|MEM_alu_data[23]                                                  ;
+; 23:1               ; 4 bits    ; 60 LEs        ; 32 LEs               ; 28 LEs                 ; Yes        ; |pipeline_riscv_mod2|execute_cycle:EX_instance|MEM_alu_data[5]                                                   ;
+; 24:1               ; 4 bits    ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |pipeline_riscv_mod2|execute_cycle:EX_instance|MEM_alu_data[27]                                                  ;
+; 24:1               ; 2 bits    ; 32 LEs        ; 18 LEs               ; 14 LEs                 ; Yes        ; |pipeline_riscv_mod2|execute_cycle:EX_instance|MEM_alu_data[2]                                                   ;
+; 25:1               ; 2 bits    ; 32 LEs        ; 18 LEs               ; 14 LEs                 ; Yes        ; |pipeline_riscv_mod2|execute_cycle:EX_instance|MEM_alu_data[29]                                                  ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |pipeline_riscv_mod2|wb_cycle:WB_instance|mux3to1_32bit:select_inst|Mux30                                        ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |pipeline_riscv_mod2|execute_cycle:EX_instance|mux3to1_32bit:sel_forwardA_inst|Mux31                             ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |pipeline_riscv_mod2|execute_cycle:EX_instance|mux3to1_32bit:select_a_inst|Mux13                                 ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |pipeline_riscv_mod2|execute_cycle:EX_instance|mux3to1_32bit:sel_forwardB_inst|Mux18                             ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; No         ; |pipeline_riscv_mod2|decode_cycle:ID_instance|imm_gen:imm_inst|MUX2TO1_5BITLOW:Comp2|MUX2TO1_1BIT:IMM0|Selector0 ;
+; 76:1               ; 8 bits    ; 400 LEs       ; 400 LEs              ; 0 LEs                  ; No         ; |pipeline_riscv_mod2|mem_cycle:MEM_instance|dmem:dmem_inst|Mux1058                                               ;
+; 76:1               ; 8 bits    ; 400 LEs       ; 400 LEs              ; 0 LEs                  ; No         ; |pipeline_riscv_mod2|mem_cycle:MEM_instance|dmem:dmem_inst|Mux1078                                               ;
+; 140:1              ; 8 bits    ; 744 LEs       ; 744 LEs              ; 0 LEs                  ; No         ; |pipeline_riscv_mod2|mem_cycle:MEM_instance|dmem:dmem_inst|Mux1084                                               ;
+; 140:1              ; 8 bits    ; 744 LEs       ; 744 LEs              ; 0 LEs                  ; No         ; |pipeline_riscv_mod2|mem_cycle:MEM_instance|dmem:dmem_inst|Mux1066                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "mem_cycle:MEM_instance" ;
++--------------+-------+----------+------------------+
+; Port         ; Type  ; Severity ; Details          ;
++--------------+-------+----------+------------------+
+; MEM_stall_en ; Input ; Info     ; Stuck at VCC     ;
+; MEM_rst_n    ; Input ; Info     ; Stuck at VCC     ;
++--------------+-------+----------+------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_overflow:result_inst|check_mux:over_select|mux2to1_32bit:over_select" ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                             ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; a    ; Input ; Info     ; Stuck at GND                                                                                                                                        ;
+; b    ; Input ; Info     ; Stuck at VCC                                                                                                                                        ;
++------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_overflow:result_inst|mux2to1_32bit:srl_select" ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                      ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                                                                                 ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_overflow:result_inst|mux2to1_32bit:sll_select" ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                      ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                                                                                                                 ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_overflow:result_inst|comparator_32bit:check_inst" ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                    ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
+; b[31..6] ; Input  ; Info     ; Stuck at GND                                                                                                               ;
+; b[4..0]  ; Input  ; Info     ; Stuck at GND                                                                                                               ;
+; b[5]     ; Input  ; Info     ; Stuck at VCC                                                                                                               ;
+; a_less_b ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                        ;
++----------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|sra_32bit:sra_inst|mux2to1_32bit:select_shift16" ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                             ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------------------------------+
+; a[31..16] ; Input ; Info     ; Stuck at GND                                                                                                        ;
+; b[31..16] ; Input ; Info     ; Stuck at VCC                                                                                                        ;
++-----------+-------+----------+---------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|sra_32bit:sra_inst|mux2to1_32bit:select_shift8" ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                            ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------------------------+
+; a[31..24] ; Input ; Info     ; Stuck at GND                                                                                                       ;
+; b[31..24] ; Input ; Info     ; Stuck at VCC                                                                                                       ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|sra_32bit:sra_inst|mux2to1_32bit:select_shift4" ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                            ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------------------------+
+; a[31..28] ; Input ; Info     ; Stuck at GND                                                                                                       ;
+; b[31..28] ; Input ; Info     ; Stuck at VCC                                                                                                       ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|sra_32bit:sra_inst|mux2to1_32bit:select_shift2" ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                            ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------------------------+
+; a[31..30] ; Input ; Info     ; Stuck at GND                                                                                                       ;
+; b[31..30] ; Input ; Info     ; Stuck at VCC                                                                                                       ;
++-----------+-------+----------+--------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|sra_32bit:sra_inst|mux2to1_32bit:select_shift1" ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------+
+; a[31] ; Input ; Info     ; Stuck at GND                                                                                                           ;
+; b[31] ; Input ; Info     ; Stuck at VCC                                                                                                           ;
++-------+-------+----------+------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|srl_32bit:srl_inst|mux2to1_32bit:shift16_inst" ;
++-----------+-------+----------+-------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                           ;
++-----------+-------+----------+-------------------------------------------------------------------------------------------------------------------+
+; b[31..16] ; Input ; Info     ; Stuck at GND                                                                                                      ;
++-----------+-------+----------+-------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|srl_32bit:srl_inst|mux2to1_32bit:shift8_inst" ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                          ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------+
+; b[31..24] ; Input ; Info     ; Stuck at GND                                                                                                     ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|srl_32bit:srl_inst|mux2to1_32bit:shift4_inst" ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                          ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------+
+; b[31..28] ; Input ; Info     ; Stuck at GND                                                                                                     ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|srl_32bit:srl_inst|mux2to1_32bit:shift2_inst" ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------+
+; Port      ; Type  ; Severity ; Details                                                                                                          ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------+
+; b[31..30] ; Input ; Info     ; Stuck at GND                                                                                                     ;
++-----------+-------+----------+------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|srl_32bit:srl_inst|mux2to1_32bit:shift1_inst" ;
++-------+-------+----------+----------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                              ;
++-------+-------+----------+----------------------------------------------------------------------------------------------------------------------+
+; b[31] ; Input ; Info     ; Stuck at GND                                                                                                         ;
++-------+-------+----------+----------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_left_32bit:sll_inst|mux2to1_32bit:shift16_inst" ;
++----------+-------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                                                                                                   ;
++----------+-------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; b[15..0] ; Input ; Info     ; Stuck at GND                                                                                                              ;
++----------+-------+----------+---------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_left_32bit:sll_inst|mux2to1_32bit:shift8_inst" ;
++---------+-------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                   ;
++---------+-------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; b[7..0] ; Input ; Info     ; Stuck at GND                                                                                                              ;
++---------+-------+----------+---------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_left_32bit:sll_inst|mux2to1_32bit:shift4_inst" ;
++---------+-------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                   ;
++---------+-------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; b[3..0] ; Input ; Info     ; Stuck at GND                                                                                                              ;
++---------+-------+----------+---------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_left_32bit:sll_inst|mux2to1_32bit:shift2_inst" ;
++---------+-------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                   ;
++---------+-------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; b[1..0] ; Input ; Info     ; Stuck at GND                                                                                                              ;
++---------+-------+----------+---------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_left_32bit:sll_inst|mux2to1_32bit:shift1_inst" ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                      ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; b[0] ; Input ; Info     ; Stuck at GND                                                                                                                 ;
++------+-------+----------+------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst" ;
++-----------+--------+----------+-----------------------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                                             ;
++-----------+--------+----------+-----------------------------------------------------------------------------------------------------+
+; a_equal_b ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                 ;
+; a_more_b  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                 ;
++-----------+--------+----------+-----------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|adder_32bit:add_inst"                                                                                             ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; cin     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; cin[-1] ; Input ; Info     ; Stuck at VCC                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func|adder_32bit:add_inst"                                                                                             ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                                                                                                                            ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; cin     ; Input ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; cin[-1] ; Input ; Info     ; Stuck at GND                                                                                                                                                                       ;
++---------+-------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|mux3to1_32bit:select_a_inst" ;
++------+-------+----------+---------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                 ;
++------+-------+----------+---------------------------------------------------------+
+; a2   ; Input ; Info     ; Stuck at GND                                            ;
++------+-------+----------+---------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_S:Signed|mag_comparator_4bit_slave:gen_compare32[29].slave_inst" ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                      ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+; a_more_b ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                          ;
++----------+--------+----------+------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_S:Signed"               ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; a_less_b ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_Un:Unsigned|mag_comparator_4bit_slave:gen_compare32[30].slave_inst" ;
++----------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                                                                         ;
++----------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------+
+; a_more_b ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                             ;
++----------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "decode_cycle:ID_instance|imm_gen:imm_inst|MUX2TO1_5BITLOW:Comp2|MUX2TO1_1BIT:IMM0" ;
++---------+-------+----------+----------------------------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                                          ;
++---------+-------+----------+----------------------------------------------------------------------------------+
+; imm_in3 ; Input ; Info     ; Stuck at GND                                                                     ;
+; imm_in4 ; Input ; Info     ; Stuck at GND                                                                     ;
+; imm_in5 ; Input ; Info     ; Stuck at GND                                                                     ;
++---------+-------+----------+----------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "decode_cycle:ID_instance|imm_gen:imm_inst|MUX2TO1_1BIT:Comp1" ;
++---------+-------+----------+-------------------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                                     ;
++---------+-------+----------+-------------------------------------------------------------+
+; imm_in5 ; Input ; Info     ; Stuck at GND                                                ;
++---------+-------+----------+-------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------+
+; Port Connectivity Checks: "fetch_cycle:IF_instance|adder_32bit:FA_inst" ;
++----------+-------+----------+-------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                   ;
++----------+-------+----------+-------------------------------------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND                              ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND                              ;
+; b[2]     ; Input ; Info     ; Stuck at VCC                              ;
+; cin      ; Input ; Info     ; Stuck at GND                              ;
++----------+-------+----------+-------------------------------------------+
 
 
 +-------------------------------+
@@ -213,7 +908,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:29     ;
 +----------------+--------------+
 
 
@@ -223,9 +918,107 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Sat Nov 23 04:58:40 2024
+    Info: Processing started: Sun Dec 01 02:56:11 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Thesis_Project -c Thesis_Project
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/xor_comp.sv
+    Info (12023): Found entity 1: xor_comp
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/xor_32bit.sv
+    Info (12023): Found entity 1: xor_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/wrapper_mod2.sv
+    Info (12023): Found entity 1: wrapper_mod2
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/wb_cycle.sv
+    Info (12023): Found entity 1: wb_cycle
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/sub_comp.sv
+    Info (12023): Found entity 1: sub_comp
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/store_inst.sv
+    Info (12023): Found entity 1: store_inst
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/srl_32bit.sv
+    Info (12023): Found entity 1: srl_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/sra_32bit.sv
+    Info (12023): Found entity 1: sra_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/slt_sltu_comp.sv
+    Info (12023): Found entity 1: slt_sltu_comp
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/shift_overflow.sv
+    Info (12023): Found entity 1: shift_overflow
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/shift_left_32bit.sv
+    Info (12023): Found entity 1: shift_left_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/shift_comp.sv
+    Info (12023): Found entity 1: shift_comp
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/regfile.sv
+    Info (12023): Found entity 1: regfile
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/pipeline_riscv_mod2.sv
+    Info (12023): Found entity 1: pipeline_riscv_mod2
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/or_comp.sv
+    Info (12023): Found entity 1: or_comp
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/or_32bit.sv
+    Info (12023): Found entity 1: or_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/mux10to1_32bit.sv
+    Info (12023): Found entity 1: mux10to1_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/mux3to1_32bit.sv
+    Info (12023): Found entity 1: mux3to1_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/mux2to1_32bit.sv
+    Info (12023): Found entity 1: mux2to1_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/mux2to1_5bitlow.sv
+    Info (12023): Found entity 1: MUX2TO1_5BITLOW
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/mux2to1_1bit.sv
+    Info (12023): Found entity 1: MUX2TO1_1BIT
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/mem_cycle.sv
+    Info (12023): Found entity 1: mem_cycle
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/mag_comparator_4bit_slave.sv
+    Info (12023): Found entity 1: mag_comparator_4bit_slave
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/mag_comparator_4bit_master.sv
+    Info (12023): Found entity 1: mag_comparator_4bit_master
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/load_inst.sv
+    Info (12023): Found entity 1: load_inst
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/inverter_32bit.sv
+    Info (12023): Found entity 1: inverter_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/imm_gen.sv
+    Info (12023): Found entity 1: imm_gen
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/imem.sv
+    Info (12023): Found entity 1: imem
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/fulladder_1bit.sv
+    Info (12023): Found entity 1: fulladder_1bit
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/forward_ctr_unit.sv
+    Info (12023): Found entity 1: forward_ctr_unit
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/fetch_cycle.sv
+    Info (12023): Found entity 1: fetch_cycle
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/execute_cycle.sv
+    Info (12023): Found entity 1: execute_cycle
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/dmem.sv
+    Info (12023): Found entity 1: dmem
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/decode_hex.sv
+    Info (12023): Found entity 1: decode_hex
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/decode_cycle.sv
+    Info (12023): Found entity 1: decode_cycle
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/d_ff_32bit.sv
+    Info (12023): Found entity 1: D_FF_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/ctrl_unit.sv
+    Info (12023): Found entity 1: ctrl_unit
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/comparator_un.sv
+    Info (12023): Found entity 1: Comparator_Un
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/comparator_s.sv
+    Info (12023): Found entity 1: Comparator_S
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/comparator_32bit.sv
+    Info (12023): Found entity 1: comparator_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/check_mux.sv
+    Info (12023): Found entity 1: check_mux
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/branch_detect_unit.sv
+    Info (12023): Found entity 1: branch_detect_unit
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/branch_comparator.sv
+    Info (12023): Found entity 1: branch_comparator
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/and_comp.sv
+    Info (12023): Found entity 1: and_comp
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/and_32bit.sv
+    Info (12023): Found entity 1: and_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/alu_component.sv
+    Info (12023): Found entity 1: alu_component
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/adder_32bit.sv
+    Info (12023): Found entity 1: adder_32bit
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/adder_1bit.sv
+    Info (12023): Found entity 1: adder_1bit
+Info (12021): Found 1 design units, including 1 entities, in source file risc_v/add_comp.sv
+    Info (12023): Found entity 1: add_comp
 Info (12021): Found 1 design units, including 1 entities, in source file wrapper.sv
     Info (12023): Found entity 1: wrapper
 Info (12021): Found 1 design units, including 1 entities, in source file uart_start_bit_detect.sv
@@ -277,8 +1070,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file d_ff_64
     Info (12023): Found entity 1: D_FF_64bit
 Info (12021): Found 1 design units, including 1 entities, in source file d_ff_32bit_with_sel.sv
     Info (12023): Found entity 1: D_FF_32bit_with_Sel
-Info (12021): Found 1 design units, including 1 entities, in source file d_ff_32bit.sv
-    Info (12023): Found entity 1: D_FF_32bit
 Info (12021): Found 1 design units, including 1 entities, in source file d_ff_12bit.sv
     Info (12023): Found entity 1: D_FF_12bit
 Info (12021): Found 1 design units, including 1 entities, in source file d_ff_8bit.sv
@@ -336,36 +1127,184 @@ Info (12021): Found 1 design units, including 1 entities, in source file transmi
 Info (12021): Found 1 design units, including 1 entities, in source file tb_receive_fifo.sv
     Info (12023): Found entity 1: tb_receive_FIFO
 Info (12021): Found 1 design units, including 1 entities, in source file fifo_read_memory.sv
-    Info (12023): Found entity 1: rx_fifo_memory
+    Info (12023): Found entity 1: fifo_read_memory
 Info (12021): Found 1 design units, including 1 entities, in source file d_ff_trick.sv
     Info (12023): Found entity 1: d_ff_trick
+Info (12021): Found 1 design units, including 1 entities, in source file d_ff_trick_tb.sv
+    Info (12023): Found entity 1: d_ff_trick_tb
+Info (12021): Found 1 design units, including 1 entities, in source file test_ver5.sv
+    Info (12023): Found entity 1: test_ver5
+Info (12021): Found 1 design units, including 1 entities, in source file compare_5bit.sv
+    Info (12023): Found entity 1: compare_5bit
+Info (12021): Found 1 design units, including 1 entities, in source file encoder_method.sv
+    Info (12023): Found entity 1: encoder_method
 Warning (10236): Verilog HDL Implicit Net warning at bit_counter_unit.sv(30): created implicit net for "bit_used"
-Warning (10236): Verilog HDL Implicit Net warning at APB_UART.sv(343): created implicit net for "notempty"
-Info (12127): Elaborating entity "d_ff_trick" for the top level hierarchy
-Warning (10240): Verilog HDL Always Construct warning at d_ff_trick.sv(13): inferring latch(es) for variable "prev_en", which holds its previous value in one or more paths through the always construct
-Info (10041): Inferred latch for "prev_en[0]" at d_ff_trick.sv(13)
-Info (10041): Inferred latch for "prev_en[1]" at d_ff_trick.sv(13)
-Info (10041): Inferred latch for "prev_en[2]" at d_ff_trick.sv(13)
-Info (10041): Inferred latch for "prev_en[3]" at d_ff_trick.sv(13)
-Info (10041): Inferred latch for "prev_en[4]" at d_ff_trick.sv(13)
+Warning (10236): Verilog HDL Implicit Net warning at APB_UART.sv(351): created implicit net for "notempty"
+Warning (10236): Verilog HDL Implicit Net warning at Thesis_Project.sv(73): created implicit net for "HTRANS"
+Warning (10236): Verilog HDL Implicit Net warning at Thesis_Project.sv(96): created implicit net for "UART_RXD"
+Warning (10236): Verilog HDL Implicit Net warning at Thesis_Project.sv(97): created implicit net for "UART_TXD"
+Warning (10236): Verilog HDL Implicit Net warning at test_ver5.sv(80): created implicit net for "PWDATA"
+Warning (10236): Verilog HDL Implicit Net warning at test_ver5.sv(81): created implicit net for "state_i"
+Warning (10236): Verilog HDL Implicit Net warning at test_ver5.sv(87): created implicit net for "error_tx_detect"
+Warning (10236): Verilog HDL Implicit Net warning at test_ver5.sv(94): created implicit net for "clk_div16"
+Warning (10236): Verilog HDL Implicit Net warning at test_ver5.sv(95): created implicit net for "state"
+Info (12127): Elaborating entity "pipeline_riscv_mod2" for the top level hierarchy
+Info (12128): Elaborating entity "fetch_cycle" for hierarchy "fetch_cycle:IF_instance"
+Info (12128): Elaborating entity "D_FF_32bit" for hierarchy "fetch_cycle:IF_instance|D_FF_32bit:PC_inst"
+Info (12128): Elaborating entity "adder_32bit" for hierarchy "fetch_cycle:IF_instance|adder_32bit:FA_inst"
+Info (12128): Elaborating entity "fulladder_1bit" for hierarchy "fetch_cycle:IF_instance|adder_32bit:FA_inst|fulladder_1bit:gen_fulladder32_low[0].fulladder_inst_0"
+Info (12128): Elaborating entity "adder_1bit" for hierarchy "fetch_cycle:IF_instance|adder_32bit:FA_inst|adder_1bit:adder_inst"
+Info (12128): Elaborating entity "mux2to1_32bit" for hierarchy "fetch_cycle:IF_instance|mux2to1_32bit:Mux_br_sel"
+Info (12128): Elaborating entity "imem" for hierarchy "fetch_cycle:IF_instance|imem:i_inst"
+Warning (10850): Verilog HDL warning at imem.sv(15): number of words (34) in memory file does not match the number of elements in the address range [0:2047]
+Warning (10240): Verilog HDL Always Construct warning at imem.sv(19): inferring latch(es) for variable "inst", which holds its previous value in one or more paths through the always construct
+Warning (10030): Net "mem.data_a" at imem.sv(7) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "mem.waddr_a" at imem.sv(7) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "mem.we_a" at imem.sv(7) has no driver or initial value, using a default initial value '0'
+Info (10041): Inferred latch for "inst[0]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[1]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[2]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[3]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[4]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[5]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[6]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[7]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[8]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[9]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[10]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[11]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[12]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[13]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[14]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[15]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[16]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[17]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[18]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[19]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[20]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[21]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[22]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[23]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[24]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[25]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[26]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[27]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[28]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[29]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[30]" at imem.sv(23)
+Info (10041): Inferred latch for "inst[31]" at imem.sv(23)
+Info (12128): Elaborating entity "decode_cycle" for hierarchy "decode_cycle:ID_instance"
+Info (12128): Elaborating entity "regfile" for hierarchy "decode_cycle:ID_instance|regfile:regfile_inst"
+Info (12128): Elaborating entity "imm_gen" for hierarchy "decode_cycle:ID_instance|imm_gen:imm_inst"
+Info (10264): Verilog HDL Case Statement information at imm_gen.sv(34): all case item expressions in this case statement are onehot
+Info (12128): Elaborating entity "MUX2TO1_1BIT" for hierarchy "decode_cycle:ID_instance|imm_gen:imm_inst|MUX2TO1_1BIT:Comp1"
+Info (10264): Verilog HDL Case Statement information at MUX2TO1_1BIT.sv(9): all case item expressions in this case statement are onehot
+Info (12128): Elaborating entity "MUX2TO1_5BITLOW" for hierarchy "decode_cycle:ID_instance|imm_gen:imm_inst|MUX2TO1_5BITLOW:Comp2"
+Info (10264): Verilog HDL Case Statement information at MUX2TO1_5BITLOW.sv(22): all case item expressions in this case statement are onehot
+Info (12128): Elaborating entity "ctrl_unit" for hierarchy "decode_cycle:ID_instance|ctrl_unit:ctr_inst"
+Info (12128): Elaborating entity "execute_cycle" for hierarchy "execute_cycle:EX_instance"
+Info (12128): Elaborating entity "branch_comparator" for hierarchy "execute_cycle:EX_instance|branch_comparator:brc_inst"
+Warning (10036): Verilog HDL or VHDL warning at branch_comparator.sv(17): object "_unused_ok" assigned a value but never read
+Info (12128): Elaborating entity "Comparator_Un" for hierarchy "execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_Un:Unsigned"
+Warning (10036): Verilog HDL or VHDL warning at Comparator_Un.sv(21): object "_unused_ok" assigned a value but never read
+Info (12128): Elaborating entity "mag_comparator_4bit_master" for hierarchy "execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_Un:Unsigned|mag_comparator_4bit_master:master_inst"
+Info (12128): Elaborating entity "mag_comparator_4bit_slave" for hierarchy "execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_Un:Unsigned|mag_comparator_4bit_slave:gen_compare32[0].slave_inst"
+Info (12128): Elaborating entity "Comparator_S" for hierarchy "execute_cycle:EX_instance|branch_comparator:brc_inst|Comparator_S:Signed"
+Warning (10036): Verilog HDL or VHDL warning at Comparator_S.sv(21): object "_unused_ok" assigned a value but never read
+Info (12128): Elaborating entity "mux3to1_32bit" for hierarchy "execute_cycle:EX_instance|mux3to1_32bit:select_a_inst"
+Info (12128): Elaborating entity "alu_component" for hierarchy "execute_cycle:EX_instance|alu_component:alu_inst"
+Info (12128): Elaborating entity "add_comp" for hierarchy "execute_cycle:EX_instance|alu_component:alu_inst|add_comp:add_func"
+Info (12128): Elaborating entity "sub_comp" for hierarchy "execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func"
+Info (12128): Elaborating entity "inverter_32bit" for hierarchy "execute_cycle:EX_instance|alu_component:alu_inst|sub_comp:sub_func|inverter_32bit:inv_inst"
+Info (12128): Elaborating entity "slt_sltu_comp" for hierarchy "execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func"
+Warning (10036): Verilog HDL or VHDL warning at slt_sltu_comp.sv(20): object "_unused_ok" assigned a value but never read
+Info (12128): Elaborating entity "comparator_32bit" for hierarchy "execute_cycle:EX_instance|alu_component:alu_inst|slt_sltu_comp:sl_func|comparator_32bit:comparator_inst"
+Info (12128): Elaborating entity "xor_comp" for hierarchy "execute_cycle:EX_instance|alu_component:alu_inst|xor_comp:xor_func"
+Info (12128): Elaborating entity "xor_32bit" for hierarchy "execute_cycle:EX_instance|alu_component:alu_inst|xor_comp:xor_func|xor_32bit:xor_inst"
+Info (12128): Elaborating entity "or_comp" for hierarchy "execute_cycle:EX_instance|alu_component:alu_inst|or_comp:or_func"
+Info (12128): Elaborating entity "or_32bit" for hierarchy "execute_cycle:EX_instance|alu_component:alu_inst|or_comp:or_func|or_32bit:or_inst"
+Info (12128): Elaborating entity "and_comp" for hierarchy "execute_cycle:EX_instance|alu_component:alu_inst|and_comp:and_func"
+Info (12128): Elaborating entity "and_32bit" for hierarchy "execute_cycle:EX_instance|alu_component:alu_inst|and_comp:and_func|and_32bit:and_inst"
+Info (12128): Elaborating entity "shift_comp" for hierarchy "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp"
+Info (12128): Elaborating entity "shift_left_32bit" for hierarchy "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_left_32bit:sll_inst"
+Warning (10036): Verilog HDL or VHDL warning at shift_left_32bit.sv(31): object "_unused_ok" assigned a value but never read
+Info (12128): Elaborating entity "srl_32bit" for hierarchy "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|srl_32bit:srl_inst"
+Warning (10036): Verilog HDL or VHDL warning at srl_32bit.sv(38): object "_unused_ok" assigned a value but never read
+Info (12128): Elaborating entity "sra_32bit" for hierarchy "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|sra_32bit:sra_inst"
+Warning (10036): Verilog HDL or VHDL warning at sra_32bit.sv(44): object "_unused_ok" assigned a value but never read
+Info (12128): Elaborating entity "shift_overflow" for hierarchy "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_overflow:result_inst"
+Warning (10036): Verilog HDL or VHDL warning at shift_overflow.sv(23): object "_unused_ok" assigned a value but never read
+Info (12128): Elaborating entity "check_mux" for hierarchy "execute_cycle:EX_instance|alu_component:alu_inst|shift_comp:shift_comp|shift_overflow:result_inst|check_mux:over_select"
+Info (12128): Elaborating entity "mux10to1_32bit" for hierarchy "execute_cycle:EX_instance|alu_component:alu_inst|mux10to1_32bit:select_inst"
+Info (12128): Elaborating entity "mem_cycle" for hierarchy "mem_cycle:MEM_instance"
+Info (12128): Elaborating entity "dmem" for hierarchy "mem_cycle:MEM_instance|dmem:dmem_inst"
+Warning (10762): Verilog HDL Case Statement warning at dmem.sv(128): can't check case statement for completeness because the case expression has too many possible states
+Warning (10762): Verilog HDL Case Statement warning at dmem.sv(206): can't check case statement for completeness because the case expression has too many possible states
+Info (10041): Inferred latch for "temp_ld[3][0]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[3][1]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[3][2]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[3][3]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[3][4]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[3][5]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[3][6]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[3][7]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[2][0]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[2][1]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[2][2]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[2][3]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[2][4]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[2][5]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[2][6]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[2][7]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[1][0]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[1][1]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[1][2]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[1][3]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[1][4]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[1][5]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[1][6]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[1][7]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[0][0]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[0][1]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[0][2]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[0][3]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[0][4]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[0][5]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[0][6]" at dmem.sv(196)
+Info (10041): Inferred latch for "temp_ld[0][7]" at dmem.sv(196)
+Info (12128): Elaborating entity "load_inst" for hierarchy "mem_cycle:MEM_instance|dmem:dmem_inst|load_inst:LOAD_DAT"
+Info (10264): Verilog HDL Case Statement information at load_inst.sv(18): all case item expressions in this case statement are onehot
+Info (12128): Elaborating entity "store_inst" for hierarchy "mem_cycle:MEM_instance|dmem:dmem_inst|store_inst:STORE_DAT"
+Info (10264): Verilog HDL Case Statement information at store_inst.sv(18): all case item expressions in this case statement are onehot
+Info (12128): Elaborating entity "wb_cycle" for hierarchy "wb_cycle:WB_instance"
+Info (12128): Elaborating entity "forward_ctr_unit" for hierarchy "forward_ctr_unit:fwr_inst"
+Info (12128): Elaborating entity "branch_detect_unit" for hierarchy "branch_detect_unit:stage_rst_instance"
+Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/db/Thesis_Project.ram0_imem_37c714.hdl.mif" contains "don't care" values -- overwriting them with 0s
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "fetch_cycle:IF_instance|imem:i_inst|inst[0]" merged with LATCH primitive "fetch_cycle:IF_instance|imem:i_inst|inst[1]"
+    Info (13026): Duplicate LATCH primitive "fetch_cycle:IF_instance|imem:i_inst|inst[2]" merged with LATCH primitive "fetch_cycle:IF_instance|imem:i_inst|inst[3]"
+    Info (13026): Duplicate LATCH primitive "fetch_cycle:IF_instance|imem:i_inst|inst[12]" merged with LATCH primitive "fetch_cycle:IF_instance|imem:i_inst|inst[3]"
+    Info (13026): Duplicate LATCH primitive "fetch_cycle:IF_instance|imem:i_inst|inst[19]" merged with LATCH primitive "fetch_cycle:IF_instance|imem:i_inst|inst[3]"
+    Info (13026): Duplicate LATCH primitive "fetch_cycle:IF_instance|imem:i_inst|inst[27]" merged with LATCH primitive "fetch_cycle:IF_instance|imem:i_inst|inst[29]"
 Info (286030): Timing-Driven Synthesis is running
-Info (144001): Generated suppressed messages file C:/Users/Admin/Desktop/HK241/Capstone_Project_3/output_files/Thesis_Project.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/output_files/Thesis_Project.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 11 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 2 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4657 megabytes
-    Info: Processing ended: Sat Nov 23 04:58:47 2024
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:02
+Info (21057): Implemented 13030 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 34 input pins
+    Info (21059): Implemented 384 output pins
+    Info (21061): Implemented 12612 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 28 warnings
+    Info: Peak virtual memory: 4756 megabytes
+    Info: Processing ended: Sun Dec 01 02:56:44 2024
+    Info: Elapsed time: 00:00:33
+    Info: Total CPU time (on all processors): 00:00:32
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Admin/Desktop/HK241/Capstone_Project_3/output_files/Thesis_Project.map.smsg.
+The suppressed messages can be found in C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/output_files/Thesis_Project.map.smsg.
 
 

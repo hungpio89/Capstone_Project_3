@@ -1,2 +1,4 @@
+Warning (10268): Verilog HDL information at dmem.sv(106): always construct contains both blocking and non-blocking assignments
 Warning (10268): Verilog HDL information at register_enable_only.sv(13): always construct contains both blocking and non-blocking assignments
 Warning (10273): Verilog HDL warning at ram.sv(81): extended using "x" or "z"
+Warning (10268): Verilog HDL information at encoder_method.sv(25): always construct contains both blocking and non-blocking assignments

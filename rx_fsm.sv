@@ -10,6 +10,7 @@ module rx_fsm
 	input logic 				parity_bit_mode,
 	input logic					stop_bit_twice,
 	input logic					data_is_avail,
+	input logic					data_is_ready,
 	input logic 				RXen, 
 	input logic					PWRITE,
 	//---------------------------------------------------//
@@ -41,13 +42,14 @@ module rx_fsm
 	logic 						flag_received_sixth_tx_state;
 	logic 						flag_received_seventh_tx_state;
 	logic 						flag_received_eighth_tx_state;
+	logic							data_is_legit;
 	
 	// state declaration communication
 	typedef enum bit[ 4 :  0] {IDLE, START, DATA_IS_5, DATA_IS_6, DATA_IS_7, DATA_IS_8, PARITY, STOP_0, STOP_1, ERROR, TIMEOUT, DONE}	state;	// Total 12 state, LOAD <=> START
   
 	state present_state, next_state;
 	
-	always_ff @(posedge baud_tick or negedge PRESETn) begin
+	always @(posedge baud_tick or negedge PRESETn) begin
 		if(!PRESETn) begin			// back to IDLE state
 			present_state <= IDLE;
 		end
@@ -58,8 +60,9 @@ module rx_fsm
 			else if (PWRITE && RXen) begin
 				present_state <= ERROR;
 			end
-			else
+			else if (!PWRITE && !RXen) begin
 				present_state <= IDLE; 
+			end
 		end
 	end
 	
@@ -88,22 +91,26 @@ module rx_fsm
 		endcase
 	end
 	
-	always @(present_state, data_is_avail, RXen, start_bit, data_is_received, parity_bit, parity_bit_mode, stop_bit_twice, stop_bit, flag_received_sixth_tx_state, flag_received_seventh_tx_state, flag_received_eighth_tx_state) begin
+	assign data_is_legit = (data_is_avail& data_is_ready && RXen);
+	
+	always @(present_state, RXen, start_bit, data_is_received, parity_bit, parity_bit_mode, stop_bit_twice, stop_bit, flag_received_sixth_tx_state, flag_received_seventh_tx_state, flag_received_eighth_tx_state) begin
 		ctrl_shift_register 		= 4'b0;
 		rx_done						= 1'b0;
-		ctrl_rx_buffer 			= 1'b0;
 		error_rx_detect 			= 1'b0;
 		timeout_flag				= 1'b0;
-
+		ctrl_rx_buffer 			= 1'b0;
+		next_state					= next_state;
 		case (present_state) 
 			IDLE: begin
-				if (!RXen) begin
-					next_state = IDLE;
-				end
-				else if (RXen & data_is_avail) begin
-					ctrl_rx_buffer	= 1'b1;
-					next_state 	= START;
-				end
+				case(RXen)
+					1'b0: begin
+						next_state 			= IDLE;	
+					end
+					1'b1: begin
+						next_state 			= START;
+						ctrl_rx_buffer 	= 1'b1;	
+					end
+				endcase
 			end
 			START: begin
 				ctrl_shift_register = 4'b0001;			// enable shift register shift start bit
@@ -189,7 +196,7 @@ module rx_fsm
 				ctrl_shift_register = 4'b1000;
 				if (stop_bit && !stop_bit_twice) begin
 					next_state 		= IDLE;
-					ctrl_rx_buffer = 1'b1;			// enable the TX buffer to receive data from D - FF intermediate
+//					ctrl_rx_buffer = 1'b1;			// enable the TX buffer to receive data from D - FF intermediate
 					rx_done			= 1'b1;
 				end
 				else if (stop_bit && stop_bit_twice) begin
@@ -203,7 +210,7 @@ module rx_fsm
 			STOP_1: begin
 				ctrl_shift_register = 4'b1001;
 				if (stop_bit) begin
-					ctrl_rx_buffer = 1'b1;			// enable the TX buffer to receive data from D - FF intermediate
+//					ctrl_rx_buffer = 1'b1;			// enable the TX buffer to receive data from D - FF intermediate
 					rx_done			= 1'b1;
 					next_state 		= IDLE;	
 				end

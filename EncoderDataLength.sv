@@ -9,13 +9,14 @@ module EncoderDataLength 									// Internal module to give out the number of d
 	// OUTPUT LOGIC CONFIGURATION
 	
 	//--------------------OUTPUT SIGNAL------------------//
-	output reg 		[  5 :  0]	SIGNAL_LENGTH			// Enable to extend later if need more
+	output logic	[  5 :  0]	SIGNAL_LENGTH			// Enable to extend later if need more
 	//---------------------------------------------------//
 );
 	
 	reg 				[  5 :  0]	mid_store_size;
 	
-	always @(*) begin
+	always @(HSIZES) begin
+		mid_store_size = 6'b0;
 		case(HSIZES)
 			3'b000: begin										// applied for 8-bits data length
 				mid_store_size = 6'b0000_01;
