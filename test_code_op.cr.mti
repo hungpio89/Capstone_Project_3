@@ -1,4 +1,11 @@
-C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_12bit.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_12bit.sv
+C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/AHB_APB_UART.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/AHB_APB_UART.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module AHB_APB_UART
+
+Top level modules:
+	AHB_APB_UART
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_12bit.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_12bit.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling module D_FF_12bit
 
@@ -85,6 +92,13 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	tb_receive_FIFO
 
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/custom_fsm_wr_rd.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/custom_fsm_wr_rd.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module custom_fsm_wr_rd
+
+Top level modules:
+	custom_fsm_wr_rd
+
 } {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/FSM_AHB.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/FSM_AHB.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling module FSM_AHB
@@ -106,6 +120,13 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	arbiter
 
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_interface.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_interface.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module apb_interface
+
+Top level modules:
+	apb_interface
+
 } {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/mux4to1_4bit.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/mux4to1_4bit.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling module mux4to1_4bit
@@ -119,6 +140,13 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 
 Top level modules:
 	BAUD_RATE_GENERATOR
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/APB_UART.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/APB_UART.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module APB_UART
+
+Top level modules:
+	APB_UART
 
 } {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/receive_FIFO.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/receive_FIFO.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
@@ -175,6 +203,13 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 
 Top level modules:
 	testbench_APB_UART
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/Thesis_Project.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/Thesis_Project.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module Thesis_Project
+
+Top level modules:
+	Thesis_Project
 
 } {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_ahb_apb_bridge.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_ahb_apb_bridge.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
@@ -239,6 +274,13 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	shift_register_rd
 
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/encoder_method.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/encoder_method.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module encoder_method
+
+Top level modules:
+	encoder_method
+
 } {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/address_decode.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/address_decode.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling module address_decode
@@ -294,6 +336,13 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 
 Top level modules:
 	baud_rate_divisor
+
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/rx_fsm.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/rx_fsm.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module rx_fsm
+
+Top level modules:
+	rx_fsm
 
 } {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/MUX2TO1_1bit.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/MUX2TO1_1bit.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013

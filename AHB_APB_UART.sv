@@ -48,18 +48,21 @@ module AHB_APB_UART
 	
 	//------------------UART INTERFACE-------------------//
 	input  logic 					UART_RXD,
-	output logic 					UART_TXD
+	output logic 					UART_TXD,
 	//---------------------------------------------------//
 	
 	//---------------------UART FLAG---------------------//
 //	output logic   [ 31 :  0]	UART_FLAG,
 	//---------------------------------------------------//
+	
+	// Delete Later
+	output reg		[ 31 :  0]	PADDR
 );
 
 	// Local signal assignment
 	reg	[ 31 :  0]	PRDATA;
 	reg	[ 31 :  0]	PWDATA;
-	reg	[ 31 :  0]	PADDR;
+//	reg	[ 31 :  0]	PADDR;
 	
 	logic 				PENABLE;					// indicates second and subsequent cycles of an APB transfer.
 	logic 				PSELx;

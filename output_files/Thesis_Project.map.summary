@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sun Dec 01 02:56:44 2024
+Analysis & Synthesis Status : Successful - Tue Dec 03 01:13:47 2024
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : Thesis_Project
-Top-level Entity Name : pipeline_riscv_mod2
+Top-level Entity Name : Thesis_Project
 Family : Cyclone IV GX
-Total logic elements : 12,467
-    Total combinational functions : 10,946
-    Dedicated logic registers : 2,917
-Total registers : 2917
-Total pins : 418
+Total logic elements : 13,981
+    Total combinational functions : 12,028
+    Dedicated logic registers : 3,793
+Total registers : 3793
+Total pins : 207
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

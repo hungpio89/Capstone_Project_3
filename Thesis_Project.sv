@@ -1,68 +1,94 @@
 module Thesis_Project 
 (
-	input 	logic	[31 : 0]		io_sw_i,
+	input 	logic	[  9 :  0]	data_input,
 	input 	logic					clk_i, 
 	input		logic					UARTCLK,
 	input		logic					rst_ni,
 	
-	output 	logic	[31 : 0]		pc_debug_o,
-	output 	logic	[31 : 0] 	io_lcd_o,
-	output 	logic	[31 : 0] 	io_ledg_o,
-	output 	logic	[31 : 0] 	io_ledr_o,
-	output 	logic	[31 : 0] 	io_hex0_o,
-	output 	logic	[31 : 0] 	io_hex1_o,
-	output 	logic	[31 : 0] 	io_hex2_o,
-	output 	logic	[31 : 0]		io_hex3_o,
-	output 	logic	[31 : 0] 	io_hex4_o,
-	output 	logic	[31 : 0] 	io_hex5_o,
-	output 	logic	[31 : 0]		io_hex6_o,
-	output 	logic	[31 : 0] 	io_hex7_o	
-);
-
-	reg 				[31 : 0] 	HRDATA;	
+	output 	logic	[ 31 :  0]	pc_debug_o,
+	output 	logic	[ 31 :  0] 	data_io_ledr_o,
+	output	logic	[ 31 :  0]	data_out,
 	
-pipeline_riscv_mod2 					PIPELINE_RISCV_MOD2
+	// UART INTERFACE PORT
+	input		logic					UART_RXD,
+	output	logic					UART_TXD,
+	
+	// Delete later
+	
+	output	reg	[ 31 :  0] 	HRDATA,
+	output	logic	[ 31 :  0] 	PADDR,
+	output	logic	[ 31 :  0] 	data_io_lcd_o
+	
+);
+	// Local Signal Assignment
+//	reg				[ 31 :  0] 	HRDATA;
+	
+//	logic				[ 31 :  0] 	data_io_lcd_o;
+	logic				[ 31 :  0] 	data_io_ledg_o;
+	logic				[ 31 :  0]	data_io_hex_0;
+	logic				[ 31 :  0]	data_io_hex_1;
+	logic				[ 31 :  0]	data_io_hex_2;
+	logic				[ 31 :  0]	data_io_hex_3;
+	logic				[ 31 :  0]	data_io_hex_4;
+	logic				[ 31 :  0]	data_io_hex_5;
+	logic				[ 31 :  0]	data_io_hex_6;
+	logic				[ 31 :  0]	data_io_hex_7;
+	
+mux2to1_32bit							MUX_SELECT_HEX_DISPLAYMENT
 (
 	// INPUT LOGIC ASSIGNMENT
 	
-				.io_sw_i						(io_sw_i),
+				.a								(HRDATA),
+				.b								({24'b0, data_io_hex_1[3:0], data_io_hex_0[3:0]}),
+				.sel							(data_input[9]),
+					
+	// OUTPUT LOGIC ASSIGNMENT
+					
+				.s								(data_out)
+);	
+
+pipeline_riscv_mod2 						PIPELINE_RISCV_MOD2
+(
+	// INPUT LOGIC ASSIGNMENT
+	
+				.io_sw_i						({24'b0, data_input[7:0]}),
 				.clk_i						(clk_i), 
 				.rst_ni						(rst_ni),
 	
 	// OUTPUT LOGIC ASSIGNMENT
 
 				.pc_debug_o					(pc_debug_o),
-				.io_lcd_o					(io_lcd_o),
-				.io_ledg_o					(io_ledg_o),
-				.io_ledr_o					(io_ledr_o),
-				.io_hex0_o					(HRDATA[ 3: 0]),
-				.io_hex1_o					(HRDATA[ 7: 4]),
-				.io_hex2_o					(HRDATA[11: 8]),
-				.io_hex3_o					(HRDATA[15:12]),
-				.io_hex4_o					(HRDATA[19:16]),
-				.io_hex5_o					(HRDATA[23:20]),
-				.io_hex6_o					(HRDATA[27:24]),
-				.io_hex7_o					(HRDATA[31:28])	
+				.io_lcd_o					(data_io_lcd_o),
+				.io_ledg_o					(data_io_ledg_o),
+				.io_ledr_o					({3'b0,data_io_ledr_o[31:3]}),
+				.io_hex0_o					(data_io_hex_0),
+				.io_hex1_o					(data_io_hex_1),
+				.io_hex2_o					(data_io_hex_2),
+				.io_hex3_o					(data_io_hex_3),
+				.io_hex4_o					(data_io_hex_4),
+				.io_hex5_o					(data_io_hex_5),
+				.io_hex6_o					(data_io_hex_6),
+				.io_hex7_o					(data_io_hex_7)	
 );
 
-ram											RAM_BLOCK
-(
-	// INPUT LOGIC ASSIGNMENT
-	
-				.HCLK							(clk_i),
-				.HRESETn						(rst_ni),
-				.HWRITE						(io_lcd_o[31]),
-				.HTRANS						(io_lcd_o[30:29]),
-				.HSEL							(io_lcd_o[28]),
-				.HREADY						(io_lcd_o[27]),
-				.HWDATA						({16'b0, io_sw_i[15:0]}),
-	
-	// OUTPUT LOGIC ASSIGNMENT
-	
-				.HRDATA						(HRDATA),
-				.HREADYOUT					(io_ledr_o[0])
-	
-);
+//ram											RAM_BLOCK
+//(
+//	// INPUT LOGIC ASSIGNMENT
+//	
+//				.HCLK							(clk_i),
+//				.HRESETn						(rst_ni),
+//				.HWRITE						(io_lcd_o[31]),
+//				.HTRANS						(io_lcd_o[30:29]),
+//				.HSEL							(io_lcd_o[28]),
+//				.HREADY						(io_lcd_o[27]),
+//				.HWDATA						({16'b0, io_sw_i[15:0]}),
+//	
+//	// OUTPUT LOGIC ASSIGNMENT
+//	
+//				.HRDATA						(HRDATA),
+//				.HREADYOUT					(io_ledr_o[0])
+//	
+//);
 
 AHB_APB_UART 								AHB_APB_UART_BLOCK
 (
@@ -70,31 +96,34 @@ AHB_APB_UART 								AHB_APB_UART_BLOCK
 	
 				.HCLK							(clk_i),
 				.HRESETn						(rst_ni),
-				.HTRANS						(HTRANS),
-				.HWRITE						(io_lcd_o[31]),
-				.HSIZES						(io_lcd_o[26:24]),
-				.HBURST						(io_lcd_o[23:21]),
-				.HSELABPif					(io_lcd_o[20]),
-				.HREADYin					(io_lcd_o[19]),
-				.HWDATA						({16'b0, io_sw_i[15:0]}),
+				.HTRANS						(2'b11),						// Sequential
+				.HWRITE						(data_input[9]),
+				.HSIZES						(3'b000),					// Size used 8 bits length
+				.HBURST						(3'b001),					// address increasingly 4
+				.HSELABPif					(data_input[8]),
+				.HREADYin					(1'b1),
+				.HWDATA						(data_io_lcd_o),
 				.UARTCLK						(UARTCLK),
-				.desired_baud_rate		(20'h9600),
+				.desired_baud_rate		(20'h115200),
 				.parity_bit_mode			(1'b1),
 				.stop_bit_twice			(1'b1),
 				.number_data_receive		(8'd8), 
 				.number_data_trans		(8'd8),
 				.ctrl_i						(7'b11),
 				.state_isr					(2'b00),
-				.uart_mode_clk_sel		(1'b0),
+				.uart_mode_clk_sel		(1'b1),
 				.fifo_en						(2'b11),
 	
 	// OUTPUT LOGIC CONFIGURATION
 	
-				.HREADYout					(io_ledr_o[1]),
-				.HRESP						(io_ledr_o[3:2]),
+				.HREADYout					(data_io_ledr_o[0]),
+				.HRESP						(data_io_ledr_o[2:1]),
 				.HRDATA						(HRDATA),
 				.UART_RXD					(UART_RXD),
-				.UART_TXD					(UART_TXD) 
+				.UART_TXD					(UART_TXD),
+				
+	// Delete later
+				.PADDR						(PADDR)
 );
 
 endmodule
