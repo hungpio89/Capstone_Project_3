@@ -15,15 +15,15 @@ module Thesis_Project
 	
 	// Delete later
 	
-	output	reg	[ 31 :  0] 	HRDATA,
-	output	logic	[ 31 :  0] 	PADDR,
-	output	logic	[ 31 :  0] 	data_io_lcd_o
+//	output	reg	[ 31 :  0] 	HRDATA,
+	output	logic	[ 31 :  0] 	PADDR
+//	output	logic	[ 31 :  0] 	data_io_lcd_o
 	
 );
 	// Local Signal Assignment
-//	reg				[ 31 :  0] 	HRDATA;
+	reg				[ 31 :  0] 	HRDATA;
 	
-//	logic				[ 31 :  0] 	data_io_lcd_o;
+	logic				[ 31 :  0] 	data_io_lcd_o;
 	logic				[ 31 :  0] 	data_io_ledg_o;
 	logic				[ 31 :  0]	data_io_hex_0;
 	logic				[ 31 :  0]	data_io_hex_1;
