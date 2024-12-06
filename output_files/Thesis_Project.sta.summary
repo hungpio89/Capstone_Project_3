@@ -2,352 +2,292 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'clk_i'
-Slack : -13.570
-TNS   : -19208.082
+Type  : Slow 1200mV 85C Model Setup 'HCLK'
+Slack : -6.090
+TNS   : -1919.774
 
-Type  : Slow 1200mV 85C Model Setup 'pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|execute_cycle:EX_instance|MEM_mem_en[0]'
-Slack : -6.884
-TNS   : -210.143
-
-Type  : Slow 1200mV 85C Model Setup 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
-Slack : -3.597
-TNS   : -19.071
+Type  : Slow 1200mV 85C Model Setup 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : -4.091
+TNS   : -54.572
 
 Type  : Slow 1200mV 85C Model Setup 'UARTCLK'
-Slack : -2.792
-TNS   : -642.967
+Slack : -3.600
+TNS   : -656.538
 
-Type  : Slow 1200mV 85C Model Setup 'pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
-Slack : -2.496
-TNS   : -64.499
+Type  : Slow 1200mV 85C Model Setup 'APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
+Slack : -3.290
+TNS   : -17.936
 
-Type  : Slow 1200mV 85C Model Setup 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
-Slack : -1.173
-TNS   : -8.926
+Type  : Slow 1200mV 85C Model Setup 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_5'
+Slack : -2.597
+TNS   : -27.431
 
-Type  : Slow 1200mV 85C Model Setup 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_6'
-Slack : -0.495
-TNS   : -3.775
+Type  : Slow 1200mV 85C Model Setup 'APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
+Slack : -1.396
+TNS   : -4.303
 
-Type  : Slow 1200mV 85C Model Setup 'AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
-Slack : -0.273
-TNS   : -2.143
+Type  : Slow 1200mV 85C Model Setup 'AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
+Slack : -0.606
+TNS   : -4.798
 
-Type  : Slow 1200mV 85C Model Setup 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|D_FF_12bit:D_FLIPFLOP_12BITS_FOR_TEMP_STORE|Q[11]'
-Slack : -0.106
-TNS   : -0.626
+Type  : Slow 1200mV 85C Model Setup 'stop_bit_twice'
+Slack : 0.013
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'UARTCLK'
-Slack : -0.959
-TNS   : -2.088
+Slack : -3.544
+TNS   : -25.758
 
-Type  : Slow 1200mV 85C Model Hold 'clk_i'
-Slack : -0.647
-TNS   : -0.887
+Type  : Slow 1200mV 85C Model Hold 'stop_bit_twice'
+Slack : -0.751
+TNS   : -4.495
 
-Type  : Slow 1200mV 85C Model Hold 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_6'
-Slack : -0.451
-TNS   : -2.945
+Type  : Slow 1200mV 85C Model Hold 'APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
+Slack : -0.332
+TNS   : -1.148
 
-Type  : Slow 1200mV 85C Model Hold 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|D_FF_12bit:D_FLIPFLOP_12BITS_FOR_TEMP_STORE|Q[11]'
-Slack : -0.292
-TNS   : -2.046
+Type  : Slow 1200mV 85C Model Hold 'HCLK'
+Slack : -0.164
+TNS   : -0.703
 
-Type  : Slow 1200mV 85C Model Hold 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
-Slack : 0.047
+Type  : Slow 1200mV 85C Model Hold 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : 0.382
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
-Slack : 0.156
+Type  : Slow 1200mV 85C Model Hold 'AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
+Slack : 0.497
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
-Slack : 0.251
+Type  : Slow 1200mV 85C Model Hold 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_5'
+Slack : 0.789
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|execute_cycle:EX_instance|MEM_mem_en[0]'
-Slack : 0.935
+Type  : Slow 1200mV 85C Model Hold 'APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
+Slack : 1.723
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
-Slack : 1.998
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Recovery 'clk_i'
-Slack : -4.162
-TNS   : -1166.486
-
-Type  : Slow 1200mV 85C Model Removal 'clk_i'
-Slack : 0.139
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_i'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'HCLK'
 Slack : -3.000
-TNS   : -3466.000
+TNS   : -575.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'UARTCLK'
 Slack : -3.000
-TNS   : -333.000
+TNS   : -338.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|D_FF_12bit:D_FLIPFLOP_12BITS_FOR_TEMP_STORE|Q[11]'
-Slack : 0.352
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'stop_bit_twice'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : -1.000
+TNS   : -14.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_5'
+Slack : 0.374
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_6'
-Slack : 0.379
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
+Slack : 0.413
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
-Slack : 0.385
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
+Slack : 0.418
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
-Slack : 0.390
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
+Slack : 0.462
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
-Slack : 0.391
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Setup 'HCLK'
+Slack : -5.436
+TNS   : -1664.682
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|execute_cycle:EX_instance|MEM_mem_en[0]'
-Slack : 0.422
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
-Slack : 0.457
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'clk_i'
-Slack : -12.088
-TNS   : -16955.258
-
-Type  : Slow 1200mV 0C Model Setup 'pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|execute_cycle:EX_instance|MEM_mem_en[0]'
-Slack : -6.076
-TNS   : -185.495
-
-Type  : Slow 1200mV 0C Model Setup 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
-Slack : -3.231
-TNS   : -17.160
+Type  : Slow 1200mV 0C Model Setup 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : -3.589
+TNS   : -47.728
 
 Type  : Slow 1200mV 0C Model Setup 'UARTCLK'
+Slack : -3.133
+TNS   : -558.656
+
+Type  : Slow 1200mV 0C Model Setup 'APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
+Slack : -2.951
+TNS   : -16.160
+
+Type  : Slow 1200mV 0C Model Setup 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_5'
 Slack : -2.432
-TNS   : -546.366
+TNS   : -24.722
 
-Type  : Slow 1200mV 0C Model Setup 'pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
-Slack : -2.171
-TNS   : -56.226
+Type  : Slow 1200mV 0C Model Setup 'APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
+Slack : -1.257
+TNS   : -3.829
 
-Type  : Slow 1200mV 0C Model Setup 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
-Slack : -1.053
-TNS   : -7.929
+Type  : Slow 1200mV 0C Model Setup 'AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
+Slack : -0.537
+TNS   : -4.246
 
-Type  : Slow 1200mV 0C Model Setup 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_6'
-Slack : -0.389
-TNS   : -2.975
-
-Type  : Slow 1200mV 0C Model Setup 'AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
-Slack : -0.238
-TNS   : -1.864
-
-Type  : Slow 1200mV 0C Model Setup 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|D_FF_12bit:D_FLIPFLOP_12BITS_FOR_TEMP_STORE|Q[11]'
-Slack : 0.002
+Type  : Slow 1200mV 0C Model Setup 'stop_bit_twice'
+Slack : 0.154
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'UARTCLK'
-Slack : -0.880
-TNS   : -1.802
+Slack : -3.273
+TNS   : -25.470
 
-Type  : Slow 1200mV 0C Model Hold 'clk_i'
-Slack : -0.618
-TNS   : -0.750
+Type  : Slow 1200mV 0C Model Hold 'stop_bit_twice'
+Slack : -0.697
+TNS   : -4.255
 
-Type  : Slow 1200mV 0C Model Hold 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_6'
-Slack : -0.296
-TNS   : -1.736
+Type  : Slow 1200mV 0C Model Hold 'APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
+Slack : -0.182
+TNS   : -0.576
 
-Type  : Slow 1200mV 0C Model Hold 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|D_FF_12bit:D_FLIPFLOP_12BITS_FOR_TEMP_STORE|Q[11]'
-Slack : -0.259
-TNS   : -1.824
+Type  : Slow 1200mV 0C Model Hold 'HCLK'
+Slack : -0.161
+TNS   : -0.438
 
-Type  : Slow 1200mV 0C Model Hold 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
-Slack : 0.147
+Type  : Slow 1200mV 0C Model Hold 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : 0.333
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
-Slack : 0.234
+Type  : Slow 1200mV 0C Model Hold 'AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
+Slack : 0.540
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
-Slack : 0.275
+Type  : Slow 1200mV 0C Model Hold 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_5'
+Slack : 0.732
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|execute_cycle:EX_instance|MEM_mem_en[0]'
-Slack : 0.858
+Type  : Slow 1200mV 0C Model Hold 'APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
+Slack : 1.662
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
-Slack : 1.908
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Recovery 'clk_i'
-Slack : -3.624
-TNS   : -999.647
-
-Type  : Slow 1200mV 0C Model Removal 'clk_i'
-Slack : 0.103
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_i'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'HCLK'
 Slack : -3.000
-TNS   : -3466.000
+TNS   : -575.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'UARTCLK'
 Slack : -3.000
-TNS   : -333.000
+TNS   : -338.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
-Slack : 0.362
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'stop_bit_twice'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : -1.000
+TNS   : -14.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_5'
+Slack : 0.366
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
-Slack : 0.431
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_6'
-Slack : 0.432
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|D_FF_12bit:D_FLIPFLOP_12BITS_FOR_TEMP_STORE|Q[11]'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
 Slack : 0.433
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
-Slack : 0.435
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
+Slack : 0.441
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
-Slack : 0.436
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
+Slack : 0.453
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|execute_cycle:EX_instance|MEM_mem_en[0]'
-Slack : 0.443
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Setup 'HCLK'
+Slack : -3.041
+TNS   : -851.727
 
-Type  : Fast 1200mV 0C Model Setup 'clk_i'
-Slack : -7.208
-TNS   : -9750.708
-
-Type  : Fast 1200mV 0C Model Setup 'pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|execute_cycle:EX_instance|MEM_mem_en[0]'
-Slack : -3.668
-TNS   : -110.241
-
-Type  : Fast 1200mV 0C Model Setup 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
-Slack : -1.812
-TNS   : -9.475
+Type  : Fast 1200mV 0C Model Setup 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : -1.878
+TNS   : -24.883
 
 Type  : Fast 1200mV 0C Model Setup 'UARTCLK'
-Slack : -1.202
-TNS   : -234.333
+Slack : -1.673
+TNS   : -231.794
 
-Type  : Fast 1200mV 0C Model Setup 'pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
-Slack : -0.940
-TNS   : -21.948
+Type  : Fast 1200mV 0C Model Setup 'APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
+Slack : -1.628
+TNS   : -8.763
 
-Type  : Fast 1200mV 0C Model Setup 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
-Slack : -0.387
-TNS   : -1.782
+Type  : Fast 1200mV 0C Model Setup 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_5'
+Slack : -1.174
+TNS   : -11.693
 
-Type  : Fast 1200mV 0C Model Setup 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_6'
-Slack : -0.082
-TNS   : -0.485
+Type  : Fast 1200mV 0C Model Setup 'APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
+Slack : -0.552
+TNS   : -0.552
 
-Type  : Fast 1200mV 0C Model Setup 'AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
-Slack : 0.148
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Setup 'AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
+Slack : -0.067
+TNS   : -0.501
 
-Type  : Fast 1200mV 0C Model Setup 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|D_FF_12bit:D_FLIPFLOP_12BITS_FOR_TEMP_STORE|Q[11]'
-Slack : 0.381
+Type  : Fast 1200mV 0C Model Setup 'stop_bit_twice'
+Slack : 0.227
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'UARTCLK'
-Slack : -0.580
-TNS   : -1.706
+Slack : -2.093
+TNS   : -15.747
 
-Type  : Fast 1200mV 0C Model Hold 'clk_i'
-Slack : -0.525
-TNS   : -1.169
+Type  : Fast 1200mV 0C Model Hold 'HCLK'
+Slack : -0.277
+TNS   : -1.690
 
-Type  : Fast 1200mV 0C Model Hold 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|D_FF_12bit:D_FLIPFLOP_12BITS_FOR_TEMP_STORE|Q[11]'
-Slack : -0.208
-TNS   : -1.496
+Type  : Fast 1200mV 0C Model Hold 'stop_bit_twice'
+Slack : -0.256
+TNS   : -1.247
 
-Type  : Fast 1200mV 0C Model Hold 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_6'
-Slack : -0.138
-TNS   : -0.720
+Type  : Fast 1200mV 0C Model Hold 'APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
+Slack : -0.085
+TNS   : -0.230
 
-Type  : Fast 1200mV 0C Model Hold 'pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
-Slack : 0.038
+Type  : Fast 1200mV 0C Model Hold 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : 0.201
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
-Slack : 0.111
+Type  : Fast 1200mV 0C Model Hold 'AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
+Slack : 0.404
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
-Slack : 0.185
+Type  : Fast 1200mV 0C Model Hold 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_5'
+Slack : 0.662
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|execute_cycle:EX_instance|MEM_mem_en[0]'
-Slack : 0.516
+Type  : Fast 1200mV 0C Model Hold 'APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
+Slack : 1.155
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
-Slack : 1.303
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Recovery 'clk_i'
-Slack : -2.061
-TNS   : -524.962
-
-Type  : Fast 1200mV 0C Model Removal 'clk_i'
-Slack : 0.036
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_i'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'HCLK'
 Slack : -3.000
-TNS   : -3522.892
+TNS   : -584.522
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'UARTCLK'
 Slack : -3.000
-TNS   : -339.208
+TNS   : -430.038
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|D_FF_12bit:D_FLIPFLOP_12BITS_FOR_TEMP_STORE|Q[11]'
-Slack : 0.314
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'stop_bit_twice'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : -1.000
+TNS   : -14.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_5'
+Slack : 0.324
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_6'
-Slack : 0.351
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
+Slack : 0.359
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
-Slack : 0.363
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
+Slack : 0.393
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
-Slack : 0.365
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|execute_cycle:EX_instance|MEM_mem_en[0]'
-Slack : 0.394
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
-Slack : 0.457
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
-Slack : 0.476
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
+Slack : 0.466
 TNS   : 0.000
 
 ------------------------------------------------------------

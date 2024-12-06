@@ -10,7 +10,7 @@ module DataLengthDecoder 										// This block is an customize module only use
 	//---------------------------------------------------//
 	
 	//---------INPUT FROM INTERNAL ENCODER BLOCK---------//
-	input logic		[  5 :  0]	SIGNAL_LENGTH,
+	input logic		[  3 :  0]	SIGNAL_LENGTH,
 	//---------------------------------------------------//
 	
 	// OUTPUT LOGIC CONFIGURATION
@@ -39,7 +39,7 @@ module DataLengthDecoder 										// This block is an customize module only use
 	always @(SIGNAL_LENGTH, mid_pwdata, HWriteReg) begin
 		if (HWriteReg) begin
 			case(SIGNAL_LENGTH)
-				6'b0000_01: begin
+				4'b0001: begin
 					for (int j = 0; j < 8; j = j + 1) begin: assign_8_bits_data
 						PWDATA[j] = mid_pwdata[j];				// return only 8 bits of original data
 					end
@@ -47,7 +47,7 @@ module DataLengthDecoder 										// This block is an customize module only use
 						PWDATA[k] = 1'b1;							// return data as reverse 24 bits 1
 					end
 				end
-				6'b0000_10: begin
+				4'b0010: begin
 					for (int j = 0; j < 16; j = j + 1) begin: assign_16_bits_data
 						PWDATA[j] = mid_pwdata[j];				// return only 16 bits of original data
 					end
@@ -55,7 +55,7 @@ module DataLengthDecoder 										// This block is an customize module only use
 						PWDATA[k] = 1'b1;							// return data as reverse 16 bits 1
 					end
 				end
-				6'b0001_00: begin
+				4'b0100: begin
 					for (int j = 0; j < 32; j = j + 1) begin: assign_32_bits_data
 						PWDATA[j] = mid_pwdata[j];				// return fully 32 bits of original data
 					end

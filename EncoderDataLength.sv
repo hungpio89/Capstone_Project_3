@@ -3,41 +3,32 @@ module EncoderDataLength 									// Internal module to give out the number of d
 	// INPUT LOGIC ASSIGNMENT
 	
 	//-----------------INPUT FROM MASTER-----------------//
-	input logic		[  2 :  0]	HSIZES,
+	input logic		[  1 :  0]	HSIZES,
 	//---------------------------------------------------//
 	
 	// OUTPUT LOGIC CONFIGURATION
 	
 	//--------------------OUTPUT SIGNAL------------------//
-	output logic	[  5 :  0]	SIGNAL_LENGTH			// Enable to extend later if need more
+	output logic	[  3 :  0]	SIGNAL_LENGTH			// Enable to extend later if need more
 	//---------------------------------------------------//
 );
 	
-	reg 				[  5 :  0]	mid_store_size;
+	reg 				[  3 :  0]	mid_store_size;
 	
 	always @(HSIZES) begin
-		mid_store_size = 6'b0;
+		mid_store_size = 4'b0;
 		case(HSIZES)
-			3'b000: begin										// applied for 8-bits data length
-				mid_store_size = 6'b0000_01;
+			2'b00: begin										// applied for 8-bits data length
+				mid_store_size = 4'b0001;
 			end
-			3'b001: begin										// applied for 16-bits data length
-				mid_store_size = 6'b0000_10;
+			2'b01: begin										// applied for 16-bits data length
+				mid_store_size = 4'b0010;
 			end
-			3'b010: begin										// applied for 32-bits data length
-				mid_store_size = 6'b0001_00;
-			end
-			3'b011: begin										// applied for 64-bits data length
-				mid_store_size = 6'b0010_00;
-			end
-			3'b100: begin										// applied for 128-bits data length
-				mid_store_size = 6'b0100_00;
-			end
-			3'b101: begin										// applied for 256-bits data length
-				mid_store_size = 6'b1000_00;
+			2'b10: begin										// applied for 32-bits data length
+				mid_store_size = 4'b0100;
 			end
 			default: begin										// applied for 8-bits data length
-				mid_store_size = 6'b0000_01;
+				mid_store_size = 4'b0001;
 			end
 		endcase
 	end

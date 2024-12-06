@@ -1,0 +1,59 @@
+module tb_sram_single_port;
+
+    // Tham số
+    parameter DATA_WIDTH = 32;
+    parameter ADDR_WIDTH = 10;
+    parameter NUM_BANKS = 4;
+
+    // Tín hiệu
+    logic clk, enable, we;
+    logic [ADDR_WIDTH-1:0] addr;
+    logic [DATA_WIDTH-1:0] wdata, rdata;
+    logic ecc_error;
+
+    // Module SRAM
+    sram_single_port #(
+        .DATA_WIDTH(DATA_WIDTH),
+        .ADDR_WIDTH(ADDR_WIDTH),
+        .NUM_BANKS(NUM_BANKS)
+    ) uut (
+        .clk(clk),
+        .enable(enable),
+        .we(we),
+        .addr(addr),
+        .wdata(wdata),
+        .rdata(rdata),
+        .ecc_error(ecc_error)
+    );
+
+    // Clock
+    initial begin
+        clk = 0;
+        forever #5 clk = ~clk; // Chu kỳ clock = 10ns
+    end
+
+    // Testcase
+    initial begin
+        enable = 1;
+        we = 0;
+        addr = 0;
+        wdata = 0;
+
+        // Ghi dữ liệu
+        @(posedge clk);
+        we = 1;
+        addr = 10'd5;
+        wdata = 32'hA5A5A5A5;
+        @(posedge clk);
+        we = 0;
+
+        // Đọc dữ liệu
+        @(posedge clk);
+        addr = 10'd5;
+        @(posedge clk);
+        $display("Read Data: %h, ECC Error: %b", rdata, ecc_error);
+
+        // Kết thúc
+        $stop;
+    end
+endmodule

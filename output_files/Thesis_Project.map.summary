@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Dec 03 01:13:47 2024
+Analysis & Synthesis Status : Successful - Fri Dec 06 03:19:57 2024
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : Thesis_Project
-Top-level Entity Name : Thesis_Project
+Top-level Entity Name : sram
 Family : Cyclone IV GX
-Total logic elements : 13,981
-    Total combinational functions : 12,028
-    Dedicated logic registers : 3,793
-Total registers : 3793
-Total pins : 207
+Total logic elements : 82,982
+    Total combinational functions : 82,982
+    Dedicated logic registers : 37,924
+Total registers : 37924
+Total pins : 89
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

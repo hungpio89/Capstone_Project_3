@@ -7,7 +7,7 @@ entity AHB_APB_UART_vlg_sample_tst is
         HREADYin        : in     vl_logic;
         HRESETn         : in     vl_logic;
         HSELABPif       : in     vl_logic;
-        HSIZES          : in     vl_logic_vector(2 downto 0);
+        HSIZES          : in     vl_logic_vector(1 downto 0);
         HTRANS          : in     vl_logic_vector(1 downto 0);
         HWDATA          : in     vl_logic_vector(31 downto 0);
         HWRITE          : in     vl_logic;

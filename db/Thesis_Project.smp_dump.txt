@@ -1,5 +1,5 @@
 
-State Machine - |Thesis_Project|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state
+State Machine - |AHB_APB_UART|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state
 Name present_state.TIMEOUT present_state.ERROR present_state.STOP_1 present_state.STOP_0 present_state.PARITY present_state.DATA_IS_8 present_state.DATA_IS_7 present_state.DATA_IS_6 present_state.DATA_IS_5 present_state.START present_state.IDLE 
 present_state.IDLE 0 0 0 0 0 0 0 0 0 0 0 
 present_state.START 0 0 0 0 0 0 0 0 0 1 1 
@@ -13,7 +13,7 @@ present_state.STOP_1 0 0 1 0 0 0 0 0 0 0 1
 present_state.ERROR 0 1 0 0 0 0 0 0 0 0 1 
 present_state.TIMEOUT 1 0 0 0 0 0 0 0 0 0 1 
 
-State Machine - |Thesis_Project|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|tx_fsm:TX_FSM_BLOCK|present_state
+State Machine - |AHB_APB_UART|APB_UART:APB_UART_BLOCK|tx_fsm:TX_FSM_BLOCK|present_state
 Name present_state.ERROR present_state.STOP_1 present_state.STOP_0 present_state.PARITY present_state.DATA7 present_state.DATA6 present_state.DATA5 present_state.DATA4 present_state.DATA3 present_state.DATA2 present_state.DATA1 present_state.DATA0 present_state.START present_state.IDLE 
 present_state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 present_state.START 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
@@ -30,7 +30,7 @@ present_state.STOP_0 0 0 1 0 0 0 0 0 0 0 0 0 0 1
 present_state.STOP_1 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
 present_state.ERROR 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
 
-State Machine - |Thesis_Project|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state
+State Machine - |AHB_APB_UART|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state
 Name present_state.IDLE present_state.ERROR present_state.WWAIT present_state.RWAIT present_state.READ present_state.TRANS present_state.INIT 
 present_state.INIT 0 0 0 0 0 0 0 
 present_state.TRANS 0 0 0 0 0 1 1 
@@ -40,7 +40,7 @@ present_state.WWAIT 0 0 1 0 0 0 1
 present_state.ERROR 0 1 0 0 0 0 1 
 present_state.IDLE 1 0 0 0 0 0 1 
 
-State Machine - |Thesis_Project|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|present_state
+State Machine - |AHB_APB_UART|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|present_state
 Name present_state.ST_WENABLEP present_state.ST_WRITEP present_state.ST_WWAIT present_state.ST_WENABLE present_state.ST_RENABLE present_state.ST_WRITE present_state.ST_READ present_state.ST_IDLE 
 present_state.ST_IDLE 0 0 0 0 0 0 0 0 
 present_state.ST_READ 0 0 0 0 0 0 1 1 

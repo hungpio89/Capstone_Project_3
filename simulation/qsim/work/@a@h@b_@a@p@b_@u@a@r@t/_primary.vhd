@@ -6,7 +6,7 @@ entity AHB_APB_UART is
         HRESETn         : in     vl_logic;
         HTRANS          : in     vl_logic_vector(1 downto 0);
         HWRITE          : in     vl_logic;
-        HSIZES          : in     vl_logic_vector(2 downto 0);
+        HSIZES          : in     vl_logic_vector(1 downto 0);
         HBURST          : in     vl_logic_vector(2 downto 0);
         HSELABPif       : in     vl_logic;
         HREADYin        : in     vl_logic;
@@ -25,6 +25,7 @@ entity AHB_APB_UART is
         HRESP           : out    vl_logic_vector(1 downto 0);
         HRDATA          : out    vl_logic_vector(31 downto 0);
         UART_RXD        : in     vl_logic;
-        UART_TXD        : out    vl_logic
+        UART_TXD        : out    vl_logic;
+        PADDR           : out    vl_logic_vector(31 downto 0)
     );
 end AHB_APB_UART;

@@ -1,15 +1,15 @@
-Fitter Status : Successful - Tue Dec 03 01:15:09 2024
+Fitter Status : Successful - Thu Dec 05 01:39:36 2024
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : Thesis_Project
-Top-level Entity Name : Thesis_Project
+Top-level Entity Name : AHB_APB_UART
 Family : Cyclone IV GX
 Device : EP4CGX30CF23C6
 Timing Models : Final
-Total logic elements : 13,038 / 29,440 ( 44 % )
-    Total combinational functions : 12,029 / 29,440 ( 41 % )
-    Dedicated logic registers : 3,793 / 29,440 ( 13 % )
-Total registers : 3793
-Total pins : 207 / 307 ( 67 % )
+Total logic elements : 1,474 / 29,440 ( 5 % )
+    Total combinational functions : 1,211 / 29,440 ( 4 % )
+    Dedicated logic registers : 921 / 29,440 ( 3 % )
+Total registers : 921
+Total pins : 156 / 307 ( 51 % )
 Total virtual pins : 0
 Total memory bits : 0 / 1,105,920 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 160 ( 0 % )

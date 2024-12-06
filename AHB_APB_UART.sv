@@ -12,7 +12,7 @@ module AHB_APB_UART
 	input logic 					HWRITE,					// indicates an AHB write ACCESS when HIGH (1) and an AHB read ACCESS when LOW (0).
 //																	// indicates that the current transfer is intended for the selected.
 //																	// slave. This signal is a combinatorial decode of the address bus.	
-	input logic		[  2 :  0]	HSIZES,
+	input logic		[  1 :  0]	HSIZES,
 	input logic		[  2 :  0]	HBURST,
 	input logic						HSELABPif,
 	input logic 					HREADYin,				// When HIGH the HREADY signal indicates that a transfer has

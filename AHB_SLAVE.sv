@@ -9,7 +9,7 @@ module AHB_SLAVE // BRIDGE MODULE (AHB TO APB)
 	
 	//-----------------INPUT FROM MASTER-----------------//
 	input logic		[  1 :  0]	HTRANS,					// This indicates the type of the current transfer, which can be NONSEQUENTIAL, SEQUENTIAL, IDLE or BUSY.
-	input logic		[  2 :  0]	HSIZES,
+	input logic		[  1 :  0]	HSIZES,
 	input logic		[  2 :  0]	HBURST,
 	input logic 					HWRITE,					// indicates an AHB write ACCESS when HIGH (1) and an AHB read ACCESS when LOW (0).
 //	
@@ -56,7 +56,7 @@ module AHB_SLAVE // BRIDGE MODULE (AHB TO APB)
 	
 	// Local Register declaration for Storing Interface's Signal
 	reg								HwriteReg;
-	reg				[  5 :  0]	AHBI_DataLength_ldB6;
+	reg				[  3 :  0]	AHBI_DataLength_ldB4;
 //	reg				[ 31 :  0]	HADDR;
 
 	typedef enum bit[ 1 : 0] {IDLE = 2'b00, BUSY = 2'b01, NONSEQ = 2'b10, SEQ = 2'b11} hstate;
@@ -130,7 +130,7 @@ EncoderDataLength 				ENCODER_DATA_LENGTH_BLOCK								// Internal module to giv
 				.HSIZES				(HSIZES),
 
 				// OUTPUT LOGIC CONFIGURATION
-				.SIGNAL_LENGTH		(AHBI_DataLength_ldB6)
+				.SIGNAL_LENGTH		(AHBI_DataLength_ldB4)
 );
 
 register_enable_only				RDATA_BLOCK
@@ -221,7 +221,7 @@ DataLengthDecoder 				D_FF_PWDATA							// This block is an customize module onl
 				.HRESETn				(HRESETn),
 				.HWriteReg			(HwriteReg),
 				.HWDATA				(HWDATA),
-				.SIGNAL_LENGTH		(AHBI_DataLength_ldB6),
+				.SIGNAL_LENGTH		(AHBI_DataLength_ldB4),
 	
 				// OUTPUT LOGIC CONFIGURATION
 				.PWDATA				(PWDATA)

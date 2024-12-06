@@ -1,0 +1,88 @@
+module sram_single_port #(
+    parameter DATA_WIDTH = 32,       // Bề rộng dữ liệu
+    parameter ADDR_WIDTH = 10,       // Bề rộng địa chỉ (1024 = 2^10)
+    parameter NUM_BANKS = 4          // Số lượng banks
+)(
+    input  logic clk,                // Clock chính
+    input  logic enable,             // Clock gating enable
+    input  logic we,                 // Write Enable
+    input  logic [ADDR_WIDTH-1:0] addr, // Địa chỉ đầy đủ
+    input  logic [DATA_WIDTH-1:0] wdata, // Dữ liệu ghi
+    output logic [DATA_WIDTH-1:0] rdata, // Dữ liệu đọc
+    output logic ecc_error           // Báo lỗi ECC
+);
+
+    // Internal parameters
+    localparam BANK_ADDR_WIDTH = ADDR_WIDTH - $clog2(NUM_BANKS); // Địa chỉ mỗi bank
+    localparam ECC_WIDTH = $clog2(DATA_WIDTH + 1); // Số bit ECC (Hamming SEC-DED)
+
+    // Memory array: NUM_BANKS banks, mỗi bank chứa 2^(ADDR_WIDTH-log2(NUM_BANKS)) từ
+    logic [DATA_WIDTH+ECC_WIDTH-1:0] mem_array [0:NUM_BANKS-1][0:(1<<BANK_ADDR_WIDTH)-1];
+
+    // Chọn bank
+    logic [$clog2(NUM_BANKS)-1:0] bank_sel;
+    assign bank_sel = addr[ADDR_WIDTH-1:ADDR_WIDTH-$clog2(NUM_BANKS)];
+
+    // Clock gating
+    logic gated_clk;
+    assign gated_clk = enable ? clk : 1'b0;
+
+    // ECC logic
+    function [DATA_WIDTH+ECC_WIDTH-1:0] encode_ecc(input [DATA_WIDTH-1:0] data);
+        integer i, parity;
+        logic [DATA_WIDTH+ECC_WIDTH-1:0] encoded;
+        begin
+            // Copy data vào encoded
+            encoded[DATA_WIDTH-1:0] = data;
+            // Tính các bit parity
+            for (i = 0; i < ECC_WIDTH; i++) begin
+                parity = 0;
+                for (int j = 0; j < DATA_WIDTH; j++) begin
+                    if ((j + 1) & (1 << i)) begin
+                        parity ^= data[j];
+                    end
+                end
+                encoded[DATA_WIDTH + i] = parity;
+            end
+            encode_ecc = encoded;
+        end
+    endfunction
+
+    function [DATA_WIDTH-1:0] decode_ecc(input [DATA_WIDTH+ECC_WIDTH-1:0] data_with_ecc, output logic error_detected);
+        integer i, parity;
+        logic [ECC_WIDTH-1:0] syndrome;
+        begin
+            error_detected = 0;
+            syndrome = 0;
+
+            // Tính syndrome (bit lỗi nếu có)
+            for (i = 0; i < ECC_WIDTH; i++) begin
+                parity = 0;
+                for (int j = 0; j < DATA_WIDTH + ECC_WIDTH; j++) begin
+                    if ((j + 1) & (1 << i)) begin
+                        parity ^= data_with_ecc[j];
+                    end
+                end
+                syndrome[i] = parity;
+            end
+
+            if (syndrome != 0) begin
+                error_detected = 1;
+            end
+
+            // Dữ liệu giải mã
+            decode_ecc = data_with_ecc[DATA_WIDTH-1:0];
+        end
+    endfunction
+
+    // Hoạt động đọc/ghi
+    always_ff @(posedge gated_clk) begin
+        if (we) begin
+            // Ghi dữ liệu với ECC
+            mem_array[bank_sel][addr[BANK_ADDR_WIDTH-1:0]] <= encode_ecc(wdata);
+        end else begin
+            // Đọc dữ liệu và kiểm tra lỗi ECC
+            rdata <= decode_ecc(mem_array[bank_sel][addr[BANK_ADDR_WIDTH-1:0]], ecc_error);
+        end
+    end
+endmodule
