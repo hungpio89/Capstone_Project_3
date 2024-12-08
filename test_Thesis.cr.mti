@@ -162,6 +162,13 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	ctrl_interface_signal
 
+} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_interface.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_interface.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module apb_interface
+
+Top level modules:
+	apb_interface
+
 } {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/mux4to1_4bit.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/mux4to1_4bit.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling module mux4to1_4bit
@@ -238,13 +245,6 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 
 Top level modules:
 	D_FF_4BIT
-
-} {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_uart_tb.sv {1 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_uart_tb.sv
-QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module testbench_APB_UART
-
-Top level modules:
-	testbench_APB_UART
 
 } {} {}} C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/Thesis_Project.sv {2 {vlog -work work -vopt -sv C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/Thesis_Project.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013

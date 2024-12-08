@@ -26,7 +26,12 @@ logic [31:0] PRDATA;
 logic UART_TXD;
 logic	baud_tick;
 logic	[   6 :   0]	UART_ERRORS;
+
+// Delete later
 logic	[11:0] data_trans;
+logic 		 rx_write_en;
+logic				rx_read_en;
+logic						ctrl_rx_buffer;
 
 parameter CLK_PERIOD = 2; // Thời gian chu kỳ đồng hồ (10 ns cho 100 MHz)
 
@@ -55,7 +60,10 @@ APB_UART uut (
     .UART_TXD(UART_TXD),
 	 .UART_ERRORS(UART_ERRORS),
 	 .baud_tick(baud_tick),
-	 .data_trans(data_trans)
+	 .data_trans(data_trans),
+	 .rx_write_en(rx_write_en),
+	 .rx_read_en(rx_read_en),
+	 .ctrl_rx_buffer(ctrl_rx_buffer)
 );
 
 // Clock generation
@@ -309,7 +317,6 @@ initial begin
 
     // Kết thúc mô phỏng
     #100;
-    $finish;
 end
 
 endmodule

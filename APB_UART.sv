@@ -38,7 +38,10 @@ module APB_UART																			// Wrapping APB UART OPERATING BLOCK
 	
 	// Delete later
 	output 	logic 					baud_tick,										// intermediate register to store temporary data when passing throughout D - FF 
-	output 	reg	[ 11 :   0] 	data_trans
+	output 	reg	[ 11 :   0] 	data_trans,
+	output 	logic						rx_write_en,
+	output	logic						rx_read_en,
+	output 	logic						ctrl_rx_buffer
 
 );	
 
@@ -61,12 +64,12 @@ module APB_UART																			// Wrapping APB UART OPERATING BLOCK
 //	logic 					baud_tick;																	// signal clk when finished created as a baud rate clock for block to operate
 	logic 					clk_div16;																	// signal clk raw before adding counter divisor to generate out clk for baudtick
 	logic 					ctrl_tx_buffer;
-	logic						ctrl_rx_buffer;															// signal for controlling FIFO of TX and RX to send out data
+//	logic						ctrl_rx_buffer;															// signal for controlling FIFO of TX and RX to send out data
 	logic						transfer;																	// flag for informing when transfer process is available
 	logic						rx_buffer_overrun, tx_buffer_overrun;								// signal as a flag to enable FIFO to not alarm ERROR if reach its max
 	logic						uart_run_flag;																// signal as an enable to allow RX or TX process to operate via apb interface
-	logic 					rx_write_en;
-	logic						rx_read_en;
+//	logic 					rx_write_en;
+//	logic						rx_read_en;
 	logic						rx_fifo_full;
 	logic						rx_not_empty;
 	logic						data_is_ready;

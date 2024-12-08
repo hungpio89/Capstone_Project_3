@@ -38,7 +38,7 @@ module rx_fsm
 );
 	// Local logic definition
 //	logic 		 [ 1 :  0]  rx_state;	
-	
+	logic							enable_pop_data;
 	logic 						flag_received_sixth_tx_state;
 	logic 						flag_received_seventh_tx_state;
 	logic 						flag_received_eighth_tx_state;
@@ -98,22 +98,22 @@ module rx_fsm
 		rx_done						= 1'b0;
 		error_rx_detect 			= 1'b0;
 		timeout_flag				= 1'b0;
-		ctrl_rx_buffer 			= 1'b0;
+		ctrl_rx_buffer 			= ctrl_rx_buffer;
 		next_state					= next_state;
 		case (present_state) 
 			IDLE: begin
+				ctrl_rx_buffer				= 1'b0;
 				case(RXen)
 					1'b0: begin
 						next_state 			= IDLE;	
 					end
 					1'b1: begin
 						next_state 			= START;
-						ctrl_rx_buffer 	= 1'b1;
 					end
 				endcase
 			end
 			START: begin
-				ctrl_rx_buffer 	= 1'b0;	
+				ctrl_rx_buffer 	= 1'b1;
 				ctrl_shift_register = 4'b0001;			// enable shift register shift start bit
 				if (!start_bit) begin
 					next_state = START;
@@ -197,7 +197,6 @@ module rx_fsm
 				ctrl_shift_register = 4'b1000;
 				if (stop_bit && !stop_bit_twice) begin
 					next_state 		= IDLE;
-//					ctrl_rx_buffer = 1'b1;			// enable the TX buffer to receive data from D - FF intermediate
 					rx_done			= 1'b1;
 				end
 				else if (stop_bit && stop_bit_twice) begin
@@ -211,7 +210,6 @@ module rx_fsm
 			STOP_1: begin
 				ctrl_shift_register = 4'b1001;
 				if (stop_bit) begin
-//					ctrl_rx_buffer = 1'b1;			// enable the TX buffer to receive data from D - FF intermediate
 					rx_done			= 1'b1;
 					next_state 		= IDLE;	
 				end
@@ -233,5 +231,5 @@ module rx_fsm
 			
 		endcase
 	end
-  
+	
 endmodule
