@@ -10,8 +10,6 @@ entity test_ver5_vlg_sample_tst is
         PWRITE          : in     vl_logic;
         UARTCLK         : in     vl_logic;
         UART_RXD        : in     vl_logic;
-        cd              : in     vl_logic_vector(12 downto 0);
-        ctrl            : in     vl_logic_vector(6 downto 0);
         ctrl_i          : in     vl_logic_vector(6 downto 0);
         desired_baud_rate: in     vl_logic_vector(19 downto 0);
         number_data_receive: in     vl_logic_vector(3 downto 0);

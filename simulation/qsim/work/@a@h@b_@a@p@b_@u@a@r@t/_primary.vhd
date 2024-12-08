@@ -26,6 +26,8 @@ entity AHB_APB_UART is
         HRDATA          : out    vl_logic_vector(31 downto 0);
         UART_RXD        : in     vl_logic;
         UART_TXD        : out    vl_logic;
-        PADDR           : out    vl_logic_vector(31 downto 0)
+        HADDR           : out    vl_logic_vector(31 downto 0);
+        baud_tick       : out    vl_logic;
+        data_trans      : out    vl_logic_vector(11 downto 0)
     );
 end AHB_APB_UART;

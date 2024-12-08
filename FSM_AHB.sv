@@ -67,18 +67,18 @@ module FSM_AHB	// Advanced High Performance Bus
 				APBen		  = 0;
 				PSELx		  = 0;
 				case (Valid) 
-				1: begin 
-					if (!HWRITE) begin 	
-						next_state 		= ST_READ;
+					1: begin 
+						if (!HWRITE) begin 	
+							next_state 		= ST_READ;
+						end
+						else 
+							next_state = ST_WWAIT;
 					end
-					else 
-						next_state = ST_WWAIT;
-				end
-				0: begin
-					next_state 		= ST_IDLE;
-					PENABLE	  		= 0;
-					PSELx		  		= 0;
-				end
+					0: begin
+						next_state 		= ST_IDLE;
+						PENABLE	  		= 0;
+						PSELx		  		= 0;
+					end
 				endcase
 			end
 
@@ -95,12 +95,12 @@ module FSM_AHB	// Advanced High Performance Bus
 				PSELx		  = 0;
 				PWRITE	  = 1;
 				case (Valid) 
-				1: begin 
-					next_state = ST_WRITEP;
-				end
-				0: begin
-					next_state = ST_WRITE;
-				end
+					1: begin 
+						next_state = ST_WRITEP;
+					end
+					0: begin
+						next_state = ST_WRITE;
+					end
 				endcase
 			end
 			
@@ -110,12 +110,12 @@ module FSM_AHB	// Advanced High Performance Bus
 				PWRITE	  = 1;
 				PENABLE	  = 1;
 				case (Valid) 
-				1: begin
-					next_state = ST_WENABLEP;
-				end
-				0: begin
-					next_state = ST_WENABLE;
-				end
+					1: begin
+						next_state = ST_WENABLEP;
+					end
+					0: begin
+						next_state = ST_WENABLE;
+					end
 				endcase
 			end
 			
@@ -133,16 +133,16 @@ module FSM_AHB	// Advanced High Performance Bus
 				APBen		  = 1;
 				PWRITE	  = 0;
 				case (Valid) 
-				1: begin 
-					if (!HWRITE) begin 	
-						next_state = ST_READ;
+					1: begin 
+						if (!HWRITE) begin 	
+							next_state = ST_READ;
+						end
+						else 
+							next_state = ST_WWAIT;
 					end
-					else 
-						next_state = ST_WWAIT;
-				end
-				0: begin
-					next_state = ST_IDLE;
-				end
+					0: begin
+						next_state = ST_IDLE;
+					end
 				endcase
 			end
 			
@@ -152,16 +152,16 @@ module FSM_AHB	// Advanced High Performance Bus
 				PWRITE	  = 1;
 				PENABLE	  = 1;
 				case (Valid) 
-				1: begin 
-					if (!HwriteReg) begin 	
-						next_state = ST_READ;
+					1: begin 
+						if (!HwriteReg) begin 	
+							next_state = ST_READ;
+						end
+						else 
+							next_state = ST_WWAIT;
 					end
-					else 
-						next_state = ST_WWAIT;
-				end
-				0: begin
-					next_state = ST_IDLE;
-				end
+					0: begin
+						next_state = ST_IDLE;
+					end
 				endcase
 			end
 			
@@ -171,16 +171,16 @@ module FSM_AHB	// Advanced High Performance Bus
 				PWRITE	  = 1;
 				PSELx		  = 1;
 				case (HwriteReg) 
-				1: begin 
-					if (!Valid) begin 	
-						next_state = ST_WRITE;
+					1: begin 
+						if (!Valid) begin 	
+							next_state = ST_WRITE;
+						end
+						else 
+							next_state = ST_WRITEP;
 					end
-					else 
-						next_state = ST_WRITEP;
-				end
-				0: begin
-					next_state = ST_READ;
-				end
+					0: begin
+						next_state = ST_READ;
+					end
 				endcase
 			end
 		endcase 

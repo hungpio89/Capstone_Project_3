@@ -8,6 +8,8 @@ entity test_ver5_vlg_check_tst is
         RXen            : in     vl_logic;
         TXdone          : in     vl_logic;
         baud_tick       : in     vl_logic;
+        cd              : in     vl_logic_vector(12 downto 0);
+        ctrl            : in     vl_logic_vector(6 downto 0);
         ctrl_rx_buffer  : in     vl_logic;
         ctrl_shift_register_rd: in     vl_logic_vector(3 downto 0);
         data_is_avail   : in     vl_logic;
@@ -15,9 +17,7 @@ entity test_ver5_vlg_check_tst is
         data_is_received: in     vl_logic;
         data_trans      : in     vl_logic_vector(11 downto 0);
         error_rx_detect : in     vl_logic;
-        fifo_read_en    : in     vl_logic;
         fifo_wr_ctrl    : in     vl_logic;
-        fifolen         : in     vl_logic_vector(5 downto 0);
         parity_bit_rx   : in     vl_logic;
         read_data       : in     vl_logic_vector(7 downto 0);
         rx_fifo_full    : in     vl_logic;

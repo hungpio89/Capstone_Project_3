@@ -88,14 +88,13 @@ module tx_fsm
 		ctrl_tx_buffer 		= 1'b0;
 		done_tx					= 1'b0;
 		error_tx_detect	   = 1'b0;
-		next_state				= IDLE;
+		next_state				= next_state;
 		case (present_state) 
 			IDLE: begin
 				if (!TXen) begin
 					next_state = IDLE;
 				end
 				else if (TXen) begin
-					ctrl_shift_register 	= 4'b0000;
 					next_state 				= START;
 					ctrl_tx_buffer 		= 1'b1;
 				end
@@ -237,7 +236,6 @@ module tx_fsm
 				end
 				else if (stop_bit && !stop_bit_twice) begin
 					next_state 		= IDLE;
-//					ctrl_tx_buffer = 1'b1;
 					done_tx 	  		= 1'b1;
 				end
 				else begin
@@ -249,7 +247,6 @@ module tx_fsm
 				ctrl_shift_register = 4'b1000;
 				if (stop_bit) begin
 					next_state 		= IDLE;
-//					ctrl_tx_buffer = 1'b1;
 					done_tx 	  		= 1'b1;
 				end
 				else begin

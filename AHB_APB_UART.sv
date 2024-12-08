@@ -18,7 +18,6 @@ module AHB_APB_UART
 	input logic 					HREADYin,				// When HIGH the HREADY signal indicates that a transfer has
 																	// finished on the bus. This signal may be driven LOW to extend a transfer.
 	input logic		[ 31 :  0]	HWDATA,
-//	input logic		[ 31 :  0]	HADDR,					// The 32-bit system address bus.
 	//---------------------------------------------------//
 	
 	//--------EXTERNAL CONFIGURATION FROM MASTER---------//
@@ -26,7 +25,7 @@ module AHB_APB_UART
 	input logic		[ 19 :  0]	desired_baud_rate,
 	input logic 					parity_bit_mode,
 	input logic						stop_bit_twice,
-	input logic		[  3 :  0]	number_data_receive, 
+	input logic		[  3 :  0]	number_data_receive,
 	input logic		[  3 :  0]	number_data_trans,
 	input logic		[	6 :  0]	ctrl_i,
 	input logic		[  1 :  0]	state_isr,
@@ -52,23 +51,29 @@ module AHB_APB_UART
 	//---------------------------------------------------//
 	
 	//---------------------UART FLAG---------------------//
-//	output logic   [ 31 :  0]	UART_FLAG,
+	output logic   [  9 :  0]	UART_ERROR_FLAG,
+	output logic	[ 31 :  0]	HADDR,
 	//---------------------------------------------------//
 	
 	// Delete Later
-	output reg		[ 31 :  0]	PADDR
+	output logic					baud_tick,
+	output logic	[ 11 :  0]	data_trans
 );
 
 	// Local signal assignment
-	reg	[ 31 :  0]	PRDATA;
-	reg	[ 31 :  0]	PWDATA;
-//	reg	[ 31 :  0]	PADDR;
+	reg		[ 31 :  0]	PRDATA;
+	reg		[ 31 :  0]	PWDATA;
+	reg		[ 31 :  0]	PADDR;
 	
-	logic 				PENABLE;					// indicates second and subsequent cycles of an APB transfer.
-	logic 				PSELx;
-	logic					PREADY;
-	logic 				PWRITE;					// indicates an APB write ACCESS when HIGH (1) and an APB read ACCESS when LOW (0).
-
+	logic		[  2 :  0]	AHB_SLAVE_ERRORS;
+	logic		[  6 :  0]	UART_ERRORS;
+	logic 					PENABLE;					// indicates second and subsequent cycles of an APB transfer.
+	logic 					PSELx;
+	logic						PREADY;
+	logic 					PWRITE;					// indicates an APB write ACCESS when HIGH (1) and an APB read ACCESS when LOW (0).
+	
+	assign UART_ERROR_FLAG = {AHB_SLAVE_ERRORS, UART_ERRORS};
+	
 AHB_SLAVE 							AHB_APB_BRIDGE
 (
 	// INPUT LOGIC ASSIGNMENT
@@ -93,7 +98,10 @@ AHB_SLAVE 							AHB_APB_BRIDGE
 										.HREADYout				(HREADYout),
 										.HRESP					(HRESP),
 										.PSELx					(PSELx),
-										.HRDATA					(HRDATA)
+										.HRDATA					(HRDATA),
+										.AHB_SLAVE_ERRORS		(AHB_SLAVE_ERRORS),
+										
+										.HADDR					(HADDR)
 );
 
 APB_UART								APB_UART_BLOCK
@@ -124,7 +132,12 @@ APB_UART								APB_UART_BLOCK
 										
 	// UART INTERFACE PORT
 										.UART_RXD				(UART_RXD),
-										.UART_TXD				(UART_TXD)
+										.UART_TXD				(UART_TXD),
+										.UART_ERRORS			(UART_ERRORS),
+	
+	// Delete later
+										.baud_tick				(baud_tick),
+										.data_trans				(data_trans)
 );
 
 endmodule

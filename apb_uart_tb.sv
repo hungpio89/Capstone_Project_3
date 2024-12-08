@@ -24,6 +24,9 @@ logic UART_RXD;
 logic PREADY;
 logic [31:0] PRDATA;
 logic UART_TXD;
+logic	baud_tick;
+logic	[   6 :   0]	UART_ERRORS;
+logic	[11:0] data_trans;
 
 parameter CLK_PERIOD = 2; // Thời gian chu kỳ đồng hồ (10 ns cho 100 MHz)
 
@@ -49,7 +52,10 @@ APB_UART uut (
     .UART_RXD(UART_RXD),
     .PREADY(PREADY),
     .PRDATA(PRDATA),
-    .UART_TXD(UART_TXD)
+    .UART_TXD(UART_TXD),
+	 .UART_ERRORS(UART_ERRORS),
+	 .baud_tick(baud_tick),
+	 .data_trans(data_trans)
 );
 
 // Clock generation
@@ -174,110 +180,123 @@ initial begin
 	 // Chờ phản hồi PREADY và kiểm tra kết quả
 	 @(posedge PREADY);
 	
-	 // stop
-    PENABLE = 0;
-    PSEL = 0;
+	 #20 
+	 PRESETn = 0;
+	 #200 
+	 PRESETn = 1;
 	
-	 // Đọc dữ liệu cd
-    #30;
+	 // Đọc dữ liệu state
+    @(posedge baud_tick);
     PSEL = 1;
     PENABLE = 1;
     PWRITE = 0;
-    PADDR = 12'h410; // Chọn địa chỉ đọc
+    PADDR = 12'h400; // Chọn địa chỉ đọc
 	 
-	 // Đọc dữ liệu state
-    #30;
+	 // Đọc dữ liệu ctrl
+    @(posedge baud_tick);
     PSEL = 1;
     PENABLE = 1;
     PWRITE = 0;
     PADDR = 12'h404; // Chọn địa chỉ đọc
 	 
-	 // Đọc dữ liệu ctrl
-    #30;
+	 // Đọc dữ liệu cd
+    
+    @(posedge baud_tick);
     PSEL = 1;
     PENABLE = 1;
     PWRITE = 0;
     PADDR = 12'h408; // Chọn địa chỉ đọc
 	 
     // Đọc dữ liệu từ PRDATA
+	 
+    @(posedge baud_tick);
     #30;
     PSEL = 1;
     PENABLE = 1;
     PWRITE = 0;
-    PADDR = 12'h400; // Chọn địa chỉ đọc
+    PADDR = 12'h410; // Chọn địa chỉ đọc
 	 
 	 // Start bit
-    @(posedge PCLK);
+    @(posedge baud_tick);
     UART_RXD = 0; // Start bit (0)
     
     // Data bits
 	 
 	 // character m
-    @(posedge PCLK);
-    UART_RXD = 1; // Data bit 0 (1)
-    @(posedge PCLK);
+    @(posedge baud_tick);
+    UART_RXD = 0; // Data bit 0 (1)
+    @(posedge baud_tick);
     UART_RXD = 0; // Data bit 1 (0)
-    @(posedge PCLK);
+    @(posedge baud_tick);
     UART_RXD = 1; // Data bit 2 (1)
-    @(posedge PCLK);
+    @(posedge baud_tick);
     UART_RXD = 1; // Data bit 3 (1)
-    @(posedge PCLK);
+    @(posedge baud_tick);
     UART_RXD = 0; // Data bit 4 (0)
-    @(posedge PCLK);
+    @(posedge baud_tick);
     UART_RXD = 1; // Data bit 5 (1)
-    @(posedge PCLK);
+    @(posedge baud_tick);
     UART_RXD = 1; // Data bit 6 (1)
-    @(posedge PCLK);
+    @(posedge baud_tick);
     UART_RXD = 0; // Data bit 7 (0)
     
     // Parity bit (even parity)
-	 @(posedge PCLK);
+	 @(posedge baud_tick);
     UART_RXD = 0; // Parity bit (1) - even parity
     
     // Stop bit
-	 @(posedge PCLK);
+	 @(posedge baud_tick);
     UART_RXD = 1; // Stop bit (1)
-	 @(posedge PCLK);
+	 @(posedge baud_tick);
     UART_RXD = 1; // Stop bit (1) 
 
 	 // Chờ phản hồi PREADY và kiểm tra kết quả
-    wait (PREADY == 1);
-    #30;
+//    wait (PREADY == 1);
+    #3000;
 	 
 	 // Start bit
-    @(posedge PCLK);
+    @(posedge baud_tick);
     UART_RXD = 0; // Start bit (0)
     
     // Data bits
 	 
 	 // character y
-    @(posedge PCLK);
+    @(posedge baud_tick);
     UART_RXD = 1; // Data bit 0 (1)
-    @(posedge PCLK);
+    @(posedge baud_tick);
     UART_RXD = 0; // Data bit 1 (0)
-    @(posedge PCLK);
+    @(posedge baud_tick);
     UART_RXD = 0; // Data bit 2 (0)
-    @(posedge PCLK);
+    @(posedge baud_tick);
     UART_RXD = 1; // Data bit 3 (1)
-    @(posedge PCLK);
+    @(posedge baud_tick);
     UART_RXD = 1; // Data bit 4 (1)
-    @(posedge PCLK);
+    @(posedge baud_tick);
     UART_RXD = 1; // Data bit 5 (1)
-    @(posedge PCLK);
+    @(posedge baud_tick);
     UART_RXD = 1; // Data bit 6 (1)
-    @(posedge PCLK);
+    @(posedge baud_tick);
     UART_RXD = 0; // Data bit 7 (0)
     
     // Parity bit (even parity)
-	 @(posedge PCLK);
+	 @(posedge baud_tick);
     UART_RXD = 1; // Parity bit (1) - even parity
     
     // Stop bit
-	 @(posedge PCLK);
+	 @(posedge baud_tick);
     UART_RXD = 1; // Stop bit (1)
-	 @(posedge PCLK);
+	 @(posedge baud_tick);
     UART_RXD = 1; // Stop bit (1)
 
+    #3000;
+	 
+	 // Start bit
+    @(posedge baud_tick);
+    UART_RXD = 1; // Start bit (0)
+	 
+	  @(posedge baud_tick);
+    UART_RXD = 1; // Start
+	 
 	 // Chờ phản hồi PREADY và kiểm tra kết quả
     wait (PREADY == 1);
     #30;

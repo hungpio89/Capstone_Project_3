@@ -12,7 +12,9 @@ entity Thesis_Project is
         UART_RXD        : in     vl_logic;
         UART_TXD        : out    vl_logic;
         HRDATA          : out    vl_logic_vector(31 downto 0);
-        PADDR           : out    vl_logic_vector(31 downto 0);
+        HADDR           : out    vl_logic_vector(31 downto 0);
+        baud_tick       : out    vl_logic;
+        data_trans      : out    vl_logic_vector(11 downto 0);
         data_io_lcd_o   : out    vl_logic_vector(31 downto 0)
     );
 end Thesis_Project;

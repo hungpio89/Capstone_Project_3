@@ -1,0 +1,36 @@
+module error_ram (
+    input  logic        clk,           // Clock signal
+    input  logic        rst_n,         // Active low reset
+    input  logic        write_enable,  // Write enable signal
+    input  logic [31:0] write_address, // Address to write
+    input  logic [9:0]  write_error,   // Error code to write
+    input  logic        read_enable,   // Read enable signal
+    input  logic [31:0] read_address,  // Address to read
+    output logic [9:0]  read_error     // Error code read
+);
+
+    // Parameters
+    parameter DEPTH = 1024;            // Depth of the RAM (number of entries)
+
+    // Memory declaration
+    typedef struct packed {
+        logic [31:0] address;          // 32-bit address
+        logic [9:0]  error;            // 10-bit error code
+    } ram_entry_t;
+
+    ram_entry_t ram [0:DEPTH-1];       // RAM array
+
+    // Read and write pointers
+    integer i;
+    logic [9:0] error_out;
+
+    // Reset logic to initialize RAM
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            for (i = 0; i < DEPTH; i = i + 1) begin
+                ram[i].address <= 32'b0;
+                ram[i].error   <= 10'b0;
+            end
+        end else if (write_enable) begin
+            // Write logic
+            for (i=DET else 읽nt==

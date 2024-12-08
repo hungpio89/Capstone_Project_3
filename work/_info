@@ -32,7 +32,7 @@ IY<KPV78SJ=<0lTzoPR5I@0
 Z5 V`JN@9S9cnhjKRR_L]QIcM3
 S1
 Z6 dC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3
-Z7 w1732207970
+Z7 w1733518054
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/address_decode.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/address_decode.sv
 L0 1
@@ -40,11 +40,11 @@ Z8 OL;L;10.2c;57
 r1
 31
 Z9 o-work work -sv -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
-Z10 !s110 1732996450
+Z10 !s110 1733684157
 !s100 @n1I3?f8;LI7_H5;:^2D?0
 !s105 address_decode_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/address_decode.sv|
-!s108 1732996450.130000
+!s108 1733684157.382000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/address_decode.sv|
 !i10b 1
 !s85 0
@@ -74,11 +74,11 @@ Z12 !s105 arbiter_sv_unit
 vAHB_APB_UART
 R4
 R10
-IPfUS4Pg`zCSOT6O`J>6PU0
+IibGN4^Qj_N08L_XUTg4oI0
 R5
 S1
 R6
-w1732733280
+w1733679667
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/AHB_APB_UART.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/AHB_APB_UART.sv
 L0 1
@@ -87,10 +87,10 @@ r1
 31
 R9
 n@a@h@b_@a@p@b_@u@a@r@t
+!s100 RJ;l^_dzRnZ5TEaNE9==L2
 !s105 AHB_APB_UART_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/AHB_APB_UART.sv|
-!s100 5ll:K9gz:A2RnBLgG[I;^0
-!s108 1732996450.224000
+!s108 1733684157.431000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/AHB_APB_UART.sv|
 !i10b 1
 !s85 0
@@ -114,7 +114,7 @@ n@a@h@b_@bus@matrix
 !s100 kW[<JSIAj2HGK7PdAYC[N2
 !s105 AHB_BusMatrix_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/AHB_BusMatrix.sv|
-!s108 1732996450.292000
+!s108 1733684157.494000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/AHB_BusMatrix.sv|
 !i10b 1
 !s85 0
@@ -122,11 +122,11 @@ n@a@h@b_@bus@matrix
 vAHB_SLAVE
 R4
 R10
-I95FKeSjDN7MkQ6SUi5N533
+I>gV0O4lUU[I=5O=dNoSf91
 R5
 S1
 R6
-w1732733080
+w1733679584
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/AHB_SLAVE.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/AHB_SLAVE.sv
 L0 1
@@ -135,36 +135,58 @@ r1
 31
 R9
 n@a@h@b_@s@l@a@v@e
+!s100 Xn<^MgULlaYIRR33=aE801
 !s105 AHB_SLAVE_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/AHB_SLAVE.sv|
-!s100 9G@JSNSEGWmgfS0lk97jj3
-!s108 1732996450.355000
+!s108 1733684157.564000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/AHB_SLAVE.sv|
 !i10b 1
 !s85 0
 !i111 0
-vapb_interface
+vahb_slave_if
 R4
 R10
-IQc]XiBd6TZ2<d1b8m:]=63
+IEmVMhEkTZT6T=jYJ]L=Hc0
 R5
 S1
 R6
-w1732731177
-8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_interface.sv
-FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_interface.sv
+R7
+8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/ahb_slave_if.sv
+FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/ahb_slave_if.sv
 L0 1
 R8
 r1
 31
 R9
-!s105 apb_interface_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_interface.sv|
-!s100 ;`MGGEWnk0PBH3AQ?YDfB1
-!s108 1732996450.412000
-!s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_interface.sv|
+!s100 5AER5EW4]HlOa8UOLY]b:1
+!s105 ahb_slave_if_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/ahb_slave_if.sv|
+!s108 1733684157.623000
+!s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/ahb_slave_if.sv|
 !i10b 1
 !s85 0
+!i111 0
+vapb_interface
+R4
+R5
+r1
+31
+ICA]amI3oVXV?`CH=hJbUl3
+S1
+R6
+w1733683505
+8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_interface.sv
+FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_interface.sv
+L0 1
+R8
+R9
+!s85 0
+!s100 R561eS;kG^LVa;7E26NA<3
+!s105 apb_interface_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_interface.sv|
+!s108 1733684157.686000
+!s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_interface.sv|
+!i10b 1
 !i111 0
 vAPB_MASTER
 R4
@@ -185,34 +207,33 @@ n@a@p@b_@m@a@s@t@e@r
 !s100 lL6knI_:IM<YZSN:F[]n22
 !s105 APB_MASTER_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/APB_MASTER.sv|
-!s108 1732996450.471000
+!s108 1733684157.755000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/APB_MASTER.sv|
 !i10b 1
 !s85 0
 !i111 0
 vAPB_UART
 R4
-R10
-IWLLAhZLnG_510fW6SkT473
 R5
+r1
+31
+I14VA`e[eMHH@APJW;^zF91
 S1
 R6
-w1732733491
+w1733683011
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/APB_UART.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/APB_UART.sv
 L0 1
 R8
-r1
-31
 R9
 n@a@p@b_@u@a@r@t
+!s85 0
+!s100 YahS6K8nlN0@dJe6:M@dm1
 !s105 APB_UART_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/APB_UART.sv|
-!s100 ;9e^<PBNP7o9eXc?>G_YD0
-!s108 1732996450.528000
+!s108 1733684157.821000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/APB_UART.sv|
 !i10b 1
-!s85 0
 !i111 0
 varbiter
 R4
@@ -232,14 +253,13 @@ r1
 R9
 !s100 RX[0XWM2kU@0RknGg_6]E3
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/arbiter.sv|
-!s108 1732996450.643000
+!s108 1733684157.946000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/arbiter.sv|
 !i10b 1
 !s85 0
 !i111 0
 varbiter_tb
 R4
-R10
 I68CI@[K]Y3;S9dcbGIWQH1
 R5
 Z13 !s105 arbiter_tb_sv_unit
@@ -253,18 +273,20 @@ R8
 r1
 31
 R9
+Z14 !s110 1733684158
 !s100 RCgEDaMOb;^zj7?cWUg4S2
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/arbiter_tb.sv|
-!s108 1732996450.699000
+!s108 1733684158.013000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/arbiter_tb.sv|
 !i10b 1
 !s85 0
 !i111 0
 vbaud_rate_divisor
 R4
-R10
-I0O_7cjgC<@J9j_2SbBL5o2
 R5
+r1
+31
+I0O_7cjgC<@J9j_2SbBL5o2
 S1
 R6
 R7
@@ -272,22 +294,21 @@ R7
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/baud_rate_divisor.sv
 L0 1
 R8
-r1
-31
 R9
+!s85 0
 !s100 @C<4^zJ3>8fnfU@8o`LTz2
 !s105 baud_rate_divisor_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/baud_rate_divisor.sv|
-!s108 1732996450.755000
+!s108 1733684158.075000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/baud_rate_divisor.sv|
 !i10b 1
-!s85 0
 !i111 0
 vBAUD_RATE_GENERATOR
 R4
-R10
-IaLT1FgJ^Zg:hnfPBi6NL02
 R5
+r1
+31
+IaLT1FgJ^Zg:hnfPBi6NL02
 S1
 R6
 R7
@@ -295,26 +316,24 @@ R7
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/BAUD_RATE_GENERATOR.sv
 L0 1
 R8
-r1
-31
 R9
 n@b@a@u@d_@r@a@t@e_@g@e@n@e@r@a@t@o@r
+!s85 0
 !s100 UgH0^7Y_gZjJoQUhhH99E0
 !s105 BAUD_RATE_GENERATOR_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/BAUD_RATE_GENERATOR.sv|
-!s108 1732996450.810000
+!s108 1733684158.159000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/BAUD_RATE_GENERATOR.sv|
 !i10b 1
-!s85 0
 !i111 0
 vBAUD_RATE_GENERATOR_tb
 R4
-Z14 !s110 1732996452
+Z15 !s110 1733684160
 I^iXC[JDe:4fMhbgIUbzT_2
 R5
 S1
 R6
-Z15 w1732207971
+Z16 w1733518055
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_baud_rate_generator.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_baud_rate_generator.sv
 L0 1
@@ -326,14 +345,14 @@ n@b@a@u@d_@r@a@t@e_@g@e@n@e@r@a@t@o@r_tb
 !s100 <[[UB7Y=0gY7:IC=UC;@D0
 !s105 tb_baud_rate_generator_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_baud_rate_generator.sv|
-!s108 1732996452.701000
+!s108 1733684160.667000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_baud_rate_generator.sv|
 !i10b 1
 !s85 0
 !i111 0
 vbcdtohex
 R4
-R10
+R14
 ICYI7c42HE0QofKK>]d7Q42
 R5
 S1
@@ -349,14 +368,14 @@ R9
 !s100 BR:Sj8k2<Pal=_b=PcN;a1
 !s105 bcdtohex_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/bcdtohex.sv|
-!s108 1732996450.863000
+!s108 1733684158.223000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/bcdtohex.sv|
 !i10b 1
 !s85 0
 !i111 0
 vbit_counter_unit
 R4
-R10
+R14
 I<=]F@P[4FK<;8DfZ3J]073
 R5
 S1
@@ -372,14 +391,14 @@ R9
 !s100 2Cnfa=ldCaME:?DhV_E0R2
 !s105 bit_counter_unit_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/bit_counter_unit.sv|
-!s108 1732996450.911000
+!s108 1733684158.286000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/bit_counter_unit.sv|
 !i10b 1
 !s85 0
 !i111 0
 vcomparator_bit
 R4
-R10
+R14
 I]L=7H<fjCJQICELcDM4KN1
 R5
 S1
@@ -395,13 +414,14 @@ R9
 !s100 bPTdWiR[Lb<[X8VWM2ZYX3
 !s105 comparator_bit_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/comparator_bit.sv|
-!s108 1732996450.959000
+!s108 1733684158.346000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/comparator_bit.sv|
 !i10b 1
 !s85 0
 !i111 0
 vcomparator_unsigned_32bit
 R4
+R14
 IfNP2<bb<a[>?l;I:N1FJ33
 R5
 S1
@@ -414,66 +434,86 @@ R8
 r1
 31
 R9
-Z16 !s110 1732996451
 !s100 dWV^zi@3Fb`LhciE:[HcK2
 !s105 comparator_unsigned_32bit_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/comparator_unsigned_32bit.sv|
-!s108 1732996451.008000
+!s108 1733684158.410000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/comparator_unsigned_32bit.sv|
 !i10b 1
 !s85 0
 !i111 0
 vcompare_5bit
 R4
-R16
-I8@oCZG9ZSW:Ga8[<>];Ii0
 R5
+r1
+31
+I8@oCZG9ZSW:Ga8[<>];Ii0
 S1
 R6
-w1732471517
+R7
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/compare_5bit.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/compare_5bit.sv
 L0 1
 R8
-r1
-31
 R9
+!s85 0
 !s100 KN]OV8ocOO0jU_JlVmdnN2
 !s105 compare_5bit_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/compare_5bit.sv|
-!s108 1732996451.058000
+!s108 1733684158.471000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/compare_5bit.sv|
 !i10b 1
+!i111 0
+vctrl_interface_signal
+R4
+R5
+r1
+31
+I1kIUeenhlP1a2O5AliYa32
+S1
+R6
+w1733683126
+8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/ctrl_interface_signal.sv
+FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/ctrl_interface_signal.sv
+L0 1
+R8
+R9
 !s85 0
+!s100 =l?^Oc:zNBT]RaY]HgnYd1
+!s105 ctrl_interface_signal_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/ctrl_interface_signal.sv|
+!s108 1733684158.534000
+!s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/ctrl_interface_signal.sv|
+!i10b 1
 !i111 0
 vcustom_fsm_wr_rd
 R4
-R16
-IJ6TlV66[nnLfUKTXU?hCQ3
 R5
+r1
+31
+IG]_Q1ahz_?P<F2^o0fST[3
 S1
 R6
-w1732729838
+w1733678250
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/custom_fsm_wr_rd.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/custom_fsm_wr_rd.sv
 L0 1
 R8
-r1
-31
 R9
+!s85 0
+!s100 Z382h>nde201L]dGSlL4Q3
 !s105 custom_fsm_wr_rd_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/custom_fsm_wr_rd.sv|
-!s100 ?@]QbF:ejBV41iHDNiQL13
-!s108 1732996451.107000
+!s108 1733684158.599000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/custom_fsm_wr_rd.sv|
 !i10b 1
-!s85 0
 !i111 0
 vD_FF_12bit
 R4
-R16
-IM>@gRX:8O>Y;RzIE2h;@M3
 R5
+r1
+31
+IM>@gRX:8O>Y;RzIE2h;@M3
 S1
 R6
 R7
@@ -481,21 +521,19 @@ R7
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_12bit.sv
 L0 1
 R8
-r1
-31
 R9
 n@d_@f@f_12bit
+!s85 0
 !s100 :R8l32mW:>BbL?e@c6gXE1
 !s105 D_FF_12bit_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_12bit.sv|
-!s108 1732996451.361000
+!s108 1733684158.895000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_12bit.sv|
 !i10b 1
-!s85 0
 !i111 0
 vD_FF_1bit
 R4
-R16
+R14
 I`oI2SQPH?_6:4AM0jOSU43
 R5
 S1
@@ -512,14 +550,14 @@ n@d_@f@f_1bit
 !s100 ]?a9C>GA5D=@mZ==DD[6M0
 !s105 D_FF_1bit_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_1bit.sv|
-!s108 1732996451.158000
+!s108 1733684158.659000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_1bit.sv|
 !i10b 1
 !s85 0
 !i111 0
 vD_FF_1bit_with_Sel
 R4
-R16
+R14
 IWlI7U]YA9461VN]V5o1<[3
 R5
 S1
@@ -536,14 +574,14 @@ n@d_@f@f_1bit_with_@sel
 !s100 KfEQiRfj36<g4_S1nUE1^1
 !s105 D_FF_1bit_with_Sel_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_1bit_with_Sel.sv|
-!s108 1732996451.211000
+!s108 1733684158.717000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_1bit_with_Sel.sv|
 !i10b 1
 !s85 0
 !i111 0
 vD_FF_32bit
 R4
-R16
+R14
 IDhgkIn<95aelW[FX?VT=j1
 R5
 S1
@@ -560,14 +598,13 @@ n@d_@f@f_32bit
 !s100 3hUF3[3V;bGh7W;HbIF<E0
 !s105 D_FF_32bit_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_32bit.sv|
-!s108 1732996451.412000
+!s108 1733684158.959000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_32bit.sv|
 !i10b 1
 !s85 0
 !i111 0
 vD_FF_32bit_with_Sel
 R4
-R16
 IA6k_TOe7hZc61Te<X[9ea0
 R5
 S1
@@ -581,17 +618,18 @@ r1
 31
 R9
 n@d_@f@f_32bit_with_@sel
+Z17 !s110 1733684159
 !s100 ?TJdFd_NnT9QRLkXSDa5z3
 !s105 D_FF_32bit_with_Sel_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_32bit_with_Sel.sv|
-!s108 1732996451.464000
+!s108 1733684159.018000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_32bit_with_Sel.sv|
 !i10b 1
 !s85 0
 !i111 0
 vD_FF_4BIT
 R4
-R16
+R14
 I1gScfcSOBk><1e<@J1oRn2
 R5
 S1
@@ -608,14 +646,14 @@ n@d_@f@f_4@b@i@t
 !s100 W9kOzd2S;z5nh5;MTifTO1
 !s105 D_FF_4BIT_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_4BIT.sv|
-!s108 1732996451.265000
+!s108 1733684158.781000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_4BIT.sv|
 !i10b 1
 !s85 0
 !i111 0
 vD_FF_64bit
 R4
-R16
+R17
 IeZ20mVgH8A9<KZ9M:WRDe1
 R5
 S1
@@ -632,16 +670,17 @@ n@d_@f@f_64bit
 !s100 a0fXT2Bc:L[AH^z;Lm5]o3
 !s105 D_FF_64bit_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_64bit.sv|
-!s108 1732996451.517000
+!s108 1733684159.078000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_64bit.sv|
 !i10b 1
 !s85 0
 !i111 0
 vD_FF_8bit
 R4
-R16
-ITLZih`Kb_g3lB2bI3lLUl1
 R5
+r1
+31
+ITLZih`Kb_g3lB2bI3lLUl1
 S1
 R6
 R7
@@ -649,26 +688,24 @@ R7
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_8bit.sv
 L0 1
 R8
-r1
-31
 R9
 n@d_@f@f_8bit
+!s85 0
 !s100 9dKfkd@cm_=UeIAOAAn^=2
 !s105 D_FF_8bit_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_8bit.sv|
-!s108 1732996451.313000
+!s108 1733684158.837000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/D_FF_8bit.sv|
 !i10b 1
-!s85 0
 !i111 0
 vd_ff_trick
 R4
-R16
+R17
 IIn;I_b0eb;^1aK_Pi0gX73
 R5
 S1
 R6
-w1732336661
+R7
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/d_ff_trick.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/d_ff_trick.sv
 L0 1
@@ -679,19 +716,19 @@ R9
 !s100 _l?g?jQVOl?]2;0XJz9KB3
 !s105 d_ff_trick_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/d_ff_trick.sv|
-!s108 1732996451.567000
+!s108 1733684159.139000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/d_ff_trick.sv|
 !i10b 1
 !s85 0
 !i111 0
 vd_ff_trick_tb
 R4
-R16
+R17
 IL<96=0X@1DoVb6]GGe9Bg2
 R5
 S1
 R6
-w1732336742
+R7
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/d_ff_trick_tb.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/d_ff_trick_tb.sv
 L0 1
@@ -702,15 +739,15 @@ R9
 !s100 dBj79jE:l];JV2E?1IF<B0
 !s105 d_ff_trick_tb_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/d_ff_trick_tb.sv|
-!s108 1732996451.617000
+!s108 1733684159.201000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/d_ff_trick_tb.sv|
 !i10b 1
 !s85 0
 !i111 0
 vDataLengthDecoder
 R4
-R16
-IdgfVa1A9D?@ePOCEG[cL60
+R17
+IeW5zQH@bOmL3RgCJ5e8Rm1
 R5
 S1
 R6
@@ -723,17 +760,17 @@ r1
 31
 R9
 n@data@length@decoder
-!s100 zk?j]QzzLYjIPKVRmc`V[2
+!s100 `jNZZ<CS<oRPEOfnUOOA;1
 !s105 DataLengthDecoder_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/DataLengthDecoder.sv|
-!s108 1732996451.669000
+!s108 1733684159.266000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/DataLengthDecoder.sv|
 !i10b 1
 !s85 0
 !i111 0
 vDIVIDER
 R4
-R16
+R17
 ILSBc_?Jk]fdf>zN>o=a<P1
 R5
 S1
@@ -750,19 +787,19 @@ n@d@i@v@i@d@e@r
 !s100 9Xn=V9LSfVUc4a2EPFWNB3
 !s105 DIVIDER_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/DIVIDER.sv|
-!s108 1732996451.762000
+!s108 1733684159.378000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/DIVIDER.sv|
 !i10b 1
 !s85 0
 !i111 0
 vencoder_method
 R4
-Z17 !s110 1732996453
-INicX7<NaoLkcnz6=f3XJf1
+R17
+IN2=ddGe<[<hYKj0[^oJVM3
 R5
 S1
 R6
-w1732733128
+w1733645270
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/encoder_method.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/encoder_method.sv
 L0 1
@@ -770,17 +807,17 @@ R8
 r1
 31
 R9
+!s100 kg`J=mEAOIQ9fTXh=8^lW0
 !s105 encoder_method_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/encoder_method.sv|
-!i10b 1
-!s100 FAM;j@0EXRNzISW227NPj3
-!s85 0
-!s108 1732996453.393000
+!s108 1733684159.443000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/encoder_method.sv|
+!i10b 1
+!s85 0
 !i111 0
 vEncoderAddressBehave
 R4
-R16
+R17
 IOWceJXoD2]Eo`5k>YVziV2
 R5
 S1
@@ -797,19 +834,19 @@ n@encoder@address@behave
 !s100 zfYaMKCBkQaoGCbm]C[G;1
 !s105 EncoderAddressBehave_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/EncoderAddressBehave.sv|
-!s108 1732996451.810000
+!s108 1733684159.505000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/EncoderAddressBehave.sv|
 !i10b 1
 !s85 0
 !i111 0
 vEncoderDataLength
 R4
-R16
-I4kUWOl5Vka=^WSEeSZIzc3
+R17
+I8OUS[HbPhh@SohS4?kV6B2
 R5
 S1
 R6
-w1732639172
+R7
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/EncoderDataLength.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/EncoderDataLength.sv
 L0 1
@@ -818,45 +855,67 @@ r1
 31
 R9
 n@encoder@data@length
-!s100 G>PA;VHQC98g41Kh92CM=1
+!s100 ?Z44?hL<DT:@EVJ@k?:800
 !s105 EncoderDataLength_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/EncoderDataLength.sv|
-!s108 1732996451.859000
+!s108 1733684159.566000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/EncoderDataLength.sv|
 !i10b 1
 !s85 0
 !i111 0
-vfifo_read_memory
+verror_ram
 R4
-R16
-I`]iWPd5<bhF=KWPT^EdmZ1
+Z18 !s110 1733684161
+I4]B[M^G[PHdFo8JUidN`>0
 R5
-Z18 !s105 fifo_read_memory_sv_unit
 S1
 R6
-w1732556095
-8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/fifo_read_memory.sv
-FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/fifo_read_memory.sv
+w1733680663
+8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/error_ram.sv
+FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/error_ram.sv
 L0 1
 R8
 r1
 31
 R9
-!s100 P9;ZfA_PH=cnj73F;B@5k1
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/fifo_read_memory.sv|
-!s108 1732996451.911000
-!s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/fifo_read_memory.sv|
+!s100 WZenlDlHc:WRYQn@PXiI<0
+!s105 error_ram_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/error_ram.sv|
+!s108 1733684161.764000
+!s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/error_ram.sv|
 !i10b 1
 !s85 0
 !i111 0
+vfifo_read_memory
+R4
+R5
+r1
+31
+IcDo=U_KH]=L<fX^Bcc=eX3
+Z19 !s105 fifo_read_memory_sv_unit
+S1
+R6
+w1733564840
+8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/fifo_read_memory.sv
+FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/fifo_read_memory.sv
+L0 1
+R8
+R9
+!s85 0
+!s100 HOjWOiFEj?0NX]=_^Xnzo2
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/fifo_read_memory.sv|
+!s108 1733684159.634000
+!s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/fifo_read_memory.sv|
+!i10b 1
+!i111 0
 vFSM_AHB
 R4
-R16
+R17
 IXf:[_c0KENF:zIm`I5^Qg3
 R5
 S1
 R6
-R7
+w1733679474
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/FSM_AHB.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/FSM_AHB.sv
 L0 1
@@ -868,13 +927,14 @@ n@f@s@m_@a@h@b
 !s100 bk]ZMP6dXzN4HkB=E67=02
 !s105 FSM_AHB_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/FSM_AHB.sv|
-!s108 1732996451.961000
+!s108 1733684159.695000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/FSM_AHB.sv|
 !i10b 1
 !s85 0
 !i111 0
 vFSM_APB
 R4
+R17
 IZL;j9F=>zi_2?AVYB5eB83
 R5
 S1
@@ -888,18 +948,17 @@ r1
 31
 R9
 n@f@s@m_@a@p@b
-R14
 !s100 EE1_KiWb5aD<k7G7LD0DD3
 !s105 FSM_APB_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/FSM_APB.sv|
-!s108 1732996452.032000
+!s108 1733684159.753000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/FSM_APB.sv|
 !i10b 1
 !s85 0
 !i111 0
 vMUX2TO1_1bit
 R4
-R14
+R17
 I5XAWiE3`3Y2Dn;8J<E0fi1
 R5
 S1
@@ -916,19 +975,19 @@ n@m@u@x2@t@o1_1bit
 !s100 V35fD10f`<7AXDUk^[RKA1
 !s105 MUX2TO1_1bit_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/MUX2TO1_1bit.sv|
-!s108 1732996452.084000
+!s108 1733684159.818000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/MUX2TO1_1bit.sv|
 !i10b 1
 !s85 0
 !i111 0
 vmux4to1_4bit
 R4
-R14
+R17
 ID_<^]b@bD@4Z6Rc3;iZPb3
 R5
 S1
 R6
-R15
+R16
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/mux4to1_4bit.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/mux4to1_4bit.sv
 L0 1
@@ -939,65 +998,110 @@ R9
 !s100 n0TDXJEBYYcE]kNE;BGNh2
 !s105 mux4to1_4bit_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/mux4to1_4bit.sv|
-!s108 1732996452.136000
+!s108 1733684159.887000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/mux4to1_4bit.sv|
+!i10b 1
+!s85 0
+!i111 0
+vor_1bit
+R4
+R5
+r1
+31
+I:nOD5[z1a^ffblk9?7=XR3
+S1
+R6
+w1733682055
+8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/or_1bit.sv
+FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/or_1bit.sv
+L0 1
+R8
+R9
+!s85 0
+!s100 f;SMeM_`e7S9LVlC0G=cW2
+!s105 or_1bit_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/or_1bit.sv|
+!s108 1733684161.701000
+!s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/or_1bit.sv|
+!i10b 1
+!i111 0
+vpriority_selector
+R4
+R18
+I<66fGM=NF>bLHc;imNlF22
+R5
+S1
+R6
+w1733658165
+8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/priority_selector.sv
+FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/priority_selector.sv
+L0 1
+R8
+r1
+31
+R9
+!s100 Q>^>PZkAYLTcE5>zBLJ131
+!s105 priority_selector_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/priority_selector.sv|
+!s108 1733684161.574000
+!s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/priority_selector.sv|
 !i10b 1
 !s85 0
 !i111 0
 vram
 R4
-R5
-r1
-!s85 0
-31
+R17
 IaW31FhQWHFJG=IJ23hmPk3
+R5
 S1
 R6
-R15
+w1733521543
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/ram.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/ram.sv
 L0 1
 R8
+r1
+31
 R9
 !s100 9g8ReS`lQIIC>[C8Col4H3
 !s105 ram_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/ram.sv|
-!s108 1732996452.196000
+!s108 1733684159.950000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/ram.sv|
 !i10b 1
+!s85 0
 !i111 0
 vreceive_FIFO
 R4
-R14
-Izd_;Cg5^RQ[ndVdXR1gk41
 R5
+r1
+31
+I;G]IH>fkED?KQd^ejQMm31
 S1
 R6
-w1732557904
+w1733566807
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/receive_FIFO.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/receive_FIFO.sv
 L0 1
 R8
-r1
-31
 R9
 nreceive_@f@i@f@o
-!s100 G?H13bR@H_P5K[O<Wd4Ai0
+!s85 0
+!s100 WXL]g1d;C80<fQ^ZJj`_<1
 !s105 receive_FIFO_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/receive_FIFO.sv|
-!s108 1732996452.318000
+!s108 1733684160.074000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/receive_FIFO.sv|
 !i10b 1
-!s85 0
 !i111 0
 vregister_enable_only
 R4
-R14
+R15
 IJY1ZSB`53NgzBS3VQz4=B0
 R5
 S1
 R6
-R15
+R16
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/register_enable_only.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/register_enable_only.sv
 L0 1
@@ -1008,7 +1112,7 @@ R9
 !s100 a54TTY1hFdaBV^XchFZUP1
 !s105 register_enable_only_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/register_enable_only.sv|
-!s108 1732996452.373000
+!s108 1733684160.135000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/register_enable_only.sv|
 !i10b 1
 !s85 0
@@ -1027,7 +1131,7 @@ FC:/Users/Admin/Desktop/HK241/Capstone_Project_3/fifo_read_memory.sv
 L0 1
 R8
 R9
-R18
+R19
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/Capstone_Project_3/fifo_read_memory.sv|
 !s107 C:/Users/Admin/Desktop/HK241/Capstone_Project_3/fifo_read_memory.sv|
 !s100 K;7DgSjFlVdlHYI^DgAgJ3
@@ -1037,30 +1141,29 @@ R18
 !i111 0
 vrx_fsm
 R4
-R14
-I3C6P=j=Q?G>KEB8UOF^4H0
 R5
+r1
+31
+I_3_nLDR;4YTIDoFjC4=aA2
 S1
 R6
-w1732728567
+w1733599984
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/rx_fsm.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/rx_fsm.sv
 L0 1
 R8
-r1
-31
 R9
+!s85 0
+!s100 6?5Dm8zE2PRhKF4]9`nFE2
 !s105 rx_fsm_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/rx_fsm.sv|
-!s100 5YDN9oGNdB9B@JG1HcI]:1
-!s108 1732996452.431000
+!s108 1733684160.214000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/rx_fsm.sv|
 !i10b 1
-!s85 0
 !i111 0
 vSel_Clk
 R4
-R14
+R15
 ITohe5O;<CK^Zl5m6]jRm]3
 R5
 S1
@@ -1077,54 +1180,75 @@ n@sel_@clk
 !s100 d^:Y`TUmD0M9^D6E>Sk[z0
 !s105 Sel_Clk_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/Sel_Clk.sv|
-!s108 1732996452.488000
+!s108 1733684160.273000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/Sel_Clk.sv|
 !i10b 1
 !s85 0
 !i111 0
 vshift_register_rd
 R4
-R14
-IT9MlR=W6UYNC>WNO8cQ?<2
 R5
+r1
+!s85 0
+31
+IT9MlR=W6UYNC>WNO8cQ?<2
 S1
 R6
-w1732210689
+R16
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/shift_register_rd.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/shift_register_rd.sv
 L0 1
 R8
-r1
-31
 R9
 !s100 coU6kBz^=i`R5ODA?Ro5:0
 !s105 shift_register_rd_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/shift_register_rd.sv|
-!s108 1732996452.542000
+!s108 1733684160.331000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/shift_register_rd.sv|
 !i10b 1
-!s85 0
 !i111 0
 vshift_register_wr
 R4
-R14
+R5
+r1
+31
 ITEhIG1bg>Be^:O3NC3X@o3
+S1
+R6
+R16
+8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/shift_register_wr.sv
+FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/shift_register_wr.sv
+L0 1
+R8
+R9
+!s85 0
+!s100 G>ED`=f^4PmU_zZhB0LU52
+!s105 shift_register_wr_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/shift_register_wr.sv|
+!s108 1733684160.399000
+!s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/shift_register_wr.sv|
+!i10b 1
+!i111 0
+vsram
+R4
+R15
+IK4;XWST6cT]O7i7[LMOXQ2
 R5
 S1
 R6
-R15
-8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/shift_register_wr.sv
-FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/shift_register_wr.sv
+R16
+8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/sram.sv
+FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/sram.sv
 L0 1
 R8
 r1
 31
 R9
-!s100 G>ED`=f^4PmU_zZhB0LU52
-!s105 shift_register_wr_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/shift_register_wr.sv|
-!s108 1732996452.596000
-!s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/shift_register_wr.sv|
+!s100 MCjDnEUd:mO6Ee9T`^JJ01
+!s105 sram_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/sram.sv|
+!s108 1733684160.463000
+!s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/sram.sv|
 !i10b 1
 !s85 0
 !i111 0
@@ -1151,14 +1275,37 @@ R9
 !i10b 1
 !s85 0
 !i111 0
+vtb_ahb_master
+R4
+R15
+IPeKKif<5>;Ak0foE>5X1_1
+R5
+S1
+R6
+R16
+8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_ahb_master_ram.sv
+FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_ahb_master_ram.sv
+L0 3
+R8
+r1
+31
+R9
+!s100 G<Ni@08[3RUE:2I>oJS_z3
+!s105 tb_ahb_master_ram_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_ahb_master_ram.sv|
+!s108 1733684160.605000
+!s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_ahb_master_ram.sv|
+!i10b 1
+!s85 0
+!i111 0
 vtb_AHB_SLAVE
 R4
-R14
+R15
 ILgjn`>6NHA3E@8]HU7=;g0
 R5
 S1
 R6
-w1732645450
+R16
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_ahb_apb_bridge.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_ahb_apb_bridge.sv
 L0 1
@@ -1170,65 +1317,134 @@ ntb_@a@h@b_@s@l@a@v@e
 !s100 UZzE@8b[fbA]NfQ:kfJ5^3
 !s105 tb_ahb_apb_bridge_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_ahb_apb_bridge.sv|
-!s108 1732996452.648000
+!s108 1733684160.526000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_ahb_apb_bridge.sv|
 !i10b 1
 !s85 0
 !i111 0
-vtb_APB_UART
+vTB_APB_UART
 R4
-I@SKX5hl]K8`?31zNbOKB]3
 R5
+r1
+31
+IA4[EfMTn]5n0VeT5[Vdei1
+Z20 !s105 apb_uart_tb_sv_unit
 S1
 R6
-R15
+w1733573927
+Z21 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_uart_tb.sv
+Z22 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_uart_tb.sv
+L0 1
+R8
+Z23 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_uart_tb.sv|
+R9
+n@t@b_@a@p@b_@u@a@r@t
+Z24 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_uart_tb.sv|
+!s100 iKEU9jKRZ46g0KYUA4i_a1
+!s108 1733573935.559000
+!s85 0
+!i10b 1
+!i111 0
+vtb_APB_UART
+R4
+R5
+r1
+31
+I@SKX5hl]K8`?31zNbOKB]3
+S1
+R6
+w1732207971
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_apb_uart.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_apb_uart.sv
 L0 1
 R8
-r1
-31
 R9
 ntb_@a@p@b_@u@a@r@t
-!s110 1732474797
 !s100 B0fj=I0T1W7HBoP9S4ejl2
 !s105 tb_apb_uart_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_apb_uart.sv|
 !s108 1732474797.137000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_apb_uart.sv|
+!s85 0
+!i10b 1
+!i111 0
+vtb_error_ram
+R4
+R18
+ILHbTSWaW=fA8V3U<J?>=D1
+R5
+S1
+R6
+w1733680740
+8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_error_ram.sv
+FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_error_ram.sv
+L0 1
+R8
+r1
+31
+R9
+!s100 ?RbeDnQ5l4P>^T<z9g^>l2
+!s105 tb_error_ram_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_error_ram.sv|
+!i10b 1
+!s85 0
+!s108 1733684161.845000
+!s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_error_ram.sv|
+!i111 0
+vtb_priority_selector
+R4
+R18
+IeYN8ie:N9JlS_m_A1K`>00
+R5
+S1
+R6
+w1733658373
+8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_priority_selector.sv
+FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_priority_selector.sv
+L0 1
+R8
+r1
+31
+R9
+!s100 di8GZAS@QN7jzh2Ehg`Rg1
+!s105 tb_priority_selector_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_priority_selector.sv|
+!s108 1733684161.636000
+!s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_priority_selector.sv|
 !i10b 1
 !s85 0
 !i111 0
 vtb_ram
 R4
-R5
-r1
-31
 I@D_h[8SiUj5V>b@o0fCA<3
+R5
 S1
 R6
-R15
+R16
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/ram_tb.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/ram_tb.sv
 L0 1
 R8
+r1
+31
 R9
-!s85 0
+R15
 !s100 Cl>oUOnDE<>BV`ZaUK5Um1
 !s105 ram_tb_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/ram_tb.sv|
-!s108 1732996452.254000
+!s108 1733684160.009000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/ram_tb.sv|
 !i10b 1
+!s85 0
 !i111 0
 vtb_receive_FIFO
 R4
-R14
+R15
 ImPh09_z?:?VfY]Qcm=aQ=3
 R5
 S1
 R6
-R15
+R16
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_receive_FIFO.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_receive_FIFO.sv
 L0 1
@@ -1240,19 +1456,42 @@ ntb_receive_@f@i@f@o
 !s100 ec0TAb5_]^8DJOnd@@Hk13
 !s105 tb_receive_FIFO_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_receive_FIFO.sv|
-!s108 1732996452.752000
+!s108 1733684160.730000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_receive_FIFO.sv|
+!i10b 1
+!s85 0
+!i111 0
+vtb_sram
+R4
+R15
+IB@zif7SeHTmd]G_=0cCeb1
+R5
+S1
+R6
+R16
+8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_sram.sv
+FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_sram.sv
+L0 3
+R8
+r1
+31
+R9
+!s100 Ha]=TWBIh7SkdmJT:CY441
+!s105 tb_sram_sv_unit
+!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_sram.sv|
+!s108 1733684160.796000
+!s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_sram.sv|
 !i10b 1
 !s85 0
 !i111 0
 vtest_ver2
 R4
-R14
+R15
 I>TMElg9Z>BI833X?5Nc]S2
 R5
 S1
 R6
-R15
+R16
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver2.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver2.sv
 L0 1
@@ -1263,19 +1502,19 @@ R9
 !s100 `fU1<Pj`gZX:GPkaC__WO3
 !s105 test_ver2_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver2.sv|
-!s108 1732996452.806000
+!s108 1733684160.861000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver2.sv|
 !i10b 1
 !s85 0
 !i111 0
 vtest_ver3
 R4
-R14
+R15
 IQBfAa<lMJgmYQo;Jcln[K2
 R5
 S1
 R6
-R15
+R16
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver3.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver3.sv
 L0 1
@@ -1286,19 +1525,18 @@ R9
 !s100 gbc`@PTH2R?Bo[i>4oFbO1
 !s105 test_ver3_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver3.sv|
-!s108 1732996452.860000
+!s108 1733684160.926000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver3.sv|
 !i10b 1
 !s85 0
 !i111 0
 vtest_ver4
 R4
-R14
 IQWNHDed@:3S6Bj7Rh]HaO1
 R5
 S1
 R6
-R15
+R16
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver4.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver4.sv
 L0 1
@@ -1306,22 +1544,23 @@ R8
 r1
 31
 R9
+R18
 !s100 fL32iH<SUzGh4[5Y[Y0in2
 !s105 test_ver4_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver4.sv|
-!s108 1732996452.911000
+!s108 1733684160.989000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver4.sv|
 !i10b 1
 !s85 0
 !i111 0
 vtest_ver5
 R4
-R14
-IRXTO0Vbm2_KCYKecR>6PM3
+R18
+Iai[RjCMnhQ?LW11aHdbbc3
 R5
 S1
 R6
-w1732554611
+w1733571504
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver5.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver5.sv
 L0 1
@@ -1329,45 +1568,45 @@ R8
 r1
 31
 R9
-!s100 ]=m6LBJR6g7QzmjJbK?cO3
+!s100 fPVTJ7<hNUUXgUzNKQl<X1
 !s105 test_ver5_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver5.sv|
-!s108 1732996452.962000
+!s108 1733684161.056000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/test_ver5.sv|
 !i10b 1
 !s85 0
 !i111 0
 vtestbench_APB_UART
 R4
-R10
-IW9k<=WZS<49bJ_MoLh9<?1
 R5
-S1
-R6
-w1732559398
-8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_uart_tb.sv
-FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_uart_tb.sv
-L0 1
-R8
 r1
 31
+I=7XkfjQl^8zZc]]ic50Mj3
+R20
+S1
+R6
+w1733684149
+R21
+R22
+L0 1
+R8
+R23
 R9
 ntestbench_@a@p@b_@u@a@r@t
-!s100 E9XI:OSN>Oiljh`_VYQ?e2
-!s105 apb_uart_tb_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_uart_tb.sv|
-!s108 1732996450.585000
-!s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_uart_tb.sv|
-!i10b 1
+R24
 !s85 0
+!s100 I`aiFdVnfn;Dn<GC9@zPa3
+!s108 1733684157.886000
+!i10b 1
 !i111 0
 vThesis_Project
 R4
-I2Wo81LFPKiWfE=[EYzdM?2
+R18
+I`boR67lHg_nR8=J0=>z:a3
 R5
 S1
 R6
-w1732996418
+w1733679725
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/Thesis_Project.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/Thesis_Project.sv
 L0 1
@@ -1376,70 +1615,67 @@ r1
 31
 R9
 n@thesis_@project
-R17
+!s100 Ym1FF7c6>2kk<4=[<cHn40
 !s105 Thesis_Project_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/Thesis_Project.sv|
-!s100 <1:TWX;4i[hBe[GOo:]Fl2
-!s108 1732996453.014000
+!s108 1733684161.119000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/Thesis_Project.sv|
 !i10b 1
 !s85 0
 !i111 0
 vtransfer_validate
 R4
-R17
-IFiC;h6iLBHHh:C@XaKGcd0
 R5
+r1
+31
+IFiC;h6iLBHHh:C@XaKGcd0
 S1
 R6
-R15
+R16
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/transfer_validate.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/transfer_validate.sv
 L0 1
 R8
-r1
-31
 R9
+!s85 0
 !s100 6XTHgfHQzK3gXzFRmUOf<3
 !s105 transfer_validate_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/transfer_validate.sv|
-!s108 1732996453.069000
+!s108 1733684161.183000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/transfer_validate.sv|
 !i10b 1
-!s85 0
 !i111 0
 vtransmit_FIFO
 R4
-R17
-I_<ezB0Y2aPeGGJ2?]j[f<2
 R5
+r1
+31
+I_<ezB0Y2aPeGGJ2?]j[f<2
 S1
 R6
-R15
+R16
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/transmit_FIFO.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/transmit_FIFO.sv
 L0 1
 R8
-r1
-31
 R9
 ntransmit_@f@i@f@o
+!s85 0
 !s100 S_U13ZlMgFLOPO7D8KkL_0
 !s105 transmit_FIFO_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/transmit_FIFO.sv|
-!s108 1732996453.123000
+!s108 1733684161.247000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/transmit_FIFO.sv|
 !i10b 1
-!s85 0
 !i111 0
 vtransmit_FIFO_tb
 R4
-R17
+R18
 IZF8cSRBM]1nNXFF1A3Ci<2
 R5
 S1
 R6
-R15
+R16
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/transmit_FIFO_tb.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/transmit_FIFO_tb.sv
 L0 3
@@ -1451,65 +1687,63 @@ ntransmit_@f@i@f@o_tb
 !s100 hUNhDeG>l<aTY@SaCEUSc2
 !s105 transmit_FIFO_tb_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/transmit_FIFO_tb.sv|
-!s108 1732996453.179000
+!s108 1733684161.310000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/transmit_FIFO_tb.sv|
 !i10b 1
 !s85 0
 !i111 0
 vtx_fsm
 R4
-R17
-I8MeSa3B1Rm_b7GV2gQCFL2
 R5
+r1
+31
+I[<o5azjjaU]1@YQhFB5A<2
 S1
 R6
-R15
+w1733678513
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tx_fsm.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tx_fsm.sv
 L0 1
 R8
-r1
-31
 R9
-!s100 ;`eR=Q14K@DmREie;Lfbz0
+!s85 0
+!s100 SG>2aF>7lWTT1m;DJGP9j3
 !s105 tx_fsm_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tx_fsm.sv|
-!s108 1732996453.231000
+!s108 1733684161.371000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tx_fsm.sv|
 !i10b 1
-!s85 0
 !i111 0
 vuart_start_bit_detect
 R4
-R17
-IM[R[OHzLRhX7XJ<i^h[Ig3
 R5
+r1
+31
+IM[R[OHzLRhX7XJ<i^h[Ig3
 S1
 R6
-w1732553919
+R16
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/uart_start_bit_detect.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/uart_start_bit_detect.sv
 L0 1
 R8
-r1
-31
 R9
+!s85 0
 !s100 ;`e7QCXO772^J:jZDA1Y73
 !s105 uart_start_bit_detect_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/uart_start_bit_detect.sv|
-!s108 1732996453.285000
+!s108 1733684161.440000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/uart_start_bit_detect.sv|
 !i10b 1
-!s85 0
 !i111 0
 vwrapper
 R4
-R17
+R18
 IkC_fHQo[MB]hTMUIeOj_l2
 R5
 S1
 R6
-R15
+w1733518056
 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/wrapper.sv
 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/wrapper.sv
 L0 1
@@ -1520,7 +1754,7 @@ R9
 !s100 8GJ:[NJnBeaONBPZ[A:K81
 !s105 wrapper_sv_unit
 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/wrapper.sv|
-!s108 1732996453.338000
+!s108 1733684161.511000
 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/wrapper.sv|
 !i10b 1
 !s85 0

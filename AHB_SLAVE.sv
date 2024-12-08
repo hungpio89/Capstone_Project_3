@@ -21,7 +21,7 @@ module AHB_SLAVE // BRIDGE MODULE (AHB TO APB)
 //	input logic		[ 31 :  0]	HADDR,					// The 32-bit system address bus.
 	input logic		[ 31 :  0]	PRDATA,
 	input logic						PREADY,
-	input logic						HSELABPif,
+	input logic						HSELABPif,				// Each APB slave has its own slave select signal, and this signal.
 	//---------------------------------------------------//
 	//---------------------------------------------------//
 	
@@ -39,6 +39,7 @@ module AHB_SLAVE // BRIDGE MODULE (AHB TO APB)
 	
 	// SEND BACK TO MASTER
 	output logic	[ 31 :  0]	HRDATA,
+	output logic	[  2 :  0]	AHB_SLAVE_ERRORS,
 	//---------------------------------------------------//
 	
 	// Delete later
@@ -46,31 +47,41 @@ module AHB_SLAVE // BRIDGE MODULE (AHB TO APB)
 );
 
 	//	Local Signal declaration for communication
-//	logic								HSELABPif;				// Each APB slave has its own slave select signal, and this signal.
 	logic								PWRITE_Int;
 	logic								PENABLE_int;
-	logic								PSELx_mid;
 	logic								PSELxInt;
 	logic								Valid;
+	logic								VALID_ERROR;
 	logic								APBen;
+	logic								HADDR_ERROR;
+	logic								HTRANS_ERROR;
 	
 	// Local Register declaration for Storing Interface's Signal
 	reg								HwriteReg;
 	reg				[  3 :  0]	AHBI_DataLength_ldB4;
-//	reg				[ 31 :  0]	HADDR;
+	
+	// Assignment for Errors signal happen during operation
+	// Distribution:
+	//						+) index[0]: HADDR_ERROR -> error detect by HADDR exceed the given address available
+	//						+) index[1]: HTRANS_ERROR -> error detect by HTRANS is in state IDLE or BUSY
+	//						+) index[2]: VALID_ERROR -> error detect by Valid signal whether AHB Bridge is not select or HREADYin is not available or in HTRANS_ERROR
+	assign AHB_SLAVE_ERRORS = {VALID_ERROR, HTRANS_ERROR, HADDR_ERROR};
 
 	typedef enum bit[ 1 : 0] {IDLE = 2'b00, BUSY = 2'b01, NONSEQ = 2'b10, SEQ = 2'b11} hstate;
 	
 	always @(posedge HCLK or negedge HRESETn) begin
 		if (!HRESETn) begin
-			HRESP 	 <= 2'b00;
+			HRESP 	 		<= 2'b00;
+			HADDR_ERROR		<= 1'b0;
 		end
 		else begin
 			if (HADDR >= 32'h8000_0000 && HADDR < 32'h8C00_0000) begin
-				HRESP 	 <= 2'b01;
+				HRESP 	 	<= 2'b01;
+				HADDR_ERROR	<= 1'b0;
 			end
 			else begin
-				HRESP 	 <= 2'b00;
+				HRESP 	 	<= 2'b00;
+				HADDR_ERROR	<= 1'b1;
 			end
 		end
 	end
@@ -78,18 +89,23 @@ module AHB_SLAVE // BRIDGE MODULE (AHB TO APB)
 	//-------------------HTRANS ASSIGNMENT---------------------//
 	hstate HST_TRANS;				// HST: HSTATE of HTRANS
 	always @(HTRANS) begin
+		HTRANS_ERROR	= HTRANS_ERROR;
 		case (HTRANS) 
 			2'd0: begin
-				HST_TRANS = IDLE;
+				HST_TRANS 		= IDLE;
+				HTRANS_ERROR	= 1'b1;
 			end
 			2'd1: begin
-				HST_TRANS = BUSY;
+				HST_TRANS 		= BUSY;
+				HTRANS_ERROR	= 1'b1;
 			end
 			2'd2: begin
-				HST_TRANS = NONSEQ;
+				HST_TRANS 		= NONSEQ;
+				HTRANS_ERROR	= 1'b0;
 			end
 			2'd3: begin
-				HST_TRANS = SEQ;
+				HST_TRANS 		= SEQ;
+				HTRANS_ERROR	= 1'b0;
 			end
 		endcase
 	end
@@ -98,10 +114,12 @@ module AHB_SLAVE // BRIDGE MODULE (AHB TO APB)
 	always @(HREADYin, HST_TRANS, HSELABPif) begin
 		//------------------Valid logic--------------------
 		if (HREADYin && HSELABPif && (HST_TRANS == SEQ || HST_TRANS == NONSEQ)) begin
-			Valid <= 1'b1;
+			Valid 		<= 1'b1;
+			VALID_ERROR	<= 1'b0;
 		end
 		else begin
-			Valid <= 1'b0;
+			Valid 		<= 1'b0;
+			VALID_ERROR	<= 1'b1;
 		end
 	end
 
@@ -168,7 +186,7 @@ D_FF_1bit_with_Sel				D_FF_PWRITE
 				.Q						(PWRITE)
 );
 
-encoder_method						ENCODER_METHOD_ADDRESS
+encoder_method						ENCODER_METHOD_ADDRESS_BLOCK
 (
 				// INPUT LOGIC ASSIGNMENT
 				.HBURST				(HBURST),
@@ -180,7 +198,7 @@ encoder_method						ENCODER_METHOD_ADDRESS
 				.HADDR				(HADDR)
 );
 
-D_FF_32bit_with_Sel				D_FF_PADDR
+D_FF_32bit_with_Sel				D_FF_PADDR_BLOCK
 (
 				// INPUT LOGIC ASSIGNMENT
 				.clk					(HCLK), 
@@ -192,29 +210,19 @@ D_FF_32bit_with_Sel				D_FF_PADDR
 				.Q						(PADDR)
 );
 
-address_decode				  		Address_decode
-(
-				// INPUT LOGIC ASSIGNMENT
-				.HADDR				(HADDR),
-				.PSEL_sel			(PSELxInt),
-				
-				// OUTPUT LOGIC ASSIGNMENT
-				.PSEL_en				(PSELx_mid)
-);
-
-D_FF_1bit_with_Sel				D_FF_PSELX
+D_FF_1bit_with_Sel				D_FF_PSELX_BLOCK
 (
 				// INPUT LOGIC ASSIGNMENT
 				.clk					(HCLK), 
 				.rst_ni				(HRESETn),
 				.enable				(1'b1),
-				.D						(PSELx_mid),
+				.D						(PSELxInt),
 				
 				// OUTPUT LOGIC ASSIGNMENT
 				.Q						(PSELx)
 );
 
-DataLengthDecoder 				D_FF_PWDATA							// This block is an customize module only used for interupt data length
+DataLengthDecoder 				D_FF_PWDATA_BLOCK							// This block is an customize module only used for interupt data length
 (
 				// INPUT LOGIC ASSIGNMENT
 				.HCLK					(HCLK),

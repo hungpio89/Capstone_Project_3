@@ -21,13 +21,31 @@ module encoder_method
 	
 	Type ctrl_addr;
 	
+	// Internal signal for edge detection
+	logic signal_in_d;
+	
+	// Rising edge detection
+	wire rising_edge;
+
+	// Edge detection
+	always_ff @(posedge HCLK or negedge HRESETn) begin
+		if (!HRESETn) begin
+			signal_in_d <= 0;
+		end 
+		else begin
+			signal_in_d <= enable;
+		end
+	end
+
+	assign rising_edge = enable & ~signal_in_d;
+	
 	// Always loop control state
 	always_ff @(posedge HCLK or negedge HRESETn) begin
 		if (!HRESETn) begin
 			HADDR_temp <= 32'h8000_0400;
 		end
 		else begin
-			if (enable) begin
+			if (rising_edge) begin
 				case (HBURST)
 					SINGLE: begin
 						HADDR_temp = 32'h8000_0400;

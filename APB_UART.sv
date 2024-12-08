@@ -1,39 +1,45 @@
-module APB_UART												// Wrapping APB UART OPERATING BLOCK
+module APB_UART																			// Wrapping APB UART OPERATING BLOCK
 (
 	// INPUT LOGIC ASSIGNMENT
 	
 	//------------------CPU INPUT------------------------//
-	input logic						PCLK,												// clock from CPU
-	input logic						UARTCLK,											// this is considered as the external custom clock by user
-	input logic						PRESETn,
-	input logic	[  19 :   0]	desired_baud_rate,							// indicate the number of baud rate used
-	input logic						parity_bit_mode,								// parity_bit_mode used as enable to have parity bit check if it is 1: odd or 0: even
-	input logic						stop_bit_twice,
+	input 	logic						PCLK,												// clock from CPU
+	input 	logic						UARTCLK,											// this is considered as the external custom clock by user
+	input 	logic						PRESETn,
+	input 	logic	[  19 :   0]	desired_baud_rate,							// indicate the number of baud rate used
+	input 	logic						parity_bit_mode,								// parity_bit_mode used as enable to have parity bit check if it is 1: odd or 0: even
+	input 	logic						stop_bit_twice,
 	//---------------------------------------------------//
 	//---------------APB BRIDGE INPUT--------------------//
-	input logic	[	 1 :   0]	fifo_en,											// enable fifo mode, fifo_en[1] for Transmit_FIFO; fifo_en[0] for Receive_FIFO
-	input logic	[	 3 :   0]	number_data_receive, number_data_trans,// choose the number of data to receive or transfer
-	input logic	[	 6 :   0]	ctrl_i,											// ctrl only write, only read, ..etc
-	input logic	[	 1 :   0]	state_isr,										// interupt state of APB UART
-	input logic 					uart_mode_clk_sel,							// sel clk for operating 0: UARTCLK, 1: PCLK
-	input logic						PSEL,
-	input logic 					PENABLE,
-	input logic						PWRITE,
-	input logic	[  11 :   0] 	PADDR,											// can increase more if # of address for other functions
-	input logic [   7 :   0] 	PWDATA,											// reference is 16 bit, currently use 8 bit (can custom as 16 bit, 8 MSB for function & 8 LSB for data)
+	input 	logic	[	 1 :   0]	fifo_en,											// enable fifo mode, fifo_en[1] for Transmit_FIFO; fifo_en[0] for Receive_FIFO
+	input 	logic	[	 3 :   0]	number_data_receive, number_data_trans,// choose the number of data to receive or transfer
+	input 	logic	[	 6 :   0]	ctrl_i,											// ctrl only write, only read, ..etc
+	input 	logic	[	 1 :   0]	state_isr,										// interupt state of APB UART
+	input 	logic 					uart_mode_clk_sel,							// sel clk for operating 0: UARTCLK, 1: PCLK
+	input 	logic						PSEL,
+	input 	logic 					PENABLE,
+	input 	logic						PWRITE,
+	input 	logic	[  11 :   0] 	PADDR,											// can increase more if # of address for other functions
+	input 	logic	[   7 :   0] 	PWDATA,											// reference is 16 bit, currently use 8 bit (can custom as 16 bit, 8 MSB for function & 8 LSB for data)
 	//---------------------------------------------------//
 	
 	//OUTPUT LOGIC ASSIGNMENT
 	
 	//------------------UART RETURN----------------------//
-	output logic					PREADY,											// used by Transmitter & Receiver block
-//	output logic					PSLVERR,											// unuse yet
-	output reg 	[  31 :   0] 	PRDATA,											// reference is 16 bit, currently use 32 bit (don't know reason why use 16 only)
+	output 	logic						PREADY,											// used by Transmitter & Receiver block
+//	output 	logic						PSLVERR,											// unuse yet
+	output 	reg	[  31 :   0] 	PRDATA,											// reference is 16 bit, currently use 32 bit (don't know reason why use 16 only)
 	//---------------------------------------------------//
 	//-----------------UART external port----------------//
-   input  logic 					UART_RXD,
-	output logic 					UART_TXD
+   input  	logic 					UART_RXD,
+	output 	logic 					UART_TXD,
+	output 	logic	[   6 :   0]	UART_ERRORS,
 	//---------------------------------------------------//
+	
+	// Delete later
+	output 	logic 					baud_tick,										// intermediate register to store temporary data when passing throughout D - FF 
+	output 	reg	[ 11 :   0] 	data_trans
+
 );	
 
 	// Local signal assignment
@@ -52,7 +58,7 @@ module APB_UART												// Wrapping APB UART OPERATING BLOCK
 	logic 					data_is_avail;																// flag for informing when RX side of UART receie data
 	logic						start_bit_rx, data_is_received, parity_bit_rx; 
 	logic						stop_bit_rx;																// flag for informing when start, data, parity, stop bit of RX is receied
-	logic 					baud_tick;																	// signal clk when finished created as a baud rate clock for block to operate
+//	logic 					baud_tick;																	// signal clk when finished created as a baud rate clock for block to operate
 	logic 					clk_div16;																	// signal clk raw before adding counter divisor to generate out clk for baudtick
 	logic 					ctrl_tx_buffer;
 	logic						ctrl_rx_buffer;															// signal for controlling FIFO of TX and RX to send out data
@@ -65,16 +71,17 @@ module APB_UART												// Wrapping APB UART OPERATING BLOCK
 	logic						rx_not_empty;
 	logic						data_is_ready;
 	logic						fifo_wr_ctrl;
+	logic						error_ctrl;
 	
 	// Register define
 	reg  	 [	 6 :   0]	ctrl;																			// signal for controlling the operation of UART
 	reg  	 [ 12 :   0]	cd;	//(counter divisor) 												// signal for passing into BAUD_RATE_GENERATOR for counting up
-	reg 	 [	 3 :   0]	state;																		// signal for informing status of UART in general
+	logic 	 [	 3 :   0]	state;																		// signal for informing status of UART in general
 	reg 	 [	 3 :   0]	state_i;
 	
 	reg  	 [ 11 :   0] 	temp_rx; 																	// intermediate register to store temporary data after done receive
 	reg  	 [ 11 :   0] 	temp_rx_1; 																	// intermediate register to store temporary data when passing throughout D - FF 
-	reg  	 [ 11 :   0] 	data_trans; 																// intermediate register to store temporary data when transmit into shift register
+//	reg  	 [ 11 :   0] 	data_trans; 																// intermediate register to store temporary data when transmit into shift register
 	reg 	 [  7 :   0] 	rx_fifo_mid;																// intermediate register to store temporary data before transmit out to read
 	reg    [  4 :   0] 	rx_fifo_wr_ptr;															// register for RX to store value of index (pointer) for write data in
 	reg 	 [  4 :   0] 	rx_fifo_rd_ptr;															// register for RX to store value of index (pointer) for read data out
@@ -87,6 +94,13 @@ module APB_UART												// Wrapping APB UART OPERATING BLOCK
 	reg	 [	 7 :   0]	tx_fifo_o;																	// intermediate register to store temporary data before transmit out via TXD signal
 	
 	assign data_is_avail = rx_not_empty;
+		
+	// Assignment for Errors signal happen during operation
+	// Distribution: 
+	// 					+) index[3:0] 	= {state_i} -> state interupt[3:2] + state report [1:0] (rx, tx fifo full)
+	//						+) index[5:4] 	= {error_tx_detect, error_rx_detect}
+	//						+) index[6]		= error_ctrl;
+	assign UART_ERRORS = {error_ctrl, error_tx_detect, error_rx_detect, state};
 	
 	// Control and Status Logic
 	always_ff @(posedge baud_tick or negedge PRESETn) begin
@@ -105,7 +119,8 @@ module APB_UART												// Wrapping APB UART OPERATING BLOCK
 				state_i[1:0] 	<= 2'b0;		
         end
     end
-
+	
+//	assign PREADY = TXdone ^ RXdone;
 //---------------------------------------------------//
 apb_interface						APB_INTERFACE_BLOCK
 (
@@ -115,29 +130,44 @@ apb_interface						APB_INTERFACE_BLOCK
 										.transfer				(transfer),
 										.PENABLE					(PENABLE),
 										.PWRITE					(PWRITE),
-										.PADDR					(PADDR[7:0]),
 										.PWDATA					(PWDATA),
-										.state_i					(state_i),
-										.ctrl_i					(ctrl_i),
 										.read_data				(read_data),
-										.desired_baud_rate	(desired_baud_rate),
 										.TXdone					(TXdone),
 										.RXdone					(RXdone),
-										.error_tx_detect		(error_tx_detect),
-										.error_rx_detect		(error_rx_detect),
+										.PADDR					(PADDR[7:0]),
+										.ctrl_o					(ctrl),											// ctrl only write, only read, ..etc
+										.state_isr_o			(state),
+										.cd_o						(cd),
 	
 	//OUTPUT LOGIC ASSIGNMENT
 										.uart_run_flag			(uart_run_flag),
-										.PREADY					(PREADY),				
-										.cd						(cd),
+										.PREADY					(PREADY),
 										.clk_div16				(clk_div16),
-										.state					(state),						// noted for future use (checking whether the currently state can insert data or not)		
-										.ctrl						(ctrl),
 										.write_data				(tx_fifo_mid),
 										.PRDATA					(PRDATA)
 );
 //---------------------------------------------------//
 
+
+//---------------------------------------------------//
+ctrl_interface_signal			CTRL_INTERFACE_SIGNAL_BLOCK
+(
+	// INPUT LOGIC ASSIGNMENT
+										.CLK						(PCLK),												// this is considered as the external custom clock by user
+										.RESETn					(PRESETn),
+										.PADDR					(PADDR[7:0]),
+										.cfg_en					(1'b0),											// Enable config mode
+										.desired_baud_rate	(desired_baud_rate),
+										.ctrl_i					(ctrl_i),											// ctrl only write, only read, ..etc
+										.state_isr_i			(state_i),
+	
+	// OUTPUT LOGIC ASSIGNMENT
+										.ctrl_o					(ctrl),											// ctrl only write, only read, ..etc
+										.state_isr_o			(state),
+										.cd_o						(cd)
+	
+);
+//---------------------------------------------------//
 
 //---------------------------------------------------//
 // block for checking whether the transfer is valid or not
@@ -165,6 +195,7 @@ custom_fsm_wr_rd					CUSTOM_FSM_WR_RD_BLOCK
 										.PWRITE					(PWRITE),
 	
 	// OUTPUT LOGIC CONFIGURATION
+										.error_ctrl				(error_ctrl),
 										.TXen						(TXen),
 										.RXen						(RXen)
 	
@@ -269,11 +300,11 @@ uart_start_bit_detect 			UART_START_BIT_DETECT_BLOCK
 (	
 	// INPUT LOGIC CONFIGURATION
 	
-										.clk_i					(PCLK),
+										.clk_i					(baud_tick),
 										.rst_ni					(PRESETn),
+										.UART_RXD				(UART_RXD),
 										.parity_bit_mode		(parity_bit_mode),
 										.stop_bit_twice		(stop_bit_twice),
-										.UART_RXD				(UART_RXD),
 										.number_data_receive	(number_data_receive),
 										.RXen						(RXen),
 										.cd						(cd),
@@ -289,11 +320,11 @@ uart_start_bit_detect 			UART_START_BIT_DETECT_BLOCK
 receive_FIFO						RECEIVE_FIFO_BLOCK
 (
 	// INPUT LOGIC CONFIGURATION
-										.clkw						(PCLK),
-										.clkr						(baud_tick),
+										.clk						(baud_tick),
 										.rst_n					(PRESETn),
 										.fiford					(ctrl_rx_buffer),
 										.fifowr					(fifo_wr_ctrl),
+										.RXdone					(RXdone),
 										
 	// OUTPUT LOGIC CONFIGURATION
 										.fifofull				(rx_fifo_full),
@@ -391,7 +422,7 @@ shift_register_rd					SHIFT_REGISTER_BLOCK
 D_FF_8bit							DFF_TEMPORARY_STORING_READ
 (
 	// INPUT LOGIC CONFIGURATION
-										.clk_i					(baud_tick), 
+										.clk_i					(PCLK), 
 										.rst_ni					(PRESETn), 
 										.enable					(1'b1),
 										.D							(rx_fifo_mid),

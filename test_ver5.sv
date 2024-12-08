@@ -29,8 +29,8 @@ module test_ver5
 	input 	logic	[  11:   0] PADDR,											// can increase more if # of address for other functions
 		//---------------------------------------------------//
 	
-	input 	logic	[  12:   0]	cd,
-	input 	logic [	 6:   0]	ctrl,
+	output 	logic	[  12:   0]	cd,
+	output 	logic [	 6:   0]	ctrl,
 	
 	// OUTPUT LOGIC CONFIGURATION
 	
@@ -67,6 +67,7 @@ module test_ver5
 	
 	
 	assign data_is_avail = rx_not_empty;
+	assign PREADY			= RXdone;
 //---------------------------------------------------//
 apb_interface						APB_INTERFACE_BLOCK
 (
@@ -76,12 +77,8 @@ apb_interface						APB_INTERFACE_BLOCK
 										.transfer					(transfer),
 										.PENABLE						(PENABLE),
 										.PWRITE						(PWRITE),
-										.PADDR						(PADDR[7:0]),
 										.PWDATA						(PWDATA),
-										.state_i						(state_i),
-										.ctrl_i						(ctrl_i),
 										.read_data					(read_data),
-										.desired_baud_rate		(desired_baud_rate),
 										.TXdone						(TXdone),
 										.RXdone						(RXdone),
 										.error_tx_detect			(error_tx_detect),
@@ -89,13 +86,30 @@ apb_interface						APB_INTERFACE_BLOCK
 	
 	//OUTPUT LOGIC ASSIGNMENT
 										.uart_run_flag				(uart_run_flag),
-										.PREADY						(PREADY),				
-										.cd							(),
+										.PREADY						(),
 										.clk_div16					(clk_div16),
-										.state						(state),						// noted for future use (checking whether the currently state can insert data or not)		
-										.ctrl							(),
 										.write_data					(),
 										.PRDATA						(PRDATA)
+);
+//---------------------------------------------------//
+
+//---------------------------------------------------//
+ctrl_interface_signal			CTRL_INTERFACE_SIGNAL_BLOCK
+(
+	// INPUT LOGIC ASSIGNMENT
+										.CLK							(PCLK),												// this is considered as the external custom clock by user
+										.RESETn						(PRESETn),
+										.PADDR						(PADDR),
+										.cfg_en						(1'b0),											// Enable config mode
+										.desired_baud_rate		(desired_baud_rate),
+										.ctrl_i						(ctrl_i),											// ctrl only write, only read, ..etc
+										.state_isr_i				(state_i),
+	
+	// OUTPUT LOGIC ASSIGNMENT
+										.ctrl_o						(ctrl),											// ctrl only write, only read, ..etc
+										.state_isr_o				(state),
+										.cd_o							(cd)
+	
 );
 //---------------------------------------------------//
 
@@ -149,7 +163,7 @@ BAUD_RATE_GENERATOR 				BAUD_RATE_GENERATOR_BLOCK
 uart_start_bit_detect			UART_DETECT_BLOCK
 (
 	// INPUT LOGIC CONFIGURATION
-										.clk_i						(PCLK),
+										.clk_i						(baud_tick),
 										.rst_ni						(PRESETn),
 										.UART_RXD					(UART_RXD),
 										.parity_bit_mode			(parity_bit_mode),
@@ -168,11 +182,11 @@ uart_start_bit_detect			UART_DETECT_BLOCK
 receive_FIFO						RECEIVE_FIFO_BLOCK
 (
 	// INPUT LOGIC CONFIGURATION
-										.clkw							(PCLK), 						
-										.clkr							(UARTCLK),
+										.clk							(baud_tick),
 										.rst_n						(PRESETn),
 										.fiford						(ctrl_rx_buffer),
 										.fifowr						(fifo_wr_ctrl),
+										.RXdone						(RXdone),
 	
 	// OUTPUT LOGIC CONFIGURATION
 										.fifofull					(rx_fifo_full),
@@ -189,7 +203,7 @@ D_FF_12bit							D_FLIPFLOP_12BITS_FOR_TEMP_STORE
 (	
 	// INPUT LOGIC CONFIGURATION
 										.rst_ni						(PRESETn),
-										.baud_tick					(UARTCLK),
+										.baud_tick					(baud_tick),
 										.enable						(ctrl_rx_buffer), 	
 										.D								(temp_rx_1),
 	
@@ -219,7 +233,7 @@ fifo_read_memory 					FIFO_BLOCK_MEMORY
 rx_fsm								RX_FSM_BLOCK
 (
 	// INPUT LOGIC CONFIGURATION
-										.baud_tick					(UARTCLK),
+										.baud_tick					(baud_tick),
 										.PRESETn						(PRESETn),
 										.parity_bit_mode			(parity_bit_mode),
 										.stop_bit_twice			(stop_bit_twice),
@@ -266,7 +280,7 @@ shift_register_rd					SHIFT_REGISTER_BLOCK
 D_FF_8bit							DFF_TEMPORARY_STORING_READ
 (
 	// INPUT LOGIC CONFIGURATION
-										.clk_i						(UARTCLK), 
+										.clk_i						(PCLK), 
 										.rst_ni						(PRESETn), 
 										.enable						(1'b1),
 										.D								(rx_fifo_mid),

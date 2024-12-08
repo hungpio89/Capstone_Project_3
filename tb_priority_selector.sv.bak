@@ -1,0 +1,51 @@
+module tb_priority_selector;
+
+    // Parameters
+    parameter NUM_INPUTS = 4;
+    parameter DATA_WIDTH = 8;
+
+    // Testbench signals
+    logic [NUM_INPUTS-1:0] req;
+    logic [DATA_WIDTH-1:0] data_in [NUM_INPUTS-1:0];
+    logic [DATA_WIDTH-1:0] data_out;
+    logic [$clog2(NUM_INPUTS)-1:0] grant;
+
+    // DUT instantiation
+    priority_selector #(
+        .NUM_INPUTS(NUM_INPUTS),
+        .DATA_WIDTH(DATA_WIDTH)
+    ) dut (
+        .req(req),
+        .data_in(data_in),
+        .data_out(data_out),
+        .grant(grant)
+    );
+
+    // Test sequence
+    initial begin
+        // Initialize inputs
+        req = 4'b0000;
+        data_in[0] = 8'hAA;
+        data_in[1] = 8'hBB;
+        data_in[2] = 8'hCC;
+        data_in[3] = 8'hDD;
+
+        // No request
+        #10 req = 4'b0000;
+        #10 $display("No request: data_out=%h, grant=%h", data_out, grant);
+
+        // Request from source 2
+        #10 req = 4'b0100;
+        #10 $display("Source 2 request: data_out=%h, grant=%h", data_out, grant);
+
+        // Requests from source 0 and 3 (priority to source 0)
+        #10 req = 4'b1001;
+        #10 $display("Source 0 and 3 request: data_out=%h, grant=%h", data_out, grant);
+
+        // Requests from all sources (priority to source 0)
+        #10 req = 4'b1111;
+        #10 $display("All sources request: data_out=%h, grant=%h", data_out, grant);
+
+        #10 $stop;
+    end
+endmodule

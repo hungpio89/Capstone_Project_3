@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV GX"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY sram
+set_global_assignment -name TOP_LEVEL_ENTITY Thesis_Project
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:34:45  NOVEMBER 03, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
@@ -169,10 +169,19 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE simulation/modelsim/Waveform_te
 set_global_assignment -name SYSTEMVERILOG_FILE ahb_slave_if.sv
 set_global_assignment -name SYSTEMVERILOG_FILE tb_ahb_master_ram.sv
 set_global_assignment -name VECTOR_WAVEFORM_FILE simulation/modelsim/Waveform_test_ahb_slave_if.vwf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3_1/output_files/Waveform_test_ahb_apb_uart.vwf"
 set_global_assignment -name SYSTEMVERILOG_FILE sram.sv
 set_global_assignment -name SYSTEMVERILOG_FILE tb_sram.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ctrl_interface_signal.sv
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulation/modelsim/Waveform_ctrl_interface_signal.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulation/modelsim/Waveform_test_fifo.vwf
+set_global_assignment -name SYSTEMVERILOG_FILE or_1bit.sv
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulation/modelsim/Waveform_or_gate.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE "C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/simulation/modelsim/Waveform_test_thesis.vwf"
+set_global_assignment -name SYSTEMVERILOG_FILE priority_selector.sv
+set_global_assignment -name SYSTEMVERILOG_FILE tb_priority_selector.sv
+set_global_assignment -name SYSTEMVERILOG_FILE error_ram.sv
+set_global_assignment -name SYSTEMVERILOG_FILE tb_error_ram.sv
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

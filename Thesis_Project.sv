@@ -16,7 +16,9 @@ module Thesis_Project
 	// Delete later
 	
 	output	reg	[ 31 :  0] 	HRDATA,
-	output	logic	[ 31 :  0] 	PADDR,
+	output	logic	[ 31 :  0] 	HADDR,
+	output	logic					baud_tick,
+	output	logic	[ 11 :  0]	data_trans,
 	output	logic	[ 31 :  0] 	data_io_lcd_o
 	
 );
@@ -33,6 +35,8 @@ module Thesis_Project
 	logic				[ 31 :  0]	data_io_hex_5;
 	logic				[ 31 :  0]	data_io_hex_6;
 	logic				[ 31 :  0]	data_io_hex_7;
+	
+	logic   			[  9 :  0]	UART_ERROR_FLAG;
 	
 mux2to1_32bit							MUX_SELECT_HEX_DISPLAYMENT
 (
@@ -77,8 +81,8 @@ pipeline_riscv_mod2 						PIPELINE_RISCV_MOD2
 //	
 //				.HCLK							(clk_i),
 //				.HRESETn						(rst_ni),
-//				.HWRITE						(io_lcd_o[31]),
-//				.HTRANS						(io_lcd_o[30:29]),
+//				.HWRITE						(data_input[9]),
+//				.HTRANS						(2'b11),
 //				.HSEL							(io_lcd_o[28]),
 //				.HREADY						(io_lcd_o[27]),
 //				.HWDATA						({16'b0, io_sw_i[15:0]}),
@@ -98,7 +102,7 @@ AHB_APB_UART 								AHB_APB_UART_BLOCK
 				.HRESETn						(rst_ni),
 				.HTRANS						(2'b11),						// Sequential
 				.HWRITE						(data_input[9]),
-				.HSIZES						(3'b000),					// Size used 8 bits length
+				.HSIZES						(2'b00),						// Size used 8 bits length
 				.HBURST						(3'b001),					// address increasingly 4
 				.HSELABPif					(data_input[8]),
 				.HREADYin					(1'b1),
@@ -121,9 +125,12 @@ AHB_APB_UART 								AHB_APB_UART_BLOCK
 				.HRDATA						(HRDATA),
 				.UART_RXD					(UART_RXD),
 				.UART_TXD					(UART_TXD),
+				.UART_ERROR_FLAG			(UART_ERROR_FLAG),
 				
 	// Delete later
-				.PADDR						(PADDR)
+				.HADDR						(HADDR),
+				.baud_tick					(baud_tick),
+				.data_trans					(data_trans)
 );
 
 endmodule

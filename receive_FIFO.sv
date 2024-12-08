@@ -2,9 +2,8 @@ module receive_FIFO
 (
 	// INPUT LOGIC CONFIGURATION
 	
-	//-------------------CPU INPUT-----------------------//	
-	input		logic					clkw, 						
-	input		logic					clkr, 						//clock read
+	//-------------------CPU INPUT-----------------------//
+	input		logic					clk, 							//clock 
 	input		logic					rst_n,
 	//---------------------------------------------------//
 	
@@ -53,7 +52,7 @@ module receive_FIFO
 	assign  rx_ptr_addr_rd_o	= 	rdcnt;
 	
 	// Always loop for control output signal
-	always @(posedge clkw or negedge rst_n) begin
+	always @(posedge clk or negedge rst_n) begin
 		if(!rst_n) begin
 			wrcnt 	 <= 5'b0;				// restart to zero
 			fifo_len  <= 6'b0;
@@ -76,13 +75,13 @@ compare_5bit 				COMPARE_5BITS_BLOCK
 										.A_less_B			(fifo_read_en)
 );
 
-	always @(posedge clkr or negedge rst_n) begin
+	always @(posedge clk or negedge rst_n) begin
 		if(!rst_n) begin
 			rdcnt		 <= 5'b0;				// restart to zero
 			fifo_rd   <= 6'b0;
 		end
 		else begin 
-			if (read && fifo_read_en) begin
+			if (RXdone) begin
 				rdcnt				<= rdcnt + 1'b1;
 				fifo_rd  		<= fifo_rd + 1'b1;
 			end

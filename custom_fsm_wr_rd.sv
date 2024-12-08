@@ -19,6 +19,7 @@ module custom_fsm_wr_rd									// CUSTOM from APB interface FSM
 	// OUTPUT LOGIC CONFIGURATION
 	
 	//--------------------REQUESTER OUT------------------//
+	output logic				error_ctrl,
 	output logic 				TXen,						// indicates second and subsequent cycles of an APB transfer
 	output logic 				RXen						// indicates that the completer is selected and that a data transfer is require
 	//---------------------------------------------------//
@@ -52,16 +53,19 @@ module custom_fsm_wr_rd									// CUSTOM from APB interface FSM
 	always @(present_state, PWRITE, transfer, PREADY, ctrl) begin
 		
 		// reset all signal
-		TXen  	= 0;
-		RXen 		= 0;
+//		error_ctrl	= 0;
+//		TXen  		= 0;
+//		RXen 			= 0;
+
+		error_ctrl	= error_ctrl;
+		TXen  		= TXen;
+		RXen 			= RXen;
 		
 		case (present_state)
-//			INIT: begin									// during this state, UART is automatic configed
-//				if (!transfer) begin
-//					next_state = INIT;
-//				end
-//			end
 			IDLE: begin
+				error_ctrl	= 0;
+				TXen  		= 0;
+				RXen 			= 0;
 				if (!transfer) begin
 					next_state = IDLE;
 				end
@@ -136,6 +140,7 @@ module custom_fsm_wr_rd									// CUSTOM from APB interface FSM
 			end
 			
 			ERROR: begin
+				error_ctrl	= 1'b1;
 				next_state	= IDLE;
 			end
 			

@@ -17,8 +17,8 @@ entity test_ver5 is
         PENABLE         : in     vl_logic;
         PWRITE          : in     vl_logic;
         PADDR           : in     vl_logic_vector(11 downto 0);
-        cd              : in     vl_logic_vector(12 downto 0);
-        ctrl            : in     vl_logic_vector(6 downto 0);
+        cd              : out    vl_logic_vector(12 downto 0);
+        ctrl            : out    vl_logic_vector(6 downto 0);
         RXen            : out    vl_logic;
         transfer        : out    vl_logic;
         uart_run_flag   : out    vl_logic;
@@ -29,7 +29,6 @@ entity test_ver5 is
         rx_write_en     : out    vl_logic;
         rx_read_en      : out    vl_logic;
         data_is_ready   : out    vl_logic;
-        fifolen         : out    vl_logic_vector(5 downto 0);
         rx_ptr_addr_wr_i: out    vl_logic_vector(4 downto 0);
         rx_ptr_addr_rd_o: out    vl_logic_vector(4 downto 0);
         temp_rx         : out    vl_logic_vector(11 downto 0);
@@ -37,7 +36,6 @@ entity test_ver5 is
         data_trans      : out    vl_logic_vector(11 downto 0);
         rx_fifo_mid     : out    vl_logic_vector(7 downto 0);
         ctrl_rx_buffer  : out    vl_logic;
-        fifo_read_en    : out    vl_logic;
         fifo_wr_ctrl    : out    vl_logic;
         data_is_avail   : out    vl_logic;
         RXdone          : out    vl_logic;

@@ -23,19 +23,6 @@ entity APB_UART is
         PRDATA          : out    vl_logic_vector(31 downto 0);
         UART_RXD        : in     vl_logic;
         UART_TXD        : out    vl_logic;
-        baud_tick       : out    vl_logic;
-        fifo_wr_ctrl    : out    vl_logic;
-        ctrl_rx_buffer  : out    vl_logic;
-        stop_bit_rx     : out    vl_logic;
-        temp_rx_2       : out    vl_logic_vector(11 downto 0);
-        temp_rx_1       : out    vl_logic_vector(11 downto 0);
-        temp_rx         : out    vl_logic_vector(11 downto 0);
-        rx_fifo_wr_ptr  : out    vl_logic_vector(4 downto 0);
-        rx_fifo_rd_ptr  : out    vl_logic_vector(4 downto 0);
-        rx_write_en     : out    vl_logic;
-        rx_read_en      : out    vl_logic;
-        rx_fifo_full    : out    vl_logic;
-        rx_not_empty    : out    vl_logic;
-        ctrl_shift_register_rd: out    vl_logic_vector(3 downto 0)
+        baud_tick       : out    vl_logic
     );
 end APB_UART;

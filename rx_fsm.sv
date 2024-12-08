@@ -91,9 +91,9 @@ module rx_fsm
 		endcase
 	end
 	
-	assign data_is_legit = (data_is_avail& data_is_ready && RXen);
+	assign data_is_legit = (data_is_avail && data_is_ready);
 	
-	always @(present_state, RXen, start_bit, data_is_received, parity_bit, parity_bit_mode, stop_bit_twice, stop_bit, flag_received_sixth_tx_state, flag_received_seventh_tx_state, flag_received_eighth_tx_state) begin
+	always @(present_state, RXen, data_is_ready, start_bit, data_is_received, parity_bit, parity_bit_mode, stop_bit_twice, stop_bit, flag_received_sixth_tx_state, flag_received_seventh_tx_state, flag_received_eighth_tx_state) begin
 		ctrl_shift_register 		= 4'b0;
 		rx_done						= 1'b0;
 		error_rx_detect 			= 1'b0;
@@ -108,11 +108,12 @@ module rx_fsm
 					end
 					1'b1: begin
 						next_state 			= START;
-						ctrl_rx_buffer 	= 1'b1;	
+						ctrl_rx_buffer 	= 1'b1;
 					end
 				endcase
 			end
 			START: begin
+				ctrl_rx_buffer 	= 1'b0;	
 				ctrl_shift_register = 4'b0001;			// enable shift register shift start bit
 				if (!start_bit) begin
 					next_state = START;

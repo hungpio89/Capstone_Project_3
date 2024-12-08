@@ -20,8 +20,9 @@ module fifo_read_memory
 );
 	
 	// Memory array and pointers
-	logic [ DATA_WIDTH-1:  0]	memory [0:FIFO_DEPTH-1];  // Memory array for FIFO
+	reg 	[ DATA_WIDTH-1:  0]	memory [0:FIFO_DEPTH-1];  // Memory array for FIFO
 	reg   [ 	  ADDRBIT-1:  0]	write_ptr, read_ptr;      // Write and read pointers
+	reg	[ DATA_WIDTH-1:  0]	temp_read;
 	
 	assign write_ptr = wraddr;
 	assign read_ptr  = rdaddr;
@@ -40,14 +41,20 @@ module fifo_read_memory
 				if (write_en && !fifofull) begin
 					memory[write_ptr] <= write_data;
 				end
-				// Read operation (pop from FIFO)
-				if (read_en && notempty) begin
-					read_data <= memory[read_ptr];
+				else begin
+					// Read operation (pop from FIFO)
+					if (read_en && notempty) begin
+						temp_read <= memory[read_ptr];
+					end
+					else
+						temp_read	<= temp_read;
 				end
 			end
 			else
-				read_data <= write_data;
+				temp_read <= write_data;
 		end
 	end
-
+	
+	assign read_data = temp_read;
+	
 endmodule
