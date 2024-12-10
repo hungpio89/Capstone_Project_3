@@ -18,7 +18,6 @@ module Thesis_Project
 	output	reg	[ 31 :  0] 	HRDATA,
 	output	logic	[ 31 :  0] 	HADDR,
 	output	logic					baud_tick,
-	output	logic	[ 11 :  0]	data_trans,
 	output	logic	[ 31 :  0] 	data_io_lcd_o
 	
 );
@@ -129,8 +128,7 @@ AHB_APB_UART 								AHB_APB_UART_BLOCK
 				
 	// Delete later
 				.HADDR						(HADDR),
-				.baud_tick					(baud_tick),
-				.data_trans					(data_trans)
+				.baud_tick					(baud_tick)
 );
 
 endmodule

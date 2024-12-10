@@ -1,5 +1,5 @@
 Flow report for Thesis_Project
-Mon Dec 09 01:23:57 2024
+Tue Dec 10 18:41:46 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -37,30 +37,31 @@ applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Flow Summary                                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Dec 09 01:23:57 2024           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; Thesis_Project                                  ;
-; Top-level Entity Name              ; Thesis_Project                                  ;
-; Family                             ; Cyclone IV GX                                   ;
-; Total logic elements               ; 13,037 / 29,440 ( 44 % )                        ;
-;     Total combinational functions  ; 12,039 / 29,440 ( 41 % )                        ;
-;     Dedicated logic registers      ; 3,764 / 29,440 ( 13 % )                         ;
-; Total registers                    ; 3764                                            ;
-; Total pins                         ; 220 / 307 ( 72 % )                              ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0 / 1,105,920 ( 0 % )                           ;
-; Embedded Multiplier 9-bit elements ; 0 / 160 ( 0 % )                                 ;
-; Total GXB Receiver Channel PCS     ; 0 / 4 ( 0 % )                                   ;
-; Total GXB Receiver Channel PMA     ; 0 / 4 ( 0 % )                                   ;
-; Total GXB Transmitter Channel PCS  ; 0 / 4 ( 0 % )                                   ;
-; Total GXB Transmitter Channel PMA  ; 0 / 4 ( 0 % )                                   ;
-; Total PLLs                         ; 0 / 6 ( 0 % )                                   ;
-; Device                             ; EP4CGX30CF23C6                                  ;
-; Timing Models                      ; Final                                           ;
-+------------------------------------+-------------------------------------------------+
++---------------------------------------------------------------------------------------+
+; Flow Summary                                                                          ;
++-------------------------------------+-------------------------------------------------+
+; Flow Status                         ; Successful - Tue Dec 10 18:41:36 2024           ;
+; Quartus II 64-Bit Version           ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                       ; Thesis_Project                                  ;
+; Top-level Entity Name               ; AHB_APB_UART                                    ;
+; Family                              ; Cyclone V                                       ;
+; Device                              ; 5CSXFC6D6F31C6                                  ;
+; Timing Models                       ; Preliminary                                     ;
+; Logic utilization (in ALMs)         ; 703 / 41,910 ( 2 % )                            ;
+; Total registers                     ; 888                                             ;
+; Total pins                          ; 179 / 499 ( 36 % )                              ;
+; Total virtual pins                  ; 0                                               ;
+; Total block memory bits             ; 0 / 5,662,720 ( 0 % )                           ;
+; Total DSP Blocks                    ; 0 / 112 ( 0 % )                                 ;
+; Total HSSI RX PCSs                  ; 0 / 9 ( 0 % )                                   ;
+; Total HSSI PMA RX Deserializers     ; 0 / 9 ( 0 % )                                   ;
+; Total HSSI PMA RX ATT Deserializers ; 0                                               ;
+; Total HSSI TX PCSs                  ; 0 / 9 ( 0 % )                                   ;
+; Total HSSI PMA TX Serializers       ; 0 / 9 ( 0 % )                                   ;
+; Total HSSI PMA TX ATT Serializers   ; 0 / 9 ( 0 % )                                   ;
+; Total PLLs                          ; 0 / 15 ( 0 % )                                  ;
+; Total DLLs                          ; 0 / 4 ( 0 % )                                   ;
++-------------------------------------+-------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -68,7 +69,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/09/2024 01:21:41 ;
+; Start date & time ; 12/10/2024 18:40:32 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Thesis_Project      ;
 +-------------------+---------------------+
@@ -76,19 +77,18 @@ applicable agreement for further details.
 
 +--------------------------------------------------------------------------------------------------------------------+
 ; Flow Non-Default Global Settings                                                                                   ;
-+-------------------------------------+-------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                         ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+-------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 4930996519629.173368210111184 ; --            ; --          ; --             ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                            ; --            ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                   ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)     ; <None>        ; --          ; --             ;
-; EDA_TIME_SCALE                      ; 1 ps                          ; --            ; --          ; eda_simulation ;
-; PARTITION_COLOR                     ; 16764057                      ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING         ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                        ; --            ; --          ; Top            ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                  ; --            ; --          ; --             ;
-+-------------------------------------+-------------------------------+---------------+-------------+----------------+
++-------------------------------------+---------------------------------+----------------+--------------+------------+
+; Assignment Name                     ; Value                           ; Default Value  ; Entity Name  ; Section Id ;
++-------------------------------------+---------------------------------+----------------+--------------+------------+
+; COMPILER_SIGNATURE_ID               ; 127943358103058.173383083224592 ; --             ; --           ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --             ; --           ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                               ; --             ; --           ; --         ;
+; PARTITION_COLOR                     ; 16764057                        ; --             ; AHB_APB_UART ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --             ; AHB_APB_UART ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --             ; AHB_APB_UART ; Top        ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --             ; --           ; --         ;
+; TOP_LEVEL_ENTITY                    ; AHB_APB_UART                    ; Thesis_Project ; --           ; --         ;
++-------------------------------------+---------------------------------+----------------+--------------+------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -96,12 +96,11 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:38     ; 1.0                     ; 4753 MB             ; 00:00:37                           ;
-; Fitter                    ; 00:01:17     ; 1.0                     ; 5166 MB             ; 00:01:16                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 4664 MB             ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:08     ; 1.0                     ; 4818 MB             ; 00:00:08                           ;
-; EDA Netlist Writer        ; 00:00:04     ; 1.0                     ; 4683 MB             ; 00:00:03                           ;
-; Total                     ; 00:02:11     ; --                      ; --                  ; 00:02:08                           ;
+; Analysis & Synthesis      ; 00:00:04     ; 1.0                     ; 4649 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:57     ; 1.0                     ; 6062 MB             ; 00:00:11                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4613 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 5230 MB             ; 00:00:04                           ;
+; Total                     ; 00:01:11     ; --                      ; --                  ; 00:00:17                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -110,11 +109,10 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; BillCipher       ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; BillCipher       ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; BillCipher       ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; BillCipher       ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; BillCipher       ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-R17VI3O  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-R17VI3O  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-R17VI3O  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-R17VI3O  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -125,7 +123,6 @@ quartus_map --read_settings_files=on --write_settings_files=off Thesis_Project -
 quartus_fit --read_settings_files=off --write_settings_files=off Thesis_Project -c Thesis_Project
 quartus_asm --read_settings_files=off --write_settings_files=off Thesis_Project -c Thesis_Project
 quartus_sta Thesis_Project -c Thesis_Project
-quartus_eda --read_settings_files=off --write_settings_files=off Thesis_Project -c Thesis_Project
 
 
 

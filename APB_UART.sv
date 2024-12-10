@@ -37,11 +37,7 @@ module APB_UART																			// Wrapping APB UART OPERATING BLOCK
 	//---------------------------------------------------//
 	
 	// Delete later
-	output 	logic 					baud_tick,										// intermediate register to store temporary data when passing throughout D - FF 
-	output 	reg	[ 11 :   0] 	data_trans,
-	output 	logic						rx_write_en,
-	output	logic						rx_read_en,
-	output 	logic						ctrl_rx_buffer
+	output 	logic 					baud_tick										// temporary keep for simulation
 
 );	
 
@@ -64,12 +60,12 @@ module APB_UART																			// Wrapping APB UART OPERATING BLOCK
 //	logic 					baud_tick;																	// signal clk when finished created as a baud rate clock for block to operate
 	logic 					clk_div16;																	// signal clk raw before adding counter divisor to generate out clk for baudtick
 	logic 					ctrl_tx_buffer;
-//	logic						ctrl_rx_buffer;															// signal for controlling FIFO of TX and RX to send out data
+	logic						ctrl_rx_buffer;															// signal for controlling FIFO of TX and RX to send out data
 	logic						transfer;																	// flag for informing when transfer process is available
 	logic						rx_buffer_overrun, tx_buffer_overrun;								// signal as a flag to enable FIFO to not alarm ERROR if reach its max
 	logic						uart_run_flag;																// signal as an enable to allow RX or TX process to operate via apb interface
-//	logic 					rx_write_en;
-//	logic						rx_read_en;
+	logic 					rx_write_en;
+	logic						rx_read_en;
 	logic						rx_fifo_full;
 	logic						rx_not_empty;
 	logic						data_is_ready;
@@ -79,12 +75,12 @@ module APB_UART																			// Wrapping APB UART OPERATING BLOCK
 	// Register define
 	reg  	 [	 6 :   0]	ctrl;																			// signal for controlling the operation of UART
 	reg  	 [ 12 :   0]	cd;	//(counter divisor) 												// signal for passing into BAUD_RATE_GENERATOR for counting up
-	logic 	 [	 3 :   0]	state;																		// signal for informing status of UART in general
+	logic  [	 3 :   0]	state;																		// signal for informing status of UART in general
 	reg 	 [	 3 :   0]	state_i;
 	
 	reg  	 [ 11 :   0] 	temp_rx; 																	// intermediate register to store temporary data after done receive
 	reg  	 [ 11 :   0] 	temp_rx_1; 																	// intermediate register to store temporary data when passing throughout D - FF 
-//	reg  	 [ 11 :   0] 	data_trans; 																// intermediate register to store temporary data when transmit into shift register
+	reg  	 [ 11 :   0] 	data_trans; 																// intermediate register to store temporary data when transmit into shift register
 	reg 	 [  7 :   0] 	rx_fifo_mid;																// intermediate register to store temporary data before transmit out to read
 	reg    [  4 :   0] 	rx_fifo_wr_ptr;															// register for RX to store value of index (pointer) for write data in
 	reg 	 [  4 :   0] 	rx_fifo_rd_ptr;															// register for RX to store value of index (pointer) for read data out
