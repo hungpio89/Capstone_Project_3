@@ -1,11 +1,11 @@
 module Thesis_Project 
 (
-	input 	logic	[  9 :  0]	data_input,
 	input 	logic					clk_i, 
 	input		logic					UARTCLK,
 	input		logic					rst_ni,
 	
-	output 	logic	[ 31 :  0]	pc_debug_o,
+	input 	logic	[  9 :  0]	data_input,
+	
 	output 	logic	[ 31 :  0] 	data_io_ledr_o,
 	output	logic	[ 31 :  0]	data_out,
 	
@@ -14,15 +14,13 @@ module Thesis_Project
 	output	logic					UART_TXD,
 	
 	// Delete later
-	
-	output	reg	[ 31 :  0] 	HRDATA,
-	output	logic	[ 31 :  0] 	HADDR,
-	output	logic					baud_tick,
 	output	logic	[ 31 :  0] 	data_io_lcd_o
 	
 );
 	// Local Signal Assignment
-//	reg				[ 31 :  0] 	HRDATA;
+	
+	logic								baud_tick;
+	logic				[ 31 :  0]	pc_debug_o;
 	
 //	logic				[ 31 :  0] 	data_io_lcd_o;
 	logic				[ 31 :  0] 	data_io_ledg_o;
@@ -35,14 +33,17 @@ module Thesis_Project
 	logic				[ 31 :  0]	data_io_hex_6;
 	logic				[ 31 :  0]	data_io_hex_7;
 	
-	logic   			[  9 :  0]	UART_ERROR_FLAG;
 	
-mux2to1_32bit							MUX_SELECT_HEX_DISPLAYMENT
+	reg   			[  9 :  0]	UART_ERROR_FLAG;
+	reg				[ 31 :  0] 	HRDATA;
+	reg				[ 31 :  0] 	HADDR;
+	
+mux2to1_32bit								MUX_SELECT_HEX_DISPLAYMENT
 (
 	// INPUT LOGIC ASSIGNMENT
 	
 				.a								(HRDATA),
-				.b								({24'b0, data_io_hex_1[3:0], data_io_hex_0[3:0]}),
+				.b								({8'b0, data_io_hex_5[3:0], data_io_hex_4[3:0], data_io_hex_3[3:0], data_io_hex_2[3:0], data_io_hex_1[3:0], data_io_hex_0[3:0]}),
 				.sel							(data_input[9]),
 					
 	// OUTPUT LOGIC ASSIGNMENT
@@ -105,29 +106,29 @@ AHB_APB_UART 								AHB_APB_UART_BLOCK
 				.HBURST						(3'b001),					// address increasingly 4
 				.HSELABPif					(data_input[8]),
 				.HREADYin					(1'b1),
-				.HWDATA						(data_io_lcd_o),
-				.UARTCLK						(UARTCLK),
-				.desired_baud_rate		(20'h115200),
+				.HWDATA						(data_io_lcd_o),			
+				.UARTCLK						(UARTCLK),					// External Clock
+				.desired_baud_rate		(20'h115200),				// Baudrate used is 115200 bits/sec
 				.parity_bit_mode			(1'b1),
 				.stop_bit_twice			(1'b1),
 				.number_data_receive		(8'd8), 
 				.number_data_trans		(8'd8),
 				.ctrl_i						(7'b11),
 				.state_isr					(2'b00),
-				.uart_mode_clk_sel		(1'b1),
-				.fifo_en						(2'b11),
+				.uart_mode_clk_sel		(1'b0),						// Let FPGA to divide clock
+				.fifo_en						(2'b11),						// Enable FIFO full ON
 	
 	// OUTPUT LOGIC CONFIGURATION
 	
-				.HREADYout					(data_io_ledr_o[0]),
-				.HRESP						(data_io_ledr_o[2:1]),
+				.HREADYout					(data_io_ledr_o[0]),			// HREADYout
+				.HRESP						(data_io_ledr_o[2:1]),		// HRESP
 				.HRDATA						(HRDATA),
 				.UART_RXD					(UART_RXD),
 				.UART_TXD					(UART_TXD),
 				.UART_ERROR_FLAG			(UART_ERROR_FLAG),
+				.HADDR						(HADDR),
 				
 	// Delete later
-				.HADDR						(HADDR),
 				.baud_tick					(baud_tick)
 );
 

@@ -1,4 +1,4 @@
-module wrapper (
+module wrapper (										// Overall assignment for FPGA DE-10 interface
   // inputs
   input  logic [ 9 : 0] SW,
   input	logic [ 3 : 0] KEY,
@@ -19,32 +19,30 @@ module wrapper (
 	logic	[ 31 :  0] 		data_io_lcd_o;
 	logic	[ 31 :  0] 		pc_debug_o;
 	logic	[ 31 :  0]		data_out;
-	logic	[ 11 :  0]		data_trans;
-	logic						baud_tick;
 
 Thesis_Project 			THESIS_PROJECT_BLOCK
 (
+	// INPUT LOGIC ASSIGNMENT
+	
 		.data_input			(SW[9:0]),
 		.clk_i				(CLOCK_50), 
 		.UARTCLK				(CLOCK2_50),
 		.rst_ni				(KEY[0]),
 			
-		.pc_debug_o			(pc_debug_o),
+	// OUTPUT LOGIC ASSIGNMENT
+	
 		.data_io_ledr_o	(LEDR[9:0]),
 		.data_out			(data_out),
 			
-			// UART INTERFACE PORT
+	// UART INTERFACE PORT
 		.UART_RXD			(GPIO_i),
 		.UART_TXD			(GPIO_o),
 			
-			// Delete later
-			
-		.HRDATA				(HRDATA),
-		.HADDR				(HADDR),
-		.baud_tick			(baud_tick),
-		.data_trans			(data_trans),
+	// Delete later
 		.data_io_lcd_o		(data_io_lcd_o)
 );
+
+// 7-segment display assignment
 
 bcdtohex						HEX0_DISPLAY
 (
@@ -58,5 +56,28 @@ bcdtohex						HEX1_DISPLAY
 		.segment				(HEX1)
 );
 
+bcdtohex						HEX2_DISPLAY
+(
+		.bcd					(data_out[11:8]),
+		.segment				(HEX2)
+);
+
+bcdtohex						HEX3_DISPLAY
+(
+		.bcd					(data_out[15:12]),
+		.segment				(HEX3)
+);
+
+bcdtohex						HEX4_DISPLAY
+(
+		.bcd					(data_out[19:16]),
+		.segment				(HEX4)
+);
+
+bcdtohex						HEX5_DISPLAY
+(
+		.bcd					(data_out[23:20]),
+		.segment				(HEX5)
+);
 
 endmodule : wrapper
