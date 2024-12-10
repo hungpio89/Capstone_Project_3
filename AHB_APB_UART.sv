@@ -56,8 +56,7 @@ module AHB_APB_UART
 	//---------------------------------------------------//
 	
 	// Delete Later
-	output logic					baud_tick,
-	output logic	[ 11 :  0]	data_trans
+	output logic					baud_tick
 );
 
 	// Local signal assignment
@@ -136,8 +135,7 @@ APB_UART								APB_UART_BLOCK
 										.UART_ERRORS			(UART_ERRORS),
 	
 	// Delete later
-										.baud_tick				(baud_tick),
-										.data_trans				(data_trans)
+										.baud_tick				(baud_tick)
 );
 
 endmodule

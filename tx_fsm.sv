@@ -53,7 +53,7 @@ module tx_fsm
 				present_state <= next_state; 
 			end
 			else
-				present_state <= ERROR;
+				present_state <= IDLE;
 		end
 	end
 	
@@ -87,10 +87,11 @@ module tx_fsm
 		tick_count	   		= 4'b0;
 		ctrl_tx_buffer 		= 1'b0;
 		done_tx					= 1'b0;
-		error_tx_detect	   = 1'b0;
+		error_tx_detect	   = error_tx_detect;
 		next_state				= next_state;
 		case (present_state) 
 			IDLE: begin
+				error_tx_detect = 1'b0;
 				if (!TXen) begin
 					next_state = IDLE;
 				end
@@ -127,7 +128,7 @@ module tx_fsm
 				if (data_on_trans) begin			// CHECK FLAG OF SHIFT DONE
 					next_state = DATA2;
 				end
-				else if (!data_on_trans ) begin
+				else if (!data_on_trans) begin
 					next_state = ERROR;
 				end
 			end

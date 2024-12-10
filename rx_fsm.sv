@@ -49,18 +49,17 @@ module rx_fsm
   
 	state present_state, next_state;
 	
+	assign data_is_legit = data_is_ready;
+	
 	always @(posedge baud_tick or negedge PRESETn) begin
 		if(!PRESETn) begin			// back to IDLE state
 			present_state <= IDLE;
 		end
 		else begin
-			if (!PWRITE && RXen) begin
+			if (!PWRITE && data_is_ready) begin
 				present_state <= next_state; 
 			end
-			else if (PWRITE && RXen) begin
-				present_state <= ERROR;
-			end
-			else if (!PWRITE && !RXen) begin
+			else begin
 				present_state <= IDLE; 
 			end
 		end
@@ -91,9 +90,8 @@ module rx_fsm
 		endcase
 	end
 	
-	assign data_is_legit = (data_is_avail && data_is_ready);
 	
-	always @(present_state, RXen, data_is_ready, start_bit, data_is_received, parity_bit, parity_bit_mode, stop_bit_twice, stop_bit, flag_received_sixth_tx_state, flag_received_seventh_tx_state, flag_received_eighth_tx_state) begin
+	always @(present_state, RXen, start_bit, data_is_received, parity_bit, parity_bit_mode, stop_bit_twice, stop_bit, flag_received_sixth_tx_state, flag_received_seventh_tx_state, flag_received_eighth_tx_state) begin
 		ctrl_shift_register 		= 4'b0;
 		rx_done						= 1'b0;
 		error_rx_detect 			= 1'b0;

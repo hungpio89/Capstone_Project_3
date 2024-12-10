@@ -92,6 +92,7 @@ compare_5bit 				COMPARE_5BITS_BLOCK
 	end
 	
 	assign fifolen = fifo_len;
-	assign data_is_ready = (read && fifo_read_en);
+	
+	assign data_is_ready = fifo_read_en;
 
 endmodule
