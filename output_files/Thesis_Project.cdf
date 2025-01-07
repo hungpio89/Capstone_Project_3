@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Ign)
-		Device PartName(5CSXFC6C6) MfrSpec(OpMask(0));
+		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
 		Device PartName(5CSXFC6D6F31) Path("C:/Users/24h/Desktop/HK241/Capstone_Project_3/output_files/") File("Thesis_Project.sof") MfrSpec(OpMask(1));
 

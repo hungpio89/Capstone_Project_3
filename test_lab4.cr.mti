@@ -1,0 +1,15 @@
+C:/Users/24h/Desktop/HK241/KTSNC/Group03_2051076_2051089_Lab5/lab5/floating_point_arithmetic.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/KTSNC/Group03_2051076_2051089_Lab5/lab5/floating_point_arithmetic.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module fpu_top
+
+Top level modules:
+	fpu_top
+
+} {} {}} C:/Users/24h/Desktop/HK241/KTSNC/Group03_2051076_2051089_Lab5/lab5/tb_floating_point_arithmetic.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/KTSNC/Group03_2051076_2051089_Lab5/lab5/tb_floating_point_arithmetic.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module fpu_top_tb
+
+Top level modules:
+	fpu_top_tb
+
+} {} {}}

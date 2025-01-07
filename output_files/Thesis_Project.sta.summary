@@ -1,581 +1,709 @@
 ------------------------------------------------------------
-TimeQuest Timing Analyzer Summary
+Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1100mV 85C Model Setup 'APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
-Slack : -9.308
-TNS   : -37.251
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -10.084
+TNS   : -20073.929
 
-Type  : Slow 1100mV 85C Model Setup 'APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
-Slack : -7.231
-TNS   : -85.260
+Type  : Slow 1100mV 85C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|execute_cycle:EX_instance|MEM_mem_en[0]'
+Slack : -9.683
+TNS   : -286.457
 
-Type  : Slow 1100mV 85C Model Setup 'HCLK'
-Slack : -6.715
-TNS   : -2723.143
+Type  : Slow 1100mV 85C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
+Slack : -6.661
+TNS   : -29.362
 
-Type  : Slow 1100mV 85C Model Setup 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
-Slack : -6.579
-TNS   : -6.579
+Type  : Slow 1100mV 85C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
+Slack : -6.653
+TNS   : -29.600
 
-Type  : Slow 1100mV 85C Model Setup 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_5'
-Slack : -6.033
-TNS   : -56.527
+Type  : Slow 1100mV 85C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|BAUD_RATE_GENERATOR:BAUD_RATE_GENERATOR_BLOCK|clk_sel'
+Slack : -5.295
+TNS   : -1122.187
 
-Type  : Slow 1100mV 85C Model Setup 'AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
-Slack : -4.092
-TNS   : -30.382
+Type  : Slow 1100mV 85C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
+Slack : -5.285
+TNS   : -141.749
 
-Type  : Slow 1100mV 85C Model Setup 'HRESETn'
-Slack : -3.817
-TNS   : -7.399
+Type  : Slow 1100mV 85C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|D_FF_1bit_with_Sel:D_FF_PWRITE|Q'
+Slack : -5.012
+TNS   : -8.918
 
-Type  : Slow 1100mV 85C Model Setup 'UARTCLK'
-Slack : -2.739
-TNS   : -645.056
+Type  : Slow 1100mV 85C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
+Slack : -4.610
+TNS   : -33.708
 
-Type  : Slow 1100mV 85C Model Setup 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
-Slack : -2.221
-TNS   : -29.045
+Type  : Slow 1100mV 85C Model Setup 'KEY[0]'
+Slack : -3.672
+TNS   : -7.281
 
-Type  : Slow 1100mV 85C Model Setup 'stop_bit_twice'
-Slack : -1.336
-TNS   : -2.163
+Type  : Slow 1100mV 85C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : -3.391
+TNS   : -124.329
 
-Type  : Slow 1100mV 85C Model Hold 'UARTCLK'
-Slack : -5.257
-TNS   : -603.063
+Type  : Slow 1100mV 85C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_6'
+Slack : -2.927
+TNS   : -34.418
 
-Type  : Slow 1100mV 85C Model Hold 'HCLK'
-Slack : -2.547
-TNS   : -331.666
+Type  : Slow 1100mV 85C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
+Slack : -1.668
+TNS   : -1.668
 
-Type  : Slow 1100mV 85C Model Hold 'stop_bit_twice'
-Slack : -1.924
-TNS   : -14.404
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : -2.795
+TNS   : -74.746
 
-Type  : Slow 1100mV 85C Model Hold 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_5'
-Slack : 0.066
+Type  : Slow 1100mV 85C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|BAUD_RATE_GENERATOR:BAUD_RATE_GENERATOR_BLOCK|clk_sel'
+Slack : -0.287
+TNS   : -0.287
+
+Type  : Slow 1100mV 85C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_6'
+Slack : 0.096
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Hold 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
-Slack : 0.352
+Type  : Slow 1100mV 85C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : 0.436
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Hold 'HRESETn'
-Slack : 2.055
+Type  : Slow 1100mV 85C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
+Slack : 0.635
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Hold 'APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
-Slack : 2.897
+Type  : Slow 1100mV 85C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
+Slack : 0.755
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Hold 'AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
-Slack : 3.016
+Type  : Slow 1100mV 85C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
+Slack : 0.755
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Hold 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
-Slack : 5.146
+Type  : Slow 1100mV 85C Model Hold 'KEY[0]'
+Slack : 1.198
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Hold 'APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
-Slack : 5.903
+Type  : Slow 1100mV 85C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
+Slack : 2.352
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Recovery 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
-Slack : -0.754
-TNS   : -10.507
-
-Type  : Slow 1100mV 85C Model Recovery 'HCLK'
-Slack : 0.066
+Type  : Slow 1100mV 85C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|D_FF_1bit_with_Sel:D_FF_PWRITE|Q'
+Slack : 2.502
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Recovery 'UARTCLK'
-Slack : 2.878
+Type  : Slow 1100mV 85C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
+Slack : 2.585
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Removal 'UARTCLK'
-Slack : -3.509
-TNS   : -1249.752
-
-Type  : Slow 1100mV 85C Model Removal 'HCLK'
-Slack : -0.859
-TNS   : -162.136
-
-Type  : Slow 1100mV 85C Model Removal 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
-Slack : 0.277
+Type  : Slow 1100mV 85C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|execute_cycle:EX_instance|MEM_mem_en[0]'
+Slack : 3.034
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'stop_bit_twice'
-Slack : -0.711
-TNS   : -3.859
+Type  : Slow 1100mV 85C Model Recovery 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|BAUD_RATE_GENERATOR:BAUD_RATE_GENERATOR_BLOCK|clk_sel'
+Slack : -7.211
+TNS   : -2450.061
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'HCLK'
+Type  : Slow 1100mV 85C Model Recovery 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : -7.046
+TNS   : -318.495
+
+Type  : Slow 1100mV 85C Model Recovery 'CLOCK_50'
+Slack : -5.785
+TNS   : -15830.090
+
+Type  : Slow 1100mV 85C Model Recovery 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
+Slack : -3.171
+TNS   : -84.697
+
+Type  : Slow 1100mV 85C Model Removal 'CLOCK_50'
+Slack : 0.824
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
+Slack : 0.834
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : 2.018
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|BAUD_RATE_GENERATOR:BAUD_RATE_GENERATOR_BLOCK|clk_sel'
+Slack : 3.567
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|BAUD_RATE_GENERATOR:BAUD_RATE_GENERATOR_BLOCK|clk_sel'
+Slack : -0.416
+TNS   : -250.522
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
 Slack : -0.394
-TNS   : -267.373
+TNS   : -1817.333
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'UARTCLK'
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
 Slack : -0.394
-TNS   : -257.672
+TNS   : -26.976
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
-Slack : -0.394
-TNS   : -9.730
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_5'
-Slack : 0.079
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
+Slack : 0.075
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'HRESETn'
-Slack : 0.197
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
+Slack : 0.202
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
-Slack : 0.304
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|execute_cycle:EX_instance|MEM_mem_en[0]'
+Slack : 0.215
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
-Slack : 0.305
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
+Slack : 0.306
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
-Slack : 0.331
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
+Slack : 0.308
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
-Slack : 0.381
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_6'
+Slack : 0.329
 TNS   : 0.000
 
-Type  : Slow 1100mV 0C Model Setup 'APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
-Slack : -9.158
-TNS   : -36.993
-
-Type  : Slow 1100mV 0C Model Setup 'APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
-Slack : -7.129
-TNS   : -84.051
-
-Type  : Slow 1100mV 0C Model Setup 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
-Slack : -6.464
-TNS   : -6.464
-
-Type  : Slow 1100mV 0C Model Setup 'HCLK'
-Slack : -6.377
-TNS   : -2576.025
-
-Type  : Slow 1100mV 0C Model Setup 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_5'
-Slack : -6.030
-TNS   : -55.841
-
-Type  : Slow 1100mV 0C Model Setup 'AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
-Slack : -4.121
-TNS   : -31.151
-
-Type  : Slow 1100mV 0C Model Setup 'HRESETn'
-Slack : -3.846
-TNS   : -7.489
-
-Type  : Slow 1100mV 0C Model Setup 'UARTCLK'
-Slack : -2.681
-TNS   : -607.807
-
-Type  : Slow 1100mV 0C Model Setup 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
-Slack : -2.228
-TNS   : -29.091
-
-Type  : Slow 1100mV 0C Model Setup 'stop_bit_twice'
-Slack : -1.526
-TNS   : -2.512
-
-Type  : Slow 1100mV 0C Model Hold 'UARTCLK'
-Slack : -5.130
-TNS   : -577.435
-
-Type  : Slow 1100mV 0C Model Hold 'HCLK'
-Slack : -2.637
-TNS   : -415.931
-
-Type  : Slow 1100mV 0C Model Hold 'stop_bit_twice'
-Slack : -1.897
-TNS   : -13.613
-
-Type  : Slow 1100mV 0C Model Hold 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_5'
-Slack : -0.024
-TNS   : -0.024
-
-Type  : Slow 1100mV 0C Model Hold 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
-Slack : 0.314
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'HRESETn'
-Slack : 2.132
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
-Slack : 2.863
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
-Slack : 3.121
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
-Slack : 5.061
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Hold 'APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
-Slack : 5.772
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Recovery 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
-Slack : -1.027
-TNS   : -14.320
-
-Type  : Slow 1100mV 0C Model Recovery 'HCLK'
-Slack : -0.001
-TNS   : -0.001
-
-Type  : Slow 1100mV 0C Model Recovery 'UARTCLK'
-Slack : 2.755
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Removal 'UARTCLK'
-Slack : -3.265
-TNS   : -1161.847
-
-Type  : Slow 1100mV 0C Model Removal 'HCLK'
-Slack : -0.780
-TNS   : -135.574
-
-Type  : Slow 1100mV 0C Model Removal 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
-Slack : 0.659
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'stop_bit_twice'
-Slack : -0.754
-TNS   : -4.080
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'HCLK'
-Slack : -0.394
-TNS   : -287.154
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'UARTCLK'
-Slack : -0.394
-TNS   : -244.447
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
-Slack : -0.394
-TNS   : -10.554
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_5'
-Slack : 0.017
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'HRESETn'
-Slack : 0.143
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
-Slack : 0.299
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
-Slack : 0.301
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
-Slack : 0.344
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
-Slack : 0.391
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Setup 'APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
-Slack : -4.933
-TNS   : -19.347
-
-Type  : Fast 1100mV 85C Model Setup 'APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
-Slack : -3.727
-TNS   : -43.698
-
-Type  : Fast 1100mV 85C Model Setup 'HCLK'
-Slack : -3.577
-TNS   : -1391.349
-
-Type  : Fast 1100mV 85C Model Setup 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
-Slack : -3.230
-TNS   : -3.230
-
-Type  : Fast 1100mV 85C Model Setup 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_5'
-Slack : -2.974
-TNS   : -25.957
-
-Type  : Fast 1100mV 85C Model Setup 'AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
-Slack : -2.024
-TNS   : -14.374
-
-Type  : Fast 1100mV 85C Model Setup 'HRESETn'
-Slack : -1.646
-TNS   : -3.126
-
-Type  : Fast 1100mV 85C Model Setup 'UARTCLK'
-Slack : -1.436
-TNS   : -256.243
-
-Type  : Fast 1100mV 85C Model Setup 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
-Slack : -0.914
-TNS   : -11.769
-
-Type  : Fast 1100mV 85C Model Setup 'stop_bit_twice'
-Slack : -0.140
-TNS   : -0.140
-
-Type  : Fast 1100mV 85C Model Hold 'UARTCLK'
-Slack : -2.968
-TNS   : -308.199
-
-Type  : Fast 1100mV 85C Model Hold 'HCLK'
-Slack : -1.196
-TNS   : -180.636
-
-Type  : Fast 1100mV 85C Model Hold 'stop_bit_twice'
-Slack : -0.870
-TNS   : -6.880
-
-Type  : Fast 1100mV 85C Model Hold 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
-Slack : 0.166
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_5'
-Slack : 0.242
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'HRESETn'
-Slack : 1.153
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
-Slack : 1.782
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
-Slack : 1.835
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
-Slack : 2.860
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
-Slack : 3.499
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Recovery 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
-Slack : -0.510
-TNS   : -7.122
-
-Type  : Fast 1100mV 85C Model Recovery 'HCLK'
-Slack : -0.188
-TNS   : -0.207
-
-Type  : Fast 1100mV 85C Model Recovery 'UARTCLK'
-Slack : 1.589
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Removal 'UARTCLK'
-Slack : -1.990
-TNS   : -708.692
-
-Type  : Fast 1100mV 85C Model Removal 'HCLK'
-Slack : -0.580
-TNS   : -114.674
-
-Type  : Fast 1100mV 85C Model Removal 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
-Slack : -0.027
-TNS   : -0.348
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'stop_bit_twice'
-Slack : -0.516
-TNS   : -3.862
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'UARTCLK'
-Slack : -0.371
-TNS   : -138.369
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'HCLK'
-Slack : -0.352
-TNS   : -41.938
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
-Slack : -0.147
-TNS   : -2.037
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'HRESETn'
-Slack : -0.131
-TNS   : -0.522
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_5'
-Slack : 0.142
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
-Slack : 0.335
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
-Slack : 0.354
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|D_FF_1bit_with_Sel:D_FF_PWRITE|Q'
 Slack : 0.365
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
-Slack : 0.369
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
+Slack : 0.417
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Setup 'APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
-Slack : -4.655
-TNS   : -18.360
-
-Type  : Fast 1100mV 0C Model Setup 'APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
-Slack : -3.567
-TNS   : -41.877
-
-Type  : Fast 1100mV 0C Model Setup 'HCLK'
-Slack : -3.224
-TNS   : -1232.791
-
-Type  : Fast 1100mV 0C Model Setup 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
-Slack : -3.057
-TNS   : -3.057
-
-Type  : Fast 1100mV 0C Model Setup 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_5'
-Slack : -2.904
-TNS   : -24.767
-
-Type  : Fast 1100mV 0C Model Setup 'AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
-Slack : -1.944
-TNS   : -14.106
-
-Type  : Fast 1100mV 0C Model Setup 'HRESETn'
-Slack : -1.622
-TNS   : -3.098
-
-Type  : Fast 1100mV 0C Model Setup 'UARTCLK'
-Slack : -1.177
-TNS   : -198.638
-
-Type  : Fast 1100mV 0C Model Setup 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
-Slack : -0.829
-TNS   : -10.569
-
-Type  : Fast 1100mV 0C Model Setup 'stop_bit_twice'
-Slack : -0.139
-TNS   : -0.139
-
-Type  : Fast 1100mV 0C Model Hold 'UARTCLK'
-Slack : -2.886
-TNS   : -318.402
-
-Type  : Fast 1100mV 0C Model Hold 'HCLK'
-Slack : -1.191
-TNS   : -231.161
-
-Type  : Fast 1100mV 0C Model Hold 'stop_bit_twice'
-Slack : -0.826
-TNS   : -6.397
-
-Type  : Fast 1100mV 0C Model Hold 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
-Slack : 0.137
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
+Slack : 0.431
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Hold 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_5'
-Slack : 0.251
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -9.776
+TNS   : -19340.099
+
+Type  : Slow 1100mV 0C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|execute_cycle:EX_instance|MEM_mem_en[0]'
+Slack : -9.680
+TNS   : -285.831
+
+Type  : Slow 1100mV 0C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
+Slack : -6.700
+TNS   : -30.238
+
+Type  : Slow 1100mV 0C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
+Slack : -6.384
+TNS   : -28.459
+
+Type  : Slow 1100mV 0C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
+Slack : -5.341
+TNS   : -143.133
+
+Type  : Slow 1100mV 0C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|BAUD_RATE_GENERATOR:BAUD_RATE_GENERATOR_BLOCK|clk_sel'
+Slack : -5.182
+TNS   : -1140.805
+
+Type  : Slow 1100mV 0C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|D_FF_1bit_with_Sel:D_FF_PWRITE|Q'
+Slack : -5.072
+TNS   : -9.004
+
+Type  : Slow 1100mV 0C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
+Slack : -4.702
+TNS   : -34.467
+
+Type  : Slow 1100mV 0C Model Setup 'KEY[0]'
+Slack : -3.487
+TNS   : -6.880
+
+Type  : Slow 1100mV 0C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : -3.363
+TNS   : -122.508
+
+Type  : Slow 1100mV 0C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_6'
+Slack : -2.877
+TNS   : -33.343
+
+Type  : Slow 1100mV 0C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
+Slack : -1.585
+TNS   : -1.585
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -2.835
+TNS   : -77.509
+
+Type  : Slow 1100mV 0C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|BAUD_RATE_GENERATOR:BAUD_RATE_GENERATOR_BLOCK|clk_sel'
+Slack : -0.174
+TNS   : -0.174
+
+Type  : Slow 1100mV 0C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_6'
+Slack : 0.036
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Hold 'HRESETn'
-Slack : 1.201
+Type  : Slow 1100mV 0C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : 0.451
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Hold 'AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
-Slack : 1.796
+Type  : Slow 1100mV 0C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
+Slack : 0.535
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Hold 'APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
-Slack : 1.800
+Type  : Slow 1100mV 0C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
+Slack : 0.674
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Hold 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
-Slack : 2.780
+Type  : Slow 1100mV 0C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
+Slack : 0.813
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Hold 'APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
-Slack : 3.402
+Type  : Slow 1100mV 0C Model Hold 'KEY[0]'
+Slack : 0.896
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Recovery 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
-Slack : -0.721
-TNS   : -10.086
-
-Type  : Fast 1100mV 0C Model Recovery 'HCLK'
-Slack : -0.225
-TNS   : -1.294
-
-Type  : Fast 1100mV 0C Model Recovery 'UARTCLK'
-Slack : 1.486
+Type  : Slow 1100mV 0C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
+Slack : 2.375
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Removal 'UARTCLK'
-Slack : -1.871
-TNS   : -666.461
+Type  : Slow 1100mV 0C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|D_FF_1bit_with_Sel:D_FF_PWRITE|Q'
+Slack : 2.548
+TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Removal 'HCLK'
-Slack : -0.538
-TNS   : -107.337
+Type  : Slow 1100mV 0C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
+Slack : 2.694
+TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Removal 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Type  : Slow 1100mV 0C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|execute_cycle:EX_instance|MEM_mem_en[0]'
+Slack : 3.095
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|BAUD_RATE_GENERATOR:BAUD_RATE_GENERATOR_BLOCK|clk_sel'
+Slack : -7.126
+TNS   : -2425.162
+
+Type  : Slow 1100mV 0C Model Recovery 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : -6.967
+TNS   : -315.195
+
+Type  : Slow 1100mV 0C Model Recovery 'CLOCK_50'
+Slack : -5.597
+TNS   : -15064.067
+
+Type  : Slow 1100mV 0C Model Recovery 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
+Slack : -3.148
+TNS   : -83.705
+
+Type  : Slow 1100mV 0C Model Removal 'CLOCK_50'
+Slack : 0.605
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
+Slack : 0.701
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : 1.960
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|BAUD_RATE_GENERATOR:BAUD_RATE_GENERATOR_BLOCK|clk_sel'
+Slack : 3.608
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.403
+TNS   : -1973.855
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|BAUD_RATE_GENERATOR:BAUD_RATE_GENERATOR_BLOCK|clk_sel'
+Slack : -0.394
+TNS   : -241.566
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : -0.394
+TNS   : -26.427
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
+Slack : 0.100
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|execute_cycle:EX_instance|MEM_mem_en[0]'
+Slack : 0.213
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
+Slack : 0.243
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
+Slack : 0.281
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
+Slack : 0.321
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_6'
+Slack : 0.323
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|D_FF_1bit_with_Sel:D_FF_PWRITE|Q'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
+Slack : 0.404
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
+Slack : 0.448
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -6.195
+TNS   : -11558.923
+
+Type  : Fast 1100mV 85C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|execute_cycle:EX_instance|MEM_mem_en[0]'
+Slack : -5.340
+TNS   : -157.588
+
+Type  : Fast 1100mV 85C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
+Slack : -4.348
+TNS   : -15.624
+
+Type  : Fast 1100mV 85C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|BAUD_RATE_GENERATOR:BAUD_RATE_GENERATOR_BLOCK|clk_sel'
+Slack : -3.671
+TNS   : -574.272
+
+Type  : Fast 1100mV 85C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
+Slack : -3.537
+TNS   : -15.149
+
+Type  : Fast 1100mV 85C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|D_FF_1bit_with_Sel:D_FF_PWRITE|Q'
+Slack : -2.622
+TNS   : -4.412
+
+Type  : Fast 1100mV 85C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
+Slack : -2.533
+TNS   : -66.233
+
+Type  : Fast 1100mV 85C Model Setup 'KEY[0]'
+Slack : -2.390
+TNS   : -4.694
+
+Type  : Fast 1100mV 85C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
+Slack : -2.315
+TNS   : -16.686
+
+Type  : Fast 1100mV 85C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : -1.760
+TNS   : -57.180
+
+Type  : Fast 1100mV 85C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_6'
+Slack : -1.742
+TNS   : -18.530
+
+Type  : Fast 1100mV 85C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
+Slack : -0.624
+TNS   : -0.624
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : -1.654
+TNS   : -43.477
+
+Type  : Fast 1100mV 85C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|BAUD_RATE_GENERATOR:BAUD_RATE_GENERATOR_BLOCK|clk_sel'
+Slack : -0.278
+TNS   : -0.561
+
+Type  : Fast 1100mV 85C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_6'
+Slack : 0.091
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : 0.132
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
+Slack : 0.296
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
+Slack : 0.372
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
+Slack : 0.414
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'KEY[0]'
+Slack : 0.733
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
+Slack : 1.218
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|D_FF_1bit_with_Sel:D_FF_PWRITE|Q'
+Slack : 1.260
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
+Slack : 1.425
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|execute_cycle:EX_instance|MEM_mem_en[0]'
+Slack : 1.589
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|BAUD_RATE_GENERATOR:BAUD_RATE_GENERATOR_BLOCK|clk_sel'
+Slack : -4.306
+TNS   : -1454.679
+
+Type  : Fast 1100mV 85C Model Recovery 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : -4.188
+TNS   : -189.606
+
+Type  : Fast 1100mV 85C Model Recovery 'CLOCK_50'
+Slack : -3.127
+TNS   : -9591.318
+
+Type  : Fast 1100mV 85C Model Recovery 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
+Slack : -1.881
+TNS   : -49.653
+
+Type  : Fast 1100mV 85C Model Removal 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'CLOCK_50'
+Slack : 0.463
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : 0.959
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|BAUD_RATE_GENERATOR:BAUD_RATE_GENERATOR_BLOCK|clk_sel'
+Slack : 1.793
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.432
+TNS   : -282.934
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|BAUD_RATE_GENERATOR:BAUD_RATE_GENERATOR_BLOCK|clk_sel'
+Slack : -0.172
+TNS   : -25.303
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : -0.003
+TNS   : -0.038
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'KEY[0]'
+Slack : 0.010
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|execute_cycle:EX_instance|MEM_mem_en[0]'
 Slack : 0.206
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'stop_bit_twice'
-Slack : -0.499
-TNS   : -3.622
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'UARTCLK'
-Slack : -0.355
-TNS   : -129.008
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'HCLK'
-Slack : -0.349
-TNS   : -41.806
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'HRESETn'
-Slack : -0.156
-TNS   : -0.600
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
-Slack : -0.145
-TNS   : -2.004
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_5'
-Slack : 0.183
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
+Slack : 0.246
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
-Slack : 0.356
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
+Slack : 0.288
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
-Slack : 0.373
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|D_FF_1bit_with_Sel:D_FF_PWRITE|Q'
+Slack : 0.338
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
-Slack : 0.395
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_6'
+Slack : 0.357
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
-Slack : 0.396
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
+Slack : 0.447
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
+Slack : 0.462
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -5.423
+TNS   : -9998.791
+
+Type  : Fast 1100mV 0C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|execute_cycle:EX_instance|MEM_mem_en[0]'
+Slack : -4.896
+TNS   : -144.084
+
+Type  : Fast 1100mV 0C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
+Slack : -3.829
+TNS   : -14.119
+
+Type  : Fast 1100mV 0C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
+Slack : -3.353
+TNS   : -14.551
+
+Type  : Fast 1100mV 0C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|BAUD_RATE_GENERATOR:BAUD_RATE_GENERATOR_BLOCK|clk_sel'
+Slack : -3.220
+TNS   : -534.761
+
+Type  : Fast 1100mV 0C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|D_FF_1bit_with_Sel:D_FF_PWRITE|Q'
+Slack : -2.500
+TNS   : -4.184
+
+Type  : Fast 1100mV 0C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
+Slack : -2.360
+TNS   : -62.218
+
+Type  : Fast 1100mV 0C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
+Slack : -2.247
+TNS   : -16.266
+
+Type  : Fast 1100mV 0C Model Setup 'KEY[0]'
+Slack : -1.879
+TNS   : -3.703
+
+Type  : Fast 1100mV 0C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : -1.550
+TNS   : -50.670
+
+Type  : Fast 1100mV 0C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_6'
+Slack : -1.513
+TNS   : -16.390
+
+Type  : Fast 1100mV 0C Model Setup 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
+Slack : -0.500
+TNS   : -0.500
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -1.643
+TNS   : -51.518
+
+Type  : Fast 1100mV 0C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|BAUD_RATE_GENERATOR:BAUD_RATE_GENERATOR_BLOCK|clk_sel'
+Slack : -0.240
+TNS   : -0.520
+
+Type  : Fast 1100mV 0C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_6'
+Slack : 0.088
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : 0.093
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
+Slack : 0.216
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
+Slack : 0.348
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'KEY[0]'
+Slack : 0.437
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
+Slack : 1.232
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|D_FF_1bit_with_Sel:D_FF_PWRITE|Q'
+Slack : 1.258
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
+Slack : 1.483
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|execute_cycle:EX_instance|MEM_mem_en[0]'
+Slack : 1.563
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|BAUD_RATE_GENERATOR:BAUD_RATE_GENERATOR_BLOCK|clk_sel'
+Slack : -4.246
+TNS   : -1442.349
+
+Type  : Fast 1100mV 0C Model Recovery 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : -4.137
+TNS   : -187.388
+
+Type  : Fast 1100mV 0C Model Recovery 'CLOCK_50'
+Slack : -2.831
+TNS   : -9208.606
+
+Type  : Fast 1100mV 0C Model Recovery 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
+Slack : -1.835
+TNS   : -48.998
+
+Type  : Fast 1100mV 0C Model Removal 'CLOCK_50'
+Slack : 0.324
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
+Slack : 0.377
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : 0.945
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|BAUD_RATE_GENERATOR:BAUD_RATE_GENERATOR_BLOCK|clk_sel'
+Slack : 1.807
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -0.446
+TNS   : -285.448
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|BAUD_RATE_GENERATOR:BAUD_RATE_GENERATOR_BLOCK|clk_sel'
+Slack : -0.093
+TNS   : -8.201
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'KEY[0]'
+Slack : -0.002
+TNS   : -0.002
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|apb_interface:APB_INTERFACE_BLOCK|baud_rate_divisor:BAUD_RATE_DIVISOR_BLOCK|clk_out'
+Slack : 0.036
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|execute_cycle:EX_instance|MEM_mem_en[0]'
+Slack : 0.242
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|pipeline_riscv_mod2:PIPELINE_RISCV_MOD2|fetch_cycle:IF_instance|D_FF_32bit:PC_inst|Q[0]'
+Slack : 0.244
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|uart_start_bit_detect:UART_START_BIT_DETECT_BLOCK|done_flag'
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|FSM_AHB:State_machine|HwriteReg'
+Slack : 0.335
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|AHB_SLAVE:AHB_APB_BRIDGE|D_FF_1bit_with_Sel:D_FF_PWRITE|Q'
+Slack : 0.370
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.DATA_IS_6'
+Slack : 0.386
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|rx_fsm:RX_FSM_BLOCK|present_state.IDLE'
+Slack : 0.444
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Thesis_Project:THESIS_PROJECT_BLOCK|AHB_APB_UART:AHB_APB_UART_BLOCK|APB_UART:APB_UART_BLOCK|custom_fsm_wr_rd:CUSTOM_FSM_WR_RD_BLOCK|present_state.INIT'
+Slack : 0.475
 TNS   : 0.000
 
 ------------------------------------------------------------

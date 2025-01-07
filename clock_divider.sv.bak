@@ -1,0 +1,23 @@
+module clock_divider (
+    input  logic clk_in,   // Clock đầu vào (50 MHz)
+    input  logic rst_n,    // Reset tín hiệu âm
+    output logic clk_out   // Clock đầu ra (10 MHz)
+);
+
+    logic [2:0] counter;   // Counter để chia tần số
+
+    always_ff @(posedge clk_in or negedge rst_n) begin
+        if (!rst_n) begin
+            counter <= 3'b0;
+        end else begin
+            if (counter == 3'd4)  // Đếm từ 0 đến 4 (5 chu kỳ)
+                counter <= 3'b0;
+            else
+                counter <= counter + 3'b1;
+        end
+    end
+
+    // Tạo tín hiệu clock_out (bật mỗi lần counter đạt giá trị nhất định)
+    assign clk_out = (counter < 3'd2); // 50% duty cycle
+
+endmodule

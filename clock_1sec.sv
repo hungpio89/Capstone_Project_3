@@ -1,0 +1,22 @@
+module clock_1sec (
+    input logic clk,          // 50 MHz clock input
+    input logic rst_n,        // Reset signal
+    output logic clk_1sec       // 1 Hz clock output
+);
+    // Parameter to define the number of clock cycles for 1 second
+    parameter int COUNT_MAX_1S = 100_000_00 - 1; // 0.1-second counter
+
+    int count; // Counter variable
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            count <= 0;
+            clk_1sec <= 0;
+        end else if (count == COUNT_MAX_1S) begin
+            count <= 0;
+            clk_1sec <= ~clk_1sec; // Toggle the output clock
+        end else begin
+            count <= count + 1;
+        end
+    end
+endmodule
