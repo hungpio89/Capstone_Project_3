@@ -29,31 +29,25 @@ module BAUD_RATE_GENERATOR
 	logic 						is_equal;
 	
 	assign cd_count = cd - 13'd1;
-	assign is_equal = &(~(cd_count ^ counter_baud));
 	
-	always_ff @(posedge baud_div_16 or negedge rst_n) begin
-		if (!rst_n) begin
-			counter_baud 		= 13'd0;
-			clk_sel 		 		= 1'b0;
-		end 
-		else begin
-			case (uart_mode_sel)
-				1'b0: begin
-					if (is_equal) begin
-						counter_baud 	= 13'd0;
-						clk_sel 			= ~clk_sel;  // Toggle the output clock
-					end 
-					else begin
-						counter_baud 	= counter_baud + 13'b0_0000_0000_0001;
-						clk_sel 			= clk_sel;
-					end
-				end
-				1'b1: begin
-					counter_baud 	= 13'd0;
-				end
-			endcase
-		end
-	end
+	logic [31:0] counter;        // Counter for dividing the clock
+
+    always_ff @(posedge baud_div_16 or negedge rst_n) begin
+        if (!rst_n)
+            counter <= 32'b0;    // Reset counter
+        else if (counter == cd_count) // If counter reaches divisor-1
+            counter <= 32'b0;    // Reset counter
+        else
+            counter <= counter + 1; // Increment counter
+    end
+
+    // Toggle clk_out when counter reaches divisor/2
+    always_ff @(posedge baud_div_16 or negedge rst_n) begin
+        if (!rst_n)
+            clk_sel <= 1'b0; // Reset clk_out
+        else if (counter == cd_count)
+            clk_sel <= ~clk_sel; // Toggle clk_out
+    end
 	
 	always_comb begin
 		case(uart_mode_sel)

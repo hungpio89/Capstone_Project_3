@@ -29,6 +29,13 @@ Top level modules:
 } {} {}} C:/Users/24h/Desktop/HK241/Capstone_Project_3/DEFINES.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/Capstone_Project_3/DEFINES.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 
+} {} {}} C:/Users/24h/Desktop/HK241/Capstone_Project_3/clock_1sec.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/Capstone_Project_3/clock_1sec.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module clock_1sec
+
+Top level modules:
+	clock_1sec
+
 } {} {}} C:/Users/24h/Desktop/HK241/Capstone_Project_3/MUX2TO1_1bit.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/Capstone_Project_3/MUX2TO1_1bit.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling module MUX2TO1_1bit
@@ -112,13 +119,6 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 
 Top level modules:
 	FSM_AHB
-
-} {} {}} C:/Users/24h/Desktop/HK241/Capstone_Project_3/wrapper.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/Capstone_Project_3/wrapper.sv
-QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module wrapper
-
-Top level modules:
-	wrapper
 
 } {} {}} C:/Users/24h/Desktop/HK241/Capstone_Project_3/arbiter.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/Capstone_Project_3/arbiter.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
@@ -281,15 +281,6 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	bit_counter_unit
 
-} {} {}} C:/Users/24h/Desktop/HK241/Capstone_Project_3/Thesis_Project.sv {2 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/Capstone_Project_3/Thesis_Project.sv
-QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module Thesis_Project
-** Warning: C:/Users/24h/Desktop/HK241/Capstone_Project_3/Thesis_Project.sv(111): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-
-
-Top level modules:
-	Thesis_Project
-
 } {} {}} C:/Users/24h/Desktop/HK241/Capstone_Project_3/arbiter_tb.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/Capstone_Project_3/arbiter_tb.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling module arbiter_tb
@@ -311,13 +302,6 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	DIVIDER
 
-} {} {}} C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_32bit_with_Sel.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_32bit_with_Sel.sv
-QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module D_FF_32bit_with_Sel
-
-Top level modules:
-	D_FF_32bit_with_Sel
-
 } {} {}} C:/Users/24h/Desktop/HK241/Capstone_Project_3/d_ff_trick_tb.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/Capstone_Project_3/d_ff_trick_tb.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 -- Compiling module d_ff_trick_tb
@@ -325,12 +309,19 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 Top level modules:
 	d_ff_trick_tb
 
-} {} {}} C:/Users/24h/Desktop/HK241/Capstone_Project_3/bcdtohex.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/Capstone_Project_3/bcdtohex.sv
+} {} {}} C:/Users/24h/Desktop/HK241/Capstone_Project_3/button_debounce.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/Capstone_Project_3/button_debounce.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
--- Compiling module bcdtohex
+-- Compiling module button_debounce
 
 Top level modules:
-	bcdtohex
+	button_debounce
+
+} {} {}} C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_32bit_with_Sel.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_32bit_with_Sel.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module D_FF_32bit_with_Sel
+
+Top level modules:
+	D_FF_32bit_with_Sel
 
 } {} {}} C:/Users/24h/Desktop/HK241/Capstone_Project_3/error_ram.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/Capstone_Project_3/error_ram.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
@@ -338,6 +329,13 @@ QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
 
 Top level modules:
 	error_ram
+
+} {} {}} C:/Users/24h/Desktop/HK241/Capstone_Project_3/bcdtohex.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/Capstone_Project_3/bcdtohex.sv
+QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013
+-- Compiling module bcdtohex
+
+Top level modules:
+	bcdtohex
 
 } {} {}} C:/Users/24h/Desktop/HK241/Capstone_Project_3/EncoderDataLength.sv {1 {vlog -work work -vopt -sv C:/Users/24h/Desktop/HK241/Capstone_Project_3/EncoderDataLength.sv
 QuestaSim-64 vlog 10.2c Compiler 2013.07 Jul 19 2013

@@ -9,1753 +9,1845 @@ Z0 dE:/HK241/KTSNC
 !i10e 25
 !i10f 100
 T_opt
-Vgi][l3>enjAYni]TZO=EW2
-04 6 4 work tb_ram fast 0
-=1-0ae0afb302ff-67277f4d-16-406c
-Z1 o-quiet -auto_acc_if_foreign -work work
-n@_opt
-Z2 OL;O;10.2c;57
-Z3 dE:/HK241/KTSNC
-!s110 1730641741
+Z1 Vgi][l3>enjAYni]TZO=EW2
+Z2 04 6 4 work tb_ram fast 0
+Z3 =1-0ae0afb302ff-67277f4d-16-406c
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OL;O;10.2c;57
+Z7 dE:/HK241/KTSNC
+Z8 !s110 1730641741
 T_opt1
-Vl4@ldn>ih[B:NV^<4LA1<1
-04 16 4 work transmit_FIFO_tb fast 0
-=1-745d22693e12-673b7c44-3c-34cc
-R1
-n@_opt1
-R2
-R3
-!s110 1731951684
+Z9 Vl4@ldn>ih[B:NV^<4LA1<1
+Z10 04 16 4 work transmit_FIFO_tb fast 0
+Z11 =1-745d22693e12-673b7c44-3c-34cc
+R4
+Z12 n@_opt1
+R6
+R7
+Z13 !s110 1731951684
 vaddress_decode
-Z4 DXx6 sv_std 3 std 0 22 `a<MJET1=lN@jzbA7kHm;1
-ITRSBJg<dnMUT9VdON71WP3
-Z5 V`JN@9S9cnhjKRR_L]QIcM3
+Z14 DXx6 sv_std 3 std 0 22 `a<MJET1=lN@jzbA7kHm;1
+Z15 ITRSBJg<dnMUT9VdON71WP3
+Z16 V`JN@9S9cnhjKRR_L]QIcM3
 S1
-Z6 dC:/Users/24h/Desktop/HK241/Capstone_Project_3
-Z7 w1733739146
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/address_decode.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/address_decode.sv
+Z17 dC:/Users/24h/Desktop/HK241/Capstone_Project_3
+Z18 w1733739146
+Z19 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/address_decode.sv
+Z20 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/address_decode.sv
 L0 1
-Z8 OL;L;10.2c;57
+Z21 OL;L;10.2c;57
 r1
 31
-Z9 o-work work -sv -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
-Z10 !s110 1733835485
-!s100 @n1I3?f8;LI7_H5;:^2D?0
-!s105 address_decode_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/address_decode.sv|
-!s108 1733835485.111000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/address_decode.sv|
+Z22 o-work work -sv -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z23 !s110 1735817136
+Z24 !s100 @n1I3?f8;LI7_H5;:^2D?0
+Z25 !s105 address_decode_sv_unit
+Z26 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/address_decode.sv|
+Z27 !s108 1735817136.829000
+Z28 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/address_decode.sv|
 !i10b 1
 !s85 0
 !i111 0
 vahb_apb_priority_arbiter
-R4
-R5
+R14
+R16
 r1
 31
-I?An1Da>m]keRmhOel1oE]1
+Z29 I?An1Da>m]keRmhOel1oE]1
 S1
-Z11 dC:/Users/24h/Desktop/HK241/DATN
-w1731737654
-8C:/Users/24h/Desktop/HK241/DATN/arbiter.sv
-FC:/Users/24h/Desktop/HK241/DATN/arbiter.sv
+Z30 dC:/Users/24h/Desktop/HK241/DATN
+Z31 w1731737654
+Z32 8C:/Users/24h/Desktop/HK241/DATN/arbiter.sv
+Z33 FC:/Users/24h/Desktop/HK241/DATN/arbiter.sv
 L0 1
-R8
-R9
-Z12 !s105 arbiter_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/DATN/arbiter.sv|
-!s107 C:/Users/24h/Desktop/HK241/DATN/arbiter.sv|
-!s100 <E^T=M]BYbz?<bn@0kQWF3
-!s108 1731737719.294000
+R21
+R22
+Z34 !s105 arbiter_sv_unit
+Z35 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/DATN/arbiter.sv|
+Z36 !s107 C:/Users/24h/Desktop/HK241/DATN/arbiter.sv|
+Z37 !s100 <E^T=M]BYbz?<bn@0kQWF3
+Z38 !s108 1731737719.294000
 !s85 0
 !i10b 1
 !i111 0
 vAHB_APB_UART
-R4
-R10
-I22eU<LOg6aQ9:?Z@_8;9<0
-R5
+R14
+R23
+Z39 I22eU<LOg6aQ9:?Z@_8;9<0
+R16
 S1
-R6
-w1733834338
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_APB_UART.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_APB_UART.sv
+R17
+Z40 w1733834338
+Z41 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_APB_UART.sv
+Z42 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_APB_UART.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-n@a@h@b_@a@p@b_@u@a@r@t
-!s105 AHB_APB_UART_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_APB_UART.sv|
-!s100 heZ329<V1D?Oho>:O=[_m3
-!s108 1733835485.258000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_APB_UART.sv|
+R22
+Z43 n@a@h@b_@a@p@b_@u@a@r@t
+Z44 !s100 heZ329<V1D?Oho>:O=[_m3
+Z45 !s105 AHB_APB_UART_sv_unit
+Z46 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_APB_UART.sv|
+Z47 !s108 1735817136.907000
+Z48 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_APB_UART.sv|
 !i10b 1
 !s85 0
 !i111 0
 vAHB_BusMatrix
-R4
-R10
-IUmJS9Mgdno?LQ^HZ^GE@>2
-R5
+R14
+R23
+Z49 IUmJS9Mgdno?LQ^HZ^GE@>2
+R16
 S1
-R6
-Z13 w1733739145
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_BusMatrix.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_BusMatrix.sv
+R17
+Z50 w1733739145
+Z51 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_BusMatrix.sv
+Z52 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_BusMatrix.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-n@a@h@b_@bus@matrix
-!s100 kW[<JSIAj2HGK7PdAYC[N2
-!s105 AHB_BusMatrix_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_BusMatrix.sv|
-!s108 1733835485.311000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_BusMatrix.sv|
+R22
+Z53 n@a@h@b_@bus@matrix
+Z54 !s100 kW[<JSIAj2HGK7PdAYC[N2
+Z55 !s105 AHB_BusMatrix_sv_unit
+Z56 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_BusMatrix.sv|
+Z57 !s108 1735817136.938000
+Z58 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_BusMatrix.sv|
 !i10b 1
 !s85 0
 !i111 0
 vAHB_SLAVE
-R4
-R10
-IC6ZRljQ@J67>F=MdYJnFW0
-R5
+R14
+R23
+Z59 IC6ZRljQ@J67>F=MdYJnFW0
+R16
 S1
-R6
-R13
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_SLAVE.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_SLAVE.sv
+R17
+R50
+Z60 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_SLAVE.sv
+Z61 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_SLAVE.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-n@a@h@b_@s@l@a@v@e
-!s100 Xn<^MgULlaYIRR33=aE801
-!s105 AHB_SLAVE_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_SLAVE.sv|
-!s108 1733835485.340000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_SLAVE.sv|
+R22
+Z62 n@a@h@b_@s@l@a@v@e
+Z63 !s100 Xn<^MgULlaYIRR33=aE801
+Z64 !s105 AHB_SLAVE_sv_unit
+Z65 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_SLAVE.sv|
+Z66 !s108 1735817136.969000
+Z67 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/AHB_SLAVE.sv|
 !i10b 1
 !s85 0
 !i111 0
 vahb_slave_if
-R4
-R10
-IDdCik[6WVEHF48=kg9^cH1
-R5
+R14
+Z68 IDdCik[6WVEHF48=kg9^cH1
+R16
 S1
-R6
-R7
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/ahb_slave_if.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/ahb_slave_if.sv
+R17
+R18
+Z69 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/ahb_slave_if.sv
+Z70 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/ahb_slave_if.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-!s100 5AER5EW4]HlOa8UOLY]b:1
-!s105 ahb_slave_if_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/ahb_slave_if.sv|
-!s108 1733835485.392000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/ahb_slave_if.sv|
+R22
+Z71 !s110 1735817137
+Z72 !s100 5AER5EW4]HlOa8UOLY]b:1
+Z73 !s105 ahb_slave_if_sv_unit
+Z74 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/ahb_slave_if.sv|
+Z75 !s108 1735817137.001000
+Z76 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/ahb_slave_if.sv|
 !i10b 1
 !s85 0
 !i111 0
 vapb_interface
-R4
-R5
+R14
+R16
 r1
 31
-Id`kmOAdIUV1^nkO6BI9CV2
+Z77 Id`kmOAdIUV1^nkO6BI9CV2
 S1
-R6
-R7
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/apb_interface.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/apb_interface.sv
+R17
+R18
+Z78 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/apb_interface.sv
+Z79 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/apb_interface.sv
 L0 1
-R8
-R9
+R21
+R22
+Z80 !s100 R561eS;kG^LVa;7E26NA<3
+Z81 !s105 apb_interface_sv_unit
+Z82 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/apb_interface.sv|
+Z83 !s108 1735817137.032000
+Z84 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/apb_interface.sv|
 !s85 0
-!s100 R561eS;kG^LVa;7E26NA<3
-!s105 apb_interface_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/apb_interface.sv|
-!s108 1733835485.420000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/apb_interface.sv|
 !i10b 1
 !i111 0
 vAPB_MASTER
-R4
-R10
-IhQzX=2CE[1aD?8afhz>el1
-R5
+R14
+R71
+Z85 IhQzX=2CE[1aD?8afhz>el1
+R16
 S1
-R6
-R13
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/APB_MASTER.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/APB_MASTER.sv
+R17
+R50
+Z86 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/APB_MASTER.sv
+Z87 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/APB_MASTER.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-n@a@p@b_@m@a@s@t@e@r
-!s100 lL6knI_:IM<YZSN:F[]n22
-!s105 APB_MASTER_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/APB_MASTER.sv|
-!s108 1733835485.461000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/APB_MASTER.sv|
+R22
+Z88 n@a@p@b_@m@a@s@t@e@r
+Z89 !s100 lL6knI_:IM<YZSN:F[]n22
+Z90 !s105 APB_MASTER_sv_unit
+Z91 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/APB_MASTER.sv|
+Z92 !s108 1735817137.063000
+Z93 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/APB_MASTER.sv|
 !i10b 1
 !s85 0
 !i111 0
 vAPB_UART
-R4
-R5
+R14
+R16
 r1
 31
-IHo;3SWXml1;>Ronic>UOg1
+Z94 IHo;3SWXml1;>Ronic>UOg1
 S1
-R6
-w1733834288
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/APB_UART.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/APB_UART.sv
+R17
+Z95 w1733834288
+Z96 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/APB_UART.sv
+Z97 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/APB_UART.sv
 L0 1
-R8
-R9
-n@a@p@b_@u@a@r@t
+R21
+R22
+Z98 n@a@p@b_@u@a@r@t
+Z99 !s100 JKKe1HiX^QmjgJ@=Y56<B3
+Z100 !s105 APB_UART_sv_unit
+Z101 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/APB_UART.sv|
+Z102 !s108 1735817137.094000
+Z103 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/APB_UART.sv|
 !s85 0
-!s105 APB_UART_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/APB_UART.sv|
-!s100 JKKe1HiX^QmjgJ@=Y56<B3
-!s108 1733835485.503000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/APB_UART.sv|
 !i10b 1
 !i111 0
 varbiter
-R4
-R10
-I:F;fjcYW<fELci`2`>dlT3
-R5
-R12
+R14
+R71
+Z104 I:F;fjcYW<fELci`2`>dlT3
+R16
+R34
 S1
-R6
-R7
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/arbiter.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/arbiter.sv
+R17
+R18
+Z105 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/arbiter.sv
+Z106 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/arbiter.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-!s100 RX[0XWM2kU@0RknGg_6]E3
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/arbiter.sv|
-!s108 1733835485.599000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/arbiter.sv|
+R22
+Z107 !s100 RX[0XWM2kU@0RknGg_6]E3
+Z108 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/arbiter.sv|
+Z109 !s108 1735817137.172000
+Z110 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/arbiter.sv|
 !i10b 1
 !s85 0
 !i111 0
 varbiter_tb
-R4
-R10
-IPMHZF?gm;a6CB`8NQE]6Q1
-R5
-Z14 !s105 arbiter_tb_sv_unit
+R14
+R71
+Z111 IPMHZF?gm;a6CB`8NQE]6Q1
+R16
+Z112 !s105 arbiter_tb_sv_unit
 S1
-R6
-R7
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/arbiter_tb.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/arbiter_tb.sv
+R17
+R18
+Z113 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/arbiter_tb.sv
+Z114 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/arbiter_tb.sv
 L0 3
-R8
+R21
 r1
 31
-R9
-!s100 RCgEDaMOb;^zj7?cWUg4S2
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/arbiter_tb.sv|
-!s108 1733835485.629000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/arbiter_tb.sv|
+R22
+Z115 !s100 RCgEDaMOb;^zj7?cWUg4S2
+Z116 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/arbiter_tb.sv|
+Z117 !s108 1735817137.204000
+Z118 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/arbiter_tb.sv|
 !i10b 1
 !s85 0
 !i111 0
 vbaud_rate_divisor
-R4
-R5
+R14
+R16
 r1
 31
-IAiE7ghhS_UWnTC:Po430g1
+Z119 IAiE7ghhS_UWnTC:Po430g1
 S1
-R6
-R7
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/baud_rate_divisor.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/baud_rate_divisor.sv
+R17
+R18
+Z120 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/baud_rate_divisor.sv
+Z121 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/baud_rate_divisor.sv
 L0 1
-R8
-R9
+R21
+R22
+Z122 !s100 @C<4^zJ3>8fnfU@8o`LTz2
+Z123 !s105 baud_rate_divisor_sv_unit
+Z124 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/baud_rate_divisor.sv|
+Z125 !s108 1735817137.235000
+Z126 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/baud_rate_divisor.sv|
 !s85 0
-!s100 @C<4^zJ3>8fnfU@8o`LTz2
-!s105 baud_rate_divisor_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/baud_rate_divisor.sv|
-!s108 1733835485.676000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/baud_rate_divisor.sv|
 !i10b 1
 !i111 0
 vBAUD_RATE_GENERATOR
-R4
-R5
+R14
+R16
 r1
 31
-IKTk:mlSI4lA339?iWQbKJ2
+Z127 IKTk:mlSI4lA339?iWQbKJ2
 S1
-R6
-R13
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/BAUD_RATE_GENERATOR.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/BAUD_RATE_GENERATOR.sv
+R17
+R50
+Z128 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/BAUD_RATE_GENERATOR.sv
+Z129 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/BAUD_RATE_GENERATOR.sv
 L0 1
-R8
-R9
-n@b@a@u@d_@r@a@t@e_@g@e@n@e@r@a@t@o@r
+R21
+R22
+Z130 n@b@a@u@d_@r@a@t@e_@g@e@n@e@r@a@t@o@r
+Z131 !s100 UgH0^7Y_gZjJoQUhhH99E0
+Z132 !s105 BAUD_RATE_GENERATOR_sv_unit
+Z133 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/BAUD_RATE_GENERATOR.sv|
+Z134 !s108 1735817137.266000
+Z135 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/BAUD_RATE_GENERATOR.sv|
 !s85 0
-!s100 UgH0^7Y_gZjJoQUhhH99E0
-!s105 BAUD_RATE_GENERATOR_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/BAUD_RATE_GENERATOR.sv|
-!s108 1733835485.726000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/BAUD_RATE_GENERATOR.sv|
 !i10b 1
 !i111 0
 vBAUD_RATE_GENERATOR_tb
-R4
-Z15 !s110 1733835487
-I>62cP0Kf^TNX?R>fllcc[0
-R5
+R14
+Z136 !s110 1735817138
+Z137 I>62cP0Kf^TNX?R>fllcc[0
+R16
 S1
-R6
-Z16 w1733739149
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_baud_rate_generator.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_baud_rate_generator.sv
+R17
+Z138 w1733739149
+Z139 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_baud_rate_generator.sv
+Z140 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_baud_rate_generator.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-n@b@a@u@d_@r@a@t@e_@g@e@n@e@r@a@t@o@r_tb
-!s100 <[[UB7Y=0gY7:IC=UC;@D0
-!s105 tb_baud_rate_generator_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_baud_rate_generator.sv|
-!s108 1733835487.437000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_baud_rate_generator.sv|
+R22
+Z141 n@b@a@u@d_@r@a@t@e_@g@e@n@e@r@a@t@o@r_tb
+Z142 !s100 <[[UB7Y=0gY7:IC=UC;@D0
+Z143 !s105 tb_baud_rate_generator_sv_unit
+Z144 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_baud_rate_generator.sv|
+Z145 !s108 1735817138.563000
+Z146 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_baud_rate_generator.sv|
 !i10b 1
 !s85 0
 !i111 0
 vbcdtohex
-R4
-R10
-I7oXSa3<BLQb:BUnA?5`LN3
-R5
+R14
+R71
+Z147 I7oXSa3<BLQb:BUnA?5`LN3
+R16
 S1
-R6
-R7
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/bcdtohex.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/bcdtohex.sv
+R17
+R18
+Z148 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/bcdtohex.sv
+Z149 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/bcdtohex.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-!s100 BR:Sj8k2<Pal=_b=PcN;a1
-!s105 bcdtohex_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/bcdtohex.sv|
-!s108 1733835485.780000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/bcdtohex.sv|
+R22
+Z150 !s100 BR:Sj8k2<Pal=_b=PcN;a1
+Z151 !s105 bcdtohex_sv_unit
+Z152 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/bcdtohex.sv|
+Z153 !s108 1735817137.297000
+Z154 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/bcdtohex.sv|
 !i10b 1
 !s85 0
 !i111 0
 vbit_counter_unit
-R4
-R10
-IPfCa1QTTWB]Y>4:Jg=hzA1
-R5
+R14
+R71
+Z155 IPfCa1QTTWB]Y>4:Jg=hzA1
+R16
 S1
-R6
-R7
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/bit_counter_unit.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/bit_counter_unit.sv
+R17
+R18
+Z156 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/bit_counter_unit.sv
+Z157 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/bit_counter_unit.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-!s100 2Cnfa=ldCaME:?DhV_E0R2
-!s105 bit_counter_unit_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/bit_counter_unit.sv|
-!s108 1733835485.820000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/bit_counter_unit.sv|
+R22
+Z158 !s100 2Cnfa=ldCaME:?DhV_E0R2
+Z159 !s105 bit_counter_unit_sv_unit
+Z160 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/bit_counter_unit.sv|
+Z161 !s108 1735817137.329000
+Z162 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/bit_counter_unit.sv|
+!i10b 1
+!s85 0
+!i111 0
+vbutton_debounce
+R14
+Z163 !s110 1735817139
+Z164 IJ6e]j4WID=MWTDU2lKLaQ2
+R16
+S1
+R17
+Z165 w1735558853
+Z166 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/button_debounce.sv
+Z167 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/button_debounce.sv
+L0 1
+R21
+r1
+31
+R22
+Z168 !s100 h3b6mZ@3hczAc[LjI4W]i2
+Z169 !s105 button_debounce_sv_unit
+Z170 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/button_debounce.sv|
+Z171 !s108 1735817139.125000
+Z172 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/button_debounce.sv|
+!i10b 1
+!s85 0
+!i111 0
+vclock_1sec
+R14
+R163
+Z173 I@o>jEaO281n1maQd3fO2=1
+R16
+S1
+R17
+Z174 w1735560862
+Z175 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/clock_1sec.sv
+Z176 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/clock_1sec.sv
+L0 1
+R21
+r1
+31
+R22
+Z177 !s100 ;3>oMXmd>T6o6iRjRNl193
+Z178 !s105 clock_1sec_sv_unit
+Z179 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/clock_1sec.sv|
+Z180 !s108 1735817139.094000
+Z181 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/clock_1sec.sv|
 !i10b 1
 !s85 0
 !i111 0
 vcomparator_bit
-R4
-R10
-I5lfTD`HE<jl]L?JFc:3d`3
-R5
+R14
+R71
+Z182 I5lfTD`HE<jl]L?JFc:3d`3
+R16
 S1
-R6
-R7
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/comparator_bit.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/comparator_bit.sv
+R17
+R18
+Z183 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/comparator_bit.sv
+Z184 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/comparator_bit.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-!s100 bPTdWiR[Lb<[X8VWM2ZYX3
-!s105 comparator_bit_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/comparator_bit.sv|
-!s108 1733835485.853000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/comparator_bit.sv|
+R22
+Z185 !s100 bPTdWiR[Lb<[X8VWM2ZYX3
+Z186 !s105 comparator_bit_sv_unit
+Z187 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/comparator_bit.sv|
+Z188 !s108 1735817137.344000
+Z189 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/comparator_bit.sv|
 !i10b 1
 !s85 0
 !i111 0
 vcomparator_unsigned_32bit
-R4
-R10
-I^bjIPZ4IlGEW9ockn2Km93
-R5
+R14
+R71
+Z190 I^bjIPZ4IlGEW9ockn2Km93
+R16
 S1
-R6
-R7
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/comparator_unsigned_32bit.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/comparator_unsigned_32bit.sv
+R17
+R18
+Z191 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/comparator_unsigned_32bit.sv
+Z192 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/comparator_unsigned_32bit.sv
 L0 2
-R8
+R21
 r1
 31
-R9
-!s100 dWV^zi@3Fb`LhciE:[HcK2
-!s105 comparator_unsigned_32bit_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/comparator_unsigned_32bit.sv|
-!s108 1733835485.891000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/comparator_unsigned_32bit.sv|
+R22
+Z193 !s100 dWV^zi@3Fb`LhciE:[HcK2
+Z194 !s105 comparator_unsigned_32bit_sv_unit
+Z195 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/comparator_unsigned_32bit.sv|
+Z196 !s108 1735817137.376000
+Z197 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/comparator_unsigned_32bit.sv|
 !i10b 1
 !s85 0
 !i111 0
 vcompare_5bit
-R4
-R5
+R14
+R16
 r1
 31
-I69N_<@c1e8eg7f0TJOKaC3
+Z198 I69N_<@c1e8eg7f0TJOKaC3
 S1
-R6
-R7
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/compare_5bit.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/compare_5bit.sv
+R17
+R18
+Z199 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/compare_5bit.sv
+Z200 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/compare_5bit.sv
 L0 1
-R8
-R9
+R21
+R22
+Z201 !s100 KN]OV8ocOO0jU_JlVmdnN2
+Z202 !s105 compare_5bit_sv_unit
+Z203 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/compare_5bit.sv|
+Z204 !s108 1735817137.407000
+Z205 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/compare_5bit.sv|
 !s85 0
-!s100 KN]OV8ocOO0jU_JlVmdnN2
-!s105 compare_5bit_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/compare_5bit.sv|
-!s108 1733835485.934000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/compare_5bit.sv|
 !i10b 1
 !i111 0
 vctrl_interface_signal
-R4
-R5
+R14
+R16
 r1
 31
-Ibk2E3U5K2`E^lB788nUW92
+Z206 Ibk2E3U5K2`E^lB788nUW92
 S1
-R6
-R7
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/ctrl_interface_signal.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/ctrl_interface_signal.sv
+R17
+R18
+Z207 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/ctrl_interface_signal.sv
+Z208 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/ctrl_interface_signal.sv
 L0 1
-R8
-R9
+R21
+R22
+Z209 !s100 =l?^Oc:zNBT]RaY]HgnYd1
+Z210 !s105 ctrl_interface_signal_sv_unit
+Z211 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/ctrl_interface_signal.sv|
+Z212 !s108 1735817137.438000
+Z213 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/ctrl_interface_signal.sv|
 !s85 0
-!s100 =l?^Oc:zNBT]RaY]HgnYd1
-!s105 ctrl_interface_signal_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/ctrl_interface_signal.sv|
-!s108 1733835485.976000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/ctrl_interface_signal.sv|
 !i10b 1
 !i111 0
 vcustom_fsm_wr_rd
-R4
-R5
+R14
+R16
 r1
 31
-Ih1FaD=_ZVTZzX=he_d]GU3
+Z214 Ih1FaD=_ZVTZzX=he_d]GU3
 S1
-R6
-R7
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/custom_fsm_wr_rd.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/custom_fsm_wr_rd.sv
+R17
+R18
+Z215 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/custom_fsm_wr_rd.sv
+Z216 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/custom_fsm_wr_rd.sv
 L0 1
-R8
-R9
+R21
+R22
+Z217 !s100 Z382h>nde201L]dGSlL4Q3
+Z218 !s105 custom_fsm_wr_rd_sv_unit
+Z219 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/custom_fsm_wr_rd.sv|
+Z220 !s108 1735817137.469000
+Z221 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/custom_fsm_wr_rd.sv|
 !s85 0
-!s100 Z382h>nde201L]dGSlL4Q3
-!s105 custom_fsm_wr_rd_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/custom_fsm_wr_rd.sv|
-!s108 1733835486.010000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/custom_fsm_wr_rd.sv|
 !i10b 1
 !i111 0
 vD_FF_12bit
-R4
-R5
+R14
+R16
 r1
 31
-I>UN1bhn1XZ>3aeMKN]F]z1
+Z222 I>UN1bhn1XZ>3aeMKN]F]z1
 S1
-R6
-R13
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_12bit.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_12bit.sv
+R17
+R50
+Z223 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_12bit.sv
+Z224 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_12bit.sv
 L0 1
-R8
-R9
-n@d_@f@f_12bit
+R21
+R22
+Z225 n@d_@f@f_12bit
+Z226 !s100 :R8l32mW:>BbL?e@c6gXE1
+Z227 !s105 D_FF_12bit_sv_unit
+Z228 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_12bit.sv|
+Z229 !s108 1735817137.610000
+Z230 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_12bit.sv|
 !s85 0
-!s100 :R8l32mW:>BbL?e@c6gXE1
-!s105 D_FF_12bit_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_12bit.sv|
-!s108 1733835486.195000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_12bit.sv|
 !i10b 1
 !i111 0
 vD_FF_1bit
-R4
-Z17 !s110 1733835486
-Ijd4h3gS0RXa[1[a5>l1172
-R5
+R14
+R71
+Z231 Ijd4h3gS0RXa[1[a5>l1172
+R16
 S1
-R6
-R13
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_1bit.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_1bit.sv
+R17
+R50
+Z232 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_1bit.sv
+Z233 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_1bit.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-n@d_@f@f_1bit
-!s100 ]?a9C>GA5D=@mZ==DD[6M0
-!s105 D_FF_1bit_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_1bit.sv|
-!s108 1733835486.051000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_1bit.sv|
+R22
+Z234 n@d_@f@f_1bit
+Z235 !s100 ]?a9C>GA5D=@mZ==DD[6M0
+Z236 !s105 D_FF_1bit_sv_unit
+Z237 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_1bit.sv|
+Z238 !s108 1735817137.501000
+Z239 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_1bit.sv|
 !i10b 1
 !s85 0
 !i111 0
 vD_FF_1bit_with_Sel
-R4
-R17
-Ialc<PBn94keDWz6dml;NH1
-R5
+R14
+R71
+Z240 Ialc<PBn94keDWz6dml;NH1
+R16
 S1
-R6
-R13
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_1bit_with_Sel.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_1bit_with_Sel.sv
+R17
+R50
+Z241 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_1bit_with_Sel.sv
+Z242 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_1bit_with_Sel.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-n@d_@f@f_1bit_with_@sel
-!s100 KfEQiRfj36<g4_S1nUE1^1
-!s105 D_FF_1bit_with_Sel_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_1bit_with_Sel.sv|
-!s108 1733835486.081000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_1bit_with_Sel.sv|
+R22
+Z243 n@d_@f@f_1bit_with_@sel
+Z244 !s100 KfEQiRfj36<g4_S1nUE1^1
+Z245 !s105 D_FF_1bit_with_Sel_sv_unit
+Z246 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_1bit_with_Sel.sv|
+Z247 !s108 1735817137.532000
+Z248 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_1bit_with_Sel.sv|
 !i10b 1
 !s85 0
 !i111 0
 vD_FF_32bit
-R4
-R17
-I?[Xza=MJm_0nVmc19S6P01
-R5
+R14
+R71
+Z249 I?[Xza=MJm_0nVmc19S6P01
+R16
 S1
-R6
-R13
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_32bit.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_32bit.sv
+R17
+R50
+Z250 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_32bit.sv
+Z251 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_32bit.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-n@d_@f@f_32bit
-!s100 3hUF3[3V;bGh7W;HbIF<E0
-!s105 D_FF_32bit_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_32bit.sv|
-!s108 1733835486.244000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_32bit.sv|
+R22
+Z252 n@d_@f@f_32bit
+Z253 !s100 3hUF3[3V;bGh7W;HbIF<E0
+Z254 !s105 D_FF_32bit_sv_unit
+Z255 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_32bit.sv|
+Z256 !s108 1735817137.641000
+Z257 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_32bit.sv|
 !i10b 1
 !s85 0
 !i111 0
 vD_FF_32bit_with_Sel
-R4
-R17
-ImAJbDi>OCQT]6O_OPWHGi3
-R5
+R14
+R71
+Z258 ImAJbDi>OCQT]6O_OPWHGi3
+R16
 S1
-R6
-R13
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_32bit_with_Sel.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_32bit_with_Sel.sv
+R17
+R50
+Z259 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_32bit_with_Sel.sv
+Z260 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_32bit_with_Sel.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-n@d_@f@f_32bit_with_@sel
-!s100 ?TJdFd_NnT9QRLkXSDa5z3
-!s105 D_FF_32bit_with_Sel_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_32bit_with_Sel.sv|
-!s108 1733835486.273000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_32bit_with_Sel.sv|
+R22
+Z261 n@d_@f@f_32bit_with_@sel
+Z262 !s100 ?TJdFd_NnT9QRLkXSDa5z3
+Z263 !s105 D_FF_32bit_with_Sel_sv_unit
+Z264 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_32bit_with_Sel.sv|
+Z265 !s108 1735817137.672000
+Z266 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_32bit_with_Sel.sv|
 !i10b 1
 !s85 0
 !i111 0
 vD_FF_4BIT
-R4
-R17
-IDRYCIjcOk<EBQ3=BS[fef2
-R5
+R14
+R71
+Z267 IDRYCIjcOk<EBQ3=BS[fef2
+R16
 S1
-R6
-R13
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_4BIT.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_4BIT.sv
+R17
+R50
+Z268 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_4BIT.sv
+Z269 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_4BIT.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-n@d_@f@f_4@b@i@t
-!s100 W9kOzd2S;z5nh5;MTifTO1
-!s105 D_FF_4BIT_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_4BIT.sv|
-!s108 1733835486.115000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_4BIT.sv|
+R22
+Z270 n@d_@f@f_4@b@i@t
+Z271 !s100 W9kOzd2S;z5nh5;MTifTO1
+Z272 !s105 D_FF_4BIT_sv_unit
+Z273 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_4BIT.sv|
+Z274 !s108 1735817137.563000
+Z275 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_4BIT.sv|
 !i10b 1
 !s85 0
 !i111 0
 vD_FF_64bit
-R4
-R17
-I;QMH@lV=nmF]mfa;kV[1l1
-R5
+R14
+R71
+Z276 I;QMH@lV=nmF]mfa;kV[1l1
+R16
 S1
-R6
-R13
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_64bit.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_64bit.sv
+R17
+R50
+Z277 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_64bit.sv
+Z278 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_64bit.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-n@d_@f@f_64bit
-!s100 a0fXT2Bc:L[AH^z;Lm5]o3
-!s105 D_FF_64bit_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_64bit.sv|
-!s108 1733835486.309000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_64bit.sv|
+R22
+Z279 n@d_@f@f_64bit
+Z280 !s100 a0fXT2Bc:L[AH^z;Lm5]o3
+Z281 !s105 D_FF_64bit_sv_unit
+Z282 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_64bit.sv|
+Z283 !s108 1735817137.704000
+Z284 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_64bit.sv|
 !i10b 1
 !s85 0
 !i111 0
 vD_FF_8bit
-R4
-R5
+R14
+R16
 r1
 31
-IAEBc09V8595EA0lS>Ym`>3
+Z285 IAEBc09V8595EA0lS>Ym`>3
 S1
-R6
-R13
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_8bit.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_8bit.sv
+R17
+R50
+Z286 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_8bit.sv
+Z287 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_8bit.sv
 L0 1
-R8
-R9
-n@d_@f@f_8bit
+R21
+R22
+Z288 n@d_@f@f_8bit
+Z289 !s100 9dKfkd@cm_=UeIAOAAn^=2
+Z290 !s105 D_FF_8bit_sv_unit
+Z291 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_8bit.sv|
+Z292 !s108 1735817137.579000
+Z293 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_8bit.sv|
 !s85 0
-!s100 9dKfkd@cm_=UeIAOAAn^=2
-!s105 D_FF_8bit_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_8bit.sv|
-!s108 1733835486.151000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/D_FF_8bit.sv|
 !i10b 1
 !i111 0
 vd_ff_trick
-R4
-R17
-IJFh`d`I1U@jIWQdDA]b]m2
-R5
+R14
+R71
+Z294 IJFh`d`I1U@jIWQdDA]b]m2
+R16
 S1
-R6
-R7
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/d_ff_trick.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/d_ff_trick.sv
+R17
+R18
+Z295 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/d_ff_trick.sv
+Z296 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/d_ff_trick.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-!s100 _l?g?jQVOl?]2;0XJz9KB3
-!s105 d_ff_trick_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/d_ff_trick.sv|
-!s108 1733835486.346000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/d_ff_trick.sv|
+R22
+Z297 !s100 _l?g?jQVOl?]2;0XJz9KB3
+Z298 !s105 d_ff_trick_sv_unit
+Z299 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/d_ff_trick.sv|
+Z300 !s108 1735817137.735000
+Z301 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/d_ff_trick.sv|
 !i10b 1
 !s85 0
 !i111 0
 vd_ff_trick_tb
-R4
-R17
-I6SlLd@enJ18jXhNXZPR]G2
-R5
+R14
+R71
+Z302 I6SlLd@enJ18jXhNXZPR]G2
+R16
 S1
-R6
-R7
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/d_ff_trick_tb.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/d_ff_trick_tb.sv
+R17
+R18
+Z303 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/d_ff_trick_tb.sv
+Z304 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/d_ff_trick_tb.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-!s100 dBj79jE:l];JV2E?1IF<B0
-!s105 d_ff_trick_tb_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/d_ff_trick_tb.sv|
-!s108 1733835486.377000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/d_ff_trick_tb.sv|
+R22
+Z305 !s100 dBj79jE:l];JV2E?1IF<B0
+Z306 !s105 d_ff_trick_tb_sv_unit
+Z307 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/d_ff_trick_tb.sv|
+Z308 !s108 1735817137.766000
+Z309 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/d_ff_trick_tb.sv|
 !i10b 1
 !s85 0
 !i111 0
 vDataLengthDecoder
-R4
-R17
-IFHJhWZVCPVKKS5hPVF]??1
-R5
+R14
+R71
+Z310 IFHJhWZVCPVKKS5hPVF]??1
+R16
 S1
-R6
-R13
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/DataLengthDecoder.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/DataLengthDecoder.sv
+R17
+R50
+Z311 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/DataLengthDecoder.sv
+Z312 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/DataLengthDecoder.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-n@data@length@decoder
-!s100 `jNZZ<CS<oRPEOfnUOOA;1
-!s105 DataLengthDecoder_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/DataLengthDecoder.sv|
-!s108 1733835486.424000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/DataLengthDecoder.sv|
+R22
+Z313 n@data@length@decoder
+Z314 !s100 `jNZZ<CS<oRPEOfnUOOA;1
+Z315 !s105 DataLengthDecoder_sv_unit
+Z316 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/DataLengthDecoder.sv|
+Z317 !s108 1735817137.797000
+Z318 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/DataLengthDecoder.sv|
 !i10b 1
 !s85 0
 !i111 0
 vDIVIDER
-R4
-R17
-IV>D2I_VgiI0N^mDD2JLPQ2
-R5
+R14
+R71
+Z319 IV>D2I_VgiI0N^mDD2JLPQ2
+R16
 S1
-R6
-R13
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/DIVIDER.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/DIVIDER.sv
+R17
+R50
+Z320 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/DIVIDER.sv
+Z321 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/DIVIDER.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-n@d@i@v@i@d@e@r
-!s100 9Xn=V9LSfVUc4a2EPFWNB3
-!s105 DIVIDER_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/DIVIDER.sv|
-!s108 1733835486.483000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/DIVIDER.sv|
+R22
+Z322 n@d@i@v@i@d@e@r
+Z323 !s100 9Xn=V9LSfVUc4a2EPFWNB3
+Z324 !s105 DIVIDER_sv_unit
+Z325 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/DIVIDER.sv|
+Z326 !s108 1735817137.860000
+Z327 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/DIVIDER.sv|
 !i10b 1
 !s85 0
 !i111 0
 vencoder_method
-R4
-R17
-I61dQnb`g[T?k6O4l`ZSO`1
-R5
+R14
+R71
+Z328 I61dQnb`g[T?k6O4l`ZSO`1
+R16
 S1
-R6
-Z18 w1733739147
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/encoder_method.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/encoder_method.sv
+R17
+Z329 w1733739147
+Z330 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/encoder_method.sv
+Z331 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/encoder_method.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-!s100 kg`J=mEAOIQ9fTXh=8^lW0
-!s105 encoder_method_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/encoder_method.sv|
-!s108 1733835486.526000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/encoder_method.sv|
+R22
+Z332 !s100 kg`J=mEAOIQ9fTXh=8^lW0
+Z333 !s105 encoder_method_sv_unit
+Z334 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/encoder_method.sv|
+Z335 !s108 1735817137.876000
+Z336 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/encoder_method.sv|
 !i10b 1
 !s85 0
 !i111 0
 vEncoderAddressBehave
-R4
-R17
-I?Ch=B^467Q]iST?O>8cVW1
-R5
+R14
+R71
+Z337 I?Ch=B^467Q]iST?O>8cVW1
+R16
 S1
-R6
-R13
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/EncoderAddressBehave.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/EncoderAddressBehave.sv
+R17
+R50
+Z338 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/EncoderAddressBehave.sv
+Z339 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/EncoderAddressBehave.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-n@encoder@address@behave
-!s100 zfYaMKCBkQaoGCbm]C[G;1
-!s105 EncoderAddressBehave_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/EncoderAddressBehave.sv|
-!s108 1733835486.570000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/EncoderAddressBehave.sv|
+R22
+Z340 n@encoder@address@behave
+Z341 !s100 zfYaMKCBkQaoGCbm]C[G;1
+Z342 !s105 EncoderAddressBehave_sv_unit
+Z343 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/EncoderAddressBehave.sv|
+Z344 !s108 1735817137.907000
+Z345 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/EncoderAddressBehave.sv|
 !i10b 1
 !s85 0
 !i111 0
 vEncoderDataLength
-R4
-R17
-I0zce@45M<@1UXHEbQZJ?d2
-R5
+R14
+R71
+Z346 I0zce@45M<@1UXHEbQZJ?d2
+R16
 S1
-R6
-R13
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/EncoderDataLength.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/EncoderDataLength.sv
+R17
+R50
+Z347 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/EncoderDataLength.sv
+Z348 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/EncoderDataLength.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-n@encoder@data@length
-!s100 ?Z44?hL<DT:@EVJ@k?:800
-!s105 EncoderDataLength_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/EncoderDataLength.sv|
-!s108 1733835486.619000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/EncoderDataLength.sv|
+R22
+Z349 n@encoder@data@length
+Z350 !s100 ?Z44?hL<DT:@EVJ@k?:800
+Z351 !s105 EncoderDataLength_sv_unit
+Z352 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/EncoderDataLength.sv|
+Z353 !s108 1735817137.938000
+Z354 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/EncoderDataLength.sv|
 !i10b 1
 !s85 0
 !i111 0
 verror_ram
-R4
-R17
-I`g@1gYcKD`Vj4IV7PA^Jc3
-R5
+R14
+R71
+Z355 I`g@1gYcKD`Vj4IV7PA^Jc3
+R16
 S1
-R6
-R18
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/error_ram.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/error_ram.sv
+R17
+R329
+Z356 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/error_ram.sv
+Z357 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/error_ram.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-!s100 WZenlDlHc:WRYQn@PXiI<0
-!s105 error_ram_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/error_ram.sv|
-!s108 1733835486.651000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/error_ram.sv|
+R22
+Z358 !s100 WZenlDlHc:WRYQn@PXiI<0
+Z359 !s105 error_ram_sv_unit
+Z360 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/error_ram.sv|
+Z361 !s108 1735817137.969000
+Z362 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/error_ram.sv|
 !i10b 1
 !s85 0
 !i111 0
 vfifo_read_memory
-R4
-R5
+R14
+R16
 r1
 31
-I3QFXa7gbKI<;adKN>7^DT2
-Z19 !s105 fifo_read_memory_sv_unit
+Z363 I3QFXa7gbKI<;adKN>7^DT2
+Z364 !s105 fifo_read_memory_sv_unit
 S1
-R6
-R18
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/fifo_read_memory.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/fifo_read_memory.sv
+R17
+R329
+Z365 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/fifo_read_memory.sv
+Z366 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/fifo_read_memory.sv
 L0 1
-R8
-R9
+R21
+R22
+Z367 !s100 HOjWOiFEj?0NX]=_^Xnzo2
+Z368 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/fifo_read_memory.sv|
+Z369 !s108 1735817138.001000
+Z370 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/fifo_read_memory.sv|
 !s85 0
-!s100 HOjWOiFEj?0NX]=_^Xnzo2
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/fifo_read_memory.sv|
-!s108 1733835486.687000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/fifo_read_memory.sv|
 !i10b 1
 !i111 0
-vFSM_AHB
-R4
-R17
-Ik=TGnjM3fUeaAmRb?Y4fG2
-R5
+vfpu_top
+R14
+Z371 !s100 zSmBNGPQgC1JWLIn@1YkV3
+Z372 IQz=FU:knmFcJ[3a[VG8A63
+R16
+Z373 !s105 floating_point_arithmetic_sv_unit
 S1
-R6
-R7
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/FSM_AHB.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/FSM_AHB.sv
+R17
+Z374 w1735957103
+Z375 8C:/Users/24h/Desktop/HK241/KTSNC/Group03_2051076_2051089_Lab5/lab5/floating_point_arithmetic.sv
+Z376 FC:/Users/24h/Desktop/HK241/KTSNC/Group03_2051076_2051089_Lab5/lab5/floating_point_arithmetic.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-n@f@s@m_@a@h@b
-!s100 bk]ZMP6dXzN4HkB=E67=02
-!s105 FSM_AHB_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/FSM_AHB.sv|
-!s108 1733835486.729000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/FSM_AHB.sv|
+Z377 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/KTSNC/Group03_2051076_2051089_Lab5/lab5/floating_point_arithmetic.sv|
+R22
+Z378 !s110 1735959670
+!i10b 1
+!s85 0
+Z379 !s108 1735959670.551000
+Z380 !s107 C:/Users/24h/Desktop/HK241/KTSNC/Group03_2051076_2051089_Lab5/lab5/floating_point_arithmetic.sv|
+!i111 0
+vfpu_top_tb
+R14
+R378
+!i10b 1
+Z381 !s100 m61=G3WV=Y<^DZN3bDLUk3
+Z382 I=ehOBzBn?h;>iZT]3z?Hg2
+R16
+Z383 !s105 tb_floating_point_arithmetic_sv_unit
+S1
+R17
+Z384 w1735957104
+Z385 8C:/Users/24h/Desktop/HK241/KTSNC/Group03_2051076_2051089_Lab5/lab5/tb_floating_point_arithmetic.sv
+Z386 FC:/Users/24h/Desktop/HK241/KTSNC/Group03_2051076_2051089_Lab5/lab5/tb_floating_point_arithmetic.sv
+L0 3
+R21
+r1
+!s85 0
+31
+!s108 1735959670.598000
+!s107 C:/Users/24h/Desktop/HK241/KTSNC/Group03_2051076_2051089_Lab5/lab5/tb_floating_point_arithmetic.sv|
+Z387 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/KTSNC/Group03_2051076_2051089_Lab5/lab5/tb_floating_point_arithmetic.sv|
+!i111 0
+R22
+vFSM_AHB
+R14
+R136
+Z388 Ik=TGnjM3fUeaAmRb?Y4fG2
+R16
+S1
+R17
+R18
+Z389 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/FSM_AHB.sv
+Z390 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/FSM_AHB.sv
+L0 1
+R21
+r1
+31
+R22
+Z391 n@f@s@m_@a@h@b
+Z392 !s100 bk]ZMP6dXzN4HkB=E67=02
+Z393 !s105 FSM_AHB_sv_unit
+Z394 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/FSM_AHB.sv|
+Z395 !s108 1735817138.047000
+Z396 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/FSM_AHB.sv|
 !i10b 1
 !s85 0
 !i111 0
 vFSM_APB
-R4
-R17
-I5mIT4?UGM^7m>mhj3=ASV0
-R5
+R14
+R136
+Z397 I5mIT4?UGM^7m>mhj3=ASV0
+R16
 S1
-R6
-R7
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/FSM_APB.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/FSM_APB.sv
+R17
+R18
+Z398 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/FSM_APB.sv
+Z399 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/FSM_APB.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-n@f@s@m_@a@p@b
-!s100 EE1_KiWb5aD<k7G7LD0DD3
-!s105 FSM_APB_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/FSM_APB.sv|
-!s108 1733835486.764000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/FSM_APB.sv|
+R22
+Z400 n@f@s@m_@a@p@b
+Z401 !s100 EE1_KiWb5aD<k7G7LD0DD3
+Z402 !s105 FSM_APB_sv_unit
+Z403 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/FSM_APB.sv|
+Z404 !s108 1735817138.079000
+Z405 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/FSM_APB.sv|
 !i10b 1
 !s85 0
 !i111 0
 vMUX2TO1_1bit
-R4
-R17
-IX_UlkMbAkbaNRDZ7>_e_P1
-R5
+R14
+R136
+Z406 IX_UlkMbAkbaNRDZ7>_e_P1
+R16
 S1
-R6
-R7
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/MUX2TO1_1bit.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/MUX2TO1_1bit.sv
+R17
+R18
+Z407 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/MUX2TO1_1bit.sv
+Z408 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/MUX2TO1_1bit.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-n@m@u@x2@t@o1_1bit
-!s100 V35fD10f`<7AXDUk^[RKA1
-!s105 MUX2TO1_1bit_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/MUX2TO1_1bit.sv|
-!s108 1733835486.792000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/MUX2TO1_1bit.sv|
+R22
+Z409 n@m@u@x2@t@o1_1bit
+Z410 !s100 V35fD10f`<7AXDUk^[RKA1
+Z411 !s105 MUX2TO1_1bit_sv_unit
+Z412 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/MUX2TO1_1bit.sv|
+Z413 !s108 1735817138.110000
+Z414 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/MUX2TO1_1bit.sv|
 !i10b 1
 !s85 0
 !i111 0
 vmux4to1_4bit
-R4
-R17
-I4kEinb6U0PG>b3k^=Ui9]0
-R5
+R14
+R136
+Z415 I4kEinb6U0PG>b3k^=Ui9]0
+R16
 S1
-R6
-R18
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/mux4to1_4bit.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/mux4to1_4bit.sv
+R17
+R329
+Z416 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/mux4to1_4bit.sv
+Z417 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/mux4to1_4bit.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-!s100 n0TDXJEBYYcE]kNE;BGNh2
-!s105 mux4to1_4bit_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/mux4to1_4bit.sv|
-!s108 1733835486.826000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/mux4to1_4bit.sv|
+R22
+Z418 !s100 n0TDXJEBYYcE]kNE;BGNh2
+Z419 !s105 mux4to1_4bit_sv_unit
+Z420 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/mux4to1_4bit.sv|
+Z421 !s108 1735817138.141000
+Z422 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/mux4to1_4bit.sv|
 !i10b 1
 !s85 0
 !i111 0
 vor_1bit
-R4
-R5
+R14
+R16
 r1
 31
-I`JKmzTVI8GbHU]aV;PF>40
+Z423 I`JKmzTVI8GbHU]aV;PF>40
 S1
-R6
-R18
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/or_1bit.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/or_1bit.sv
+R17
+R329
+Z424 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/or_1bit.sv
+Z425 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/or_1bit.sv
 L0 1
-R8
-R9
+R21
+R22
+Z426 !s100 f;SMeM_`e7S9LVlC0G=cW2
+Z427 !s105 or_1bit_sv_unit
+Z428 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/or_1bit.sv|
+Z429 !s108 1735817138.172000
+Z430 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/or_1bit.sv|
 !s85 0
-!s100 f;SMeM_`e7S9LVlC0G=cW2
-!s105 or_1bit_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/or_1bit.sv|
-!s108 1733835486.859000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/or_1bit.sv|
 !i10b 1
 !i111 0
 vpriority_selector
-R4
-R17
-IhhSl<XhB2I6<_^M8RgSkK1
-R5
+R14
+R136
+Z431 IhhSl<XhB2I6<_^M8RgSkK1
+R16
 S1
-R6
-R18
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/priority_selector.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/priority_selector.sv
+R17
+R329
+Z432 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/priority_selector.sv
+Z433 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/priority_selector.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-!s100 Q>^>PZkAYLTcE5>zBLJ131
-!s105 priority_selector_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/priority_selector.sv|
-!s108 1733835486.905000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/priority_selector.sv|
+R22
+Z434 !s100 Q>^>PZkAYLTcE5>zBLJ131
+Z435 !s105 priority_selector_sv_unit
+Z436 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/priority_selector.sv|
+Z437 !s108 1735817138.204000
+Z438 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/priority_selector.sv|
 !i10b 1
 !s85 0
 !i111 0
 vram
-R4
-R17
-I3[QB_[XjR0<8aY28@UL7a1
-R5
+R14
+R136
+Z439 I3[QB_[XjR0<8aY28@UL7a1
+R16
 S1
-R6
-R18
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/ram.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/ram.sv
+R17
+R329
+Z440 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/ram.sv
+Z441 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/ram.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-!s100 9g8ReS`lQIIC>[C8Col4H3
-!s105 ram_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/ram.sv|
-!s108 1733835486.952000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/ram.sv|
+R22
+Z442 !s100 9g8ReS`lQIIC>[C8Col4H3
+Z443 !s105 ram_sv_unit
+Z444 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/ram.sv|
+Z445 !s108 1735817138.235000
+Z446 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/ram.sv|
 !i10b 1
 !s85 0
 !i111 0
 vreceive_FIFO
-R4
-R5
+R14
+R16
 r1
 31
-I<hAUk]4L]nUQHUTYn=zgA0
+Z447 I<hAUk]4L]nUQHUTYn=zgA0
 S1
-R6
-w1733833274
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/receive_FIFO.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/receive_FIFO.sv
+R17
+Z448 w1733833274
+Z449 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/receive_FIFO.sv
+Z450 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/receive_FIFO.sv
 L0 1
-R8
-R9
-nreceive_@f@i@f@o
+R21
+R22
+Z451 nreceive_@f@i@f@o
+Z452 !s100 `doM]McZTTgj]d8AO6<LA1
+Z453 !s105 receive_FIFO_sv_unit
+Z454 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/receive_FIFO.sv|
+Z455 !s108 1735817138.297000
+Z456 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/receive_FIFO.sv|
 !s85 0
-!s100 `doM]McZTTgj]d8AO6<LA1
-!s105 receive_FIFO_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/receive_FIFO.sv|
-!s108 1733835487.039000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/receive_FIFO.sv|
 !i10b 1
 !i111 0
 vregister_enable_only
-R4
-R15
-IDCke]:;`Nf2MG`f6M;BkR1
-R5
+R14
+R136
+Z457 IDCke]:;`Nf2MG`f6M;BkR1
+R16
 S1
-R6
-R18
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/register_enable_only.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/register_enable_only.sv
+R17
+R329
+Z458 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/register_enable_only.sv
+Z459 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/register_enable_only.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-!s100 a54TTY1hFdaBV^XchFZUP1
-!s105 register_enable_only_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/register_enable_only.sv|
-!s108 1733835487.116000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/register_enable_only.sv|
+R22
+Z460 !s100 a54TTY1hFdaBV^XchFZUP1
+Z461 !s105 register_enable_only_sv_unit
+Z462 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/register_enable_only.sv|
+Z463 !s108 1735817138.329000
+Z464 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/register_enable_only.sv|
 !i10b 1
 !s85 0
 !i111 0
 vrx_fifo_memory
-R4
-R5
+R14
+R16
 r1
 31
-I23e0P_GB;3YDnY3fGdY[J0
+Z465 I23e0P_GB;3YDnY3fGdY[J0
 S1
-dC:/Users/Admin/Desktop/HK241/Capstone_Project_3
-w1732363605
-8C:/Users/Admin/Desktop/HK241/Capstone_Project_3/fifo_read_memory.sv
-FC:/Users/Admin/Desktop/HK241/Capstone_Project_3/fifo_read_memory.sv
+Z466 dC:/Users/Admin/Desktop/HK241/Capstone_Project_3
+Z467 w1732363605
+Z468 8C:/Users/Admin/Desktop/HK241/Capstone_Project_3/fifo_read_memory.sv
+Z469 FC:/Users/Admin/Desktop/HK241/Capstone_Project_3/fifo_read_memory.sv
 L0 1
-R8
-R9
-R19
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/Capstone_Project_3/fifo_read_memory.sv|
-!s107 C:/Users/Admin/Desktop/HK241/Capstone_Project_3/fifo_read_memory.sv|
-!s100 K;7DgSjFlVdlHYI^DgAgJ3
-!s108 1732379024.186000
+R21
+R22
+R364
+Z470 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/Capstone_Project_3/fifo_read_memory.sv|
+Z471 !s107 C:/Users/Admin/Desktop/HK241/Capstone_Project_3/fifo_read_memory.sv|
+Z472 !s100 K;7DgSjFlVdlHYI^DgAgJ3
+Z473 !s108 1732379024.186000
 !s85 0
 !i10b 1
 !i111 0
 vrx_fsm
-R4
-R5
+R14
+R16
 r1
 31
-Ihi3g;n03oGal84deg]IW83
+Z474 Ihi3g;n03oGal84deg]IW83
 S1
-R6
-w1733833366
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/rx_fsm.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/rx_fsm.sv
+R17
+Z475 w1733833366
+Z476 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/rx_fsm.sv
+Z477 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/rx_fsm.sv
 L0 1
-R8
-R9
+R21
+R22
+Z478 !s100 ;0jJcQ`U:E1I5?oa=5FB=1
+Z479 !s105 rx_fsm_sv_unit
+Z480 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/rx_fsm.sv|
+Z481 !s108 1735817138.344000
+Z482 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/rx_fsm.sv|
 !s85 0
-!s100 ;0jJcQ`U:E1I5?oa=5FB=1
-!s105 rx_fsm_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/rx_fsm.sv|
-!s108 1733835487.161000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/rx_fsm.sv|
 !i10b 1
 !i111 0
 vSel_Clk
-R4
-R15
-Ieo844jSA7TL:Jm[nZ;EhG2
-R5
+R14
+R136
+Z483 Ieo844jSA7TL:Jm[nZ;EhG2
+R16
 S1
-R6
-R7
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/Sel_Clk.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/Sel_Clk.sv
+R17
+R18
+Z484 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/Sel_Clk.sv
+Z485 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/Sel_Clk.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-n@sel_@clk
-!s100 d^:Y`TUmD0M9^D6E>Sk[z0
-!s105 Sel_Clk_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/Sel_Clk.sv|
-!s108 1733835487.205000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/Sel_Clk.sv|
+R22
+Z486 n@sel_@clk
+Z487 !s100 d^:Y`TUmD0M9^D6E>Sk[z0
+Z488 !s105 Sel_Clk_sv_unit
+Z489 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/Sel_Clk.sv|
+Z490 !s108 1735817138.375000
+Z491 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/Sel_Clk.sv|
 !i10b 1
 !s85 0
 !i111 0
 vshift_register_rd
-R4
-R5
+R14
+R16
 r1
-!s85 0
 31
-Ial7k_660?IKaKcRfDY0jD2
+Z492 Ial7k_660?IKaKcRfDY0jD2
 S1
-R6
-R18
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/shift_register_rd.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/shift_register_rd.sv
+R17
+R329
+Z493 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/shift_register_rd.sv
+Z494 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/shift_register_rd.sv
 L0 1
-R8
-R9
-!s100 coU6kBz^=i`R5ODA?Ro5:0
-!s105 shift_register_rd_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/shift_register_rd.sv|
-!s108 1733835487.245000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/shift_register_rd.sv|
+R21
+R22
+Z495 !s100 coU6kBz^=i`R5ODA?Ro5:0
+Z496 !s105 shift_register_rd_sv_unit
+Z497 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/shift_register_rd.sv|
+Z498 !s108 1735817138.407000
+Z499 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/shift_register_rd.sv|
+!s85 0
 !i10b 1
 !i111 0
 vshift_register_wr
-R4
-R5
+R14
+R16
 r1
 31
-I_Y^bS`B[@13e=SJKi0[PY3
+Z500 I_Y^bS`B[@13e=SJKi0[PY3
 S1
-R6
-R18
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/shift_register_wr.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/shift_register_wr.sv
+R17
+R329
+Z501 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/shift_register_wr.sv
+Z502 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/shift_register_wr.sv
 L0 1
-R8
-R9
+R21
+R22
+Z503 !s100 G>ED`=f^4PmU_zZhB0LU52
+Z504 !s105 shift_register_wr_sv_unit
+Z505 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/shift_register_wr.sv|
+Z506 !s108 1735817138.454000
+Z507 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/shift_register_wr.sv|
 !s85 0
-!s100 G>ED`=f^4PmU_zZhB0LU52
-!s105 shift_register_wr_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/shift_register_wr.sv|
-!s108 1733835487.281000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/shift_register_wr.sv|
 !i10b 1
 !i111 0
 vsram
-R4
-R15
-IWCa_O`N@l>n_EZ1<:_bNT0
-R5
-S1
-R6
+R14
+R136
+Z508 IWCa_O`N@l>n_EZ1<:_bNT0
 R16
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/sram.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/sram.sv
+S1
+R17
+R138
+Z509 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/sram.sv
+Z510 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/sram.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-!s100 MCjDnEUd:mO6Ee9T`^JJ01
-!s105 sram_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/sram.sv|
-!s108 1733835487.311000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/sram.sv|
+R22
+Z511 !s100 MCjDnEUd:mO6Ee9T`^JJ01
+Z512 !s105 sram_sv_unit
+Z513 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/sram.sv|
+Z514 !s108 1735817138.485000
+Z515 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/sram.sv|
 !i10b 1
 !s85 0
 !i111 0
 vtb_ahb_apb_priority_arbiter
-R4
-I@RhFzRogoDA`Q8C@6U`L[1
-R5
 R14
+Z516 I@RhFzRogoDA`Q8C@6U`L[1
+R16
+R112
 S1
-R11
-w1731737666
-8C:/Users/24h/Desktop/HK241/DATN/arbiter_tb.sv
-FC:/Users/24h/Desktop/HK241/DATN/arbiter_tb.sv
+R30
+Z517 w1731737666
+Z518 8C:/Users/24h/Desktop/HK241/DATN/arbiter_tb.sv
+Z519 FC:/Users/24h/Desktop/HK241/DATN/arbiter_tb.sv
 L0 3
-R8
+R21
 r1
 31
-R9
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/DATN/arbiter_tb.sv|
-!s107 C:/Users/24h/Desktop/HK241/DATN/arbiter_tb.sv|
-!s110 1731737677
-!s100 e1j_BWeR1Ei4aQzDkGlS52
-!s108 1731737677.634000
+R22
+Z520 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/DATN/arbiter_tb.sv|
+Z521 !s107 C:/Users/24h/Desktop/HK241/DATN/arbiter_tb.sv|
+Z522 !s110 1731737677
+Z523 !s100 e1j_BWeR1Ei4aQzDkGlS52
+Z524 !s108 1731737677.634000
 !i10b 1
 !s85 0
 !i111 0
 vtb_ahb_master
-R4
-R15
-IN2emJ22MA<Lz2fQkl4H^L2
-R5
-S1
-R6
+R14
+R136
+Z525 IN2emJ22MA<Lz2fQkl4H^L2
 R16
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_ahb_master_ram.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_ahb_master_ram.sv
+S1
+R17
+R138
+Z526 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_ahb_master_ram.sv
+Z527 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_ahb_master_ram.sv
 L0 3
-R8
+R21
 r1
 31
-R9
-!s100 G<Ni@08[3RUE:2I>oJS_z3
-!s105 tb_ahb_master_ram_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_ahb_master_ram.sv|
-!s108 1733835487.407000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_ahb_master_ram.sv|
+R22
+Z528 !s100 G<Ni@08[3RUE:2I>oJS_z3
+Z529 !s105 tb_ahb_master_ram_sv_unit
+Z530 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_ahb_master_ram.sv|
+Z531 !s108 1735817138.547000
+Z532 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_ahb_master_ram.sv|
 !i10b 1
 !s85 0
 !i111 0
 vtb_AHB_SLAVE
-R4
-R15
-IQ5bh=LKS49:K9375ga94h0
-R5
-S1
-R6
+R14
+R136
+Z533 IQ5bh=LKS49:K9375ga94h0
 R16
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_ahb_apb_bridge.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_ahb_apb_bridge.sv
+S1
+R17
+R138
+Z534 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_ahb_apb_bridge.sv
+Z535 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_ahb_apb_bridge.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-ntb_@a@h@b_@s@l@a@v@e
-!s100 UZzE@8b[fbA]NfQ:kfJ5^3
-!s105 tb_ahb_apb_bridge_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_ahb_apb_bridge.sv|
-!s108 1733835487.376000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_ahb_apb_bridge.sv|
+R22
+Z536 ntb_@a@h@b_@s@l@a@v@e
+Z537 !s100 UZzE@8b[fbA]NfQ:kfJ5^3
+Z538 !s105 tb_ahb_apb_bridge_sv_unit
+Z539 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_ahb_apb_bridge.sv|
+Z540 !s108 1735817138.516000
+Z541 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_ahb_apb_bridge.sv|
 !i10b 1
 !s85 0
 !i111 0
 vTB_APB_UART
-R4
-R5
+R14
+R16
 r1
 31
-IA4[EfMTn]5n0VeT5[Vdei1
-Z20 !s105 apb_uart_tb_sv_unit
+Z542 IA4[EfMTn]5n0VeT5[Vdei1
+Z543 !s105 apb_uart_tb_sv_unit
 S1
-Z21 dC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3
-w1733573927
-8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_uart_tb.sv
-FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_uart_tb.sv
+Z544 dC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3
+Z545 w1733573927
+Z546 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_uart_tb.sv
+Z547 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_uart_tb.sv
 L0 1
-R8
-R9
-n@t@b_@a@p@b_@u@a@r@t
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_uart_tb.sv|
-!s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_uart_tb.sv|
-!s100 iKEU9jKRZ46g0KYUA4i_a1
-!s108 1733573935.559000
+R21
+R22
+Z548 n@t@b_@a@p@b_@u@a@r@t
+Z549 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_uart_tb.sv|
+Z550 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/apb_uart_tb.sv|
+Z551 !s100 iKEU9jKRZ46g0KYUA4i_a1
+Z552 !s108 1733573935.559000
 !s85 0
 !i10b 1
 !i111 0
 vtb_APB_UART
-R4
-R5
+R14
+R16
 r1
 31
-I@SKX5hl]K8`?31zNbOKB]3
+Z553 I@SKX5hl]K8`?31zNbOKB]3
 S1
-R21
-w1732207971
-8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_apb_uart.sv
-FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_apb_uart.sv
+R544
+Z554 w1732207971
+Z555 8C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_apb_uart.sv
+Z556 FC:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_apb_uart.sv
 L0 1
-R8
-R9
-ntb_@a@p@b_@u@a@r@t
-!s100 B0fj=I0T1W7HBoP9S4ejl2
-!s105 tb_apb_uart_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_apb_uart.sv|
-!s108 1732474797.137000
-!s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_apb_uart.sv|
+R21
+R22
+Z557 ntb_@a@p@b_@u@a@r@t
+Z558 !s100 B0fj=I0T1W7HBoP9S4ejl2
+Z559 !s105 tb_apb_uart_sv_unit
+Z560 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_apb_uart.sv|
+Z561 !s108 1732474797.137000
+Z562 !s107 C:/Users/Admin/Desktop/HK241/DATN/Capstone_Project_3/tb_apb_uart.sv|
 !s85 0
 !i10b 1
 !i111 0
 vtb_error_ram
-R4
-R15
-IYkPGf^8jWI;T1jAV4FRDV0
-R5
-S1
-R6
+R14
+R136
+Z563 IYkPGf^8jWI;T1jAV4FRDV0
 R16
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_error_ram.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_error_ram.sv
+S1
+R17
+R138
+Z564 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_error_ram.sv
+Z565 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_error_ram.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-!s100 ?RbeDnQ5l4P>^T<z9g^>l2
-!s105 tb_error_ram_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_error_ram.sv|
-!s108 1733835487.485000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_error_ram.sv|
+R22
+Z566 !s100 ?RbeDnQ5l4P>^T<z9g^>l2
+Z567 !s105 tb_error_ram_sv_unit
+Z568 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_error_ram.sv|
+Z569 !s108 1735817138.594000
+Z570 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_error_ram.sv|
 !i10b 1
 !s85 0
 !i111 0
 vtb_priority_selector
-R4
-R15
-I^YhBo0i4L`1^`h@kGiUe[2
-R5
-S1
-R6
+R14
+R136
+Z571 I^YhBo0i4L`1^`h@kGiUe[2
 R16
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_priority_selector.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_priority_selector.sv
+S1
+R17
+R138
+Z572 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_priority_selector.sv
+Z573 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_priority_selector.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-!s100 di8GZAS@QN7jzh2Ehg`Rg1
-!s105 tb_priority_selector_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_priority_selector.sv|
-!s108 1733835487.529000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_priority_selector.sv|
+R22
+Z574 !s100 di8GZAS@QN7jzh2Ehg`Rg1
+Z575 !s105 tb_priority_selector_sv_unit
+Z576 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_priority_selector.sv|
+Z577 !s108 1735817138.625000
+Z578 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_priority_selector.sv|
 !i10b 1
 !s85 0
 !i111 0
 vtb_ram
-R4
-IIz9IQ7=eX0G]Y?5ZXQTBI2
-R5
+R14
+R136
+Z579 IIz9IQ7=eX0G]Y?5ZXQTBI2
+R16
 S1
-R6
-R18
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/ram_tb.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/ram_tb.sv
+R17
+R329
+Z580 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/ram_tb.sv
+Z581 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/ram_tb.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-R15
-!s100 Cl>oUOnDE<>BV`ZaUK5Um1
-!s105 ram_tb_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/ram_tb.sv|
-!s108 1733835486.997000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/ram_tb.sv|
+R22
+Z582 !s100 Cl>oUOnDE<>BV`ZaUK5Um1
+Z583 !s105 ram_tb_sv_unit
+Z584 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/ram_tb.sv|
+Z585 !s108 1735817138.266000
+Z586 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/ram_tb.sv|
 !i10b 1
 !s85 0
 !i111 0
 vtb_receive_FIFO
-R4
-R15
-Ia0i3i;Y62khcK]UE;b5R>1
-R5
-S1
-R6
+R14
+R136
+Z587 Ia0i3i;Y62khcK]UE;b5R>1
 R16
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_receive_FIFO.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_receive_FIFO.sv
+S1
+R17
+R138
+Z588 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_receive_FIFO.sv
+Z589 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_receive_FIFO.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-ntb_receive_@f@i@f@o
-!s100 ec0TAb5_]^8DJOnd@@Hk13
-!s105 tb_receive_FIFO_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_receive_FIFO.sv|
-!s108 1733835487.564000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_receive_FIFO.sv|
+R22
+Z590 ntb_receive_@f@i@f@o
+Z591 !s100 ec0TAb5_]^8DJOnd@@Hk13
+Z592 !s105 tb_receive_FIFO_sv_unit
+Z593 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_receive_FIFO.sv|
+Z594 !s108 1735817138.657000
+Z595 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_receive_FIFO.sv|
 !i10b 1
 !s85 0
 !i111 0
 vtb_sram
-R4
-R15
-IF2^MZljG<7CWcBM:hhm5g1
-R5
-S1
-R6
+R14
+R136
+Z596 IF2^MZljG<7CWcBM:hhm5g1
 R16
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_sram.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_sram.sv
+S1
+R17
+R138
+Z597 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_sram.sv
+Z598 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_sram.sv
 L0 3
-R8
+R21
 r1
 31
-R9
-!s100 Ha]=TWBIh7SkdmJT:CY441
-!s105 tb_sram_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_sram.sv|
-!s108 1733835487.592000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_sram.sv|
+R22
+Z599 !s100 Ha]=TWBIh7SkdmJT:CY441
+Z600 !s105 tb_sram_sv_unit
+Z601 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_sram.sv|
+Z602 !s108 1735817138.704000
+Z603 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/tb_sram.sv|
 !i10b 1
 !s85 0
 !i111 0
 vtest_ver2
-R4
-R15
-I0oW@71a?NJmF9:JN`nogR3
-R5
-S1
-R6
+R14
+R136
+Z604 I0oW@71a?NJmF9:JN`nogR3
 R16
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver2.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver2.sv
+S1
+R17
+R138
+Z605 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver2.sv
+Z606 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver2.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-!s100 `fU1<Pj`gZX:GPkaC__WO3
-!s105 test_ver2_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver2.sv|
-!s108 1733835487.621000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver2.sv|
+R22
+Z607 !s100 `fU1<Pj`gZX:GPkaC__WO3
+Z608 !s105 test_ver2_sv_unit
+Z609 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver2.sv|
+Z610 !s108 1735817138.735000
+Z611 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver2.sv|
 !i10b 1
 !s85 0
 !i111 0
 vtest_ver3
-R4
-R15
-InKL@Zg5`6zZUE_9db>RRi2
-R5
-S1
-R6
+R14
+R136
+Z612 InKL@Zg5`6zZUE_9db>RRi2
 R16
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver3.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver3.sv
+S1
+R17
+R138
+Z613 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver3.sv
+Z614 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver3.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-!s100 gbc`@PTH2R?Bo[i>4oFbO1
-!s105 test_ver3_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver3.sv|
-!s108 1733835487.650000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver3.sv|
+R22
+Z615 !s100 gbc`@PTH2R?Bo[i>4oFbO1
+Z616 !s105 test_ver3_sv_unit
+Z617 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver3.sv|
+Z618 !s108 1735817138.766000
+Z619 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver3.sv|
 !i10b 1
 !s85 0
 !i111 0
 vtest_ver4
-R4
-R15
-I59iI34XIRW:TY=RXZ5=3k0
-R5
-S1
-R6
+R14
+R136
+Z620 I59iI34XIRW:TY=RXZ5=3k0
 R16
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver4.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver4.sv
+S1
+R17
+R138
+Z621 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver4.sv
+Z622 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver4.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-!s100 fL32iH<SUzGh4[5Y[Y0in2
-!s105 test_ver4_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver4.sv|
-!s108 1733835487.687000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver4.sv|
+R22
+Z623 !s100 fL32iH<SUzGh4[5Y[Y0in2
+Z624 !s105 test_ver4_sv_unit
+Z625 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver4.sv|
+Z626 !s108 1735817138.797000
+Z627 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver4.sv|
 !i10b 1
 !s85 0
 !i111 0
 vtest_ver5
-R4
-R15
-IZL8zZff@3U?cOd>ALBbN21
-R5
-S1
-R6
+R14
+R136
+Z628 IZL8zZff@3U?cOd>ALBbN21
 R16
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver5.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver5.sv
+S1
+R17
+R138
+Z629 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver5.sv
+Z630 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver5.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-!s100 fPVTJ7<hNUUXgUzNKQl<X1
-!s105 test_ver5_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver5.sv|
-!s108 1733835487.725000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver5.sv|
+R22
+Z631 !s100 fPVTJ7<hNUUXgUzNKQl<X1
+Z632 !s105 test_ver5_sv_unit
+Z633 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver5.sv|
+Z634 !s108 1735817138.829000
+Z635 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/test_ver5.sv|
 !i10b 1
 !s85 0
 !i111 0
 vtestbench_APB_UART
-R4
-R5
+R14
+R16
 r1
 31
-IVa;PM>>h1VV@ojmSfRSgB2
-R20
+Z636 IVa;PM>>h1VV@ojmSfRSgB2
+R543
 S1
-R6
-w1733834218
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/apb_uart_tb.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/apb_uart_tb.sv
+R17
+Z637 w1733834218
+Z638 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/apb_uart_tb.sv
+Z639 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/apb_uart_tb.sv
 L0 1
-R8
-R9
-ntestbench_@a@p@b_@u@a@r@t
+R21
+R22
+Z640 ntestbench_@a@p@b_@u@a@r@t
+Z641 !s100 [^4dW1K0i?G@PDKLh3BkE0
+Z642 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/apb_uart_tb.sv|
+Z643 !s108 1735817137.141000
+Z644 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/apb_uart_tb.sv|
 !s85 0
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/apb_uart_tb.sv|
-!s100 [^4dW1K0i?G@PDKLh3BkE0
-!s108 1733835485.565000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/apb_uart_tb.sv|
 !i10b 1
 !i111 0
 vThesis_Project
-R4
-R15
-I5GBT9]SB9?S`LJ7hh[0AR1
-R5
+R14
+R136
+Z645 ID8k?leJS=@V:<kZDdNeWg0
+R16
 S1
-R6
-w1733835269
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/Thesis_Project.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/Thesis_Project.sv
+R17
+Z646 w1735562513
+Z647 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/Thesis_Project.sv
+Z648 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/Thesis_Project.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-n@thesis_@project
-!s105 Thesis_Project_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/Thesis_Project.sv|
-!s100 C^DJ>c8G3nD3<BF4nl:8i1
-!s108 1733835487.766000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/Thesis_Project.sv|
+R22
+Z649 n@thesis_@project
+Z650 !s105 Thesis_Project_sv_unit
+Z651 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/Thesis_Project.sv|
+Z652 !s100 =4H1XO9[c1>2N;A[4d]9g3
+Z653 !s108 1735817138.860000
+Z654 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/Thesis_Project.sv|
 !i10b 1
 !s85 0
 !i111 0
 vtransfer_validate
-R4
-R5
+R14
+R16
 r1
 31
-IAahZmc6N4U^W6e8m04aeY3
+Z655 IAahZmc6N4U^W6e8m04aeY3
 S1
-R6
-R16
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/transfer_validate.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/transfer_validate.sv
+R17
+R138
+Z656 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/transfer_validate.sv
+Z657 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/transfer_validate.sv
 L0 1
-R8
-R9
+R21
+R22
+Z658 !s100 6XTHgfHQzK3gXzFRmUOf<3
+Z659 !s105 transfer_validate_sv_unit
+Z660 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/transfer_validate.sv|
+Z661 !s108 1735817138.891000
+Z662 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/transfer_validate.sv|
 !s85 0
-!s100 6XTHgfHQzK3gXzFRmUOf<3
-!s105 transfer_validate_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/transfer_validate.sv|
-!s108 1733835487.796000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/transfer_validate.sv|
 !i10b 1
 !i111 0
 vtransmit_FIFO
-R4
-R5
+R14
+R16
 r1
 31
-IEOC<oGG3T9M[j<2dm4Ya21
+Z663 IEOC<oGG3T9M[j<2dm4Ya21
 S1
-R6
-R16
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/transmit_FIFO.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/transmit_FIFO.sv
+R17
+R138
+Z664 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/transmit_FIFO.sv
+Z665 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/transmit_FIFO.sv
 L0 1
-R8
-R9
-ntransmit_@f@i@f@o
+R21
+R22
+Z666 ntransmit_@f@i@f@o
+Z667 !s100 S_U13ZlMgFLOPO7D8KkL_0
+Z668 !s105 transmit_FIFO_sv_unit
+Z669 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/transmit_FIFO.sv|
+Z670 !s108 1735817138.922000
+Z671 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/transmit_FIFO.sv|
 !s85 0
-!s100 S_U13ZlMgFLOPO7D8KkL_0
-!s105 transmit_FIFO_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/transmit_FIFO.sv|
-!s108 1733835487.831000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/transmit_FIFO.sv|
 !i10b 1
 !i111 0
 vtransmit_FIFO_tb
-R4
-R15
-Ia<ZL:DY6VhihGS0dCQ[cH1
-R5
-S1
-R6
+R14
+R136
+Z672 Ia<ZL:DY6VhihGS0dCQ[cH1
 R16
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/transmit_FIFO_tb.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/transmit_FIFO_tb.sv
+S1
+R17
+R138
+Z673 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/transmit_FIFO_tb.sv
+Z674 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/transmit_FIFO_tb.sv
 L0 3
-R8
+R21
 r1
 31
-R9
-ntransmit_@f@i@f@o_tb
-!s100 hUNhDeG>l<aTY@SaCEUSc2
-!s105 transmit_FIFO_tb_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/transmit_FIFO_tb.sv|
-!s108 1733835487.879000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/transmit_FIFO_tb.sv|
+R22
+Z675 ntransmit_@f@i@f@o_tb
+Z676 !s100 hUNhDeG>l<aTY@SaCEUSc2
+Z677 !s105 transmit_FIFO_tb_sv_unit
+Z678 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/transmit_FIFO_tb.sv|
+Z679 !s108 1735817138.954000
+Z680 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/transmit_FIFO_tb.sv|
 !i10b 1
 !s85 0
 !i111 0
 vtx_fsm
-R4
-R5
+R14
+R16
 r1
 31
-I46@h4<DGRPoQQ7WjhUPBJ3
+Z681 I46@h4<DGRPoQQ7WjhUPBJ3
 S1
-R6
-w1733832151
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/tx_fsm.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/tx_fsm.sv
+R17
+Z682 w1733832151
+Z683 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/tx_fsm.sv
+Z684 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/tx_fsm.sv
 L0 1
-R8
-R9
+R21
+R22
+Z685 !s100 ZV>6zVTYhjTI4Fe8EcZ:j2
+Z686 !s105 tx_fsm_sv_unit
+Z687 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/tx_fsm.sv|
+Z688 !s108 1735817138.985000
+Z689 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/tx_fsm.sv|
 !s85 0
-!s100 ZV>6zVTYhjTI4Fe8EcZ:j2
-!s105 tx_fsm_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/tx_fsm.sv|
-!s108 1733835487.926000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/tx_fsm.sv|
 !i10b 1
 !i111 0
 vuart_start_bit_detect
-R4
-R5
+R14
+R16
 r1
 31
-IBeX1GWL^aa?bR0VMCzkUG2
+Z690 IBeX1GWL^aa?bR0VMCzkUG2
 S1
-R6
-R16
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/uart_start_bit_detect.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/uart_start_bit_detect.sv
+R17
+R138
+Z691 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/uart_start_bit_detect.sv
+Z692 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/uart_start_bit_detect.sv
 L0 1
-R8
-R9
+R21
+R22
+Z693 !s100 ;`e7QCXO772^J:jZDA1Y73
+Z694 !s105 uart_start_bit_detect_sv_unit
+Z695 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/uart_start_bit_detect.sv|
+Z696 !s108 1735817139.032000
+Z697 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/uart_start_bit_detect.sv|
 !s85 0
-!s100 ;`e7QCXO772^J:jZDA1Y73
-!s105 uart_start_bit_detect_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/uart_start_bit_detect.sv|
-!s108 1733835487.986000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/uart_start_bit_detect.sv|
 !i10b 1
 !i111 0
 vwrapper
-R4
-Icmz;h6ZhH6MYZDm2<jRZ00
-R5
+R14
+R163
+Z698 IJNHHQz=?c<H>::S^al?VF1
+R16
 S1
-R6
-w1733835449
-8C:/Users/24h/Desktop/HK241/Capstone_Project_3/wrapper.sv
-FC:/Users/24h/Desktop/HK241/Capstone_Project_3/wrapper.sv
+R17
+Z699 w1735563461
+Z700 8C:/Users/24h/Desktop/HK241/Capstone_Project_3/wrapper.sv
+Z701 FC:/Users/24h/Desktop/HK241/Capstone_Project_3/wrapper.sv
 L0 1
-R8
+R21
 r1
 31
-R9
-!s105 wrapper_sv_unit
-!s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/wrapper.sv|
-!s110 1733835488
+R22
+Z702 !s105 wrapper_sv_unit
+Z703 !s90 -reportprogress|300|-work|work|-vopt|-sv|C:/Users/24h/Desktop/HK241/Capstone_Project_3/wrapper.sv|
+Z704 !s100 BMS5]mc`3d4XO@8U<RkJ61
+Z705 !s108 1735817139.063000
+Z706 !s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/wrapper.sv|
 !i10b 1
-!s100 UKe?Ja5;PZjYE562SIf]>0
 !s85 0
-!s108 1733835488.016000
-!s107 C:/Users/24h/Desktop/HK241/Capstone_Project_3/wrapper.sv|
 !i111 0

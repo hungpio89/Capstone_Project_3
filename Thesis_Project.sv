@@ -4,6 +4,8 @@ module Thesis_Project
 	input		logic					UARTCLK,
 	input		logic					rst_ni,
 	
+	input		logic					ctrl_send,
+	
 	input 	logic	[  9 :  0]	data_input,
 	
 	output 	logic	[ 31 :  0] 	data_io_ledr_o,
@@ -14,15 +16,15 @@ module Thesis_Project
 	output	logic					UART_TXD,
 	
 	// Delete later
+	output 	logic					baud_tick,
 	output	logic	[ 31 :  0] 	data_io_lcd_o
 	
 );
 	// Local Signal Assignment
 	
-	logic								baud_tick;
 	logic				[ 31 :  0]	pc_debug_o;
 	
-//	logic				[ 31 :  0] 	data_io_lcd_o;
+	logic				[ 31 :  0] 	data_to_uart_i;
 	logic				[ 31 :  0] 	data_io_ledg_o;
 	logic				[ 31 :  0]	data_io_hex_0;
 	logic				[ 31 :  0]	data_io_hex_1;
@@ -93,6 +95,15 @@ pipeline_riscv_mod2 						PIPELINE_RISCV_MOD2
 //				.HREADYOUT					(io_ledr_o[0])
 //	
 //);
+
+D_FF_32bit									D_FF_32_BIT_FOR_SEND_TO_UART
+(
+				.D								(data_io_lcd_o),
+				.clk							(clk_i), 
+				.rst_ni						(rst_ni), 
+				.en							(ctrl_send),
+				.Q								(data_to_uart_i)
+);
 
 AHB_APB_UART 								AHB_APB_UART_BLOCK
 (

@@ -1,0 +1,33 @@
+module button_debounce (
+    input logic clk,          // Clock 50 MHz
+    input logic rst_n,        // Reset (active low)
+    input logic button_in,    // Tín hiệu đầu vào từ nút bấm
+    output logic button_out   // Tín hiệu đầu ra đã chống rung
+);
+    // Thời gian chống rung là 10 ms => COUNTER_MAX = 50 MHz * 10 ms = 500,000
+    parameter integer COUNTER_MAX = 500_000;
+    
+    logic [19:0] counter;     // 20 bit đủ để đếm đến 500,000 (log2(500,000) ≈ 19.93)
+    logic stable_button;
+
+    always_ff @(posedge clk or negedge rst_n) begin
+        if (!rst_n) begin
+            counter <= 0;
+            stable_button <= 0;
+        end else begin
+            if (button_in == stable_button) begin
+                counter <= 0; // Reset bộ đếm nếu tín hiệu không thay đổi
+            end else begin
+                counter <= counter + 1; // Tăng bộ đếm khi tín hiệu thay đổi
+                if (counter >= COUNTER_MAX) begin
+                    counter <= 0;
+                    stable_button <= button_in; // Cập nhật tín hiệu khi ổn định
+                end
+            end
+        end
+    end
+
+    assign button_out = stable_button;
+
+endmodule
+``
