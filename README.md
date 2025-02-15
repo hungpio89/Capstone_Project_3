@@ -1,4 +1,4 @@
-# Feature: AMBA AHB - APB and APB-UART bridges (application for FPGA kit DE10)
+# Feature: Implement an AMBA AHB - APB UART communication integrated with High Bandwidth On-chip Memory on RISC-V 32 bits Processor (application for FPGA kit DE10)
 + 13.08.2024 | Personal | Testing Version
 + 11.09.2024 | Personal | Testbench
 
