@@ -3,14 +3,15 @@
 + 11.09.2024 | Personal | Testbench
 
 ## 1. Introduction
-UPDATE 13 August 2024: you are invited to test the main branch, which is the result of my experiment about AHB - APB with APB UART. I haven't completed testing this feature yet but I expect it would work. If you do test it, please let me know and I'll adjust and merge it to master.
+UPDATE 29 April 2025: you are invited to test the main branch, which is the result of my experiment about RISC-V Processor with AMBA feature between AHB - APB with APB UART. I have completed testing this feature in TX side of UART and not finished with RX yet but I expect it would work (success in Vision via https://hshop.vn/mach-usb-saleae-8ch-24mhz-logic-analyzer). If you do test (examinize) it, please let me know and I'll adjust and merge it to master.
 
 NOTE: I did a custom version of this system for my capstone project (graduation). Basic testing shows it works correctly but please let me know if you encounter any issues.
 
 ## 2. Tool use
-+ Quartus II 64-bit for Compiler
-+ Modelsim for Simulator
-+ Ubuntu 22.04 (Later)
++ Quartus Prime 23.1std for Compiler
++ QuestaSim (Modelsim) for Simulator
++ Kit DE10 FPGA Standard for Demonstration
++ Ubuntu 22.04 (Later) for Synthesizing and Verification
 
 ## 3. Design Architecture & Signal used
 
@@ -27,7 +28,7 @@ NOTE: I did a custom version of this system for my capstone project (graduation)
 | TXD  (UART)                    |   1    |    INPUT    |  (Serial) 
 | Baudrate (baud_rate_desired)   |   20   |    INPUT    |           -> Can be down to 16 (depend on dev)
 | Start Bit                      |   1    |    IN/OUT   |
-| Data Length (including Parity) |   9    |    IN/OUT   |  (Serial) -> This is the first basic design for testing whether the project is working or not
+| Data Length                    |   8    |    IN/OUT   |  (Serial) -> This is the first basic design for testing whether the project is working or not
 | Parity                         |   1    |    IN/OUT   |           -> Can be ignore if not used (not for this version)
 | Stop Bit                       |   1    |    IN/OUT   |
 
@@ -75,6 +76,6 @@ https://developer.arm.com/documentation/ddi0479/latest/ page 4-9 (APB components
 Github: https://github.com/hungpio89
 
 ## 6. Project status
-Unfinished -> Finished with simulation on Modelsim -> 
+Unfinished -> Finished with simulation on Modelsim -> Finished with applying on DE10 FPGA standard kit for testing its feature (TX only)
 
 ### Please show your appreciation to those who have contributed to the project.
